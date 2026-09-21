@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/SmartForest-no/SegmentAnyTree",
+  "commit": "a3561ed8447bbb7938f059ba65a3e9c97d6e2ee9",
+  "retrieved_on": "2026-09-17",
+  "checkpoint": "model_file/PointGroup-PAPER.pt",
+  "checkpoint_bytes": 665666007,
+  "checkpoint_sha256": "0b4d74b4644e37a16f59008ad0f5c62894fc4d2d906f3abd803bbfc5b5dd803a",
+  "status": "code and full official pretrained checkpoint saved locally; inference not run"
+}

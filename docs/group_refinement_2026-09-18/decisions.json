@@ -1,0 +1,2194 @@
+{
+  "S001-ms2lp7mr": {
+    "id": "S001-ms2lp7mr",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2lps2z": {
+    "id": "S001-ms2lps2z",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2lq74o": {
+    "id": "S001-ms2lq74o",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2lqiho": {
+    "id": "S001-ms2lqiho",
+    "action": "single",
+    "reason": "Second RGB/CHM review: one compact green crown against surrounding ground, reaching the lower site edge, supported by a raised CHM patch (max 4.68 m). Proposed single visible clipped crown; moderate confidence and explicit tile/site-edge truncation, not a complete crown or verified stem count.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+    "confidence": "moderate",
+    "review_round": 2,
+    "author_review_required": true
+  },
+  "S001-ms2lrjfk": {
+    "id": "S001-ms2lrjfk",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2luf6p": {
+    "id": "S001-ms2luf6p",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2lusm9": {
+    "id": "S001-ms2lusm9",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2lvb2v": {
+    "id": "S001-ms2lvb2v",
+    "action": "single",
+    "reason": "Compact isolated roadside RGB crown with one contiguous CHM footprint and no visible internal crown boundary. Propose one visible crown; source group interpretation must be checked by Xi.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T01:40:36.043048+00:00"
+  },
+  "S001-ms2lvife": {
+    "id": "S001-ms2lvife",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2lvxg1": {
+    "id": "S001-ms2lvxg1",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2lw8a5": {
+    "id": "S001-ms2lw8a5",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2lwjv6": {
+    "id": "S001-ms2lwjv6",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2lx3vo": {
+    "id": "S001-ms2lx3vo",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2lxjh5": {
+    "id": "S001-ms2lxjh5",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2lzoed": {
+    "id": "S001-ms2lzoed",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2m1zgt": {
+    "id": "S001-ms2m1zgt",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2m2bcd": {
+    "id": "S001-ms2m2bcd",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S001-ms2m346y": {
+    "id": "S001-ms2m346y",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S001: RGB shows connected garden and roadside vegetation; the native CHM has fragmented/merged height support. Preserve existing ambiguous groups rather than infer individual stems from a rounded outline. No model detections used; multiplicity is not independently verified. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S002-ms2ovgey": {
+    "id": "S002-ms2ovgey",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S002: the group polygons cover connected garden vegetation, narrow canopy strips and edge fragments next to roofs. RGB texture and native CHM do not establish repeatable individual divisions; retain ambiguous groups with no claim of independent stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S002-ms2ovpe8": {
+    "id": "S002-ms2ovpe8",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S002: the group polygons cover connected garden vegetation, narrow canopy strips and edge fragments next to roofs. RGB texture and native CHM do not establish repeatable individual divisions; retain ambiguous groups with no claim of independent stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S002-ms2ow8nk": {
+    "id": "S002-ms2ow8nk",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S002: the group polygons cover connected garden vegetation, narrow canopy strips and edge fragments next to roofs. RGB texture and native CHM do not establish repeatable individual divisions; retain ambiguous groups with no claim of independent stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S002-ms2owhw2": {
+    "id": "S002-ms2owhw2",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S002: the group polygons cover connected garden vegetation, narrow canopy strips and edge fragments next to roofs. RGB texture and native CHM do not establish repeatable individual divisions; retain ambiguous groups with no claim of independent stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S002-ms2owv9s": {
+    "id": "S002-ms2owv9s",
+    "action": "single",
+    "reason": "One rounded deciduous RGB crown with coherent radiating branch texture and one corresponding CHM mound. Propose reclassification rather than cutting the crown.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T01:40:36.574459+00:00"
+  },
+  "S002-ms2ox5kr": {
+    "id": "S002-ms2ox5kr",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S002: the group polygons cover connected garden vegetation, narrow canopy strips and edge fragments next to roofs. RGB texture and native CHM do not establish repeatable individual divisions; retain ambiguous groups with no claim of independent stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S002-ms2oxlca": {
+    "id": "S002-ms2oxlca",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S002: the group polygons cover connected garden vegetation, narrow canopy strips and edge fragments next to roofs. RGB texture and native CHM do not establish repeatable individual divisions; retain ambiguous groups with no claim of independent stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S002-ms2oxy7z": {
+    "id": "S002-ms2oxy7z",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S002: the group polygons cover connected garden vegetation, narrow canopy strips and edge fragments next to roofs. RGB texture and native CHM do not establish repeatable individual divisions; retain ambiguous groups with no claim of independent stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S002-ms2oy88k": {
+    "id": "S002-ms2oy88k",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S002: the group polygons cover connected garden vegetation, narrow canopy strips and edge fragments next to roofs. RGB texture and native CHM do not establish repeatable individual divisions; retain ambiguous groups with no claim of independent stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S002-ms2oyf4a": {
+    "id": "S002-ms2oyf4a",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S002: the group polygons cover connected garden vegetation, narrow canopy strips and edge fragments next to roofs. RGB texture and native CHM do not establish repeatable individual divisions; retain ambiguous groups with no claim of independent stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S002-ms2p13wn": {
+    "id": "S002-ms2p13wn",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S002: the group polygons cover connected garden vegetation, narrow canopy strips and edge fragments next to roofs. RGB texture and native CHM do not establish repeatable individual divisions; retain ambiguous groups with no claim of independent stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S003-ms2p8ey9": {
+    "id": "S003-ms2p8ey9",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S003: narrow roadside/garden canopy strips and connected crown patches cross property context. RGB and native CHM supply no repeatable division for the existing ambiguous regions; retain groups conservatively rather than invent single-tree identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S003-ms2p8s4x": {
+    "id": "S003-ms2p8s4x",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S003: narrow roadside/garden canopy strips and connected crown patches cross property context. RGB and native CHM supply no repeatable division for the existing ambiguous regions; retain groups conservatively rather than invent single-tree identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S003-ms2p9fce": {
+    "id": "S003-ms2p9fce",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S003: narrow roadside/garden canopy strips and connected crown patches cross property context. RGB and native CHM supply no repeatable division for the existing ambiguous regions; retain groups conservatively rather than invent single-tree identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S003-ms2pa8ez": {
+    "id": "S003-ms2pa8ez",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S003: narrow roadside/garden canopy strips and connected crown patches cross property context. RGB and native CHM supply no repeatable division for the existing ambiguous regions; retain groups conservatively rather than invent single-tree identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S003-ms2pauya": {
+    "id": "S003-ms2pauya",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S003: narrow roadside/garden canopy strips and connected crown patches cross property context. RGB and native CHM supply no repeatable division for the existing ambiguous regions; retain groups conservatively rather than invent single-tree identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S003-ms2pb4jp": {
+    "id": "S003-ms2pb4jp",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S003: narrow roadside/garden canopy strips and connected crown patches cross property context. RGB and native CHM supply no repeatable division for the existing ambiguous regions; retain groups conservatively rather than invent single-tree identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S003-ms2pbksl": {
+    "id": "S003-ms2pbksl",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S003: narrow roadside/garden canopy strips and connected crown patches cross property context. RGB and native CHM supply no repeatable division for the existing ambiguous regions; retain groups conservatively rather than invent single-tree identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S003-ms2pdyom": {
+    "id": "S003-ms2pdyom",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S003: narrow roadside/garden canopy strips and connected crown patches cross property context. RGB and native CHM supply no repeatable division for the existing ambiguous regions; retain groups conservatively rather than invent single-tree identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S003-ms2pe673": {
+    "id": "S003-ms2pe673",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S003: narrow roadside/garden canopy strips and connected crown patches cross property context. RGB and native CHM supply no repeatable division for the existing ambiguous regions; retain groups conservatively rather than invent single-tree identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S003-ms2pehqd": {
+    "id": "S003-ms2pehqd",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S003: narrow roadside/garden canopy strips and connected crown patches cross property context. RGB and native CHM supply no repeatable division for the existing ambiguous regions; retain groups conservatively rather than invent single-tree identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S003-ms2pev3d": {
+    "id": "S003-ms2pev3d",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S003: narrow roadside/garden canopy strips and connected crown patches cross property context. RGB and native CHM supply no repeatable division for the existing ambiguous regions; retain groups conservatively rather than invent single-tree identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S003-ms2ph94s": {
+    "id": "S003-ms2ph94s",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S003: narrow roadside/garden canopy strips and connected crown patches cross property context. RGB and native CHM supply no repeatable division for the existing ambiguous regions; retain groups conservatively rather than invent single-tree identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S003-ms2phisa": {
+    "id": "S003-ms2phisa",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S003: narrow roadside/garden canopy strips and connected crown patches cross property context. RGB and native CHM supply no repeatable division for the existing ambiguous regions; retain groups conservatively rather than invent single-tree identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S004-ms2pluuz": {
+    "id": "S004-ms2pluuz",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S004: connected park shelterbelt/edge canopy surrounds separately drawn coherent crowns. The 909 m\u00b2 flagged polygon follows a long connected vegetated strip, not an accidental giant single-tree polygon. Retain all groups, including the large canopy strip. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S004-ms2pmd91": {
+    "id": "S004-ms2pmd91",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S004: connected park shelterbelt/edge canopy surrounds separately drawn coherent crowns. The 909 m\u00b2 flagged polygon follows a long connected vegetated strip, not an accidental giant single-tree polygon. Retain all groups, including the large canopy strip. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S004-ms2pomii": {
+    "id": "S004-ms2pomii",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S004: connected park shelterbelt/edge canopy surrounds separately drawn coherent crowns. The 909 m\u00b2 flagged polygon follows a long connected vegetated strip, not an accidental giant single-tree polygon. Retain all groups, including the large canopy strip. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S004-ms2poynb": {
+    "id": "S004-ms2poynb",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S004: connected park shelterbelt/edge canopy surrounds separately drawn coherent crowns. The 909 m\u00b2 flagged polygon follows a long connected vegetated strip, not an accidental giant single-tree polygon. Retain all groups, including the large canopy strip. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S004-ms2ppdbi": {
+    "id": "S004-ms2ppdbi",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S004: connected park shelterbelt/edge canopy surrounds separately drawn coherent crowns. The 909 m\u00b2 flagged polygon follows a long connected vegetated strip, not an accidental giant single-tree polygon. Retain all groups, including the large canopy strip. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S004-ms2ppqgf": {
+    "id": "S004-ms2ppqgf",
+    "action": "single",
+    "reason": "Second RGB/CHM review: an isolated small oval green crown against open ground, with one raised CHM patch (max 4.21 m); no visible junction between separate crowns. Proposed single-crown category correction preserving the outline; moderate confidence due coarse RGB and low height.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+    "confidence": "moderate",
+    "review_round": 2,
+    "author_review_required": true
+  },
+  "S005-ms2pue8c": {
+    "id": "S005-ms2pue8c",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S005: connected park-edge canopy has interlocking texture, height transitions and small low/sparse patches. Large connected patches and small ambiguous fragments remain groups; a smooth height mound alone cannot verify one stem. No new individual crowns inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S005-ms2pvhxk": {
+    "id": "S005-ms2pvhxk",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S005: connected park-edge canopy has interlocking texture, height transitions and small low/sparse patches. Large connected patches and small ambiguous fragments remain groups; a smooth height mound alone cannot verify one stem. No new individual crowns inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S005-ms2pvwkv": {
+    "id": "S005-ms2pvwkv",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S005: connected park-edge canopy has interlocking texture, height transitions and small low/sparse patches. Large connected patches and small ambiguous fragments remain groups; a smooth height mound alone cannot verify one stem. No new individual crowns inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S005-ms2pw6n0": {
+    "id": "S005-ms2pw6n0",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S005: connected park-edge canopy has interlocking texture, height transitions and small low/sparse patches. Large connected patches and small ambiguous fragments remain groups; a smooth height mound alone cannot verify one stem. No new individual crowns inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S005-ms2pws92": {
+    "id": "S005-ms2pws92",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S005: connected park-edge canopy has interlocking texture, height transitions and small low/sparse patches. Large connected patches and small ambiguous fragments remain groups; a smooth height mound alone cannot verify one stem. No new individual crowns inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S005-ms2px6fq": {
+    "id": "S005-ms2px6fq",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S005: connected park-edge canopy has interlocking texture, height transitions and small low/sparse patches. Large connected patches and small ambiguous fragments remain groups; a smooth height mound alone cannot verify one stem. No new individual crowns inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S005-ms2pxdfh": {
+    "id": "S005-ms2pxdfh",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S005: connected park-edge canopy has interlocking texture, height transitions and small low/sparse patches. Large connected patches and small ambiguous fragments remain groups; a smooth height mound alone cannot verify one stem. No new individual crowns inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S005-ms2py63s": {
+    "id": "S005-ms2py63s",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S005: connected park-edge canopy has interlocking texture, height transitions and small low/sparse patches. Large connected patches and small ambiguous fragments remain groups; a smooth height mound alone cannot verify one stem. No new individual crowns inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S005-ms2pzf3f": {
+    "id": "S005-ms2pzf3f",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S005: connected park-edge canopy has interlocking texture, height transitions and small low/sparse patches. Large connected patches and small ambiguous fragments remain groups; a smooth height mound alone cannot verify one stem. No new individual crowns inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S005-ms2q08up": {
+    "id": "S005-ms2q08up",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S005: connected park-edge canopy has interlocking texture, height transitions and small low/sparse patches. Large connected patches and small ambiguous fragments remain groups; a smooth height mound alone cannot verify one stem. No new individual crowns inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S005-ms2q0kbj": {
+    "id": "S005-ms2q0kbj",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S005: connected park-edge canopy has interlocking texture, height transitions and small low/sparse patches. Large connected patches and small ambiguous fragments remain groups; a smooth height mound alone cannot verify one stem. No new individual crowns inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspebf4x": {
+    "id": "S006-mspebf4x",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspecesx": {
+    "id": "S006-mspecesx",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-msped4p7": {
+    "id": "S006-msped4p7",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspedw16": {
+    "id": "S006-mspedw16",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspeecea": {
+    "id": "S006-mspeecea",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspeer8c": {
+    "id": "S006-mspeer8c",
+    "action": "single",
+    "reason": "Compact oval open-grown crown with coherent branch pattern and a single bounded CHM lobe. No separate adjoining crown is visible within this group outline.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T01:40:37.083428+00:00"
+  },
+  "S006-mspegddp": {
+    "id": "S006-mspegddp",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspegrp6": {
+    "id": "S006-mspegrp6",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspehngn": {
+    "id": "S006-mspehngn",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspeihyf": {
+    "id": "S006-mspeihyf",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspej0bc": {
+    "id": "S006-mspej0bc",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspejhve": {
+    "id": "S006-mspejhve",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspejvx6": {
+    "id": "S006-mspejvx6",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspekoz5": {
+    "id": "S006-mspekoz5",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspel1ls": {
+    "id": "S006-mspel1ls",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspeln7f": {
+    "id": "S006-mspeln7f",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S006-mspeml6x": {
+    "id": "S006-mspeml6x",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S006: long park-edge patches and adjoining tall crowns have merged RGB texture and continuous CHM surfaces; coherent nearby single crowns are already separate. Retain ambiguous polygons as groups; do not split canopy from peak count alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S007-mspep4dv": {
+    "id": "S007-mspep4dv",
+    "action": "split",
+    "reason": "Upper narrow rounded crown has a distinct RGB perimeter and a neck to the lower connected canopy. Extract only the upper crown at the visible neck; the lower connected crowns remain unresolved tree_group.",
+    "crowns": [
+      [
+        [
+          274.51820128504187,
+          146.46680942177773
+        ],
+        [
+          278.80085653066635,
+          135.33190578222275
+        ],
+        [
+          285.22483940050006,
+          124.62526766583323
+        ],
+        [
+          292.93361884355545,
+          124.19700214266777
+        ],
+        [
+          301.49892933573574,
+          128.05139186233282
+        ],
+        [
+          307.49464668054134,
+          136.61670235544443
+        ],
+        [
+          304.92505353316665,
+          149.46466809511185
+        ],
+        [
+          294.64668094180524,
+          160.59957173466682
+        ],
+        [
+          288.65096359699965,
+          172.59100642427802
+        ],
+        [
+          283.2177016418427,
+          180
+        ],
+        [
+          247.35357098001987,
+          180
+        ],
+        [
+          248.82226980756968,
+          177.73019272089005
+        ],
+        [
+          253.96145610231906,
+          167.451820127666
+        ],
+        [
+          260.8137044971809,
+          158.02997858822346
+        ],
+        [
+          265.95289079193026,
+          151.60599571838975
+        ],
+        [
+          273.23340471088886,
+          148.17987152189016
+        ]
+      ]
+    ],
+    "reviewed_at": "2026-09-18T01:40:02.231142+00:00"
+  },
+  "S007-mspepwua": {
+    "id": "S007-mspepwua",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S007: connected roadside strips and overlapping park crowns retain uncertain individual identity; several rounded smaller patches warrant human multiplicity review, but no repeatable division is established by these RGB/CHM chips. Retain groups provisionally; no additional trees inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S007-mspeqpmm": {
+    "id": "S007-mspeqpmm",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S007: connected roadside strips and overlapping park crowns retain uncertain individual identity; several rounded smaller patches warrant human multiplicity review, but no repeatable division is established by these RGB/CHM chips. Retain groups provisionally; no additional trees inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S007-msperoll": {
+    "id": "S007-msperoll",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S007: connected roadside strips and overlapping park crowns retain uncertain individual identity; several rounded smaller patches warrant human multiplicity review, but no repeatable division is established by these RGB/CHM chips. Retain groups provisionally; no additional trees inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S007-mspes7re": {
+    "id": "S007-mspes7re",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S007: connected roadside strips and overlapping park crowns retain uncertain individual identity; several rounded smaller patches warrant human multiplicity review, but no repeatable division is established by these RGB/CHM chips. Retain groups provisionally; no additional trees inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S007-mspesjyd": {
+    "id": "S007-mspesjyd",
+    "action": "single",
+    "reason": "Isolated oval crown on paved edge, one coherent RGB canopy and one bounded CHM mound. Propose one visible individual crown.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T01:40:37.576169+00:00"
+  },
+  "S007-mspet0de": {
+    "id": "S007-mspet0de",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S007: connected roadside strips and overlapping park crowns retain uncertain individual identity; several rounded smaller patches warrant human multiplicity review, but no repeatable division is established by these RGB/CHM chips. Retain groups provisionally; no additional trees inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S007-mspetcy9": {
+    "id": "S007-mspetcy9",
+    "action": "single",
+    "reason": "Compact crown in open space with coherent central canopy texture and a single bounded CHM footprint. Lobed outer edge alone does not establish multiple trees.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T01:40:37.974584+00:00"
+  },
+  "S007-mspetqnp": {
+    "id": "S007-mspetqnp",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S007: connected roadside strips and overlapping park crowns retain uncertain individual identity; several rounded smaller patches warrant human multiplicity review, but no repeatable division is established by these RGB/CHM chips. Retain groups provisionally; no additional trees inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S007-mspeu1dd": {
+    "id": "S007-mspeu1dd",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S007: connected roadside strips and overlapping park crowns retain uncertain individual identity; several rounded smaller patches warrant human multiplicity review, but no repeatable division is established by these RGB/CHM chips. Retain groups provisionally; no additional trees inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S007-mspeuecl": {
+    "id": "S007-mspeuecl",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S007: connected roadside strips and overlapping park crowns retain uncertain individual identity; several rounded smaller patches warrant human multiplicity review, but no repeatable division is established by these RGB/CHM chips. Retain groups provisionally; no additional trees inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S007-mspevauw": {
+    "id": "S007-mspevauw",
+    "action": "single",
+    "reason": "Second RGB/CHM review: the broad central green crown has a coherent perimeter against open ground and continuous texture, supported by a single broad height mound (max 11.93 m). Proposed whole-outline single visible crown; moderate confidence because the left/lower lobes could reflect crown branches or adjoining vegetation.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+    "confidence": "moderate",
+    "review_round": 2,
+    "author_review_required": true
+  },
+  "S007-mspewan3": {
+    "id": "S007-mspewan3",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S007: connected roadside strips and overlapping park crowns retain uncertain individual identity; several rounded smaller patches warrant human multiplicity review, but no repeatable division is established by these RGB/CHM chips. Retain groups provisionally; no additional trees inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S007-mspewofj": {
+    "id": "S007-mspewofj",
+    "action": "single",
+    "reason": "Isolated rounded RGB crown beside the path, with one compact CHM mound and no distinguishable internal crown boundary. Propose one visible individual crown.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T01:40:38.379965+00:00"
+  },
+  "S008-mspfkk7a": {
+    "id": "S008-mspfkk7a",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspflmlg": {
+    "id": "S008-mspflmlg",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspflyw9": {
+    "id": "S008-mspflyw9",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspfmc99": {
+    "id": "S008-mspfmc99",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspfo91b": {
+    "id": "S008-mspfo91b",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspfpyke": {
+    "id": "S008-mspfpyke",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspfquyw": {
+    "id": "S008-mspfquyw",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspft4ws": {
+    "id": "S008-mspft4ws",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspftv44": {
+    "id": "S008-mspftv44",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspfymfb": {
+    "id": "S008-mspfymfb",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspfz64w": {
+    "id": "S008-mspfz64w",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspfzo9n": {
+    "id": "S008-mspfzo9n",
+    "action": "single",
+    "reason": "Second RGB/CHM review: a coherent grey-green crown texture inside the existing perimeter, with one broad raised CHM mound (max 16.55 m) and no clear internal crown boundary. Proposed whole-outline single crown; moderate confidence because adjoining woodland limits independent perimeter interpretation.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+    "confidence": "moderate",
+    "review_round": 2,
+    "author_review_required": true
+  },
+  "S008-mspfzvxp": {
+    "id": "S008-mspfzvxp",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspg05xw": {
+    "id": "S008-mspg05xw",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspg0isi": {
+    "id": "S008-mspg0isi",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspg0qjg": {
+    "id": "S008-mspg0qjg",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspg183u": {
+    "id": "S008-mspg183u",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspg1kar": {
+    "id": "S008-mspg1kar",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspg3dsm": {
+    "id": "S008-mspg3dsm",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S008-mspg4ajg": {
+    "id": "S008-mspg4ajg",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S008: dense continuous woodland and interlocking edge crowns have no stable individual boundaries throughout the labelled groups. The flagged 1476 m\u00b2 polygon covers contiguous woodland and remains a group, not a single-tree reference. Retain smaller ambiguous edge patches without inferred stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S009-mspg9z1m": {
+    "id": "S009-mspg9z1m",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S009: woodland fringe, low/scrubby patches and connected irregular crowns lack stable internal divisions in RGB/CHM. Retain the existing ambiguous groups without claiming every patch contains multiple verified stems; no single-tree top-up inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S009-mspgagoa": {
+    "id": "S009-mspgagoa",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S009: woodland fringe, low/scrubby patches and connected irregular crowns lack stable internal divisions in RGB/CHM. Retain the existing ambiguous groups without claiming every patch contains multiple verified stems; no single-tree top-up inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S009-mspgc35f": {
+    "id": "S009-mspgc35f",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S009: woodland fringe, low/scrubby patches and connected irregular crowns lack stable internal divisions in RGB/CHM. Retain the existing ambiguous groups without claiming every patch contains multiple verified stems; no single-tree top-up inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S009-mspgcemx": {
+    "id": "S009-mspgcemx",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S009: woodland fringe, low/scrubby patches and connected irregular crowns lack stable internal divisions in RGB/CHM. Retain the existing ambiguous groups without claiming every patch contains multiple verified stems; no single-tree top-up inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S009-mspgcort": {
+    "id": "S009-mspgcort",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S009: woodland fringe, low/scrubby patches and connected irregular crowns lack stable internal divisions in RGB/CHM. Retain the existing ambiguous groups without claiming every patch contains multiple verified stems; no single-tree top-up inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S009-mspgdeno": {
+    "id": "S009-mspgdeno",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S009: woodland fringe, low/scrubby patches and connected irregular crowns lack stable internal divisions in RGB/CHM. Retain the existing ambiguous groups without claiming every patch contains multiple verified stems; no single-tree top-up inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S009-mspgdxen": {
+    "id": "S009-mspgdxen",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S009: woodland fringe, low/scrubby patches and connected irregular crowns lack stable internal divisions in RGB/CHM. Retain the existing ambiguous groups without claiming every patch contains multiple verified stems; no single-tree top-up inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S009-mspge9kf": {
+    "id": "S009-mspge9kf",
+    "action": "single",
+    "reason": "Second RGB/CHM review: one coherent oblong green crown texture, with a raised CHM mound (max 7.85 m) and no repeatable internal crown division. Proposed whole-outline single visible crown; moderate confidence, not evidence that only one physical stem exists.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+    "confidence": "moderate",
+    "review_round": 2,
+    "author_review_required": true
+  },
+  "S009-mspgeh2m": {
+    "id": "S009-mspgeh2m",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S009: woodland fringe, low/scrubby patches and connected irregular crowns lack stable internal divisions in RGB/CHM. Retain the existing ambiguous groups without claiming every patch contains multiple verified stems; no single-tree top-up inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S009-mspgeven": {
+    "id": "S009-mspgeven",
+    "action": "single",
+    "reason": "Second RGB/CHM review: one compact dark-green crown with a coherent visible perimeter and no repeatable internal division; CHM supports one raised mound (max 6.00 m). Reclassify the whole existing outline as a single visible crown, with moderate confidence and no claim of verified stem identity.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+    "confidence": "moderate",
+    "review_round": 2,
+    "author_review_required": true
+  },
+  "S009-mspgfjui": {
+    "id": "S009-mspgfjui",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S009: woodland fringe, low/scrubby patches and connected irregular crowns lack stable internal divisions in RGB/CHM. Retain the existing ambiguous groups without claiming every patch contains multiple verified stems; no single-tree top-up inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S009-mspggokt": {
+    "id": "S009-mspggokt",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S009: woodland fringe, low/scrubby patches and connected irregular crowns lack stable internal divisions in RGB/CHM. Retain the existing ambiguous groups without claiming every patch contains multiple verified stems; no single-tree top-up inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S009-mspgir1e": {
+    "id": "S009-mspgir1e",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S009: woodland fringe, low/scrubby patches and connected irregular crowns lack stable internal divisions in RGB/CHM. Retain the existing ambiguous groups without claiming every patch contains multiple verified stems; no single-tree top-up inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S009-mspgjfqm": {
+    "id": "S009-mspgjfqm",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S009: woodland fringe, low/scrubby patches and connected irregular crowns lack stable internal divisions in RGB/CHM. Retain the existing ambiguous groups without claiming every patch contains multiple verified stems; no single-tree top-up inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S009-mspgjqrd": {
+    "id": "S009-mspgjqrd",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S009: woodland fringe, low/scrubby patches and connected irregular crowns lack stable internal divisions in RGB/CHM. Retain the existing ambiguous groups without claiming every patch contains multiple verified stems; no single-tree top-up inferred. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S010-mspgl9zn": {
+    "id": "S010-mspgl9zn",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S010: dense conifer/broadleaf canopy has many height peaks in continuous crown texture. The three flagged large polygons cover connected wooded patches. Retain these as groups; multiple peaks are insufficient to draw reproducible separate crowns. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S010-mspglkkq": {
+    "id": "S010-mspglkkq",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S010: dense conifer/broadleaf canopy has many height peaks in continuous crown texture. The three flagged large polygons cover connected wooded patches. Retain these as groups; multiple peaks are insufficient to draw reproducible separate crowns. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S010-mspgm2m4": {
+    "id": "S010-mspgm2m4",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S010: dense conifer/broadleaf canopy has many height peaks in continuous crown texture. The three flagged large polygons cover connected wooded patches. Retain these as groups; multiple peaks are insufficient to draw reproducible separate crowns. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S010-mspgmxh2": {
+    "id": "S010-mspgmxh2",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S010: dense conifer/broadleaf canopy has many height peaks in continuous crown texture. The three flagged large polygons cover connected wooded patches. Retain these as groups; multiple peaks are insufficient to draw reproducible separate crowns. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S010-mspgnaw8": {
+    "id": "S010-mspgnaw8",
+    "action": "single",
+    "reason": "Second RGB/CHM review: one compact green crown with a coherent outer edge and central height mound (CHM max 12.79 m); no visually repeatable two-crown division. Proposed single visible crown, moderate confidence; multiple stems are not independently verified.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+    "confidence": "moderate",
+    "review_round": 2,
+    "author_review_required": true
+  },
+  "S010-mspgqee9": {
+    "id": "S010-mspgqee9",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S010: dense conifer/broadleaf canopy has many height peaks in continuous crown texture. The three flagged large polygons cover connected wooded patches. Retain these as groups; multiple peaks are insufficient to draw reproducible separate crowns. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S010-mspgr58c": {
+    "id": "S010-mspgr58c",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S010: dense conifer/broadleaf canopy has many height peaks in continuous crown texture. The three flagged large polygons cover connected wooded patches. Retain these as groups; multiple peaks are insufficient to draw reproducible separate crowns. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S010-mspgrrq7": {
+    "id": "S010-mspgrrq7",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S010: dense conifer/broadleaf canopy has many height peaks in continuous crown texture. The three flagged large polygons cover connected wooded patches. Retain these as groups; multiple peaks are insufficient to draw reproducible separate crowns. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S010-mspgttd5": {
+    "id": "S010-mspgttd5",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S010: dense conifer/broadleaf canopy has many height peaks in continuous crown texture. The three flagged large polygons cover connected wooded patches. Retain these as groups; multiple peaks are insufficient to draw reproducible separate crowns. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S010-mspgukp4": {
+    "id": "S010-mspgukp4",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S010: dense conifer/broadleaf canopy has many height peaks in continuous crown texture. The three flagged large polygons cover connected wooded patches. Retain these as groups; multiple peaks are insufficient to draw reproducible separate crowns. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S011-msrzankn": {
+    "id": "S011-msrzankn",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S011: the two flagged large regions follow continuous wooded canopy at the site edges. Smaller groups are overlapping or blurred crown/edge patches with unresolved identity; retain conservative group labels. Separately exclude the unresolved small uncertain object. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S011-msrzb36j": {
+    "id": "S011-msrzb36j",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S011: the two flagged large regions follow continuous wooded canopy at the site edges. Smaller groups are overlapping or blurred crown/edge patches with unresolved identity; retain conservative group labels. Separately exclude the unresolved small uncertain object. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S011-msrzbmu4": {
+    "id": "S011-msrzbmu4",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S011: the two flagged large regions follow continuous wooded canopy at the site edges. Smaller groups are overlapping or blurred crown/edge patches with unresolved identity; retain conservative group labels. Separately exclude the unresolved small uncertain object. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S011-msrzc7oc": {
+    "id": "S011-msrzc7oc",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S011: the two flagged large regions follow continuous wooded canopy at the site edges. Smaller groups are overlapping or blurred crown/edge patches with unresolved identity; retain conservative group labels. Separately exclude the unresolved small uncertain object. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S011-msrzddd6": {
+    "id": "S011-msrzddd6",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S011: the two flagged large regions follow continuous wooded canopy at the site edges. Smaller groups are overlapping or blurred crown/edge patches with unresolved identity; retain conservative group labels. Separately exclude the unresolved small uncertain object. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S011-msrzgldr": {
+    "id": "S011-msrzgldr",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S011: the two flagged large regions follow continuous wooded canopy at the site edges. Smaller groups are overlapping or blurred crown/edge patches with unresolved identity; retain conservative group labels. Separately exclude the unresolved small uncertain object. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S011-msrzhk6x": {
+    "id": "S011-msrzhk6x",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S011: the two flagged large regions follow continuous wooded canopy at the site edges. Smaller groups are overlapping or blurred crown/edge patches with unresolved identity; retain conservative group labels. Separately exclude the unresolved small uncertain object. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrzjp02": {
+    "id": "S012-msrzjp02",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrzleqc": {
+    "id": "S012-msrzleqc",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrzmoe7": {
+    "id": "S012-msrzmoe7",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrznas7": {
+    "id": "S012-msrznas7",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrzpp5k": {
+    "id": "S012-msrzpp5k",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrzq2pk": {
+    "id": "S012-msrzq2pk",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrzqhjf": {
+    "id": "S012-msrzqhjf",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrzr144": {
+    "id": "S012-msrzr144",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrztt22": {
+    "id": "S012-msrztt22",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrzxhl9": {
+    "id": "S012-msrzxhl9",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrzy4bd": {
+    "id": "S012-msrzy4bd",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrzynt8": {
+    "id": "S012-msrzynt8",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrzzdj4": {
+    "id": "S012-msrzzdj4",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-msrzzwwc": {
+    "id": "S012-msrzzwwc",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S012-mss005js": {
+    "id": "S012-mss005js",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S012: connected woodland, tall canopy strips and site-edge fragments are not reproducibly separable into individual crowns. Both flagged polygons (approximately 964 and 939 m\u00b2) track connected vegetated patches; retain as groups. Small weak-height patches remain ambiguous, not confirmed individual trees. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S013-mss05nez": {
+    "id": "S013-mss05nez",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S013: adjoining residential vegetation, narrow hedges and overhanging crown fragments form connected canopy around buildings. Retain groups conservatively; rounded or palm-like appearance does not by itself prove individual crown identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S013-mss06es3": {
+    "id": "S013-mss06es3",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S013: adjoining residential vegetation, narrow hedges and overhanging crown fragments form connected canopy around buildings. Retain groups conservatively; rounded or palm-like appearance does not by itself prove individual crown identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S013-mss07rcr": {
+    "id": "S013-mss07rcr",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S013: adjoining residential vegetation, narrow hedges and overhanging crown fragments form connected canopy around buildings. Retain groups conservatively; rounded or palm-like appearance does not by itself prove individual crown identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S013-mss09q2b": {
+    "id": "S013-mss09q2b",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S013: adjoining residential vegetation, narrow hedges and overhanging crown fragments form connected canopy around buildings. Retain groups conservatively; rounded or palm-like appearance does not by itself prove individual crown identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S013-mss0b4t6": {
+    "id": "S013-mss0b4t6",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S013: adjoining residential vegetation, narrow hedges and overhanging crown fragments form connected canopy around buildings. Retain groups conservatively; rounded or palm-like appearance does not by itself prove individual crown identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S013-mss0de8l": {
+    "id": "S013-mss0de8l",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S013: adjoining residential vegetation, narrow hedges and overhanging crown fragments form connected canopy around buildings. Retain groups conservatively; rounded or palm-like appearance does not by itself prove individual crown identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S013-mss0eknr": {
+    "id": "S013-mss0eknr",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S013: adjoining residential vegetation, narrow hedges and overhanging crown fragments form connected canopy around buildings. Retain groups conservatively; rounded or palm-like appearance does not by itself prove individual crown identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S013-mss0fhxq": {
+    "id": "S013-mss0fhxq",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S013: adjoining residential vegetation, narrow hedges and overhanging crown fragments form connected canopy around buildings. Retain groups conservatively; rounded or palm-like appearance does not by itself prove individual crown identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S013-mss0gdw0": {
+    "id": "S013-mss0gdw0",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S013: adjoining residential vegetation, narrow hedges and overhanging crown fragments form connected canopy around buildings. Retain groups conservatively; rounded or palm-like appearance does not by itself prove individual crown identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S013-mss0gr72": {
+    "id": "S013-mss0gr72",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S013: adjoining residential vegetation, narrow hedges and overhanging crown fragments form connected canopy around buildings. Retain groups conservatively; rounded or palm-like appearance does not by itself prove individual crown identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S013-mss0hng5": {
+    "id": "S013-mss0hng5",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S013: adjoining residential vegetation, narrow hedges and overhanging crown fragments form connected canopy around buildings. Retain groups conservatively; rounded or palm-like appearance does not by itself prove individual crown identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S013-mss0k2ae": {
+    "id": "S013-mss0k2ae",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S013: adjoining residential vegetation, narrow hedges and overhanging crown fragments form connected canopy around buildings. Retain groups conservatively; rounded or palm-like appearance does not by itself prove individual crown identity. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S014-mss0nc8z": {
+    "id": "S014-mss0nc8z",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S014: roof-adjacent connected vegetation and narrow garden canopy strips retain unresolved individual multiplicity. Keep these as groups; separately exclude all three shadowed uncertain objects with object-specific reasons. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S014-mss0nwrf": {
+    "id": "S014-mss0nwrf",
+    "action": "split",
+    "reason": "RGB suggests two diagonally adjacent crown lobes with a narrow shared neck. CHM confirms a raised connected vegetation footprint but does not independently resolve a decisive height saddle. Propose a partition at the RGB neck with moderate confidence; Xi must review tree identity and the approximate shared boundary.",
+    "crowns": [
+      [
+        [
+          190.1498929336667,
+          290.79229122027755
+        ],
+        [
+          183.2976445397362,
+          284.7965738773346
+        ],
+        [
+          182.0128479655832,
+          277.0877944342792
+        ],
+        [
+          179.8715203423053,
+          270.6638115644455
+        ],
+        [
+          185.010706637986,
+          263.81156316772103
+        ],
+        [
+          191.0064239827916,
+          256.5310492515564
+        ],
+        [
+          196.1456102784723,
+          249.67880085483193
+        ],
+        [
+          198.80728051345795,
+          245.80728051438928
+        ],
+        [
+          224.5807115798816,
+          271.58071158081293
+        ],
+        [
+          220.9850107068196,
+          278.3725910075009
+        ],
+        [
+          209.42184154130518,
+          286.0813704505563
+        ],
+        [
+          201.284796574153,
+          289.93576017022133
+        ],
+        [
+          189.7216274086386,
+          290.3640256971121
+        ]
+      ],
+      [
+        [
+          198.80728051345795,
+          245.80728051438928
+        ],
+        [
+          200.8565310491249,
+          242.82655246183276
+        ],
+        [
+          206.8522483939305,
+          237.68736616522074
+        ],
+        [
+          214.1327623128891,
+          234.6895074956119
+        ],
+        [
+          223.55460385419428,
+          234.6895074956119
+        ],
+        [
+          230.40685224812478,
+          229.97858672216535
+        ],
+        [
+          234.68950749468058,
+          225.69593147933483
+        ],
+        [
+          242.39828693773597,
+          225.69593147933483
+        ],
+        [
+          250.53533190581948,
+          228.2655246257782
+        ],
+        [
+          257.8158458247781,
+          231.69164882227778
+        ],
+        [
+          261.24197002127767,
+          240.2569593153894
+        ],
+        [
+          259.95717344712466,
+          247.9657387584448
+        ],
+        [
+          254.81798715237528,
+          253.1049250550568
+        ],
+        [
+          247.9657387584448,
+          259.10064239799976
+        ],
+        [
+          241.54175588861108,
+          263.81156316772103
+        ],
+        [
+          228.69379014987499,
+          263.81156316772103
+        ],
+        [
+          224.5807115798816,
+          271.58071158081293
+        ]
+      ]
+    ],
+    "reviewed_at": "2026-09-18T01:46:23.816691+00:00"
+  },
+  "S014-mss0obmd": {
+    "id": "S014-mss0obmd",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S014: roof-adjacent connected vegetation and narrow garden canopy strips retain unresolved individual multiplicity. Keep these as groups; separately exclude all three shadowed uncertain objects with object-specific reasons. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S014-mss0os8i": {
+    "id": "S014-mss0os8i",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S014: roof-adjacent connected vegetation and narrow garden canopy strips retain unresolved individual multiplicity. Keep these as groups; separately exclude all three shadowed uncertain objects with object-specific reasons. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S014-mss0p3rg": {
+    "id": "S014-mss0p3rg",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S014: roof-adjacent connected vegetation and narrow garden canopy strips retain unresolved individual multiplicity. Keep these as groups; separately exclude all three shadowed uncertain objects with object-specific reasons. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S014-mss0pg01": {
+    "id": "S014-mss0pg01",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S014: roof-adjacent connected vegetation and narrow garden canopy strips retain unresolved individual multiplicity. Keep these as groups; separately exclude all three shadowed uncertain objects with object-specific reasons. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S015-mss0zw54": {
+    "id": "S015-mss0zw54",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S015: long street-side vegetation, connected garden canopy and clipped edge fragments contain unresolved individual divisions. The flagged 1126 m\u00b2 region follows contiguous roadside canopy. Retain groups separately from the single-tree denominator. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S015-mss10adu": {
+    "id": "S015-mss10adu",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S015: long street-side vegetation, connected garden canopy and clipped edge fragments contain unresolved individual divisions. The flagged 1126 m\u00b2 region follows contiguous roadside canopy. Retain groups separately from the single-tree denominator. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S015-mss10wee": {
+    "id": "S015-mss10wee",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S015: long street-side vegetation, connected garden canopy and clipped edge fragments contain unresolved individual divisions. The flagged 1126 m\u00b2 region follows contiguous roadside canopy. Retain groups separately from the single-tree denominator. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S015-mss11j6j": {
+    "id": "S015-mss11j6j",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S015: long street-side vegetation, connected garden canopy and clipped edge fragments contain unresolved individual divisions. The flagged 1126 m\u00b2 region follows contiguous roadside canopy. Retain groups separately from the single-tree denominator. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S015-mss1225o": {
+    "id": "S015-mss1225o",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S015: long street-side vegetation, connected garden canopy and clipped edge fragments contain unresolved individual divisions. The flagged 1126 m\u00b2 region follows contiguous roadside canopy. Retain groups separately from the single-tree denominator. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S015-mss12csd": {
+    "id": "S015-mss12csd",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S015: long street-side vegetation, connected garden canopy and clipped edge fragments contain unresolved individual divisions. The flagged 1126 m\u00b2 region follows contiguous roadside canopy. Retain groups separately from the single-tree denominator. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S015-mss12wxm": {
+    "id": "S015-mss12wxm",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S015: long street-side vegetation, connected garden canopy and clipped edge fragments contain unresolved individual divisions. The flagged 1126 m\u00b2 region follows contiguous roadside canopy. Retain groups separately from the single-tree denominator. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S015-mss142od": {
+    "id": "S015-mss142od",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S015: long street-side vegetation, connected garden canopy and clipped edge fragments contain unresolved individual divisions. The flagged 1126 m\u00b2 region follows contiguous roadside canopy. Retain groups separately from the single-tree denominator. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S015-mss14ydv": {
+    "id": "S015-mss14ydv",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S015: long street-side vegetation, connected garden canopy and clipped edge fragments contain unresolved individual divisions. The flagged 1126 m\u00b2 region follows contiguous roadside canopy. Retain groups separately from the single-tree denominator. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S015-mss171sg": {
+    "id": "S015-mss171sg",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S015: long street-side vegetation, connected garden canopy and clipped edge fragments contain unresolved individual divisions. The flagged 1126 m\u00b2 region follows contiguous roadside canopy. Retain groups separately from the single-tree denominator. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S016-mss18t87": {
+    "id": "S016-mss18t87",
+    "action": "single",
+    "reason": "Compact rounded crown below the building edge, one RGB crown outline and one bounded CHM footprint. Provisional single-crown interpretation pending comparison of ORIGINAL XZ with independent TW labels.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T01:40:38.877593+00:00"
+  },
+  "S016-mss1954g": {
+    "id": "S016-mss1954g",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S016: three roof/rail-side vegetation patches were checked against RGB and CHM. Two are narrow/irregular patches; the rounded first patch may merit human single-crown adjudication, but these chips do not establish its multiplicity reliably. Retain original classes pending independent TW labels; preserve the pre-review XZ export for agreement. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S016-mss1ejzd": {
+    "id": "S016-mss1ejzd",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S016: three roof/rail-side vegetation patches were checked against RGB and CHM. Two are narrow/irregular patches; the rounded first patch may merit human single-crown adjudication, but these chips do not establish its multiplicity reliably. Retain original classes pending independent TW labels; preserve the pre-review XZ export for agreement. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S017-mss1munk": {
+    "id": "S017-mss1munk",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S017: large interlocking residential canopy and narrow roof-adjacent vegetation strips have merged height support and no reproducible complete individual divisions. Retain all four groups; no model overlays or GPU outputs used for annotation review. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S017-mss1nobm": {
+    "id": "S017-mss1nobm",
+    "action": "split",
+    "reason": "The right-hand compact green RGB crown has its own perimeter and differs in texture from the left canopy. Extract the right crown at the narrow connection; retain the left connected canopy as unresolved tree_group.",
+    "crowns": [
+      [
+        [
+          218,
+          256.97583359107375
+        ],
+        [
+          220.9850107068196,
+          260.8137044981122
+        ],
+        [
+          222.6980728050694,
+          271.9486081376672
+        ],
+        [
+          227.40899357572198,
+          269.3790149874985
+        ],
+        [
+          232.54817987140268,
+          260.38543897122145
+        ],
+        [
+          239.40042826533318,
+          265.95289079099894
+        ],
+        [
+          248.82226980756968,
+          277.94432548061013
+        ],
+        [
+          257.8158458247781,
+          295.5032119899988
+        ],
+        [
+          252.24839400406927,
+          309.6359743028879
+        ],
+        [
+          235.1177730197087,
+          314.3468950763345
+        ],
+        [
+          235.1177730197087,
+          325.0535331889987
+        ],
+        [
+          225.6959314774722,
+          327.1948608122766
+        ],
+        [
+          222.2698072809726,
+          316.4882226996124
+        ],
+        [
+          218.8436830835417,
+          306.6381156332791
+        ],
+        [
+          218,
+          305.10414639115334
+        ]
+      ]
+    ],
+    "reviewed_at": "2026-09-18T01:40:35.598262+00:00"
+  },
+  "S017-mss1o4m6": {
+    "id": "S017-mss1o4m6",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S017: large interlocking residential canopy and narrow roof-adjacent vegetation strips have merged height support and no reproducible complete individual divisions. Retain all four groups; no model overlays or GPU outputs used for annotation review. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S017-mss1on78": {
+    "id": "S017-mss1on78",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S017: large interlocking residential canopy and narrow roof-adjacent vegetation strips have merged height support and no reproducible complete individual divisions. Retain all four groups; no model overlays or GPU outputs used for annotation review. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S018-mss1v7hz": {
+    "id": "S018-mss1v7hz",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S018: broad merged canopy and small residential edge patches have uncertain individual multiplicity. Rounded patches are candidates for human adjudication, but RGB/CHM do not provide reproducible stem identity or divisions. Retain groups conservatively with geometry unchanged. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S018-mss1w341": {
+    "id": "S018-mss1w341",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S018: broad merged canopy and small residential edge patches have uncertain individual multiplicity. Rounded patches are candidates for human adjudication, but RGB/CHM do not provide reproducible stem identity or divisions. Retain groups conservatively with geometry unchanged. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S018-mss1wn7g": {
+    "id": "S018-mss1wn7g",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S018: broad merged canopy and small residential edge patches have uncertain individual multiplicity. Rounded patches are candidates for human adjudication, but RGB/CHM do not provide reproducible stem identity or divisions. Retain groups conservatively with geometry unchanged. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S018-mss1xaht": {
+    "id": "S018-mss1xaht",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S018: broad merged canopy and small residential edge patches have uncertain individual multiplicity. Rounded patches are candidates for human adjudication, but RGB/CHM do not provide reproducible stem identity or divisions. Retain groups conservatively with geometry unchanged. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S018-mss1xwhr": {
+    "id": "S018-mss1xwhr",
+    "action": "split",
+    "reason": "Second review: RGB shows an upper broad crown and a lower smaller rounded crown meeting at a narrow neck near pixel row 102. Propose two visible crown polygons using a manual horizontal neck cut; CHM supports raised vegetation but does not prove two stems or a clear independent saddle. Moderate confidence; author must adjudicate the chosen boundary.",
+    "crowns": [
+      [
+        [
+          49.8693790147081,
+          89.20128479599953
+        ],
+        [
+          52.26766595244408,
+          80.0877944342792
+        ],
+        [
+          55.625267665833235,
+          70.97430406883359
+        ],
+        [
+          62.34047109168023,
+          66.65738758072257
+        ],
+        [
+          71.45396145619452,
+          63.29978586733341
+        ],
+        [
+          78.64882226940244,
+          63.77944325655699
+        ],
+        [
+          82.48608137015253,
+          71.45396145433187
+        ],
+        [
+          89.20128479693085,
+          70.49464667961001
+        ],
+        [
+          92.07922912202775,
+          76.25053533166647
+        ],
+        [
+          93.03854389768094,
+          93.99785867333412
+        ],
+        [
+          84.88436830788851,
+          97.35546038672328
+        ],
+        [
+          74.33190578129143,
+          98.79443254694343
+        ],
+        [
+          71.12633832916617,
+          102.0
+        ],
+        [
+          48.86732004676014,
+          102.0
+        ],
+        [
+          48.43040685262531,
+          90.64025695994496
+        ]
+      ],
+      [
+        [
+          71.12633832916617,
+          102.0
+        ],
+        [
+          66.17773019243032,
+          106.94860813766718
+        ],
+        [
+          76.7301927190274,
+          106.94860813766718
+        ],
+        [
+          75.29122055694461,
+          117.02141327783465
+        ],
+        [
+          65.21841541770846,
+          123.73661670088768
+        ],
+        [
+          56.58458244148642,
+          123.2569593153894
+        ],
+        [
+          51.308351177722216,
+          115.58244111388922
+        ],
+        [
+          48.91006423998624,
+          103.11134903505445
+        ],
+        [
+          48.86732004676014,
+          102.0
+        ]
+      ]
+    ],
+    "manual_cut_pixels": [
+      [
+        0,
+        102
+      ],
+      [
+        400,
+        102
+      ]
+    ],
+    "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+    "confidence": "moderate",
+    "review_round": 2,
+    "author_review_required": true
+  },
+  "S018-mss1yw36": {
+    "id": "S018-mss1yw36",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S018: broad merged canopy and small residential edge patches have uncertain individual multiplicity. Rounded patches are candidates for human adjudication, but RGB/CHM do not provide reproducible stem identity or divisions. Retain groups conservatively with geometry unchanged. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S018-mss210k4": {
+    "id": "S018-mss210k4",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S018: broad merged canopy and small residential edge patches have uncertain individual multiplicity. Rounded patches are candidates for human adjudication, but RGB/CHM do not provide reproducible stem identity or divisions. Retain groups conservatively with geometry unchanged. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S018-mss21aj5": {
+    "id": "S018-mss21aj5",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S018: broad merged canopy and small residential edge patches have uncertain individual multiplicity. Rounded patches are candidates for human adjudication, but RGB/CHM do not provide reproducible stem identity or divisions. Retain groups conservatively with geometry unchanged. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S019-mss24fw4": {
+    "id": "S019-mss24fw4",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S019: connected roof/garden vegetation and clipped canopy-edge strips retain unresolved individual divisions. The more rounded isolated patch warrants human multiplicity review; preserve existing group labels until adjudication rather than increase the reference denominator from appearance alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S019-mss25jg7": {
+    "id": "S019-mss25jg7",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S019: connected roof/garden vegetation and clipped canopy-edge strips retain unresolved individual divisions. The more rounded isolated patch warrants human multiplicity review; preserve existing group labels until adjudication rather than increase the reference denominator from appearance alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S019-mss2617q": {
+    "id": "S019-mss2617q",
+    "action": "single",
+    "reason": "Compact oval roadside crown with coherent RGB canopy texture and one bounded CHM mound. No visible internal division; propose single visible crown.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T01:40:39.376784+00:00"
+  },
+  "S019-mss27yf6": {
+    "id": "S019-mss27yf6",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S019: connected roof/garden vegetation and clipped canopy-edge strips retain unresolved individual divisions. The more rounded isolated patch warrants human multiplicity review; preserve existing group labels until adjudication rather than increase the reference denominator from appearance alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S019-mss285su": {
+    "id": "S019-mss285su",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S019: connected roof/garden vegetation and clipped canopy-edge strips retain unresolved individual divisions. The more rounded isolated patch warrants human multiplicity review; preserve existing group labels until adjudication rather than increase the reference denominator from appearance alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S019-mss28tnd": {
+    "id": "S019-mss28tnd",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S019: connected roof/garden vegetation and clipped canopy-edge strips retain unresolved individual divisions. The more rounded isolated patch warrants human multiplicity review; preserve existing group labels until adjudication rather than increase the reference denominator from appearance alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S019-mss29asp": {
+    "id": "S019-mss29asp",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S019: connected roof/garden vegetation and clipped canopy-edge strips retain unresolved individual divisions. The more rounded isolated patch warrants human multiplicity review; preserve existing group labels until adjudication rather than increase the reference denominator from appearance alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S019-mss29kv4": {
+    "id": "S019-mss29kv4",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S019: connected roof/garden vegetation and clipped canopy-edge strips retain unresolved individual divisions. The more rounded isolated patch warrants human multiplicity review; preserve existing group labels until adjudication rather than increase the reference denominator from appearance alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S019-mss2a443": {
+    "id": "S019-mss2a443",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S019: connected roof/garden vegetation and clipped canopy-edge strips retain unresolved individual divisions. The more rounded isolated patch warrants human multiplicity review; preserve existing group labels until adjudication rather than increase the reference denominator from appearance alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S019-mss2adc3": {
+    "id": "S019-mss2adc3",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S019: connected roof/garden vegetation and clipped canopy-edge strips retain unresolved individual divisions. The more rounded isolated patch warrants human multiplicity review; preserve existing group labels until adjudication rather than increase the reference denominator from appearance alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S019-mss2ajw6": {
+    "id": "S019-mss2ajw6",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S019: connected roof/garden vegetation and clipped canopy-edge strips retain unresolved individual divisions. The more rounded isolated patch warrants human multiplicity review; preserve existing group labels until adjudication rather than increase the reference denominator from appearance alone. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S020-mss2i41d": {
+    "id": "S020-mss2i41d",
+    "action": "single",
+    "reason": "Small compact rounded roadside RGB crown with one bounded CHM mound. Provisional one-crown interpretation; retain original XZ for ORIGINAL XZ-TW comparison.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T01:40:39.877282+00:00"
+  },
+  "S020-mss2igg6": {
+    "id": "S020-mss2igg6",
+    "action": "single",
+    "reason": "Compact isolated RGB crown beside the roof corner with a single bounded CHM footprint. Provisional one-crown interpretation pending ORIGINAL XZ-TW comparison.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T01:40:40.262643+00:00"
+  },
+  "S020-mss2irmn": {
+    "id": "S020-mss2irmn",
+    "action": "single",
+    "reason": "Compact rounded RGB crown beside roofs with one coherent CHM mound and no visible internal boundary. Provisional one-crown interpretation pending ORIGINAL XZ-TW comparison.",
+    "crowns": [],
+    "reviewed_at": "2026-09-18T01:40:40.661827+00:00"
+  },
+  "S020-mss2j946": {
+    "id": "S020-mss2j946",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S020: narrow interlocking canopy strips and roof-adjacent groups were inspected. Several rounded patches and the large oval patch are useful candidates for independent TW class comparison; preserve the original XZ classes for that comparison. Group labels remain conservative, not verified stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S020-mss2lw2d": {
+    "id": "S020-mss2lw2d",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S020: narrow interlocking canopy strips and roof-adjacent groups were inspected. Several rounded patches and the large oval patch are useful candidates for independent TW class comparison; preserve the original XZ classes for that comparison. Group labels remain conservative, not verified stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S020-mss2makf": {
+    "id": "S020-mss2makf",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S020: narrow interlocking canopy strips and roof-adjacent groups were inspected. Several rounded patches and the large oval patch are useful candidates for independent TW class comparison; preserve the original XZ classes for that comparison. Group labels remain conservative, not verified stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S020-mss2mxew": {
+    "id": "S020-mss2mxew",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S020: narrow interlocking canopy strips and roof-adjacent groups were inspected. Several rounded patches and the large oval patch are useful candidates for independent TW class comparison; preserve the original XZ classes for that comparison. Group labels remain conservative, not verified stem counts. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S021-mss2qdvq": {
+    "id": "S021-mss2qdvq",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S021: connected urban woodland and narrow roof/garden edge vegetation remain inseparable into repeatable individual crowns. The flagged 2476 m\u00b2 polygon tracks connected canopy through several properties rather than a giant single-tree crown. Retain all seven groups with no geometry extrapolation. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S021-mss2r6eo": {
+    "id": "S021-mss2r6eo",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S021: connected urban woodland and narrow roof/garden edge vegetation remain inseparable into repeatable individual crowns. The flagged 2476 m\u00b2 polygon tracks connected canopy through several properties rather than a giant single-tree crown. Retain all seven groups with no geometry extrapolation. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S021-mss2tjpn": {
+    "id": "S021-mss2tjpn",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S021: connected urban woodland and narrow roof/garden edge vegetation remain inseparable into repeatable individual crowns. The flagged 2476 m\u00b2 polygon tracks connected canopy through several properties rather than a giant single-tree crown. Retain all seven groups with no geometry extrapolation. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S021-mss2u3q7": {
+    "id": "S021-mss2u3q7",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S021: connected urban woodland and narrow roof/garden edge vegetation remain inseparable into repeatable individual crowns. The flagged 2476 m\u00b2 polygon tracks connected canopy through several properties rather than a giant single-tree crown. Retain all seven groups with no geometry extrapolation. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S021-mss2ummt": {
+    "id": "S021-mss2ummt",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S021: connected urban woodland and narrow roof/garden edge vegetation remain inseparable into repeatable individual crowns. The flagged 2476 m\u00b2 polygon tracks connected canopy through several properties rather than a giant single-tree crown. Retain all seven groups with no geometry extrapolation. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S021-mss2v1wm": {
+    "id": "S021-mss2v1wm",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S021: connected urban woodland and narrow roof/garden edge vegetation remain inseparable into repeatable individual crowns. The flagged 2476 m\u00b2 polygon tracks connected canopy through several properties rather than a giant single-tree crown. Retain all seven groups with no geometry extrapolation. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S021-mss2vil4": {
+    "id": "S021-mss2vil4",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S021: connected urban woodland and narrow roof/garden edge vegetation remain inseparable into repeatable individual crowns. The flagged 2476 m\u00b2 polygon tracks connected canopy through several properties rather than a giant single-tree crown. Retain all seven groups with no geometry extrapolation. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S022-mss2xkq3": {
+    "id": "S022-mss2xkq3",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S022: two clipped, narrow vegetation patches at the built-site edge have sparse CHM structure and unresolved individual identity. Preserve groups; elevated roofs elsewhere are not included as canopy reference or ignored by these polygons. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S022-mss2xsot": {
+    "id": "S022-mss2xsot",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S022: two clipped, narrow vegetation patches at the built-site edge have sparse CHM structure and unresolved individual identity. Preserve groups; elevated roofs elsewhere are not included as canopy reference or ignored by these polygons. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  },
+  "S023-mss2yqxw": {
+    "id": "S023-mss2yqxw",
+    "action": "retain",
+    "crowns": [],
+    "reason": "S023: the sole group is a narrow roadside vegetation strip clipped at the site boundary. RGB and CHM do not establish separable individuals; retain as a group, without treating surrounding buildings as ignored regions. Re-inspected for within-group crown separation; no split accepted without visible individual boundaries.",
+    "reviewer": "Codex AI visual review; pending author review",
+    "evidence": "24 sites viewed in browser: RGB and CHM only"
+  }
+}

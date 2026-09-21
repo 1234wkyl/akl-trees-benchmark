@@ -1,0 +1,183 @@
+{
+  "status": "DEVELOPMENT ONLY; PRE-FREEZE TRAINING-SITE COMPARISON",
+  "warning": "Full-density training sites only; complete-site coverage must be independently verified. Reference is not frozen; do not treat micro metrics as held-out accuracy or use them to change acceptance rules.",
+  "site_ids": [
+    "S017",
+    "S010",
+    "S006",
+    "S008"
+  ],
+  "reference_sha256": "bc1807bf926866f34c2605fd16cee6eb2819df4c772bc21472558400eb6ce1c6",
+  "coverage_plan_sha256": "1bd9dc05e647b07b79a42ae3984433a9d2f6cb62bde37536654122b77a47e271",
+  "coverage_limit": "Header-box containment and safe split are verified, but header extrema do not prove every canopy return is observed.",
+  "sources": [
+    {
+      "site_id": "S017",
+      "path": "docs/cluster_runs/20260920T142229Z_gpu_v100_4319/crown_conversion_grid_S017_v1_summary.json",
+      "sha256": "f89c1ff120f34616b195dfa57096f82f0c33d8359141f5cbdd5093aa9d9e5a91"
+    },
+    {
+      "site_id": "S010",
+      "path": "outputs/nectar_receipts/20260920T142229Z_gpu_v100_4319/sat_S010_pretrained_v1_receipts_v1/grid/summary.json",
+      "sha256": "e200a1b5c52f4d0a074a7c9b53b003e63d150a5a5ab22da554217b50a3c37f03"
+    },
+    {
+      "site_id": "S006",
+      "path": "outputs/nectar_receipts/20260920T142229Z_gpu_v100_4319/sat_S006_pretrained_v1_receipts_v1/grid/summary.json",
+      "sha256": "43e160ae7d3133b9bd659b3e95c7314fff118117abeb9b2909a879f7f6c6e468"
+    },
+    {
+      "site_id": "S008",
+      "path": "outputs/nectar_receipts/20260920T142229Z_gpu_v100_4319/sat_S008_pretrained_v1_receipts_v1/grid/summary.json",
+      "sha256": "dc2729a880dfe1de4a20bdb6a48f22b7e96ee8f7f5237f49d4e62f83c62cc686"
+    }
+  ],
+  "site_rows": {
+    "S017": {
+      "convex_b000": {
+        "tp": 4,
+        "fp": 14,
+        "fn": 10,
+        "site_predictions": 41,
+        "ignored_predictions": 23,
+        "buffer_m": 0.0
+      },
+      "convex_b050": {
+        "tp": 5,
+        "fp": 14,
+        "fn": 9,
+        "site_predictions": 42,
+        "ignored_predictions": 23,
+        "buffer_m": 0.5
+      },
+      "convex_b100": {
+        "tp": 5,
+        "fp": 17,
+        "fn": 9,
+        "site_predictions": 45,
+        "ignored_predictions": 23,
+        "buffer_m": 1.0
+      }
+    },
+    "S010": {
+      "convex_b000": {
+        "tp": 0,
+        "fp": 9,
+        "fn": 1,
+        "site_predictions": 137,
+        "ignored_predictions": 128,
+        "buffer_m": 0.0
+      },
+      "convex_b050": {
+        "tp": 0,
+        "fp": 9,
+        "fn": 1,
+        "site_predictions": 139,
+        "ignored_predictions": 130,
+        "buffer_m": 0.5
+      },
+      "convex_b100": {
+        "tp": 0,
+        "fp": 9,
+        "fn": 1,
+        "site_predictions": 140,
+        "ignored_predictions": 131,
+        "buffer_m": 1.0
+      }
+    },
+    "S006": {
+      "convex_b000": {
+        "tp": 4,
+        "fp": 29,
+        "fn": 3,
+        "site_predictions": 142,
+        "ignored_predictions": 109,
+        "buffer_m": 0.0
+      },
+      "convex_b050": {
+        "tp": 4,
+        "fp": 26,
+        "fn": 3,
+        "site_predictions": 143,
+        "ignored_predictions": 113,
+        "buffer_m": 0.5
+      },
+      "convex_b100": {
+        "tp": 4,
+        "fp": 28,
+        "fn": 3,
+        "site_predictions": 145,
+        "ignored_predictions": 113,
+        "buffer_m": 1.0
+      }
+    },
+    "S008": {
+      "convex_b000": {
+        "tp": 0,
+        "fp": 18,
+        "fn": 4,
+        "site_predictions": 108,
+        "ignored_predictions": 90,
+        "buffer_m": 0.0
+      },
+      "convex_b050": {
+        "tp": 0,
+        "fp": 16,
+        "fn": 4,
+        "site_predictions": 108,
+        "ignored_predictions": 92,
+        "buffer_m": 0.5
+      },
+      "convex_b100": {
+        "tp": 0,
+        "fp": 16,
+        "fn": 4,
+        "site_predictions": 108,
+        "ignored_predictions": 92,
+        "buffer_m": 1.0
+      }
+    }
+  },
+  "rows": [
+    {
+      "config_id": "convex_b000",
+      "buffer_m": 0.0,
+      "sites": 4,
+      "reference_singles": 26,
+      "tp": 8,
+      "fp": 70,
+      "fn": 18,
+      "ignored_predictions": 350,
+      "micro_precision": 0.10256410256410256,
+      "micro_recall": 0.3076923076923077,
+      "micro_f1": 0.15384615384615385
+    },
+    {
+      "config_id": "convex_b050",
+      "buffer_m": 0.5,
+      "sites": 4,
+      "reference_singles": 26,
+      "tp": 9,
+      "fp": 65,
+      "fn": 17,
+      "ignored_predictions": 358,
+      "micro_precision": 0.12162162162162163,
+      "micro_recall": 0.34615384615384615,
+      "micro_f1": 0.18
+    },
+    {
+      "config_id": "convex_b100",
+      "buffer_m": 1.0,
+      "sites": 4,
+      "reference_singles": 26,
+      "tp": 9,
+      "fp": 70,
+      "fn": 17,
+      "ignored_predictions": 359,
+      "micro_precision": 0.11392405063291139,
+      "micro_recall": 0.34615384615384615,
+      "micro_f1": 0.17142857142857143
+    }
+  ],
+  "matched_iou_note": "Per-site medians cannot be pooled; this script does not report pooled median IoU."
+}

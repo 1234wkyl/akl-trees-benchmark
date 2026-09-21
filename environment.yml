@@ -1,0 +1,55 @@
+# Environment for the Auckland tree detection benchmark.
+#
+#   conda env create -f environment.yml
+#   conda activate akl-benchmark
+#   python scripts/00_check_environment.py
+#
+# Versions are the ones this kit was built and tested against on 16 July 2026.
+# Pin them again, with the exact builds, before you run anything on the cluster
+# that produces a number for the report. Reproducibility is a marked criterion,
+# not a nicety.
+#
+# This is the Starter Kit preparation environment, not the validated upstream
+# SegmentAnyTree stack. Validate its pinned container and sparse-convolution
+# dependencies separately on Nectar. See scripts/hpc/NECTAR_SETUP.md step 3.
+
+name: akl-benchmark
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+
+  # core
+  - numpy=2.2
+  - pandas=2.3
+  - scipy
+  - scikit-learn=1.6
+
+  # geospatial
+  - rasterio=1.4
+  - geopandas=1.1
+  - shapely=2.1
+  - pyproj=3.6
+  - fiona
+  - gdal
+  - laspy=2.7
+  - lazrs                # LAZ decompression backend for laspy
+  - pdal                 # optional, point cloud pipelines
+  - python-pdal
+
+  # imagery and figures
+  - pillow
+  - matplotlib=3.10
+
+  # modelling
+  - pytorch=2.12         # Starter Kit optional modelling; not a SAT compatibility claim
+
+  # notebooks and quality
+  - jupyterlab
+  - ipykernel
+  - pytest
+  - requests
+  - tqdm
+  - pyarrow              # GeoParquet, the cluster output format

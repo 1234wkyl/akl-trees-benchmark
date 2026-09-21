@@ -1,0 +1,8 @@
+{
+  "status": "template_only",
+  "completed_site_ids": [],
+  "predictions_sha256": null,
+  "model_configuration_sha256": null,
+  "execution_receipts": [],
+  "note": "Fill from verified completed runs, including successfully processed sites with zero predictions. Do not assert completed coverage from an empty GeoPackage row set alone."
+}

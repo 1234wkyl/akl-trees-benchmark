@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Crown labeller — Auckland tree reference set</title>
+<style>
+  :root{
+    --bg:#14141a; --panel:#1d1d25; --line:#32323d; --ink:#f2f2f0; --ink2:#a9a9b4;
+    --blue:#2a78d6; --aqua:#1baf7a; --yellow:#eda100; --red:#e34948; --violet:#8b7ce8;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+       background:var(--bg);color:var(--ink);display:flex;height:100vh;overflow:hidden}
+  #stage{flex:1;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  #canvas{cursor:crosshair;image-rendering:pixelated;box-shadow:0 0 0 1px var(--line)}
+  aside{width:300px;background:var(--panel);border-left:1px solid var(--line);
+        display:flex;flex-direction:column;overflow-y:auto}
+  aside section{padding:12px 14px;border-bottom:1px solid var(--line)}
+  h1{font-size:14px;margin:0 0 2px}
+  h2{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink2);margin:0 0 8px}
+  .muted{color:var(--ink2);font-size:12px}
+  button{background:#2a2a34;color:var(--ink);border:1px solid var(--line);border-radius:6px;
+         padding:6px 9px;font-size:12px;cursor:pointer;font-family:inherit}
+  button:hover{background:#343441}
+  button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+  button.danger:hover{background:var(--red);border-color:var(--red)}
+  .row{display:flex;gap:6px;flex-wrap:wrap}
+  .row>*{flex:1}
+  select,input[type=text]{width:100%;background:#2a2a34;color:var(--ink);border:1px solid var(--line);
+         border-radius:6px;padding:6px;font-family:inherit;font-size:12px}
+  input[type=range]{width:100%}
+  kbd{background:#2a2a34;border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;
+      padding:1px 5px;font-size:11px;font-family:ui-monospace,monospace}
+  table{width:100%;border-collapse:collapse;font-size:12px}
+  td{padding:2px 0}
+  td.n{text-align:right;color:var(--ink2);font-variant-numeric:tabular-nums}
+  .pill{display:inline-block;padding:1px 7px;border-radius:99px;font-size:11px;background:#2a2a34}
+  .warn{background:#3a2a1a;border:1px solid #6b4a1f;color:#f0c98a;padding:8px;border-radius:6px;font-size:12px}
+  #hint{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.72);padding:6px 10px;
+        border-radius:6px;font-size:12px;color:#ddd;pointer-events:none}
+  #readout{position:absolute;right:12px;top:12px;background:rgba(0,0,0,.72);padding:6px 10px;
+        border-radius:6px;font-size:12px;font-variant-numeric:tabular-nums;pointer-events:none}
+  ul.k{list-style:none;padding:0;margin:0;font-size:12px}
+  ul.k li{display:flex;justify-content:space-between;padding:2px 0;color:var(--ink2)}
+</style>
+</head>
+<body>
+
+<div id="stage">
+  <canvas id="canvas"></canvas>
+  <div id="hint"></div>
+  <div id="readout"></div>
+</div>
+
+<aside>
+  <section>
+    <h1>Crown labeller</h1>
+    <div class="muted">Auckland tree reference set</div>
+  </section>
+
+  <section>
+    <h2>Labeller</h2>
+    <input type="text" id="who" placeholder="your name or initials">
+    <div class="muted" style="margin-top:6px">Recorded with every label. Needed for the
+      inter-rater agreement check.</div>
+  </section>
+
+  <section>
+    <h2>Site</h2>
+    <select id="site"></select>
+    <div class="muted" style="margin-top:6px" id="siteinfo"></div>
+    <div class="row" style="margin-top:8px">
+      <button id="prev">← Prev</button>
+      <button id="next">Next →</button>
+    </div>
+    <div style="margin-top:8px">
+      <button id="done" style="width:100%">Mark site complete</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Layer</h2>
+    <div class="row">
+      <button id="lrgb" class="on">RGB <kbd>1</kbd></button>
+      <button id="lchm">Height <kbd>2</kbd></button>
+    </div>
+    <div style="margin-top:8px">
+      <label class="muted">Blend</label>
+      <input type="range" id="blend" min="0" max="100" value="0">
+    </div>
+    <label class="muted" style="display:block;margin-top:6px">
+      <input type="checkbox" id="showdet"> Show existing model detections
+    </label>
+    <div class="warn" style="margin-top:6px" id="detwarn" hidden>
+      These are the current model's guesses, not truth. Looking at them while you
+      label biases your labels toward the thing you are testing. Use only to
+      cross-check after you have finished a site.
+    </div>
+  </section>
+
+  <section>
+    <h2>Tool</h2>
+    <div class="row">
+      <button id="tpoly" class="on">Polygon <kbd>p</kbd></button>
+      <button id="tellipse">Ellipse <kbd>e</kbd></button>
+    </div>
+    <div class="row" style="margin-top:6px">
+      <button id="tdelete">Delete <kbd>d</kbd></button>
+      <button id="undo">Undo <kbd>u</kbd></button>
+    </div>
+    <div style="margin-top:8px">
+      <label class="muted">Class for new crowns</label>
+      <select id="cls">
+        <option value="tree">tree — a single tree crown</option>
+        <option value="tree_group">tree_group — crowns you cannot separate</option>
+        <option value="not_tree">not_tree — building, shrub, artefact</option>
+        <option value="uncertain">uncertain — flag for Tim</option>
+      </select>
+    </div>
+  </section>
+
+  <section>
+    <h2>Progress</h2>
+    <table id="prog"></table>
+  </section>
+
+  <section>
+    <h2>Save</h2>
+    <div class="row">
+      <button id="export">Export JSON</button>
+      <button id="import">Import</button>
+    </div>
+    <div class="muted" style="margin-top:6px">Saved in this browser automatically.
+      Export at the end of every session and keep the file in <code>data/labels/</code>.</div>
+    <div style="margin-top:8px">
+      <button id="clear" class="danger" style="width:100%">Clear this site</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Keys</h2>
+    <ul class="k">
+      <li><span>Close polygon</span><kbd>Enter</kbd></li>
+      <li><span>Cancel current</span><kbd>Esc</kbd></li>
+      <li><span>Pan</span><kbd>drag middle / space</kbd></li>
+      <li><span>Zoom</span><kbd>scroll</kbd></li>
+      <li><span>Next site</span><kbd>n</kbd></li>
+    </ul>
+  </section>
+</aside>
+
+<script>
+const KEY = "akl_crown_labels_v1";
+const CLASS_COLOUR = {tree:"#1baf7a", tree_group:"#eda100", not_tree:"#e34948", uncertain:"#8b7ce8"};
+
+let sites = [], siteIdx = 0, meta = null, dets = [];
+let imgRGB = null, imgCHM = null;
+let store = JSON.parse(localStorage.getItem(KEY) || "{}");
+let tool = "polygon", layer = "rgb", blend = 0, showDet = false;
+let draft = [], ellipseStart = null, hoverPt = null;
+let view = {scale:1, ox:0, oy:0}, panning = false, panStart = null, spaceDown = false;
+
+const cv = document.getElementById("canvas"), ctx = cv.getContext("2d");
+const $ = id => document.getElementById(id);
+
+function siteKey(){ return sites[siteIdx]?.site_id; }
+function rec(){
+  const k = siteKey();
+  if(!store[k]) store[k] = {labels:[], complete:false};
+  return store[k];
+}
+function save(){ localStorage.setItem(KEY, JSON.stringify(store)); drawProgress(); }
+
+async function loadSites(){
+  sites = await (await fetch("../data/sites/chips/index.json")).json();
+  $("site").innerHTML = sites.map((s,i)=>
+    `<option value="${i}">${s.site_id} — ${s.stratum} (${s.split})</option>`).join("");
+  await loadSite(0);
+}
+
+async function loadSite(i){
+  siteIdx = i; $("site").value = i;
+  const id = sites[i].site_id, base = `../data/sites/chips/${id}`;
+  meta = await (await fetch(`${base}/meta.json`)).json();
+  try { dets = await (await fetch(`${base}/existing_detections.json`)).json(); }
+  catch { dets = []; }
+  imgRGB = await loadImg(`${base}/rgb.png`);
+  imgCHM = await loadImg(`${base}/chm.png`);
+  cv.width = meta.width_px; cv.height = meta.height_px;
+  fitView();
+  $("siteinfo").innerHTML =
+    `<span class="pill">${meta.stratum}</span> <span class="pill">${meta.split}</span><br>` +
+    `${meta.width_px}×${meta.height_px} px at ${meta.resolution_m} m/px · ` +
+    `canopy max ${(meta.chm_stats.max||0).toFixed(1)} m`;
+  draft = []; ellipseStart = null;
+  syncDone(); draw(); drawProgress();
+}
+
+function loadImg(src){
+  return new Promise(res => { const im = new Image(); im.onload = ()=>res(im);
+                              im.onerror = ()=>res(null); im.src = src; });
+}
+
+function fitView(){
+  const st = document.getElementById("stage");
+  const s = Math.min((st.clientWidth-40)/cv.width, (st.clientHeight-40)/cv.height);
+  view.scale = s; view.ox = 0; view.oy = 0; applyView();
+}
+function applyView(){
+  cv.style.width = (cv.width*view.scale)+"px";
+  cv.style.height = (cv.height*view.scale)+"px";
+  cv.style.transform = `translate(${view.ox}px,${view.oy}px)`;
+}
+
+/* ---------- drawing ---------- */
+function draw(){
+  ctx.clearRect(0,0,cv.width,cv.height);
+  const base = layer==="rgb" ? imgRGB : imgCHM;
+  const over = layer==="rgb" ? imgCHM : imgRGB;
+  if(base) ctx.drawImage(base,0,0,cv.width,cv.height);
+  if(over && blend>0){
+    ctx.globalAlpha = blend/100;
+    ctx.drawImage(over,0,0,cv.width,cv.height);
+    ctx.globalAlpha = 1;
+  }
+  if(showDet) drawDetections();
+  for(const l of rec().labels) drawLabel(l);
+  drawDraft();
+}
+
+function worldToPx(x,y){
+  return [ (x - meta.bbox_epsg2193[0]) / meta.resolution_m,
+           (meta.bbox_epsg2193[3] - y) / meta.resolution_m ];
+}
+function pxToWorld(c,r){
+  return [ meta.bbox_epsg2193[0] + (c+0.5)*meta.resolution_m,
+           meta.bbox_epsg2193[3] - (r+0.5)*meta.resolution_m ];
+}
+
+function drawDetections(){
+  ctx.save();
+  ctx.strokeStyle = "#ffffff"; ctx.globalAlpha = .85; ctx.lineWidth = 1;
+  for(const d of dets){
+    const [c,r] = worldToPx(d.x, d.y);
+    ctx.beginPath(); ctx.moveTo(c-5,r); ctx.lineTo(c+5,r);
+    ctx.moveTo(c,r-5); ctx.lineTo(c,r+5); ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function drawLabel(l){
+  const col = CLASS_COLOUR[l.cls] || "#ccc";
+  ctx.save();
+  ctx.lineWidth = 2/Math.max(view.scale,.35);
+  ctx.strokeStyle = col;
+  ctx.fillStyle = col + "33";
+  ctx.beginPath();
+  l.px.forEach(([c,r],i)=> i? ctx.lineTo(c,r) : ctx.moveTo(c,r));
+  ctx.closePath(); ctx.fill(); ctx.stroke();
+  ctx.restore();
+}
+
+function drawDraft(){
+  if(tool==="polygon" && draft.length){
+    ctx.save();
+    ctx.strokeStyle="#fff"; ctx.lineWidth=2/Math.max(view.scale,.35);
+    ctx.setLineDash([4,3]);
+    ctx.beginPath();
+    draft.forEach(([c,r],i)=> i? ctx.lineTo(c,r) : ctx.moveTo(c,r));
+    if(hoverPt) ctx.lineTo(hoverPt[0],hoverPt[1]);
+    ctx.stroke();
+    ctx.setLineDash([]);
+    for(const [c,r] of draft){ ctx.fillStyle="#fff"; ctx.fillRect(c-2,r-2,4,4); }
+    ctx.restore();
+  }
+  if(tool==="ellipse" && ellipseStart && hoverPt){
+    const rx = Math.abs(hoverPt[0]-ellipseStart[0]), ry = Math.abs(hoverPt[1]-ellipseStart[1]);
+    ctx.save(); ctx.strokeStyle="#fff"; ctx.setLineDash([4,3]);
+    ctx.lineWidth=2/Math.max(view.scale,.35);
+    ctx.beginPath(); ctx.ellipse(ellipseStart[0],ellipseStart[1],rx,ry,0,0,Math.PI*2);
+    ctx.stroke(); ctx.restore();
+  }
+}
+
+/* ---------- geometry ---------- */
+function ellipsePoly(cx,cy,rx,ry,n=24){
+  const p=[]; for(let i=0;i<n;i++){ const a=2*Math.PI*i/n;
+    p.push([cx+rx*Math.cos(a), cy+ry*Math.sin(a)]); } return p;
+}
+function areaPx(px){
+  let a=0; for(let i=0;i<px.length;i++){ const [x1,y1]=px[i], [x2,y2]=px[(i+1)%px.length];
+    a += x1*y2 - x2*y1; } return Math.abs(a/2);
+}
+function centroidPx(px){
+  let x=0,y=0; for(const [a,b] of px){ x+=a; y+=b; } return [x/px.length, y/px.length];
+}
+function pointInPoly(pt,px){
+  let inside=false;
+  for(let i=0,j=px.length-1;i<px.length;j=i++){
+    const [xi,yi]=px[i], [xj,yj]=px[j];
+    if(((yi>pt[1])!=(yj>pt[1])) && (pt[0] < (xj-xi)*(pt[1]-yi)/(yj-yi)+xi)) inside=!inside;
+  }
+  return inside;
+}
+
+function commit(px){
+  if(px.length<3) return;
+  const cls = $("cls").value;
+  const [cx,cy] = centroidPx(px);
+  const [wx,wy] = pxToWorld(cx,cy);
+  rec().labels.push({
+    id: `${siteKey()}-${Date.now().toString(36)}`,
+    cls, px,
+    world: px.map(([c,r])=>pxToWorld(c,r)),
+    centroid_epsg2193: [wx,wy],
+    area_m2: +(areaPx(px)*meta.resolution_m**2).toFixed(2),
+    labeller: $("who").value || null,
+    created: new Date().toISOString(),
+  });
+  save(); draw();
+}
+
+/* ---------- interaction ---------- */
+function evtPx(e){
+  const r = cv.getBoundingClientRect();
+  return [ (e.clientX-r.left)/view.scale, (e.clientY-r.top)/view.scale ];
+}
+
+cv.addEventListener("mousedown", e=>{
+  if(e.button===1 || spaceDown){ panning=true; panStart=[e.clientX-view.ox,e.clientY-view.oy];
+    e.preventDefault(); return; }
+  const p = evtPx(e);
+  if(tool==="delete"){
+    const ls = rec().labels;
+    for(let i=ls.length-1;i>=0;i--){
+      if(pointInPoly(p, ls[i].px)){ ls.splice(i,1); save(); draw(); return; }
+    }
+    return;
+  }
+  if(tool==="polygon"){ draft.push(p); draw(); }
+  if(tool==="ellipse"){ ellipseStart = p; }
+});
+
+cv.addEventListener("mousemove", e=>{
+  if(panning){ view.ox = e.clientX-panStart[0]; view.oy = e.clientY-panStart[1]; applyView(); return; }
+  hoverPt = evtPx(e);
+  const [wx,wy] = pxToWorld(hoverPt[0],hoverPt[1]);
+  $("readout").textContent = `${wx.toFixed(1)} E  ${wy.toFixed(1)} N`;
+  if(draft.length || ellipseStart) draw();
+});
+
+cv.addEventListener("mouseup", e=>{
+  if(panning){ panning=false; return; }
+  if(tool==="ellipse" && ellipseStart){
+    const p = evtPx(e);
+    const rx = Math.abs(p[0]-ellipseStart[0]), ry = Math.abs(p[1]-ellipseStart[1]);
+    if(rx>2 && ry>2) commit(ellipsePoly(ellipseStart[0],ellipseStart[1],rx,ry));
+    ellipseStart = null; draw();
+  }
+});
+
+cv.addEventListener("dblclick", ()=>{ if(tool==="polygon"&&draft.length>=3){ commit(draft); draft=[]; } });
+
+document.getElementById("stage").addEventListener("wheel", e=>{
+  e.preventDefault();
+  const f = e.deltaY<0 ? 1.12 : 1/1.12;
+  view.scale = Math.max(.1, Math.min(14, view.scale*f));
+  applyView(); draw();
+}, {passive:false});
+
+document.addEventListener("keydown", e=>{
+  if(e.target.tagName==="INPUT"||e.target.tagName==="SELECT") return;
+  if(e.code==="Space"){ spaceDown=true; e.preventDefault(); }
+  if(e.key==="Enter" && tool==="polygon" && draft.length>=3){ commit(draft); draft=[]; draw(); }
+  if(e.key==="Escape"){ draft=[]; ellipseStart=null; draw(); }
+  if(e.key==="1") setLayer("rgb");
+  if(e.key==="2") setLayer("chm");
+  if(e.key==="p") setTool("polygon");
+  if(e.key==="e") setTool("ellipse");
+  if(e.key==="d") setTool("delete");
+  if(e.key==="u") undo();
+  if(e.key==="n") loadSite(Math.min(sites.length-1, siteIdx+1));
+});
+document.addEventListener("keyup", e=>{ if(e.code==="Space") spaceDown=false; });
+
+function undo(){
+  if(draft.length){ draft.pop(); draw(); return; }
+  const ls = rec().labels; if(ls.length){ ls.pop(); save(); draw(); }
+}
+
+function setTool(t){
+  tool=t; draft=[]; ellipseStart=null;
+  for(const [id,name] of [["tpoly","polygon"],["tellipse","ellipse"],["tdelete","delete"]])
+    $(id).classList.toggle("on", tool===name);
+  cv.style.cursor = t==="delete" ? "not-allowed" : "crosshair";
+  $("hint").textContent = {
+    polygon:"Click each vertex. Enter or double-click closes the crown.",
+    ellipse:"Drag from the crown centre outwards. Fast for open-grown trees.",
+    delete:"Click inside a crown to remove it.",
+  }[t];
+  draw();
+}
+function setLayer(l){
+  layer=l; $("lrgb").classList.toggle("on",l==="rgb"); $("lchm").classList.toggle("on",l==="chm");
+  draw();
+}
+
+function syncDone(){
+  $("done").textContent = rec().complete ? "✓ Marked complete" : "Mark site complete";
+  $("done").classList.toggle("on", !!rec().complete);
+}
+
+function drawProgress(){
+  let total=0, done=0;
+  const rows = sites.map(s=>{
+    const r = store[s.site_id] || {labels:[],complete:false};
+    total += r.labels.length; if(r.complete) done++;
+    return `<tr><td>${r.complete?"✓":"·"} ${s.site_id}</td>
+            <td class="n">${r.labels.length}</td></tr>`;
+  }).join("");
+  $("prog").innerHTML = rows +
+    `<tr><td style="border-top:1px solid var(--line);padding-top:5px"><b>${done}/${sites.length} sites</b></td>
+     <td class="n" style="border-top:1px solid var(--line);padding-top:5px"><b>${total}</b></td></tr>`;
+}
+
+/* ---------- ui wiring ---------- */
+$("site").onchange = e => loadSite(+e.target.value);
+$("prev").onclick = ()=> loadSite(Math.max(0,siteIdx-1));
+$("next").onclick = ()=> loadSite(Math.min(sites.length-1,siteIdx+1));
+$("lrgb").onclick = ()=> setLayer("rgb");
+$("lchm").onclick = ()=> setLayer("chm");
+$("tpoly").onclick = ()=> setTool("polygon");
+$("tellipse").onclick = ()=> setTool("ellipse");
+$("tdelete").onclick = ()=> setTool("delete");
+$("undo").onclick = undo;
+$("blend").oninput = e => { blend = +e.target.value; draw(); };
+$("showdet").onchange = e => { showDet = e.target.checked; $("detwarn").hidden = !showDet; draw(); };
+$("done").onclick = ()=>{ rec().complete = !rec().complete; save(); syncDone(); };
+$("clear").onclick = ()=>{
+  if(confirm(`Delete all ${rec().labels.length} labels for ${siteKey()}?`)){
+    store[siteKey()] = {labels:[], complete:false}; save(); syncDone(); draw();
+  }
+};
+$("export").onclick = ()=>{
+  const out = {
+    schema_version:"akl-trees-crown-labels/v1",
+    exported_at:new Date().toISOString(),
+    labeller:$("who").value || null,
+    crs:"EPSG:2193",
+    sites:store,
+  };
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([JSON.stringify(out,null,2)],{type:"application/json"}));
+  a.download=`crown_labels_${($("who").value||"anon").replace(/\s+/g,"_")}_${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+};
+$("import").onclick = ()=>{
+  const inp=document.createElement("input"); inp.type="file"; inp.accept=".json";
+  inp.onchange=async()=>{ const d=JSON.parse(await inp.files[0].text());
+    if(d.sites){ store=d.sites; save(); if(d.labeller) $("who").value=d.labeller;
+      syncDone(); draw(); alert("Labels imported."); } };
+  inp.click();
+};
+$("who").oninput = e => localStorage.setItem("akl_labeller_name", e.target.value);
+$("who").value = localStorage.getItem("akl_labeller_name") || "";
+
+window.addEventListener("resize", ()=>{ fitView(); draw(); });
+setTool("polygon");
+loadSites().catch(err=>{
+  document.getElementById("hint").textContent =
+    "Could not load sites. Start the server with: python scripts/03_serve_labeller.py";
+  console.error(err);
+});
+</script>
+</body>
+</html>

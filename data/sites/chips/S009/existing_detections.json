@@ -1,0 +1,252 @@
+[
+ {
+  "tree_id": "akl_tree_lid_0003367",
+  "x": 1741562.4999999988,
+  "y": 5895198.5,
+  "height_m": 19.81,
+  "crown_area_m2": 132.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "evergreen_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0003777",
+  "x": 1741502.4999999988,
+  "y": 5895197.500000002,
+  "height_m": 20.31,
+  "crown_area_m2": 172.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "conifer",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0003908",
+  "x": 1741546.499999999,
+  "y": 5895191.5,
+  "height_m": 22.4,
+  "crown_area_m2": 201.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "evergreen_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0004147",
+  "x": 1741535.5000000005,
+  "y": 5895190.499999998,
+  "height_m": 20.79,
+  "crown_area_m2": 141.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "conifer",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0004232",
+  "x": 1741521.5000000023,
+  "y": 5895184.5,
+  "height_m": 21.15,
+  "crown_area_m2": 173.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "conifer",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0004362",
+  "x": 1741508.499999999,
+  "y": 5895188.499999998,
+  "height_m": 22.18,
+  "crown_area_m2": 156.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "conifer",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0004612",
+  "x": 1741530.4999999995,
+  "y": 5895181.5,
+  "height_m": 16.92,
+  "crown_area_m2": 101.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "conifer",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0004740",
+  "x": 1741564.5,
+  "y": 5895190.5,
+  "height_m": 16.65,
+  "crown_area_m2": 83.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "conifer",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0004883",
+  "x": 1741581.5000000014,
+  "y": 5895193.5,
+  "height_m": 18.36,
+  "crown_area_m2": 118.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "conifer",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0004895",
+  "x": 1741592.5000000023,
+  "y": 5895196.500000002,
+  "height_m": 17.77,
+  "crown_area_m2": 119.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "conifer",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0004926",
+  "x": 1741572.5000000002,
+  "y": 5895190.499999999,
+  "height_m": 14.45,
+  "crown_area_m2": 78.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "evergreen_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0005082",
+  "x": 1741594.500000001,
+  "y": 5895113.499999999,
+  "height_m": 15.21,
+  "crown_area_m2": 160.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "evergreen_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0005309",
+  "x": 1741514.5000000005,
+  "y": 5895102.5,
+  "height_m": 14.31,
+  "crown_area_m2": 133.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "evergreen_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0005344",
+  "x": 1741597.5000000023,
+  "y": 5895128.5,
+  "height_m": 13.11,
+  "crown_area_m2": 116.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "evergreen_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0005446",
+  "x": 1741570.5000000014,
+  "y": 5895137.5,
+  "height_m": 11.04,
+  "crown_area_m2": 140.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "evergreen_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0005534",
+  "x": 1741503.499999999,
+  "y": 5895115.5,
+  "height_m": 12.04,
+  "crown_area_m2": 93.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "evergreen_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0005649",
+  "x": 1741553.499999999,
+  "y": 5895125.5,
+  "height_m": 11.17,
+  "crown_area_m2": 80.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "conifer",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0005727",
+  "x": 1741514.499999999,
+  "y": 5895113.5,
+  "height_m": 14.41,
+  "crown_area_m2": 110.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "conifer",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0005833",
+  "x": 1741548.4999999998,
+  "y": 5895122.5,
+  "height_m": 10.72,
+  "crown_area_m2": 58.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "conifer",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0005897",
+  "x": 1741543.4999999995,
+  "y": 5895120.5,
+  "height_m": 10.27,
+  "crown_area_m2": 71.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "conifer",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0006287",
+  "x": 1741558.5000000014,
+  "y": 5895171.5,
+  "height_m": 8.13,
+  "crown_area_m2": 47.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "evergreen_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0006297",
+  "x": 1741595.4999999995,
+  "y": 5895156.5,
+  "height_m": 7.18,
+  "crown_area_m2": 32.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "evergreen_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0006298",
+  "x": 1741545.499999999,
+  "y": 5895171.5,
+  "height_m": 7.54,
+  "crown_area_m2": 43.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "evergreen_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0006320",
+  "x": 1741539.4999999995,
+  "y": 5895111.500000001,
+  "height_m": 9.63,
+  "crown_area_m2": 71.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "evergreen_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ },
+ {
+  "tree_id": "akl_tree_lid_0006339",
+  "x": 1741570.5000000007,
+  "y": 5895108.5,
+  "height_m": 9.33,
+  "crown_area_m2": 49.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "evergreen_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ }
+]

@@ -1,0 +1,20 @@
+{
+  "status": "researcher_fixed",
+  "supervisor_confirmation_record": null,
+  "crs": "EPSG:2193",
+  "matching": "greedy_iou_then_distance_then_ids",
+  "distance_reference": "centroids_after_site_clipping",
+  "match_tolerance_m": 2.0,
+  "minimum_match_iou": 0.0,
+  "prediction_ignore_rule": "unmatched_centroid_in_group_or_uncertain",
+  "false_positive_precision_definition": "same_scored_detection_precision",
+  "bootstrap_unit": "paired_site",
+  "bootstrap_stratification": "none",
+  "bootstrap_iterations": 2000,
+  "random_seed": 42,
+  "note": "Research-side operational interpretation fixed at Xi request. Ordinary scored TP/(TP+FP) implements both original precision thresholds; all thresholds unchanged. Group/uncertain exclusion is explicit and reported. Tim did not confirm omitted questions. Reference freeze remains pending independent labels and supervisor decision.",
+  "distance_reference_status": "researcher_adopted_before_heldout_results",
+  "method_record": "docs/review_2026-09-18/\u8bba\u6587\u4f9d\u636e\u4e0e\u8bc4\u4f30\u53e3\u5f84.md",
+  "researcher_decision_record": "docs/progress_2026-09-18/EVALUATION_DECISIONS.md",
+  "fixed_before_model_results_on": "2026-09-18"
+}

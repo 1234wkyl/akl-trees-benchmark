@@ -1,0 +1,55 @@
+{
+  "project": "akl-trees-reference-benchmark",
+  "student": "Xi Zhang",
+  "supervisor": "Dr Timothy F. Welch",
+  "semester": "2026 S2",
+  "submission_date": "2026-11-16",
+  "crs": "EPSG:2193",
+  "random_seed": 42,
+  "_comment_paths": "Relative to Starter_Kit. Frozen snapshot received 18 Sep 2026; always read-only, scripts writing databases must use a separate working copy. Full imagery XYZ archive and full tile plan remain historical paths.",
+  "paths": {
+    "source_repo": "../Xi_Zhang_Benchmark/source_reference",
+    "database": "../baselines/xi-capstone-20260730/akl_trees.sqlite",
+    "chm_vrt": "../Xi_Zhang_Benchmark/chm/reference_sites.vrt",
+    "imagery_tiles_z18": "{source_repo}/data/raw/esri_world_imagery/tiles_z18",
+    "laz_root": "../Xi_Zhang_Benchmark/laz",
+    "laz_tile_plan": "{source_repo}/outputs/hpc/pointcloud_download_plan_auckland_metro_v1.json"
+  },
+  "_comment_sites": "A site is a square cell you label exhaustively. 24 sites x ~20 crowns = ~500 crowns.",
+  "reference_set": {
+    "site_size_m": 100,
+    "target_sites": 24,
+    "target_crowns": 500,
+    "min_site_separation_m": 400,
+    "split_buffer_m": 1000,
+    "_comment_splits": "Equal thirds, not the usual 50/20/30. Every stratum must appear in the test split, because one acceptance threshold is per-stratum recall and that has to be measured on held-out data. With 8 strata and 24 sites, equal thirds puts ~20 labelled crowns per stratum in test. That is a wide confidence interval and you should say so in the report; a smaller test split would be worse.",
+    "splits": {
+      "train": 0.34,
+      "val": 0.33,
+      "test": 0.33
+    },
+    "strata": [
+      "open_street_trees",
+      "park_open_grown",
+      "dense_broadleaf",
+      "conifer_dominant",
+      "palm_present",
+      "small_subcanopy",
+      "canopy_edge",
+      "hard_negative_built"
+    ]
+  },
+  "_comment_thresholds": "PREDECLARED at M1 (7 Aug 2026). Do not change these after seeing results. If a change is unavoidable, record the date and reason in docs/DECISIONS.md and state it in the report.",
+  "acceptance_thresholds": {
+    "declared_on": "2026-08-07",
+    "detection_precision_min": 0.85,
+    "detection_recall_min": 0.85,
+    "median_matched_crown_iou_min": 0.6,
+    "false_positive_precision_min": 0.95,
+    "min_recall_any_stratum": 0.7,
+    "winner_rule": "bootstrap 95% CI on F1 improvement over the classical baseline must exclude zero",
+    "bootstrap_iterations": 2000,
+    "match_tolerance_m": 2.0
+  },
+  "_comment_baseline": "The database is pinned to a frozen snapshot taken 2026-07-30, NOT the live repository database. The live one has since been rebuilt with an NDVI vegetation gate and 233,145 promoted low-canopy trees, which would move reference-site selection and break its reproducibility. Your labels are crown polygons in EPSG:2193 keyed to site geometry, not to tree_id, so they remain valid against any future detection run. Verify the snapshot with scripts/baseline_snapshot.py verify in the source repo. If /Volumes/T7 is not mounted, standalone mode still works: data/sites/cell_aggregate.csv.gz reproduces site selection without the database."
+}

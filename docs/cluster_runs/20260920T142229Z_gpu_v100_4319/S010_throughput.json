@@ -1,0 +1,17 @@
+{
+  "wall_seconds": 3484,
+  "processed_area_km2": 0.3408112400001064,
+  "wall_seconds_per_km2": 10222.667538778687,
+  "wall_hours_per_km2": 2.8396298718829684,
+  "km2_per_hour": 0.3521585717567115,
+  "cost_per_km2": null,
+  "cost_basis": "runtime-only estimate; excludes idle VM time",
+  "hourly_price": null,
+  "billing_seconds": null,
+  "currency": null,
+  "timing_sha256": "3497726df6b8f6badced14ef71f8846714852dcb834da1bea084ade988921b8a",
+  "area_record_sha256": "2fc5b22c52cc5cadd03d80f1da205daf406a65802f33ed2f92ec9672a4656faa",
+  "footprint_description": "EPSG:2193 XY coordinate-envelope rectangle of the exact filtered full-density input LAZ; technical tile-throughput proxy, not site area or occupied-cell union",
+  "area_measurement_record": "laspy.open(input).header.mins/maxs, width \u00d7 height / 1,000,000; gaps and empty corners within envelope are included",
+  "note": "Use the footprint actually processed. Do not divide full-tile runtime by the small reference-site area; declare preprocessing, I/O, inference and container startup inclusions. Runtime estimates are not invoices."
+}

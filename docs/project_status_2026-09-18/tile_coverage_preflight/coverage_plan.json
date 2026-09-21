@@ -1,0 +1,1041 @@
+{
+  "status": "staging/preflight plan, not permission for held-out inference",
+  "tiles": [
+    {
+      "tile": "pc_BA31_1000_3848.laz",
+      "header_points": 1071244,
+      "bytes": 7785576,
+      "bbox_epsg2193": [
+        1754562.0,
+        5918642.0,
+        1755038.0,
+        5919358.0
+      ],
+      "sha256": "fa10efea17a81f5889be6df6f589d99036b69a13bdd9db83703bafea287d873d",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S001"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BA31_1000_3849.laz",
+      "header_points": 1759575,
+      "bytes": 13527647,
+      "bbox_epsg2193": [
+        1755042.0,
+        5918642.0,
+        1755518.0,
+        5919358.0
+      ],
+      "sha256": "5ecb7c12b0ffbdc0676f559b4ae60a718e50e621666880f1d90452a7add84231",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S001",
+        "S017"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BA31_1000_3948.laz",
+      "header_points": 1044415,
+      "bytes": 7771031,
+      "bbox_epsg2193": [
+        1754562.0,
+        5917922.0,
+        1755038.0,
+        5918638.0
+      ],
+      "sha256": "116637d06ed88273960f6bc749385a107d7a1bb3c2edffc7664a984c73996da9",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S001"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BA31_1000_3949.laz",
+      "header_points": 1441533,
+      "bytes": 10928418,
+      "bbox_epsg2193": [
+        1755042.0,
+        5917922.0,
+        1755518.0,
+        5918638.0
+      ],
+      "sha256": "5211f6ad8712540bb130b14580b1534595b5bbd5187327ab6198118490f97e77",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S001"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BA31_1000_4121.laz",
+      "header_points": 1189129,
+      "bytes": 8635434,
+      "bbox_epsg2193": [
+        1741602.0,
+        5916482.0,
+        1742078.0,
+        5917198.0
+      ],
+      "sha256": "fa15fc1bac4f16b38de89ac7a4795a31e1512d6eab6cc35273eecff73ae9686a",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S012"
+      ],
+      "held_out_intersecting_sites": [
+        "S012"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA31_1000_4221.laz",
+      "header_points": 1916540,
+      "bytes": 14595219,
+      "bbox_epsg2193": [
+        1741602.0,
+        5915762.0,
+        1742078.0,
+        5916478.0
+      ],
+      "sha256": "d08a989ffd1ed8e1d8b86435a7743801a56f62de1dc61680eafbd9a153f1afb6",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S012"
+      ],
+      "held_out_intersecting_sites": [
+        "S012"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA31_1000_4349.laz",
+      "header_points": 2085983,
+      "bytes": 15602699,
+      "bbox_epsg2193": [
+        1755042.0,
+        5915042.0,
+        1755518.0,
+        5915758.01
+      ],
+      "sha256": "dd16ed24353a25cd2960a4e3d771540c1bfab3f3b80967ad6c8204d91d6b279a",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S013"
+      ],
+      "held_out_intersecting_sites": [
+        "S013"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA31_1000_4350.laz",
+      "header_points": 2277702,
+      "bytes": 17066577,
+      "bbox_epsg2193": [
+        1755522.0,
+        5915042.0,
+        1755998.0,
+        5915758.0
+      ],
+      "sha256": "249f0f1519bb40e57d12b13d4618fec465ebefd3f18469abefd796825b57dd92",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S002"
+      ],
+      "held_out_intersecting_sites": [
+        "S002"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA31_1000_4439.laz",
+      "header_points": 980053,
+      "bytes": 6861895,
+      "bbox_epsg2193": [
+        1750242.0,
+        5914322.0,
+        1750718.0,
+        5915038.0
+      ],
+      "sha256": "dccdea5c4b0dc7565ee02692a4e5c2b36e0f3ae520b3943d7581780640062b00",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S021"
+      ],
+      "held_out_intersecting_sites": [
+        "S021"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA31_1000_4440.laz",
+      "header_points": 1535152,
+      "bytes": 11536864,
+      "bbox_epsg2193": [
+        1750722.0,
+        5914322.0,
+        1751198.0,
+        5915038.0
+      ],
+      "sha256": "20982fce2d86d0399859ee791f8c297aaa29bc6f5d0edbac98d14465fe63bdf8",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S021"
+      ],
+      "held_out_intersecting_sites": [
+        "S021"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA31_1000_4526.laz",
+      "header_points": 1191796,
+      "bytes": 8649349,
+      "bbox_epsg2193": [
+        1744002.0,
+        5913602.0,
+        1744478.0,
+        5914317.99
+      ],
+      "sha256": "f0d7d43764316a2881218fbc028e9a254d3e49c09c41aa8cda49c2aa411114a0",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S010"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BA31_1000_4538.laz",
+      "header_points": 2040067,
+      "bytes": 14312973,
+      "bbox_epsg2193": [
+        1749762.0,
+        5913602.0,
+        1750238.0,
+        5914318.01
+      ],
+      "sha256": "4ce84aae023d3f10fcc6c3e0bc13d0ae5e20c2367373d04de8edcdfff694dfe6",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S023"
+      ],
+      "held_out_intersecting_sites": [
+        "S023"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA32_1000_2502.laz",
+      "header_points": 1423815,
+      "bytes": 10682032,
+      "bbox_epsg2193": [
+        1756482.0,
+        5928002.0,
+        1756958.0,
+        5928718.0
+      ],
+      "sha256": "418a19fae38ee60c217610692575b1223b0e140f4aa043c5790d5454274ce1c7",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA32_1000_2602.laz",
+      "header_points": 1509238,
+      "bytes": 11357103,
+      "bbox_epsg2193": [
+        1756482.0,
+        5927282.0,
+        1756958.0,
+        5927998.0
+      ],
+      "sha256": "d6682651e6ac6b71833133b1eb7348493a39b183ad5ddfff7671b6ede378f940",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S022"
+      ],
+      "held_out_intersecting_sites": [
+        "S022"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA32_1000_3009.laz",
+      "header_points": 1673955,
+      "bytes": 12867372,
+      "bbox_epsg2193": [
+        1759842.0,
+        5924402.0,
+        1760318.0,
+        5925118.0
+      ],
+      "sha256": "866aa6cd6122ab99e3a9513716415b44839eeeabb571ed17380229df56171445",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S018"
+      ],
+      "held_out_intersecting_sites": [
+        "S018"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA32_1000_3310.laz",
+      "header_points": 1359818,
+      "bytes": 10383004,
+      "bbox_epsg2193": [
+        1760322.0,
+        5922242.0,
+        1760798.0,
+        5922958.0
+      ],
+      "sha256": "1c4237e8433b1a1f82d45eb2b80056fa1624b6df9e5c170b84a3549315d15e1f",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA32_1000_3311.laz",
+      "header_points": 845862,
+      "bytes": 6336796,
+      "bbox_epsg2193": [
+        1760802.0,
+        5922242.09,
+        1761278.0,
+        5922958.0
+      ],
+      "sha256": "dbbf7b063f18ce67d394a856c9a4db52c0f3b6267f88cc2804ed1e54369b13ea",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S020"
+      ],
+      "held_out_intersecting_sites": [
+        "S020"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA32_1000_3502.laz",
+      "header_points": 1136425,
+      "bytes": 8514741,
+      "bbox_epsg2193": [
+        1756482.0,
+        5920802.0,
+        1756958.0,
+        5921518.0
+      ],
+      "sha256": "f16e28190bb061157ee7302cd6cf8fdc41e200865d8f79bd65050d958d3b9350",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA32_1000_3602.laz",
+      "header_points": 1165946,
+      "bytes": 8723254,
+      "bbox_epsg2193": [
+        1756482.0,
+        5920082.0,
+        1756958.0,
+        5920798.0
+      ],
+      "sha256": "a39daaf442712fd074ed15277fdf8070d7c07639161b09abf14c8107cad08393",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S014"
+      ],
+      "held_out_intersecting_sites": [
+        "S014"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA32_1000_3606.laz",
+      "header_points": 829509,
+      "bytes": 5498917,
+      "bbox_epsg2193": [
+        1758402.0,
+        5920082.01,
+        1758878.0,
+        5920798.0
+      ],
+      "sha256": "8df49791fb326818e973138fa0b184b9696b624f987fcc14ba20e6e21ab899df",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S016"
+      ],
+      "held_out_intersecting_sites": [
+        "S016"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA32_1000_3714.laz",
+      "header_points": 3124376,
+      "bytes": 23437374,
+      "bbox_epsg2193": [
+        1762242.0,
+        5919362.0,
+        1762718.0,
+        5920078.0
+      ],
+      "sha256": "5cae6e9c32f9c8518ab6a9f8543c9a6b97fe0b74f387bea5bff4d26b709c987a",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S019"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BA32_1000_3715.laz",
+      "header_points": 2806487,
+      "bytes": 20521342,
+      "bbox_epsg2193": [
+        1762722.0,
+        5919362.0,
+        1763198.0,
+        5920078.0
+      ],
+      "sha256": "936582b1f5dda07fabf44bd1992ccc44d70d272a87b18d8fe2b0832dc7b9c867",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S019"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BA32_1000_3810.laz",
+      "header_points": 1243835,
+      "bytes": 8578017,
+      "bbox_epsg2193": [
+        1760322.0,
+        5918642.0,
+        1760798.0,
+        5919358.0
+      ],
+      "sha256": "449fe0e04561eaa0a46cf9ba897a00e204a11e339cd916f41efd60d96bc8e15a",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S015"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BA32_1000_3814.laz",
+      "header_points": 3719375,
+      "bytes": 28251844,
+      "bbox_epsg2193": [
+        1762242.0,
+        5918642.0,
+        1762718.0,
+        5919358.0
+      ],
+      "sha256": "36108f851441a658717759296dee80cf73b8e08855d30e3b386cd3e3338c5128",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S019"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BA32_1000_3815.laz",
+      "header_points": 2779647,
+      "bytes": 21169683,
+      "bbox_epsg2193": [
+        1762722.0,
+        5918642.0,
+        1763198.0,
+        5919358.0
+      ],
+      "sha256": "d42f1ce2f067276ef123af977934862e81bc380da8c98dca8fa6c12f4cd3f2eb",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S019"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BA32_1000_3905.laz",
+      "header_points": 934487,
+      "bytes": 6564990,
+      "bbox_epsg2193": [
+        1757922.0,
+        5917922.0,
+        1758398.0,
+        5918638.0
+      ],
+      "sha256": "6ee3447cb29089ff851d941f499f4afe9976aa25486b42c203164bb969ec389d",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA32_1000_3906.laz",
+      "header_points": 1330275,
+      "bytes": 10021881,
+      "bbox_epsg2193": [
+        1758402.0,
+        5917922.0,
+        1758878.0,
+        5918638.0
+      ],
+      "sha256": "433eb1eb4818148a0d4c715421d3aa46ba0e8b6252f4e324d7898eaca9879acd",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S024"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BA32_1000_3910.laz",
+      "header_points": 4116962,
+      "bytes": 32134352,
+      "bbox_epsg2193": [
+        1760322.0,
+        5917922.0,
+        1760798.0,
+        5918638.0
+      ],
+      "sha256": "5e35b67d640bca11d9596db5e207132d6df44f23e10fcbf3abdb13d2a92218ef",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S015"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BA32_1000_4204.laz",
+      "header_points": 2326540,
+      "bytes": 17373096,
+      "bbox_epsg2193": [
+        1757442.0,
+        5915762.0,
+        1757918.0,
+        5916478.0
+      ],
+      "sha256": "f70f3b25de43c0289b7ecce4ab6dbbc9167be710a041678c26f12cbbfa446c47",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S003"
+      ],
+      "held_out_intersecting_sites": [
+        "S003"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA32_1000_4234.laz",
+      "header_points": 1326257,
+      "bytes": 10108633,
+      "bbox_epsg2193": [
+        1771842.0,
+        5915762.01,
+        1772318.0,
+        5916478.0
+      ],
+      "sha256": "9929c2de031acc9a8f56408f72760f1eb88075719598c83b837d39a2e2903a7d",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S005"
+      ],
+      "held_out_intersecting_sites": [
+        "S005"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA32_1000_4235.laz",
+      "header_points": 580301,
+      "bytes": 4407644,
+      "bbox_epsg2193": [
+        1772322.0,
+        5915762.0,
+        1772798.0,
+        5916477.66
+      ],
+      "sha256": "c27da388ec493f2da5b8b5b697733b4c99f96a212745319d83f0e2677a231dc6",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S005"
+      ],
+      "held_out_intersecting_sites": [
+        "S005"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BA32_1000_4647.laz",
+      "header_points": 1498103,
+      "bytes": 10866225,
+      "bbox_epsg2193": [
+        1778082.0,
+        5912882.0,
+        1778558.0,
+        5913598.0
+      ],
+      "sha256": "a5744776ad114039c00b9580f39192db024dfa377c6e7d090a6d559c84438061",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S008"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BA32_1000_4843.laz",
+      "header_points": 1499204,
+      "bytes": 10618841,
+      "bbox_epsg2193": [
+        1776162.0,
+        5911442.0,
+        1776638.0,
+        5912158.0
+      ],
+      "sha256": "e2447422892c8660f99d783c30d1ece34688a7e0414aedd1643f109bd073f101",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S004"
+      ],
+      "held_out_intersecting_sites": [
+        "S004"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BB31_1000_2120.laz",
+      "header_points": 1510680,
+      "bytes": 11553289,
+      "bbox_epsg2193": [
+        1741122.0,
+        5894882.0,
+        1741598.0,
+        5895598.0
+      ],
+      "sha256": "611e7ea67038d7a3d98b95393bc9381d25812a377598a1cc209d9eb5e94dd2ca",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S009"
+      ],
+      "held_out_intersecting_sites": [
+        "S009"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BB31_1000_2121.laz",
+      "header_points": 1657006,
+      "bytes": 12717226,
+      "bbox_epsg2193": [
+        1741602.0,
+        5894882.0,
+        1742078.0,
+        5895598.0
+      ],
+      "sha256": "dbe922c38668c1d33a7f13f6563cbc9805f9e0dfc3f0c4ae79d3f586be332ada",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BB32_1000_0135.laz",
+      "header_points": 1481670,
+      "bytes": 11200015,
+      "bbox_epsg2193": [
+        1772322.0,
+        5909282.0,
+        1772798.0,
+        5909998.01
+      ],
+      "sha256": "cb3861e3bbea804823f1dca43f58531e7853e8fe37fcfc8ef786467a9c814d71",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BB32_1000_0136.laz",
+      "header_points": 1670446,
+      "bytes": 12876954,
+      "bbox_epsg2193": [
+        1772802.0,
+        5909282.0,
+        1773278.0,
+        5909998.0
+      ],
+      "sha256": "87fdc92e97be7cd8bec7f52be907dad83b5ff0e7fc147ecc0fd4a2a1c0aeb2e3",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S011"
+      ],
+      "held_out_intersecting_sites": [
+        "S011"
+      ],
+      "safe_full_tile_for_development": false
+    },
+    {
+      "tile": "pc_BB32_1000_1236.laz",
+      "header_points": 1415588,
+      "bytes": 9997447,
+      "bbox_epsg2193": [
+        1772802.0,
+        5901362.0,
+        1773278.0,
+        5902078.0
+      ],
+      "sha256": "68c04f89a6efc7d5bc83aa865329f5c58e05687b3461bfb9f344fbb442d2d42a",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S006"
+      ],
+      "held_out_intersecting_sites": [],
+      "safe_full_tile_for_development": true
+    },
+    {
+      "tile": "pc_BB32_1000_1524.laz",
+      "header_points": 2766224,
+      "bytes": 19427680,
+      "bbox_epsg2193": [
+        1767042.0,
+        5899202.0,
+        1767518.0,
+        5899918.01
+      ],
+      "sha256": "830f3a68fcb58d881645a36b95d21745171ad15c46908b92b890729a79b7a3d0",
+      "sha256_source": "previously verified delivered bundle manifest; not rehashed in header-only planner",
+      "intersecting_sites": [
+        "S007"
+      ],
+      "held_out_intersecting_sites": [
+        "S007"
+      ],
+      "safe_full_tile_for_development": false
+    }
+  ],
+  "sites": [
+    {
+      "site_id": "S001",
+      "split": "train",
+      "stratum": "open_street_trees",
+      "required_tiles": [
+        "pc_BA31_1000_3848.laz",
+        "pc_BA31_1000_3849.laz",
+        "pc_BA31_1000_3948.laz",
+        "pc_BA31_1000_3949.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 0.9216,
+      "safe_full_development_tiles": [
+        "pc_BA31_1000_3848.laz",
+        "pc_BA31_1000_3849.laz",
+        "pc_BA31_1000_3948.laz",
+        "pc_BA31_1000_3949.laz"
+      ],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S002",
+      "split": "test",
+      "stratum": "open_street_trees",
+      "required_tiles": [
+        "pc_BA31_1000_4350.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 1.0,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S003",
+      "split": "val",
+      "stratum": "open_street_trees",
+      "required_tiles": [
+        "pc_BA32_1000_4204.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 1.0,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S004",
+      "split": "test",
+      "stratum": "park_open_grown",
+      "required_tiles": [
+        "pc_BA32_1000_4843.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 1.0,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S005",
+      "split": "val",
+      "stratum": "park_open_grown",
+      "required_tiles": [
+        "pc_BA32_1000_4234.laz",
+        "pc_BA32_1000_4235.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 0.96,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S006",
+      "split": "train",
+      "stratum": "park_open_grown",
+      "required_tiles": [
+        "pc_BB32_1000_1236.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 1.0,
+      "safe_full_development_tiles": [
+        "pc_BB32_1000_1236.laz"
+      ],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S007",
+      "split": "val",
+      "stratum": "dense_broadleaf",
+      "required_tiles": [
+        "pc_BB32_1000_1524.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 1.0,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S008",
+      "split": "train",
+      "stratum": "dense_broadleaf",
+      "required_tiles": [
+        "pc_BA32_1000_4647.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 1.0,
+      "safe_full_development_tiles": [
+        "pc_BA32_1000_4647.laz"
+      ],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S009",
+      "split": "test",
+      "stratum": "dense_broadleaf",
+      "required_tiles": [
+        "pc_BB31_1000_2120.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 0.98,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S010",
+      "split": "train",
+      "stratum": "conifer_dominant",
+      "required_tiles": [
+        "pc_BA31_1000_4526.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 1.0,
+      "safe_full_development_tiles": [
+        "pc_BA31_1000_4526.laz"
+      ],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S011",
+      "split": "test",
+      "stratum": "conifer_dominant",
+      "required_tiles": [
+        "pc_BB32_1000_0136.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 0.98,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S012",
+      "split": "val",
+      "stratum": "conifer_dominant",
+      "required_tiles": [
+        "pc_BA31_1000_4121.laz",
+        "pc_BA31_1000_4221.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 0.96,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S013",
+      "split": "test",
+      "stratum": "palm_present",
+      "required_tiles": [
+        "pc_BA31_1000_4349.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 1.0,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S014",
+      "split": "val",
+      "stratum": "palm_present",
+      "required_tiles": [
+        "pc_BA32_1000_3602.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 0.98,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S015",
+      "split": "train",
+      "stratum": "palm_present",
+      "required_tiles": [
+        "pc_BA32_1000_3810.laz",
+        "pc_BA32_1000_3910.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 0.96,
+      "safe_full_development_tiles": [
+        "pc_BA32_1000_3810.laz",
+        "pc_BA32_1000_3910.laz"
+      ],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S016",
+      "split": "val",
+      "stratum": "small_subcanopy",
+      "required_tiles": [
+        "pc_BA32_1000_3606.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 1.0,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S017",
+      "split": "train",
+      "stratum": "small_subcanopy",
+      "required_tiles": [
+        "pc_BA31_1000_3849.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 1.0,
+      "safe_full_development_tiles": [
+        "pc_BA31_1000_3849.laz"
+      ],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S018",
+      "split": "test",
+      "stratum": "small_subcanopy",
+      "required_tiles": [
+        "pc_BA32_1000_3009.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 1.0,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S019",
+      "split": "train",
+      "stratum": "canopy_edge",
+      "required_tiles": [
+        "pc_BA32_1000_3714.laz",
+        "pc_BA32_1000_3715.laz",
+        "pc_BA32_1000_3814.laz",
+        "pc_BA32_1000_3815.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 0.9216,
+      "safe_full_development_tiles": [
+        "pc_BA32_1000_3714.laz",
+        "pc_BA32_1000_3715.laz",
+        "pc_BA32_1000_3814.laz",
+        "pc_BA32_1000_3815.laz"
+      ],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S020",
+      "split": "test",
+      "stratum": "canopy_edge",
+      "required_tiles": [
+        "pc_BA32_1000_3311.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 0.98,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S021",
+      "split": "val",
+      "stratum": "canopy_edge",
+      "required_tiles": [
+        "pc_BA31_1000_4439.laz",
+        "pc_BA31_1000_4440.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 0.96,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S022",
+      "split": "test",
+      "stratum": "hard_negative_built",
+      "required_tiles": [
+        "pc_BA32_1000_2602.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 0.98,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S023",
+      "split": "val",
+      "stratum": "hard_negative_built",
+      "required_tiles": [
+        "pc_BA31_1000_4538.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 1.0,
+      "safe_full_development_tiles": [],
+      "development_tile_conflicts": []
+    },
+    {
+      "site_id": "S024",
+      "split": "train",
+      "stratum": "hard_negative_built",
+      "required_tiles": [
+        "pc_BA32_1000_3906.laz"
+      ],
+      "header_bbox_union_coverage_fraction": 0.98,
+      "safe_full_development_tiles": [
+        "pc_BA32_1000_3906.laz"
+      ],
+      "development_tile_conflicts": []
+    }
+  ],
+  "source_manifest_sha256": "4d028396ecc17ff247596c40d5ec74894e7ae3fec87d955c198049a2fefb246e",
+  "site_definitions_sha256": "78b8513a2153d380b3761c8f642b8d23c14216e7aeb3af67865b5070fc0eb1fe",
+  "required_tiles_sha256": "a2f280b6c2baac1b29dfbcfad00545b5f2c7bb048e3a329ee7107158978d0e49",
+  "header_only": true,
+  "model_run_executed": false,
+  "input_filtering_applied": false,
+  "bbox_coverage_limit": "Header extrema describe point bounds, not authoritative acquisition footprints or complete pulses/returns. Multi-tile clouds still need recorded merge/dedup and context rules.",
+  "development_conflict_limit": "A full training tile touching a val/test reference is not permitted by the current development runner; plan must resolve cropping/context before execution."
+}

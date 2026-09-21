@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.Rhistory
+*.pre-ndvi-swap
+.~*
+logs/
+outputs/
+external/
+data/laz/
+data/chm/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.tar.gz
+*.zip

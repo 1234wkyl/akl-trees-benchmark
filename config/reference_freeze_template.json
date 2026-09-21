@@ -1,0 +1,11 @@
+{
+  "status": "template_only",
+  "supervisor_confirmation_record": null,
+  "reference_sha256": null,
+  "evaluation_policy_sha256": null,
+  "site_definitions_sha256": null,
+  "independent_original_exports": [],
+  "adjudication_record": null,
+  "test_lock_date": null,
+  "note": "This is not approval. Populate only after original TW export, independent comparison, unresolved-label decisions and explicit supervisor freeze confirmation. Bind to the final derived reference GeoPackage and approved scoring policy."
+}

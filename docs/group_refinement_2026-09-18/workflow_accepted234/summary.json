@@ -1,0 +1,19 @@
+{
+  "source_reference_sha256": "a56fadee0f9025998843c52dab2c1a4ecc2ebb4e70a073b6dd3adf7c924d786d",
+  "evaluation_reference_sha256": "bc1807bf926866f34c2605fd16cee6eb2819df4c772bc21472558400eb6ce1c6",
+  "classes": {
+    "tree": 234,
+    "tree_group": 216,
+    "not_tree": 41,
+    "uncertain": 4
+  },
+  "retained_groups": 216,
+  "training_QA_regions": 176,
+  "training_only_QA": true,
+  "point_labels_created": false,
+  "reference_frozen": false,
+  "model_outputs_used": false,
+  "peak_method": "1 m Gaussian smoothing; 3 m square maximum-filter radius; >=3 m candidate; connected plateaus counted once",
+  "peak_limit": "Heuristic review signal on resampled CHM, neither verified tree number nor splitting approval",
+  "reference_layer_mapping": "tree->single_trees; tree_group->tree_groups; uncertain->uncertainty_regions; not_tree->hard_negatives"
+}

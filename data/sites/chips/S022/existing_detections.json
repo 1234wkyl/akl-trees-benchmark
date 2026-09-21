@@ -1,0 +1,12 @@
+[
+ {
+  "tree_id": "akl_tree_lid_1300248",
+  "x": 1756874.5000000007,
+  "y": 5927900.5,
+  "height_m": 10.73,
+  "crown_area_m2": 9.0,
+  "source_primary": "lidar_inferred_canopy",
+  "growth_form": "deciduous_broadleaf",
+  "growth_form_confidence": "model_inferred"
+ }
+]

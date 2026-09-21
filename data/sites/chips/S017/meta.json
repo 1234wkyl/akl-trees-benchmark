@@ -1,0 +1,30 @@
+{
+  "site_id": "S017",
+  "stratum": "small_subcanopy",
+  "split": "train",
+  "crs": "EPSG:2193",
+  "bbox_epsg2193": [
+    1755400.0,
+    5919200.0,
+    1755500.0,
+    5919300.0
+  ],
+  "resolution_m": 0.25,
+  "width_px": 400,
+  "height_px": 400,
+  "imagery_source": "esri",
+  "imagery_tiles_found": 12,
+  "pixel_to_world": {
+    "x": "x0 + (col + 0.5) * resolution_m",
+    "y": "y1 - (row + 0.5) * resolution_m",
+    "x0": 1755400.0,
+    "y1": 5919300.0
+  },
+  "chm_stats": {
+    "min": 0.0,
+    "max": 11.620258331298828,
+    "mean": 2.5380184650421143
+  },
+  "existing_detection_count": 20,
+  "point_count": 0
+}
