@@ -1,0 +1,14 @@
+{
+  "chm_sha256": "f2e09461623d15dd3040fe90ac7e0817096e208793e363023d12eed9e7dcd439",
+  "csv_sha256": "46980ea40ab1d0e289b1e7c68ea1a5530deb848c24c48db3c96b744ff07b00d2",
+  "evaluation_sha256": "72d566fc5b8ae601df7bd2a832cb9e8129c9ae87dd57c7ad8fd9b6dd6d125f29",
+  "figure_sha256": "a884802a8357491c696f206bb22706f91af597a9e673e721b9260e1ac1edf023",
+  "point_support_sha256": "eac79a685c1afc61d94f777110ef9538caa86ebed58c46dddd17d9f7b1dd20d3",
+  "predictions_sha256": "4ae2cc7ff0c8dd96252d1d9a04819a36b403a6852967621049a5f4fef2678907",
+  "reference_sha256": "bc1807bf926866f34c2605fd16cee6eb2819df4c772bc21472558400eb6ce1c6",
+  "rgb_sha256": "f0751c09c87841aa45e70f89db3df90d7f2e213e21eb474a9e2db4c5a995519c",
+  "rule": "nearest centroid is descriptive; the fixed evaluation was not changed",
+  "site_id": "S008",
+  "status": "TRAINING_ONLY_DEVELOPMENT_DIAGNOSTIC",
+  "unmatched_count": 4
+}

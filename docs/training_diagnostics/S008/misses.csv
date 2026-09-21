@@ -1,0 +1,5 @@
+site_id,reference_id,reference_area_m2,inside_positive_instance_points,buffered_positive_instance_points,nearest_prediction_id,nearest_centroid_distance_m,nearest_crown_iou,candidate_centroids_within_2m,diagnostic_category
+S008,S008-mspg4wok,38.81442897158897,85,184,777,2.1441108758241687,0.4072999725819852,0,no_centroid_within_2m
+S008,S008-mspg52ln,39.6111220649159,35,101,778,3.0799509733895816,0.2380433417799734,0,no_centroid_within_2m
+S008,S008-mspg5b9a,50.518366353972695,75,171,897,2.814532488872233,0.46439448117035304,0,no_centroid_within_2m
+S008,S008-mspg5i7b,7.0498741349275456,0,23,840,4.696940655391613,0.002501201289062015,0,no_centroid_within_2m
