@@ -1,19 +1,16 @@
 {
   "status": "PRE-FREEZE REFERENCE REVIEW; NOT INDEPENDENT GROUND TRUTH",
-  "reference_path": "data/exports/reference_crowns.gpkg",
-  "reference_sha256": "08f2444ee1a8615fb665e13ce962998d7e340eeeda33494082dd7d0b6fa82dde",
+  "reference_path": "docs/group_refinement_2026-09-18/export_20260922T060150894212Z/crown_labels_XZ_2026-09-22-2.json",
+  "reference_sha256": "67e17c550a281e1906415fbae72e9fee9da9d6a5f2fc4de8360b041bf24796ce",
   "large_group_ids": [
-    "S004-ms2pluuz",
     "S008-mspfkk7a",
     "S010-mspgqee9",
     "S010-mspgrrq7",
     "S010-mspgttd5",
     "S011-msrzankn",
     "S011-msrzgldr",
-    "S012-msrzleqc",
     "S012-msrzpp5k",
-    "S015-mss171sg",
-    "S021-mss2tjpn"
+    "S015-mss171sg"
   ],
   "uncertain_ids": [
     "S011-msrzicxq",
@@ -22,8 +19,6 @@
     "S014-mss0sqru"
   ],
   "image_source_sha256": {
-    "data/sites/chips/S004/rgb.png": "b073a632146dc077b61b171517c3ebb6acb510193f02e1780ffbb604e5485ad7",
-    "data/sites/chips/S004/chm.png": "007a1bd8a8bbfa34e4cdab040978b98856429bf5778270a7624cf2428cfa93c7",
     "data/sites/chips/S008/rgb.png": "f0751c09c87841aa45e70f89db3df90d7f2e213e21eb474a9e2db4c5a995519c",
     "data/sites/chips/S008/chm.png": "f2e09461623d15dd3040fe90ac7e0817096e208793e363023d12eed9e7dcd439",
     "data/sites/chips/S010/rgb.png": "c532e454a41db7521b6bd7fc84c6ed00c96b4fd0bf1c3b68a679fcb524ced9a7",
@@ -34,17 +29,12 @@
     "data/sites/chips/S012/chm.png": "3b5df0246ff5aedfdf203f3875c445ed27f9870c9021f2df57f4d2e09b9db72e",
     "data/sites/chips/S015/rgb.png": "b7c2b7e5c6840acb8e3e77c472a95611e203176e42e0aebb87b63044c3dedb7c",
     "data/sites/chips/S015/chm.png": "d55387fae5b8b9afd17e125a3cc47b4e85d1a691bb2f1c05257c33cd4d388b79",
-    "data/sites/chips/S021/rgb.png": "92f4398b695dcfe82394c9eb23fcfc8bfcc6a44446a11fafddc40a9c522c1c34",
-    "data/sites/chips/S021/chm.png": "8367908796f953e1531c2a4a00fe89700b719befa4177efd4cdf80686b8a4287",
     "data/sites/chips/S014/rgb.png": "431b3ada56693ac2de1b095aa54c4d935e59c76fb0825c34f8a3ad55c6460e65",
     "data/sites/chips/S014/chm.png": "0220f7c34e362f8b79585950319f1ceadbf7b3de815862536850f9beb8f6b79e"
   },
-  "group_split_example_source": "docs/group_refinement_2026-09-18/visual_review/S014-mss0nwrf.png",
-  "group_split_example_source_sha256": "c4ad041dc983b9897a01546751ac132205f3687ff02f0d43f58f786253ab8674",
   "outputs_sha256": {
-    "group_split_example_S014.png": "c4ad041dc983b9897a01546751ac132205f3687ff02f0d43f58f786253ab8674",
-    "uncertain_regions.png": "2b87d73c6d36c0a2100698e5780415061c0a96952212c08f838a7f518d380ab7",
-    "large_groups.png": "454ac89b30fd2af325b53f959d57c6e8042eb5b290721d6ea679ade49d78e1e4"
+    "uncertain_regions.png": "b008d19a37a8e4141c8b7021f80d51238fd7a3a8f525022515aa65e171b680a6",
+    "large_groups.png": "015941619bb47f62730eb9194a9db16ef841f96fdcc7d3e8c3a8c12f97b8584c"
   },
-  "note": "Only original RGB, CHM and reference geometry are shown. No model detections were used."
+  "note": "Only RGB, CHM and the named pre-freeze reference geometry are shown. No model detections were used."
 }

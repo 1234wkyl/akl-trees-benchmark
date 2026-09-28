@@ -3,16 +3,36 @@
 import argparse
 import json
 import math
-import shutil
 from pathlib import Path
 
 import geopandas as gpd
 import matplotlib.pyplot as plt
 from PIL import Image
+from shapely.geometry import Polygon
 
 from benchmark.common import sha256, site_definitions, write_json
 
 ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_LABELS = (ROOT / 'docs/group_refinement_2026-09-18/'
+                  'export_20260922T060150894212Z/'
+                  'crown_labels_XZ_2026-09-22-2.json')
+
+
+def load_labels(path):
+    data = json.loads(path.read_text())
+    if data.get('schema_version') != 'akl-trees-crown-labels/v1' or data.get('crs') != 'EPSG:2193':
+        raise ValueError('expected akl-trees-crown-labels/v1 in EPSG:2193')
+    records, geometries = [], []
+    for site_id, site in data.get('sites', {}).items():
+        for label in site.get('labels', []):
+            geometry = Polygon(label['world'])
+            if not geometry.is_valid:
+                geometry = geometry.buffer(0)
+            if geometry.is_empty or not geometry.is_valid:
+                raise ValueError(f'invalid geometry after repair: {label["id"]}')
+            records.append({'site_id': site_id, 'label_id': label['id'], 'class': label['cls']})
+            geometries.append(geometry)
+    return gpd.GeoDataFrame(records, geometry=geometries, crs='EPSG:2193')
 
 
 def render_sheet(rows, output, title, pad_m, ncols=2):
@@ -53,33 +73,34 @@ def render_sheet(rows, output, title, pad_m, ncols=2):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--output', type=Path, required=True)
+    ap.add_argument('--labels-json', type=Path, default=DEFAULT_LABELS)
     args = ap.parse_args()
     if args.output.exists():
         ap.error('use a fresh output directory')
-    source = ROOT / 'data/exports/reference_crowns.gpkg'
-    frame = gpd.read_file(source, layer='reference_crowns')
+    source = args.labels_json.resolve()
+    frame = load_labels(source)
     if frame.crs is None or frame.crs.to_epsg() != 2193:
         raise ValueError('EPSG:2193 reference required')
     large = frame[(frame['class'] == 'tree_group') & (frame.geometry.area > 900)].sort_values(['site_id', 'label_id'])
     uncertain = frame[frame['class'] == 'uncertain'].sort_values(['site_id', 'label_id'])
-    if len(large) != 11 or len(uncertain) != 4:
-        raise ValueError(f'expected 11 large groups and 4 uncertain, received {len(large)} and {len(uncertain)}')
+    if len(uncertain) != 4:
+        raise ValueError(f'expected 4 uncertain regions, received {len(uncertain)}')
     args.output.mkdir(parents=True)
     source_hashes = {}
-    for rows, name, title, pad in ((large, 'large_groups.png', 'Eleven flagged tree groups over 900 square metres', 6),
+    for rows, name, title, pad in ((large, 'large_groups.png', f'{len(large)} current tree groups over 900 square metres', 6),
                                    (uncertain, 'uncertain_regions.png', 'Four unresolved annotations excluded from individual-tree scoring', 12)):
         source_hashes.update(render_sheet(list(rows.itertuples()), args.output / name, title, pad))
-    example = ROOT / 'docs/group_refinement_2026-09-18/visual_review/S014-mss0nwrf.png'
-    shutil.copy2(example, args.output / 'group_split_example_S014.png')
+    try:
+        reference_path = str(source.relative_to(ROOT))
+    except ValueError:
+        reference_path = str(source)
     write_json(args.output / 'provenance.json', {
         'status': 'PRE-FREEZE REFERENCE REVIEW; NOT INDEPENDENT GROUND TRUTH',
-        'reference_path': str(source.relative_to(ROOT)), 'reference_sha256': sha256(source),
+        'reference_path': reference_path, 'reference_sha256': sha256(source),
         'large_group_ids': list(large.label_id), 'uncertain_ids': list(uncertain.label_id),
         'image_source_sha256': source_hashes,
-        'group_split_example_source': str(example.relative_to(ROOT)),
-        'group_split_example_source_sha256': sha256(example),
         'outputs_sha256': {p.name: sha256(p) for p in args.output.glob('*.png')},
-        'note': 'Only original RGB, CHM and reference geometry are shown. No model detections were used.'})
+        'note': 'Only RGB, CHM and the named pre-freeze reference geometry are shown. No model detections were used.'})
     print(json.dumps({'large_groups': len(large), 'uncertain': len(uncertain),
                       'output': str(args.output)}))
 

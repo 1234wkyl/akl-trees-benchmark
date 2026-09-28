@@ -28,5 +28,24 @@
   "additional_refinement_proposal_single_trees": 243,
   "reference_frozen": false,
   "group_diagnostics": "config/group_diagnostics.json",
-  "group_point_label_warning": "Unresolved tree_group is not a single treeID; polygons are XY QA regions only, checked 3D labels still required"
+  "group_point_label_warning": "Unresolved tree_group is not a single treeID; polygons are XY QA regions only, checked 3D labels still required",
+  "current_author_prefreeze_source": "docs/group_refinement_2026-09-18/export_20260922T060150894212Z/crown_labels_XZ_2026-09-22-2.json",
+  "current_author_prefreeze_sha256": "67e17c550a281e1906415fbae72e9fee9da9d6a5f2fc4de8360b041bf24796ce",
+  "current_author_prefreeze_counts": {
+    "tree": 249,
+    "tree_group": 229,
+    "not_tree": 41,
+    "uncertain": 4
+  },
+  "current_author_prefreeze_tree_split": {
+    "train": 82,
+    "val": 76,
+    "test": 91
+  },
+  "current_author_prefreeze_status": "author version for freeze discussion; not frozen; not used for initial XZ/TW agreement",
+  "historical_revision_records": {
+    "accepted_234": "docs/group_refinement_2026-09-18/accepted_revision_pointer.json",
+    "accepted_240": "docs/group_refinement_2026-09-18/export_20260922T060150894212Z/reference_refinement_proposal.gpkg",
+    "proposed_243": "docs/group_refinement_2026-09-18/latest_revision_pointer.json"
+  }
 }

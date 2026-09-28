@@ -41,7 +41,7 @@ def run(command, commands):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--condition', nargs=3, action='append', required=True,
-                    metavar=('FRACTION', 'PREDICTION', 'COORDINATE_AUDIT'))
+                    metavar=('FRACTION', 'PREDICTION', 'VERIFICATION_RECORD'))
     ap.add_argument('--config', nargs=4, action='append', required=True,
                     metavar=('ID', 'METHOD', 'RATIO_OR_NONE', 'BUFFER_M'))
     ap.add_argument('--reference', type=Path, required=True)
@@ -66,7 +66,11 @@ def main():
         prediction, audit = Path(prediction_text), Path(audit_text)
         if not np.isfinite(fraction) or not 0 < fraction <= 1 or not prediction.is_file() or not audit.is_file():
             ap.error(f'invalid condition: {fraction_text} {prediction} {audit}')
-        conditions.append({'fraction': fraction, 'prediction': prediction, 'audit': audit})
+        verification_record = json.loads(audit.read_text())
+        verification_flag = ('--merge-receipt' if verification_record.get('status') ==
+                             'TRAINING-SITE MULTI-TILE MERGE COMPLETED' else '--coordinate-audit')
+        conditions.append({'fraction': fraction, 'prediction': prediction, 'audit': audit,
+                           'verification_flag': verification_flag})
     if len({item['fraction'] for item in conditions}) != len(conditions):
         ap.error('condition fractions must be unique')
 
@@ -80,7 +84,7 @@ def main():
             crowns, standard, evaluation = root / 'crowns', root / 'standardized', root / 'evaluation'
             convert = [python, ROOT/'scripts/20_sat_crown_candidates.py',
                        '--prediction', condition['prediction'],
-                       '--coordinate-audit', condition['audit'],
+                       condition['verification_flag'], condition['audit'],
                        '--tree-semantic-values', '1', '--hull-method', config['method'],
                        '--buffer-m', config['buffer_m'], '--output', crowns]
             if config['method'] == 'concave_hull':

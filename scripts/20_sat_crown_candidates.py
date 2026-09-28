@@ -15,7 +15,10 @@ from benchmark.common import sha256, write_json
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument('--prediction',type=Path,required=True)
-    ap.add_argument('--coordinate-audit',type=Path,required=True)
+    verification = ap.add_mutually_exclusive_group(required=True)
+    verification.add_argument('--coordinate-audit',type=Path)
+    verification.add_argument('--merge-receipt',type=Path,
+                              help='training-site merge receipt binding the merged prediction hash')
     ap.add_argument('--tree-semantic-values',type=int,nargs='+',required=True,
                     help='explicit values confirmed from the actual checkpoint taxonomy, never original ASPRS values')
     ap.add_argument('--hull-method',choices=['convex_hull','concave_hull'],default='convex_hull')
@@ -30,9 +33,19 @@ def main():
         ap.error('--concave-ratio must be in [0,1]')
     if not np.isfinite(args.buffer_m) or args.buffer_m<0:
         ap.error('--buffer-m must be finite and nonnegative')
-    audit=json.loads(args.coordinate_audit.read_text())
-    if audit.get('prediction_sha256')!=sha256(args.prediction) or audit.get('epsg2193_coordinate_consistency') is not True or audit.get('uint16_boundary_warning'):
-        raise ValueError('require matching successful restored-coordinate audit, without ID-boundary warning')
+    verification_path = args.coordinate_audit or args.merge_receipt
+    audit=json.loads(verification_path.read_text())
+    if args.coordinate_audit:
+        if audit.get('prediction_sha256')!=sha256(args.prediction) or audit.get('epsg2193_coordinate_consistency') is not True or audit.get('uint16_boundary_warning'):
+            raise ValueError('require matching successful restored-coordinate audit, without ID-boundary warning')
+        verification_type = 'coordinate_audit'
+    else:
+        if (audit.get('status') != 'TRAINING-SITE MULTI-TILE MERGE COMPLETED' or
+                audit.get('split') != 'train' or
+                audit.get('output_laz_sha256') != sha256(args.prediction) or
+                audit.get('benchmark_scores_created') is not False):
+            raise ValueError('require matching completed training-site merge receipt')
+        verification_type = 'training_site_merge_receipt'
     pred=laspy.read(args.prediction)
     ids=np.asarray(pred['PredInstance']);semantic=np.asarray(pred['PredSemantic'])
     values=set(map(int,np.unique(semantic)))
@@ -61,7 +74,10 @@ def main():
     frame=gpd.GeoDataFrame(rows,columns=['prediction_id','instance_id','points','conversion','area_m2'],geometry=geometries,crs=2193)
     target=args.output/'candidate_crowns.gpkg';frame.to_file(target,layer='candidate_crowns',driver='GPKG')
     write_json(args.output/'provenance.json',{'status':'DRAFT CONVERSION ONLY; not approved benchmark crowns',
-        'prediction_sha256':sha256(args.prediction),'coordinate_audit_sha256':sha256(args.coordinate_audit),
+        'prediction_sha256':sha256(args.prediction),'verification_record':str(verification_path),
+        'verification_record_type':verification_type,'verification_record_sha256':sha256(verification_path),
+        'coordinate_audit_sha256':sha256(args.coordinate_audit) if args.coordinate_audit else None,
+        'merge_receipt_sha256':sha256(args.merge_receipt) if args.merge_receipt else None,
         'output_sha256':sha256(target),'crs':'EPSG:2193, derived from audited coordinates',
         'tree_semantic_values':args.tree_semantic_values,'instance_zero_excluded':True,
         'requested_semantic_values_absent_from_output':sorted(set(args.tree_semantic_values)-values),

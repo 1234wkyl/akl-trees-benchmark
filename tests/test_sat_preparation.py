@@ -67,6 +67,18 @@ class SATSyntheticPreparation(unittest.TestCase):
         self.assertEqual(len(frame),1);self.assertAlmostEqual(frame.geometry.area.iloc[0],4)
         meta=json.loads((converted/'provenance.json').read_text());self.assertFalse(meta['conversion_approved']);self.assertEqual(meta['skipped_instances'][0]['instance_id'],2)
         self.assertEqual(meta['hull_method'],'convex_hull');self.assertEqual(meta['buffer_m'],0)
+        merge_receipt=self.root/'merge_receipt.json'
+        merge_receipt.write_text(json.dumps({'status':'TRAINING-SITE MULTI-TILE MERGE COMPLETED',
+            'split':'train','output_laz_sha256':sha256(output),'benchmark_scores_created':False}))
+        merged_converted=self.root/'merged_hulls';call(crowns,['--prediction',output,'--merge-receipt',merge_receipt,'--tree-semantic-values','1','--output',merged_converted])
+        merged_meta=json.loads((merged_converted/'provenance.json').read_text())
+        self.assertEqual(merged_meta['verification_record_type'],'training_site_merge_receipt')
+        self.assertEqual(merged_meta['merge_receipt_sha256'],sha256(merge_receipt))
+        bad_receipt=self.root/'bad_merge_receipt.json'
+        bad_receipt.write_text(json.dumps({'status':'TRAINING-SITE MULTI-TILE MERGE COMPLETED',
+            'split':'train','output_laz_sha256':'0'*64,'benchmark_scores_created':False}))
+        with self.assertRaisesRegex(ValueError,'matching completed'):
+            call(crowns,['--prediction',output,'--merge-receipt',bad_receipt,'--tree-semantic-values','1','--output',self.root/'bad_merged_hulls'])
         buffered=self.root/'buffered_hulls';call(crowns,['--prediction',output,'--coordinate-audit',report,'--tree-semantic-values','1','--hull-method','concave_hull','--concave-ratio','.5','--buffer-m','.25','--output',buffered])
         buffered_frame=gpd.read_file(buffered/'candidate_crowns.gpkg',layer='candidate_crowns')
         self.assertEqual(len(buffered_frame),1);self.assertGreater(buffered_frame.geometry.area.iloc[0],4)

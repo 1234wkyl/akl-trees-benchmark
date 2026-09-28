@@ -2,7 +2,7 @@
   "accepted_by": "Xi Zhang",
   "recorded_on": "2026-09-18T06:16:17.400305+00:00",
   "source_sha256": "24d789f15bd5edcdc55777de64c202aa67230f9e91055ae38e11915c3b550c50",
-  "scope": "Previous 14 changed parent objects only; later proposals require separate acceptance",
+  "scope": "20 accepted changed parent objects in the pre-freeze working reference; two second-round proposals declined",
   "reference_frozen": false,
   "original_XZ_TW_comparison_preserved": true,
   "accepted_decisions": {
@@ -358,9 +358,71 @@
       "reason": "Compact rounded RGB crown beside roofs with one coherent CHM mound and no visible internal boundary. Provisional one-crown interpretation pending ORIGINAL XZ-TW comparison.",
       "crowns": [],
       "reviewed_at": "2026-09-18T01:40:40.661827+00:00"
+    },
+    "S001-ms2lqiho": {
+      "id": "S001-ms2lqiho",
+      "action": "single",
+      "reason": "Second RGB/CHM review: one compact green crown against surrounding ground, reaching the lower site edge, supported by a raised CHM patch (max 4.68 m). Proposed single visible clipped crown; moderate confidence and explicit tile/site-edge truncation, not a complete crown or verified stem count.",
+      "crowns": [],
+      "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+      "confidence": "moderate",
+      "review_round": 2,
+      "author_review_required": true
+    },
+    "S004-ms2ppqgf": {
+      "id": "S004-ms2ppqgf",
+      "action": "single",
+      "reason": "Second RGB/CHM review: an isolated small oval green crown against open ground, with one raised CHM patch (max 4.21 m); no visible junction between separate crowns. Proposed single-crown category correction preserving the outline; moderate confidence due coarse RGB and low height.",
+      "crowns": [],
+      "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+      "confidence": "moderate",
+      "review_round": 2,
+      "author_review_required": true
+    },
+    "S007-mspevauw": {
+      "id": "S007-mspevauw",
+      "action": "single",
+      "reason": "Second RGB/CHM review: the broad central green crown has a coherent perimeter against open ground and continuous texture, supported by a single broad height mound (max 11.93 m). Proposed whole-outline single visible crown; moderate confidence because the left/lower lobes could reflect crown branches or adjoining vegetation.",
+      "crowns": [],
+      "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+      "confidence": "moderate",
+      "review_round": 2,
+      "author_review_required": true
+    },
+    "S008-mspfzo9n": {
+      "id": "S008-mspfzo9n",
+      "action": "single",
+      "reason": "Second RGB/CHM review: a coherent grey-green crown texture inside the existing perimeter, with one broad raised CHM mound (max 16.55 m) and no clear internal crown boundary. Proposed whole-outline single crown; moderate confidence because adjoining woodland limits independent perimeter interpretation.",
+      "crowns": [],
+      "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+      "confidence": "moderate",
+      "review_round": 2,
+      "author_review_required": true
+    },
+    "S009-mspgeven": {
+      "id": "S009-mspgeven",
+      "action": "single",
+      "reason": "Second RGB/CHM review: one compact dark-green crown with a coherent visible perimeter and no repeatable internal division; CHM supports one raised mound (max 6.00 m). Reclassify the whole existing outline as a single visible crown, with moderate confidence and no claim of verified stem identity.",
+      "crowns": [],
+      "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+      "confidence": "moderate",
+      "review_round": 2,
+      "author_review_required": true
+    },
+    "S010-mspgnaw8": {
+      "id": "S010-mspgnaw8",
+      "action": "single",
+      "reason": "Second RGB/CHM review: one compact green crown with a coherent outer edge and central height mound (CHM max 12.79 m); no visually repeatable two-crown division. Proposed single visible crown, moderate confidence; multiple stems are not independently verified.",
+      "crowns": [],
+      "reviewed_at": "2026-09-18T06:17:27.781038+00:00",
+      "confidence": "moderate",
+      "review_round": 2,
+      "author_review_required": true
     }
   },
   "author_statement_english_translation": "The visually clear groups may be changed to individual trees.",
   "source_statement_sha256": "621f386b4800e4576e758d32d1a13a965ab8fdd751101ca1f56697b5b5147958",
-  "translation_note": "English translation for repository presentation; the original statement is retained only in the local historical record."
+  "translation_note": "English translation for repository presentation; the original statement is retained only in the local historical record.",
+  "round2_recorded_on": "2026-09-22T06:01:44.654013+00:00",
+  "round2_user_direction": "Accept six specified single-crown revisions; decline the other two, while preserving them in the comparison gallery."
 }
