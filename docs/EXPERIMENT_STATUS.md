@@ -1,4 +1,4 @@
-# Experimental status at 29 September 2026
+# Experimental status at 6 October 2026
 
 ## Inputs and reference set
 
@@ -22,6 +22,33 @@ The associated frozen crown-polygon geometry is absent, and the supervisor is
 still checking which code commit and parameters produced the snapshot. Exact
 reproduction and training-only tuning therefore remain open; M3 is not
 complete.
+
+A provisional crown-stage adapter now calls the supplied historical
+`segment_chunk` function without changing its segmentation constants. It
+retains the metropolitan grid from the original CHM manifest, checks all 40
+delivered source TIFFs, and uses the frozen inventory through immutable,
+read-only SQLite access. An S017 mask-free smoke run completed in 66 seconds:
+21 candidate crowns intersect the site; 13 of 14 frozen seed-inside crown IDs
+were recovered, and three match all four stored crown attributes within
+1e-6. This is a diagnostic, not an exact reproduction.
+
+The eight-site attempt subsequently completed with all nine current building
+responses and eight of nine current nonvegetation responses; one response
+remained unavailable after recorded acquisition retries. All 126 frozen
+seed-inside crown IDs were recovered, with no extra seed-inside IDs; 116
+matched all four stored crown attributes within 1e-6. The ten remaining crowns
+all have larger raster support areas, by 1–62 m². Their cause is not yet
+established. Candidate geometries numbered 156 site intersections before
+standardisation and 155 positive-area site records after clipping.
+
+Development scoring against the 82 pre-freeze training references gives TP
+20, FP 29, FN 62, precision 0.4082, recall 0.2439, micro F1 0.3053 and pooled
+median matched IoU 0.4876; 106 predictions were ignored under the fixed
+group/uncertainty policy. These figures are not held-out accuracy or formal
+acceptance. The source database remained byte-identical. Historical masks,
+greenness use, the producing revision and original crown geometry remain
+unconfirmed. See the [attempt specification](CLASSICAL_REPRODUCTION_ATTEMPT.md)
+and [recorded results](historical_crown_attempt_20261006/RESULTS.md).
 
 ## SegmentAnyTree pretrained development
 

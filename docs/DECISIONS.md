@@ -2,6 +2,26 @@
 
 Each methodological choice records its date, decision, reason, and rejected alternative. A consequence is included where it changes later work. Historical proposals are distinguished from the researcher's operational rules and from decisions explicitly confirmed by the supervisor. A recorded rule does not imply that the reference set is frozen or that the supervisor approved an unasked detail.
 
+## 2026-10-06 — Provisional historical crown-stage reproduction
+
+**Decision.** Attempt the historical crown stage on the eight training sites using the hash-checked supplied source, its unchanged `segment_chunk` function and default segmentation constants. Use the original metropolitan grid established by the CHM manifest and an immutable read-only frozen seed database. Acquire current OSM masks explicitly and retain their query responses; record unavailable historical greenness and mask provenance. Keep any mask-free smoke result separate.
+
+**Why.** A bounded training-only attempt can produce candidate geometry and quantify agreement with the frozen crown summary attributes while the producing revision and original crown geometry remain unconfirmed. The original CHM manifest establishes the metropolitan extent, 1 m pixels and 1,024 m chunks; the current default pilot configuration alone would choose a different extent.
+
+**Rejected.** Writing to the frozen database, downloading replacement CHM, silently discarding masks, claiming current OSM responses are historical inputs, fabricating a freeze record, and treating scalar equality as proof of crown-geometry identity were rejected.
+
+**Consequence.** The attempt is provisional and does not close M3. It reconstructs the crown stage from retained frozen inventory seeds, not the full detection/canonicalisation history. Reference evaluation remains training-only and all formal acceptance thresholds remain unchanged.
+
+## 2026-10-06 — Explicit incomplete-mask approximation
+
+**Decision.** After repeated whole-cell, subdivided-query, mirror and POST acquisition failures, permit a separate training-only attempt with all nine building responses and eight of nine nonvegetation responses. Record the missing query cell and response filename explicitly; keep strict cache completeness as the default.
+
+**Why.** The missing current OSM response is an external acquisition failure. Available masks and frozen seeds still support a useful bounded crown-stage diagnostic while exact historical inputs remain unavailable.
+
+**Rejected.** Fabricating an empty successful response, silently omitting the mask, deleting failed run records, or describing this approximation as the frozen default baseline was rejected.
+
+**Consequence.** The candidate carries incomplete-mask status and cannot establish exact reproduction or close M3. If the response becomes available, the complete-mask attempt must use a new output directory and retain the earlier evidence.
+
 ## 2026-07-16 — Initial acceptance thresholds
 
 **Decision.** Use detection precision and recall of at least 0.85, median matched-crown IoU of at least 0.60, false-positive precision of at least 0.95, and recall of at least 0.70 in every stratum. Declare an F1 improvement over the classical baseline only when its bootstrap 95% confidence interval excludes zero. The original plan also specified a 2 m match tolerance and seed 42; `config/project.json` records the thresholds as predeclared at M1 on 7 August.

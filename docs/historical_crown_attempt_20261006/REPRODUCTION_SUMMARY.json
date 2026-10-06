@@ -1,0 +1,277 @@
+{
+  "status": "PROVISIONAL HISTORICAL CROWN-STAGE ATTEMPT",
+  "created_utc": "2026-10-06T01:56:08.450479+00:00",
+  "baseline_reproduction_verified": false,
+  "reference_frozen": false,
+  "training_site_ids": [
+    "S001",
+    "S006",
+    "S008",
+    "S010",
+    "S015",
+    "S017",
+    "S019",
+    "S024"
+  ],
+  "crowns_intersecting_training_sites": 156,
+  "by_site": {
+    "S001": {
+      "frozen_crowns_with_seed_inside": 11,
+      "reproduced_frozen_ids": 11,
+      "all_scalars_match_at_1e_6": 10,
+      "extra_seed_inside_ids": 0
+    },
+    "S006": {
+      "frozen_crowns_with_seed_inside": 20,
+      "reproduced_frozen_ids": 20,
+      "all_scalars_match_at_1e_6": 20,
+      "extra_seed_inside_ids": 0
+    },
+    "S008": {
+      "frozen_crowns_with_seed_inside": 25,
+      "reproduced_frozen_ids": 25,
+      "all_scalars_match_at_1e_6": 24,
+      "extra_seed_inside_ids": 0
+    },
+    "S010": {
+      "frozen_crowns_with_seed_inside": 20,
+      "reproduced_frozen_ids": 20,
+      "all_scalars_match_at_1e_6": 17,
+      "extra_seed_inside_ids": 0
+    },
+    "S015": {
+      "frozen_crowns_with_seed_inside": 15,
+      "reproduced_frozen_ids": 15,
+      "all_scalars_match_at_1e_6": 15,
+      "extra_seed_inside_ids": 0
+    },
+    "S017": {
+      "frozen_crowns_with_seed_inside": 14,
+      "reproduced_frozen_ids": 14,
+      "all_scalars_match_at_1e_6": 10,
+      "extra_seed_inside_ids": 0
+    },
+    "S019": {
+      "frozen_crowns_with_seed_inside": 20,
+      "reproduced_frozen_ids": 20,
+      "all_scalars_match_at_1e_6": 20,
+      "extra_seed_inside_ids": 0
+    },
+    "S024": {
+      "frozen_crowns_with_seed_inside": 1,
+      "reproduced_frozen_ids": 1,
+      "all_scalars_match_at_1e_6": 0,
+      "extra_seed_inside_ids": 0
+    }
+  },
+  "frozen_seed_inside_crowns": 126,
+  "frozen_ids_reproduced": 126,
+  "all_scalar_matches_at_1e_6": 116,
+  "extra_seed_inside_ids": [],
+  "database_sha256": "0aa08032104ff21e38f0d3819c5fce2de0fad7cbe71012a3b797cce6a88b6bff",
+  "source_database_unchanged": true,
+  "chm_grid": {
+    "crs": "EPSG:2193",
+    "resolution": [
+      1.0,
+      1.0
+    ],
+    "transform": [
+      1.0,
+      0.0,
+      1740000.0,
+      0.0,
+      -1.0,
+      5935000.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "nodata": -9999.0
+  },
+  "chm_source_files_verified": 40,
+  "mask_source": "osm-current",
+  "mask_files": {
+    "buildings_tiles/osm_buildings_1772000_5899000_1776000_5903000.json": {
+      "sha256": "48e3079d49a4d0af500a06d62d5ea65afced1c76ed69e83c031cc4d4e72dc8b4",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:20:50Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "nonveg_tiles/osm_nonveg_v2_1772000_5899000_1776000_5903000.json": {
+      "sha256": "76c34e61ee6019af76ba40abe49fca9567442a2a673e709fd65eff6db329c816",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:20:50Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "buildings_tiles/osm_buildings_1744000_5911000_1748000_5915000.json": {
+      "sha256": "0e7d0e1efdcb0b0efb181a77aad389c977dc419809733b7018d665e0dc42c895",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:20:50Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "nonveg_tiles/osm_nonveg_v2_1744000_5911000_1748000_5915000.json": {
+      "sha256": "7a8c7c7c205b9112a286b5eb5a397031e3c5c666768fbccedb8070614f2798c9",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:21:50Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "buildings_tiles/osm_buildings_1776000_5911000_1780000_5915000.json": {
+      "sha256": "96d672365b9c53a20bd95c0c22e89e2c57bf825707ec6d8b2602f826044ec45d",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:21:50Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "nonveg_tiles/osm_nonveg_v2_1776000_5911000_1780000_5915000.json": {
+      "sha256": "c718693a6bb271a3753ded1789bad4c3c95c90927a920b3ba0725c1c8e69305e",
+      "osm3s": {
+        "timestamp_osm_base": "2026-05-06T03:25:00Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "buildings_tiles/osm_buildings_1752000_5915000_1756000_5919000.json": {
+      "sha256": "0ed93fec7ff40a97ac22f8d83a57885758f567600cf80b4a3ea4fc3b68d5cd50",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:25:54Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "nonveg_tiles/osm_nonveg_v2_1752000_5915000_1756000_5919000.json": {
+      "sha256": "760f07e519b069aa9877a541dc2c2b5e202a0d6586bb4a49e887906d2be8a0e2",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:25:54Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "buildings_tiles/osm_buildings_1756000_5915000_1760000_5919000.json": {
+      "sha256": "51631590db80cd7b9598fc84d9637bdbf48a662c4e9bdfc933e61c5419d8c397",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:26:56Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "nonveg_tiles/osm_nonveg_v2_1756000_5915000_1760000_5919000.json": {
+      "sha256": "a3f4f5ca0674e695eecf60c99d22717896425798a82ce3e7f8fc58486420e9f7",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:26:56Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "buildings_tiles/osm_buildings_1760000_5915000_1764000_5919000.json": {
+      "sha256": "b6c0ff658293950954043ceac57925f39d44c3167b07ad0c8e8cb3506167cd13",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:26:56Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "nonveg_tiles/osm_nonveg_v2_1760000_5915000_1764000_5919000.json": {
+      "sha256": "4b6eeb83401764584258db0a2a8683bb23946cd7f68e4b3845cf4dd4b6b3251a",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:28:00Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "buildings_tiles/osm_buildings_1752000_5919000_1756000_5923000.json": {
+      "sha256": "c1f1793e595ee398a6f6edf825e760cfc504d13641299f24df0803b8c58af278",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:28:00Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "nonveg_tiles/osm_nonveg_v2_1752000_5919000_1756000_5923000.json": {
+      "sha256": "e06db8a7c458f5fa1d1dc76db73a6b0f0d4d23e6372a73747946b7697ad8407b",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:28:00Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "buildings_tiles/osm_buildings_1756000_5919000_1760000_5923000.json": {
+      "sha256": "9218145331b78f6c35b81af84f2e6d4f4e011268c9473cb03b1f280aeb90f8ad",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:28:00Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "nonveg_tiles/osm_nonveg_v2_1756000_5919000_1760000_5923000.json": {
+      "sha256": "070c7e0aaa17e4a787a460428624165157609b3649b3c4c8f0ab359d5e0232b9",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:33:05Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "buildings_tiles/osm_buildings_1760000_5919000_1764000_5923000.json": {
+      "sha256": "d806e94f2381316cb11207fc48dbb3a58ae8a9bdd3981f9c7bd269dc86e21fb0",
+      "osm3s": {
+        "timestamp_osm_base": "2026-10-06T01:39:17Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+      }
+    },
+    "nonveg_tiles/osm_nonveg_v2_1760000_5919000_1764000_5923000.json": {
+      "status": "MISSING EXPLICITLY OMITTED",
+      "original_query_cell_2193": [
+        1760000.0,
+        5919000.0,
+        1764000.0,
+        5923000.0
+      ]
+    }
+  },
+  "current_mask_coverage_complete": false,
+  "missing_nonvegetation_mask_files": {
+    "nonveg_tiles/osm_nonveg_v2_1760000_5919000_1764000_5923000.json": {
+      "status": "MISSING EXPLICITLY OMITTED",
+      "original_query_cell_2193": [
+        1760000.0,
+        5919000.0,
+        1764000.0,
+        5923000.0
+      ]
+    }
+  },
+  "linz_building_source_used": false,
+  "historical_masks_available": false,
+  "greenness_used": false,
+  "greenness_sha256": null,
+  "missing_inputs": [
+    "original greenness raster; use during frozen run unknown"
+  ],
+  "parameters": {
+    "CANOPY_MIN_HEIGHT_M": 3.0,
+    "MIN_CROWN_AREA_M2": 4.0,
+    "CHUNK_SIZE_M": 1024.0,
+    "CROWN_HALO_M": 25.0,
+    "CROWN_GLI_THRESHOLD": 0.03,
+    "CROWN_GLI_WINDOW_PX": 5,
+    "MAX_CROWN_ASPECT_RATIO": 3.5,
+    "MIN_CROWN_BBOX_FILL": 0.3,
+    "OSM_NONVEG_CACHE_VERSION": "v2",
+    "original_global_bbox": [
+      1740000.0,
+      5895000.0,
+      1782000.0,
+      5935000.0
+    ],
+    "radius_rule": "clip(0.65*height,5,14); missing height 7m",
+    "building_buffer_m": 1.0,
+    "closing_m": 0.65,
+    "simplify_m": 0.45,
+    "polygon_connectivity": 4,
+    "candidate_connectivity": 4,
+    "seed_emission": "original chunk strict interior",
+    "greenness_enabled": false
+  },
+  "limitations": [
+    "producing commit/default settings not confirmed",
+    "current OSM masks cannot certify historical mask equality",
+    "one or more current nonvegetation query responses explicitly omitted; inspect used_mask_manifest.json",
+    "frozen postprocessing inventory is reused, not a reproduction of detection/canonicalisation",
+    "subset CHM may leave remote context nodata inside original chunks",
+    "bounded SQL may order equidistant seeds differently from historical full inventory",
+    "frozen crown polygon file unavailable; scalar equality cannot establish geometry equality"
+  ]
+}

@@ -22,6 +22,8 @@ When the independent JSON arrives, archive it unchanged, record SHA-256, and fol
 
 Read the 30 July SQLite database read-only. `scripts/10_inspect_frozen_baseline.py` and `scripts/22_export_received_baseline.py` inspect the snapshot and site-level detection records. The frozen generating commit, parameters, and crown-polygon output or exact regeneration path are still pending verification. Do not label the supplied historical script as the verified frozen pipeline. Once provenance is established, reproduce the frozen output first, then tune on training sites only. Preserve the frozen output and every trial separately.
 
+For a provisional training-only crown-stage attempt while provenance remains pending, use `scripts/51_attempt_historical_crowns.py` as described in [the attempt guide](docs/CLASSICAL_REPRODUCTION_ATTEMPT.md). Its mask acquisition and offline execution are separate phases; the source database stays immutable. Scalar comparisons do not certify the missing frozen crown geometry, and this attempt does not grant reference freeze or complete M3.
+
 ## 4. SegmentAnyTree on the standalone GPU VM
 
 Use `scripts/hpc/build_sat_image.py` and `scripts/hpc/run_sat_container.py` with the pinned upstream checkout and checkpoint recorded in `config/segmentanytree_source.json`. Record `nvidia-smi`, container image digest, checkpoint hash, code commit, driver, CUDA, and PyTorch versions. Prepare and validate one training tile, then use `scripts/13_prepare_density.py` and `scripts/hpc/run_density_training.py` for nested return retention. Do not infer crown polygons directly from point-instance scores without a fixed conversion. The current conversion grid is a training-only diagnostic and must be resolved before held-out inference.
