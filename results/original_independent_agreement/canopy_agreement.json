@@ -1,0 +1,138 @@
+{
+  "role": "supplementary extent/boundary agreement; does not replace primary instance/class results",
+  "primary_metric_changed": false,
+  "automatic_pass_or_freeze": false,
+  "policy": {
+    "recorded_on": "2026-10-06",
+    "status": "supplementary protocol recorded before receiving the original TW export",
+    "vegetation_classes": [
+      "tree",
+      "tree_group"
+    ],
+    "coverage_geometry": "union vegetation polygons separately per rater, intersect fixed site domain; exact vector areas; internal instance divisions disappear",
+    "boundary_geometry": "natural boundary of each un-clipped vegetation union intersected with site domain; do not introduce artificial site-clip edges",
+    "boundary_sample_spacing_m": 0.25,
+    "boundary_tolerances_m": [
+      0.5,
+      1.0
+    ],
+    "boundary_rule": "length-weighted midpoint samples at intervals at most 0.25 m, distance to other rater's continuous boundary; symmetric harmonic mean of matched length fractions",
+    "tolerance_basis": "0.5 m and 1.0 m sensitivity scales relative to the delivered 1 m CHM grid; project choices, not universal thresholds",
+    "uncertainty_policy": "uncertain and not_tree polygons are not vegetation; no disagreement-derived exclusion masks; uncertain areas reported separately",
+    "empty_policy": "both vegetation sets empty: coverage IoU/Dice undefined; one empty: zero; both natural boundary sets empty: boundary F1 undefined",
+    "primary_policy": "retain config/independent_agreement.json unchanged; always report primary single-tree agreement and matched-class kappa",
+    "acceptance_rule": "no new automatic passing threshold or freeze criterion",
+    "limitations": "Extent agreement can be high despite wrong tree counts, merges, class disagreements or incomplete coverage. Two sites do not establish reliability in all strata. Boundary F1 is supplementary and approximately length-weighted; it is not Boundary IoU or object-detection F1."
+  },
+  "pooled_area": {
+    "area_a_m2": 2833.990192380054,
+    "area_b_m2": 2041.4261124058348,
+    "intersection_m2": 1780.9406440056382,
+    "union_m2": 3094.475660780251,
+    "symmetric_difference_m2": 1313.5350167746128,
+    "coverage_iou": 0.5755225890374546,
+    "coverage_dice": 0.7305799269930655
+  },
+  "pooled_boundary": [
+    {
+      "boundary_length_a_m": 1221.5653305152723,
+      "boundary_length_b_m": 1206.30235608739,
+      "matched_boundary_length_a_m": 550.3617801970662,
+      "matched_boundary_length_b_m": 553.8549405772694,
+      "tolerance_m": 0.5,
+      "fraction_a_near_b": 0.45053814679311205,
+      "fraction_b_near_a": 0.4591344266073419,
+      "boundary_f1": 0.4547956698734668
+    },
+    {
+      "boundary_length_a_m": 1221.5653305152723,
+      "boundary_length_b_m": 1206.30235608739,
+      "matched_boundary_length_a_m": 791.2397373695387,
+      "matched_boundary_length_b_m": 806.3680253979828,
+      "tolerance_m": 1.0,
+      "fraction_a_near_b": 0.647726091764395,
+      "fraction_b_near_a": 0.6684626133148046,
+      "boundary_f1": 0.6579310008392125
+    }
+  ],
+  "per_site": [
+    {
+      "site_id": "S016",
+      "area_a_m2": 777.9211315921976,
+      "area_b_m2": 642.6151782340797,
+      "intersection_m2": 551.1375322154983,
+      "union_m2": 869.3987776107791,
+      "symmetric_difference_m2": 318.26124539528087,
+      "coverage_iou": 0.63392949979766,
+      "coverage_dice": 0.7759569796324304,
+      "vegetation_objects_a": 17,
+      "vegetation_objects_b": 24,
+      "vegetation_outside_site_a_m2": 0.0,
+      "vegetation_outside_site_b_m2": 0.3789594433651473,
+      "uncertain_area_a_m2": 0.0,
+      "uncertain_area_b_m2": 21.09489577838705,
+      "boundary": [
+        {
+          "tolerance_m": 0.5,
+          "boundary_length_a_m": 442.30492264869457,
+          "boundary_length_b_m": 461.40552135954744,
+          "matched_boundary_length_a_m": 231.81507693044804,
+          "matched_boundary_length_b_m": 232.41539177603713,
+          "fraction_a_near_b": 0.5241069340631546,
+          "fraction_b_near_a": 0.5037117698358206,
+          "boundary_f1": 0.5137069997631136
+        },
+        {
+          "tolerance_m": 1.0,
+          "boundary_length_a_m": 442.30492264869457,
+          "boundary_length_b_m": 461.40552135954744,
+          "matched_boundary_length_a_m": 337.8116601815418,
+          "matched_boundary_length_b_m": 337.7064449199996,
+          "fraction_a_near_b": 0.7637528837766346,
+          "fraction_b_near_a": 0.7319081139838463,
+          "boundary_f1": 0.7474914884478383
+        }
+      ]
+    },
+    {
+      "site_id": "S020",
+      "area_a_m2": 2056.0690607878564,
+      "area_b_m2": 1398.810934171755,
+      "intersection_m2": 1229.8031117901398,
+      "union_m2": 2225.0768831694713,
+      "symmetric_difference_m2": 995.2737713793317,
+      "coverage_iou": 0.5527014015076946,
+      "coverage_dice": 0.7119223322282235,
+      "vegetation_objects_a": 20,
+      "vegetation_objects_b": 34,
+      "vegetation_outside_site_a_m2": 0.07455768866520884,
+      "vegetation_outside_site_b_m2": -2.2737367544323206e-13,
+      "uncertain_area_a_m2": 0.0,
+      "uncertain_area_b_m2": 241.94269820860018,
+      "boundary": [
+        {
+          "tolerance_m": 0.5,
+          "boundary_length_a_m": 779.2604078665777,
+          "boundary_length_b_m": 744.8968347278426,
+          "matched_boundary_length_a_m": 318.5467032666181,
+          "matched_boundary_length_b_m": 321.43954880123226,
+          "fraction_a_near_b": 0.4087808132569191,
+          "fraction_b_near_a": 0.43152223746349283,
+          "boundary_f1": 0.4198437956819072
+        },
+        {
+          "tolerance_m": 1.0,
+          "boundary_length_a_m": 779.2604078665777,
+          "boundary_length_b_m": 744.8968347278426,
+          "matched_boundary_length_a_m": 453.42807718799696,
+          "matched_boundary_length_b_m": 468.6615804779832,
+          "fraction_a_near_b": 0.5818697737119366,
+          "fraction_b_near_a": 0.6291630714865564,
+          "boundary_f1": 0.6045929728252513
+        }
+      ]
+    }
+  ],
+  "synthetic_only": false,
+  "reference_frozen": false
+}

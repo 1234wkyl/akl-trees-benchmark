@@ -1,0 +1,1048 @@
+{
+  "val": {
+    "models": {
+      "classical": {
+        "summary": {
+          "tp": 37,
+          "fp": 64,
+          "fn": 104,
+          "precision": 0.36633663366336633,
+          "recall": 0.2624113475177305,
+          "commission_rate": 0.6336633663366337,
+          "omission_rate": 0.7375886524822695,
+          "f1": 0.30578512396694213,
+          "median_matched_iou": 0.54631465681666,
+          "over_segmented_references": 17,
+          "under_segmented_predictions": 19,
+          "over_segmentation_rate": 0.12056737588652482,
+          "under_segmentation_rate": 0.18811881188118812,
+          "ignored_predictions": 57
+        },
+        "bootstrap": {
+          "unit": "paired_site",
+          "stratification": "none",
+          "iterations": 2000,
+          "seed": 42,
+          "rng": "PCG64",
+          "numpy_version": "2.2.6",
+          "sites": [
+            "S003",
+            "S005",
+            "S007",
+            "S012",
+            "S014",
+            "S016",
+            "S021",
+            "S023"
+          ],
+          "intervals": {
+            "precision": {
+              "lower": 0.2291392543859649,
+              "upper": 0.48453806502775576,
+              "valid_replicates": 2000
+            },
+            "recall": {
+              "lower": 0.17543407487791643,
+              "upper": 0.3333333333333333,
+              "valid_replicates": 2000
+            },
+            "commission_rate": {
+              "lower": 0.5154619349722442,
+              "upper": 0.770860745614035,
+              "valid_replicates": 2000
+            },
+            "omission_rate": {
+              "lower": 0.6666666666666666,
+              "upper": 0.8245659251220836,
+              "valid_replicates": 2000
+            },
+            "f1": {
+              "lower": 0.19889502762430938,
+              "upper": 0.39450144857556735,
+              "valid_replicates": 2000
+            },
+            "median_matched_iou": {
+              "lower": 0.5055776357564609,
+              "upper": 0.6230032161348587,
+              "valid_replicates": 2000
+            },
+            "over_segmentation_rate": {
+              "lower": 0.06779342423856251,
+              "upper": 0.17391304347826086,
+              "valid_replicates": 2000
+            },
+            "under_segmentation_rate": {
+              "lower": 0.07839366515837104,
+              "upper": 0.2871287128712871,
+              "valid_replicates": 2000
+            }
+          },
+          "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site."
+        }
+      },
+      "pretrained": {
+        "summary": {
+          "tp": 69,
+          "fp": 356,
+          "fn": 72,
+          "precision": 0.1623529411764706,
+          "recall": 0.48936170212765956,
+          "commission_rate": 0.8376470588235294,
+          "omission_rate": 0.5106382978723404,
+          "f1": 0.24381625441696114,
+          "median_matched_iou": 0.47065075914389287,
+          "over_segmented_references": 67,
+          "under_segmented_predictions": 27,
+          "over_segmentation_rate": 0.475177304964539,
+          "under_segmentation_rate": 0.06352941176470588,
+          "ignored_predictions": 212
+        },
+        "bootstrap": {
+          "unit": "paired_site",
+          "stratification": "none",
+          "iterations": 2000,
+          "seed": 42,
+          "rng": "PCG64",
+          "numpy_version": "2.2.6",
+          "sites": [
+            "S003",
+            "S005",
+            "S007",
+            "S012",
+            "S014",
+            "S016",
+            "S021",
+            "S023"
+          ],
+          "intervals": {
+            "precision": {
+              "lower": 0.10615896795672077,
+              "upper": 0.21686746987951808,
+              "valid_replicates": 2000
+            },
+            "recall": {
+              "lower": 0.33845864661654135,
+              "upper": 0.6283783783783784,
+              "valid_replicates": 2000
+            },
+            "commission_rate": {
+              "lower": 0.7831325301204819,
+              "upper": 0.8938410320432791,
+              "valid_replicates": 2000
+            },
+            "omission_rate": {
+              "lower": 0.3716216216216216,
+              "upper": 0.6615413533834587,
+              "valid_replicates": 2000
+            },
+            "f1": {
+              "lower": 0.16239831136698404,
+              "upper": 0.30770465489566606,
+              "valid_replicates": 2000
+            },
+            "median_matched_iou": {
+              "lower": 0.4432983430780952,
+              "upper": 0.5121833029747465,
+              "valid_replicates": 2000
+            },
+            "over_segmentation_rate": {
+              "lower": 0.3581709287955129,
+              "upper": 0.5946233467510063,
+              "valid_replicates": 2000
+            },
+            "under_segmentation_rate": {
+              "lower": 0.041791044776119404,
+              "upper": 0.08346729978862513,
+              "valid_replicates": 2000
+            }
+          },
+          "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site."
+        }
+      },
+      "previous_weak": {
+        "summary": {
+          "tp": 23,
+          "fp": 66,
+          "fn": 118,
+          "precision": 0.25842696629213485,
+          "recall": 0.16312056737588654,
+          "commission_rate": 0.7415730337078652,
+          "omission_rate": 0.8368794326241135,
+          "f1": 0.2,
+          "median_matched_iou": 0.46519629668023327,
+          "over_segmented_references": 10,
+          "under_segmented_predictions": 8,
+          "over_segmentation_rate": 0.07092198581560284,
+          "under_segmentation_rate": 0.0898876404494382,
+          "ignored_predictions": 34
+        },
+        "bootstrap": {
+          "unit": "paired_site",
+          "stratification": "none",
+          "iterations": 2000,
+          "seed": 42,
+          "rng": "PCG64",
+          "numpy_version": "2.2.6",
+          "sites": [
+            "S003",
+            "S005",
+            "S007",
+            "S012",
+            "S014",
+            "S016",
+            "S021",
+            "S023"
+          ],
+          "intervals": {
+            "precision": {
+              "lower": 0.17389855072463767,
+              "upper": 0.3372128047072009,
+              "valid_replicates": 2000
+            },
+            "recall": {
+              "lower": 0.09698681251277858,
+              "upper": 0.23255813953488372,
+              "valid_replicates": 2000
+            },
+            "commission_rate": {
+              "lower": 0.6627871952927991,
+              "upper": 0.8261014492753622,
+              "valid_replicates": 2000
+            },
+            "omission_rate": {
+              "lower": 0.7674418604651163,
+              "upper": 0.9030131874872214,
+              "valid_replicates": 2000
+            },
+            "f1": {
+              "lower": 0.12789401570137757,
+              "upper": 0.25810328784119085,
+              "valid_replicates": 2000
+            },
+            "median_matched_iou": {
+              "lower": 0.4404707632149742,
+              "upper": 0.5497435169064891,
+              "valid_replicates": 2000
+            },
+            "over_segmentation_rate": {
+              "lower": 0.027777777777777776,
+              "upper": 0.12234313938341292,
+              "valid_replicates": 2000
+            },
+            "under_segmentation_rate": {
+              "lower": 0.043478260869565216,
+              "upper": 0.14154312668463592,
+              "valid_replicates": 2000
+            }
+          },
+          "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site."
+        }
+      },
+      "revised_weak": {
+        "summary": {
+          "tp": 22,
+          "fp": 67,
+          "fn": 119,
+          "precision": 0.24719101123595505,
+          "recall": 0.15602836879432624,
+          "commission_rate": 0.7528089887640449,
+          "omission_rate": 0.8439716312056738,
+          "f1": 0.19130434782608696,
+          "median_matched_iou": 0.46949361852402677,
+          "over_segmented_references": 9,
+          "under_segmented_predictions": 7,
+          "over_segmentation_rate": 0.06382978723404255,
+          "under_segmentation_rate": 0.07865168539325842,
+          "ignored_predictions": 37
+        },
+        "bootstrap": {
+          "unit": "paired_site",
+          "stratification": "none",
+          "iterations": 2000,
+          "seed": 42,
+          "rng": "PCG64",
+          "numpy_version": "2.2.6",
+          "sites": [
+            "S003",
+            "S005",
+            "S007",
+            "S012",
+            "S014",
+            "S016",
+            "S021",
+            "S023"
+          ],
+          "intervals": {
+            "precision": {
+              "lower": 0.17019473494410386,
+              "upper": 0.33846774193548385,
+              "valid_replicates": 2000
+            },
+            "recall": {
+              "lower": 0.09350493115441422,
+              "upper": 0.22501524390243896,
+              "valid_replicates": 2000
+            },
+            "commission_rate": {
+              "lower": 0.6615322580645161,
+              "upper": 0.829805265055896,
+              "valid_replicates": 2000
+            },
+            "omission_rate": {
+              "lower": 0.774984756097561,
+              "upper": 0.9064950688455857,
+              "valid_replicates": 2000
+            },
+            "f1": {
+              "lower": 0.12716304248096155,
+              "upper": 0.25165675541739874,
+              "valid_replicates": 2000
+            },
+            "median_matched_iou": {
+              "lower": 0.44915838431153254,
+              "upper": 0.5497435169064891,
+              "valid_replicates": 2000
+            },
+            "over_segmentation_rate": {
+              "lower": 0.015037593984962405,
+              "upper": 0.11941086819424002,
+              "valid_replicates": 2000
+            },
+            "under_segmentation_rate": {
+              "lower": 0.04224981467753892,
+              "upper": 0.13333333333333333,
+              "valid_replicates": 2000
+            }
+          },
+          "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site."
+        }
+      }
+    },
+    "revision_minus_comparator": {
+      "previous_weak": {
+        "unit": "paired_site",
+        "stratification": "none",
+        "iterations": 2000,
+        "seed": 42,
+        "rng": "PCG64",
+        "numpy_version": "2.2.6",
+        "sites": [
+          "S003",
+          "S005",
+          "S007",
+          "S012",
+          "S014",
+          "S016",
+          "S021",
+          "S023"
+        ],
+        "intervals": {
+          "precision": {
+            "lower": 0.17019473494410386,
+            "upper": 0.33846774193548385,
+            "valid_replicates": 2000
+          },
+          "recall": {
+            "lower": 0.09350493115441422,
+            "upper": 0.22501524390243896,
+            "valid_replicates": 2000
+          },
+          "commission_rate": {
+            "lower": 0.6615322580645161,
+            "upper": 0.829805265055896,
+            "valid_replicates": 2000
+          },
+          "omission_rate": {
+            "lower": 0.774984756097561,
+            "upper": 0.9064950688455857,
+            "valid_replicates": 2000
+          },
+          "f1": {
+            "lower": 0.12716304248096155,
+            "upper": 0.25165675541739874,
+            "valid_replicates": 2000
+          },
+          "median_matched_iou": {
+            "lower": 0.44915838431153254,
+            "upper": 0.5497435169064891,
+            "valid_replicates": 2000
+          },
+          "over_segmentation_rate": {
+            "lower": 0.015037593984962405,
+            "upper": 0.11941086819424002,
+            "valid_replicates": 2000
+          },
+          "under_segmentation_rate": {
+            "lower": 0.04224981467753892,
+            "upper": 0.13333333333333333,
+            "valid_replicates": 2000
+          }
+        },
+        "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site.",
+        "f1_improvement": {
+          "lower": -0.02553224139045034,
+          "upper": 0.004752778452436218,
+          "valid_replicates": 2000
+        },
+        "positive_improvement_ci_excludes_zero": false
+      },
+      "pretrained": {
+        "unit": "paired_site",
+        "stratification": "none",
+        "iterations": 2000,
+        "seed": 42,
+        "rng": "PCG64",
+        "numpy_version": "2.2.6",
+        "sites": [
+          "S003",
+          "S005",
+          "S007",
+          "S012",
+          "S014",
+          "S016",
+          "S021",
+          "S023"
+        ],
+        "intervals": {
+          "precision": {
+            "lower": 0.17019473494410386,
+            "upper": 0.33846774193548385,
+            "valid_replicates": 2000
+          },
+          "recall": {
+            "lower": 0.09350493115441422,
+            "upper": 0.22501524390243896,
+            "valid_replicates": 2000
+          },
+          "commission_rate": {
+            "lower": 0.6615322580645161,
+            "upper": 0.829805265055896,
+            "valid_replicates": 2000
+          },
+          "omission_rate": {
+            "lower": 0.774984756097561,
+            "upper": 0.9064950688455857,
+            "valid_replicates": 2000
+          },
+          "f1": {
+            "lower": 0.12716304248096155,
+            "upper": 0.25165675541739874,
+            "valid_replicates": 2000
+          },
+          "median_matched_iou": {
+            "lower": 0.44915838431153254,
+            "upper": 0.5497435169064891,
+            "valid_replicates": 2000
+          },
+          "over_segmentation_rate": {
+            "lower": 0.015037593984962405,
+            "upper": 0.11941086819424002,
+            "valid_replicates": 2000
+          },
+          "under_segmentation_rate": {
+            "lower": 0.04224981467753892,
+            "upper": 0.13333333333333333,
+            "valid_replicates": 2000
+          }
+        },
+        "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site.",
+        "f1_improvement": {
+          "lower": -0.11641790346197746,
+          "upper": 0.01775998639806434,
+          "valid_replicates": 2000
+        },
+        "positive_improvement_ci_excludes_zero": false
+      },
+      "classical": {
+        "unit": "paired_site",
+        "stratification": "none",
+        "iterations": 2000,
+        "seed": 42,
+        "rng": "PCG64",
+        "numpy_version": "2.2.6",
+        "sites": [
+          "S003",
+          "S005",
+          "S007",
+          "S012",
+          "S014",
+          "S016",
+          "S021",
+          "S023"
+        ],
+        "intervals": {
+          "precision": {
+            "lower": 0.17019473494410386,
+            "upper": 0.33846774193548385,
+            "valid_replicates": 2000
+          },
+          "recall": {
+            "lower": 0.09350493115441422,
+            "upper": 0.22501524390243896,
+            "valid_replicates": 2000
+          },
+          "commission_rate": {
+            "lower": 0.6615322580645161,
+            "upper": 0.829805265055896,
+            "valid_replicates": 2000
+          },
+          "omission_rate": {
+            "lower": 0.774984756097561,
+            "upper": 0.9064950688455857,
+            "valid_replicates": 2000
+          },
+          "f1": {
+            "lower": 0.12716304248096155,
+            "upper": 0.25165675541739874,
+            "valid_replicates": 2000
+          },
+          "median_matched_iou": {
+            "lower": 0.44915838431153254,
+            "upper": 0.5497435169064891,
+            "valid_replicates": 2000
+          },
+          "over_segmentation_rate": {
+            "lower": 0.015037593984962405,
+            "upper": 0.11941086819424002,
+            "valid_replicates": 2000
+          },
+          "under_segmentation_rate": {
+            "lower": 0.04224981467753892,
+            "upper": 0.13333333333333333,
+            "valid_replicates": 2000
+          }
+        },
+        "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site.",
+        "f1_improvement": {
+          "lower": -0.18720031922895722,
+          "upper": -0.031281230228650404,
+          "valid_replicates": 2000
+        },
+        "positive_improvement_ci_excludes_zero": false
+      }
+    }
+  },
+  "test": {
+    "models": {
+      "classical": {
+        "summary": {
+          "tp": 39,
+          "fp": 46,
+          "fn": 131,
+          "precision": 0.4588235294117647,
+          "recall": 0.22941176470588234,
+          "commission_rate": 0.5411764705882353,
+          "omission_rate": 0.7705882352941177,
+          "f1": 0.3058823529411765,
+          "median_matched_iou": 0.5351717744106974,
+          "over_segmented_references": 9,
+          "under_segmented_predictions": 22,
+          "over_segmentation_rate": 0.052941176470588235,
+          "under_segmentation_rate": 0.25882352941176473,
+          "ignored_predictions": 77
+        },
+        "bootstrap": {
+          "unit": "paired_site",
+          "stratification": "none",
+          "iterations": 2000,
+          "seed": 42,
+          "rng": "PCG64",
+          "numpy_version": "2.2.6",
+          "sites": [
+            "S002",
+            "S004",
+            "S009",
+            "S011",
+            "S013",
+            "S018",
+            "S020",
+            "S022"
+          ],
+          "intervals": {
+            "precision": {
+              "lower": 0.34782608695652173,
+              "upper": 0.5733333333333334,
+              "valid_replicates": 2000
+            },
+            "recall": {
+              "lower": 0.16071102711157456,
+              "upper": 0.3230769230769231,
+              "valid_replicates": 2000
+            },
+            "commission_rate": {
+              "lower": 0.4266666666666667,
+              "upper": 0.6521739130434783,
+              "valid_replicates": 2000
+            },
+            "omission_rate": {
+              "lower": 0.676923076923077,
+              "upper": 0.8392889728884254,
+              "valid_replicates": 2000
+            },
+            "f1": {
+              "lower": 0.22033290081907386,
+              "upper": 0.41027777777777763,
+              "valid_replicates": 2000
+            },
+            "median_matched_iou": {
+              "lower": 0.4957846358701475,
+              "upper": 0.60647329611417,
+              "valid_replicates": 2000
+            },
+            "over_segmentation_rate": {
+              "lower": 0.014703198797767282,
+              "upper": 0.08543049471958722,
+              "valid_replicates": 2000
+            },
+            "under_segmentation_rate": {
+              "lower": 0.16322779111644656,
+              "upper": 0.32142857142857145,
+              "valid_replicates": 2000
+            }
+          },
+          "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site."
+        }
+      },
+      "pretrained": {
+        "summary": {
+          "tp": 61,
+          "fp": 316,
+          "fn": 109,
+          "precision": 0.16180371352785147,
+          "recall": 0.3588235294117647,
+          "commission_rate": 0.8381962864721485,
+          "omission_rate": 0.6411764705882353,
+          "f1": 0.2230347349177331,
+          "median_matched_iou": 0.4711707316145247,
+          "over_segmented_references": 62,
+          "under_segmented_predictions": 23,
+          "over_segmentation_rate": 0.36470588235294116,
+          "under_segmentation_rate": 0.0610079575596817,
+          "ignored_predictions": 247
+        },
+        "bootstrap": {
+          "unit": "paired_site",
+          "stratification": "none",
+          "iterations": 2000,
+          "seed": 42,
+          "rng": "PCG64",
+          "numpy_version": "2.2.6",
+          "sites": [
+            "S002",
+            "S004",
+            "S009",
+            "S011",
+            "S013",
+            "S018",
+            "S020",
+            "S022"
+          ],
+          "intervals": {
+            "precision": {
+              "lower": 0.1274773802704166,
+              "upper": 0.20700664878757405,
+              "valid_replicates": 2000
+            },
+            "recall": {
+              "lower": 0.29815545361875634,
+              "upper": 0.4500204918032786,
+              "valid_replicates": 2000
+            },
+            "commission_rate": {
+              "lower": 0.792993351212426,
+              "upper": 0.8725226197295833,
+              "valid_replicates": 2000
+            },
+            "omission_rate": {
+              "lower": 0.5499795081967214,
+              "upper": 0.7018445463812436,
+              "valid_replicates": 2000
+            },
+            "f1": {
+              "lower": 0.18627450980392157,
+              "upper": 0.2733037337930708,
+              "valid_replicates": 2000
+            },
+            "median_matched_iou": {
+              "lower": 0.4505321600527291,
+              "upper": 0.5268423702163822,
+              "valid_replicates": 2000
+            },
+            "over_segmentation_rate": {
+              "lower": 0.27219858156028365,
+              "upper": 0.4764705882352941,
+              "valid_replicates": 2000
+            },
+            "under_segmentation_rate": {
+              "lower": 0.02026020225523537,
+              "upper": 0.08515045068928948,
+              "valid_replicates": 2000
+            }
+          },
+          "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site."
+        }
+      },
+      "previous_weak": {
+        "summary": {
+          "tp": 25,
+          "fp": 75,
+          "fn": 145,
+          "precision": 0.25,
+          "recall": 0.14705882352941177,
+          "commission_rate": 0.75,
+          "omission_rate": 0.8529411764705882,
+          "f1": 0.18518518518518517,
+          "median_matched_iou": 0.3878780530823029,
+          "over_segmented_references": 24,
+          "under_segmented_predictions": 12,
+          "over_segmentation_rate": 0.1411764705882353,
+          "under_segmentation_rate": 0.12,
+          "ignored_predictions": 31
+        },
+        "bootstrap": {
+          "unit": "paired_site",
+          "stratification": "none",
+          "iterations": 2000,
+          "seed": 42,
+          "rng": "PCG64",
+          "numpy_version": "2.2.6",
+          "sites": [
+            "S002",
+            "S004",
+            "S009",
+            "S011",
+            "S013",
+            "S018",
+            "S020",
+            "S022"
+          ],
+          "intervals": {
+            "precision": {
+              "lower": 0.16666666666666666,
+              "upper": 0.3365519662921348,
+              "valid_replicates": 2000
+            },
+            "recall": {
+              "lower": 0.06193197241978392,
+              "upper": 0.21656050955414013,
+              "valid_replicates": 2000
+            },
+            "commission_rate": {
+              "lower": 0.6634480337078651,
+              "upper": 0.8333333333333334,
+              "valid_replicates": 2000
+            },
+            "omission_rate": {
+              "lower": 0.7834394904458599,
+              "upper": 0.938068027580216,
+              "valid_replicates": 2000
+            },
+            "f1": {
+              "lower": 0.0942285667539267,
+              "upper": 0.25,
+              "valid_replicates": 2000
+            },
+            "median_matched_iou": {
+              "lower": 0.3770689031051453,
+              "upper": 0.5467482819794238,
+              "valid_replicates": 1999
+            },
+            "over_segmentation_rate": {
+              "lower": 0.032179768243031634,
+              "upper": 0.2260453169799298,
+              "valid_replicates": 2000
+            },
+            "under_segmentation_rate": {
+              "lower": 0.0625,
+              "upper": 0.15190561364887173,
+              "valid_replicates": 2000
+            }
+          },
+          "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site."
+        }
+      },
+      "revised_weak": {
+        "summary": {
+          "tp": 25,
+          "fp": 80,
+          "fn": 145,
+          "precision": 0.23809523809523808,
+          "recall": 0.14705882352941177,
+          "commission_rate": 0.7619047619047619,
+          "omission_rate": 0.8529411764705882,
+          "f1": 0.18181818181818182,
+          "median_matched_iou": 0.45678163013271333,
+          "over_segmented_references": 23,
+          "under_segmented_predictions": 11,
+          "over_segmentation_rate": 0.13529411764705881,
+          "under_segmentation_rate": 0.10476190476190476,
+          "ignored_predictions": 35
+        },
+        "bootstrap": {
+          "unit": "paired_site",
+          "stratification": "none",
+          "iterations": 2000,
+          "seed": 42,
+          "rng": "PCG64",
+          "numpy_version": "2.2.6",
+          "sites": [
+            "S002",
+            "S004",
+            "S009",
+            "S011",
+            "S013",
+            "S018",
+            "S020",
+            "S022"
+          ],
+          "intervals": {
+            "precision": {
+              "lower": 0.16923076923076924,
+              "upper": 0.3181943056943056,
+              "valid_replicates": 2000
+            },
+            "recall": {
+              "lower": 0.06622047982006748,
+              "upper": 0.21363733488733486,
+              "valid_replicates": 2000
+            },
+            "commission_rate": {
+              "lower": 0.6818056943056943,
+              "upper": 0.8307692307692308,
+              "valid_replicates": 2000
+            },
+            "omission_rate": {
+              "lower": 0.7863626651126652,
+              "upper": 0.9337795201799325,
+              "valid_replicates": 2000
+            },
+            "f1": {
+              "lower": 0.09675868486352357,
+              "upper": 0.24,
+              "valid_replicates": 2000
+            },
+            "median_matched_iou": {
+              "lower": 0.38264980625820155,
+              "upper": 0.5484753525799477,
+              "valid_replicates": 1999
+            },
+            "over_segmentation_rate": {
+              "lower": 0.032179768243031634,
+              "upper": 0.22283683013144584,
+              "valid_replicates": 2000
+            },
+            "under_segmentation_rate": {
+              "lower": 0.058823529411764705,
+              "upper": 0.12088744588744585,
+              "valid_replicates": 2000
+            }
+          },
+          "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site."
+        }
+      }
+    },
+    "revision_minus_comparator": {
+      "previous_weak": {
+        "unit": "paired_site",
+        "stratification": "none",
+        "iterations": 2000,
+        "seed": 42,
+        "rng": "PCG64",
+        "numpy_version": "2.2.6",
+        "sites": [
+          "S002",
+          "S004",
+          "S009",
+          "S011",
+          "S013",
+          "S018",
+          "S020",
+          "S022"
+        ],
+        "intervals": {
+          "precision": {
+            "lower": 0.16923076923076924,
+            "upper": 0.3181943056943056,
+            "valid_replicates": 2000
+          },
+          "recall": {
+            "lower": 0.06622047982006748,
+            "upper": 0.21363733488733486,
+            "valid_replicates": 2000
+          },
+          "commission_rate": {
+            "lower": 0.6818056943056943,
+            "upper": 0.8307692307692308,
+            "valid_replicates": 2000
+          },
+          "omission_rate": {
+            "lower": 0.7863626651126652,
+            "upper": 0.9337795201799325,
+            "valid_replicates": 2000
+          },
+          "f1": {
+            "lower": 0.09675868486352357,
+            "upper": 0.24,
+            "valid_replicates": 2000
+          },
+          "median_matched_iou": {
+            "lower": 0.38264980625820155,
+            "upper": 0.5484753525799477,
+            "valid_replicates": 1999
+          },
+          "over_segmentation_rate": {
+            "lower": 0.032179768243031634,
+            "upper": 0.22283683013144584,
+            "valid_replicates": 2000
+          },
+          "under_segmentation_rate": {
+            "lower": 0.058823529411764705,
+            "upper": 0.12088744588744585,
+            "valid_replicates": 2000
+          }
+        },
+        "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site.",
+        "f1_improvement": {
+          "lower": -0.0188698183278129,
+          "upper": 0.01654153991564848,
+          "valid_replicates": 2000
+        },
+        "positive_improvement_ci_excludes_zero": false
+      },
+      "pretrained": {
+        "unit": "paired_site",
+        "stratification": "none",
+        "iterations": 2000,
+        "seed": 42,
+        "rng": "PCG64",
+        "numpy_version": "2.2.6",
+        "sites": [
+          "S002",
+          "S004",
+          "S009",
+          "S011",
+          "S013",
+          "S018",
+          "S020",
+          "S022"
+        ],
+        "intervals": {
+          "precision": {
+            "lower": 0.16923076923076924,
+            "upper": 0.3181943056943056,
+            "valid_replicates": 2000
+          },
+          "recall": {
+            "lower": 0.06622047982006748,
+            "upper": 0.21363733488733486,
+            "valid_replicates": 2000
+          },
+          "commission_rate": {
+            "lower": 0.6818056943056943,
+            "upper": 0.8307692307692308,
+            "valid_replicates": 2000
+          },
+          "omission_rate": {
+            "lower": 0.7863626651126652,
+            "upper": 0.9337795201799325,
+            "valid_replicates": 2000
+          },
+          "f1": {
+            "lower": 0.09675868486352357,
+            "upper": 0.24,
+            "valid_replicates": 2000
+          },
+          "median_matched_iou": {
+            "lower": 0.38264980625820155,
+            "upper": 0.5484753525799477,
+            "valid_replicates": 1999
+          },
+          "over_segmentation_rate": {
+            "lower": 0.032179768243031634,
+            "upper": 0.22283683013144584,
+            "valid_replicates": 2000
+          },
+          "under_segmentation_rate": {
+            "lower": 0.058823529411764705,
+            "upper": 0.12088744588744585,
+            "valid_replicates": 2000
+          }
+        },
+        "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site.",
+        "f1_improvement": {
+          "lower": -0.1529417897443534,
+          "upper": 0.031011282934104906,
+          "valid_replicates": 2000
+        },
+        "positive_improvement_ci_excludes_zero": false
+      },
+      "classical": {
+        "unit": "paired_site",
+        "stratification": "none",
+        "iterations": 2000,
+        "seed": 42,
+        "rng": "PCG64",
+        "numpy_version": "2.2.6",
+        "sites": [
+          "S002",
+          "S004",
+          "S009",
+          "S011",
+          "S013",
+          "S018",
+          "S020",
+          "S022"
+        ],
+        "intervals": {
+          "precision": {
+            "lower": 0.16923076923076924,
+            "upper": 0.3181943056943056,
+            "valid_replicates": 2000
+          },
+          "recall": {
+            "lower": 0.06622047982006748,
+            "upper": 0.21363733488733486,
+            "valid_replicates": 2000
+          },
+          "commission_rate": {
+            "lower": 0.6818056943056943,
+            "upper": 0.8307692307692308,
+            "valid_replicates": 2000
+          },
+          "omission_rate": {
+            "lower": 0.7863626651126652,
+            "upper": 0.9337795201799325,
+            "valid_replicates": 2000
+          },
+          "f1": {
+            "lower": 0.09675868486352357,
+            "upper": 0.24,
+            "valid_replicates": 2000
+          },
+          "median_matched_iou": {
+            "lower": 0.38264980625820155,
+            "upper": 0.5484753525799477,
+            "valid_replicates": 1999
+          },
+          "over_segmentation_rate": {
+            "lower": 0.032179768243031634,
+            "upper": 0.22283683013144584,
+            "valid_replicates": 2000
+          },
+          "under_segmentation_rate": {
+            "lower": 0.058823529411764705,
+            "upper": 0.12088744588744585,
+            "valid_replicates": 2000
+          }
+        },
+        "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site.",
+        "f1_improvement": {
+          "lower": -0.2943906703564031,
+          "upper": 0.004602615419852324,
+          "valid_replicates": 2000
+        },
+        "positive_improvement_ci_excludes_zero": false
+      }
+    }
+  }
+}

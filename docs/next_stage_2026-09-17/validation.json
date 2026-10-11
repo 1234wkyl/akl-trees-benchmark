@@ -1,0 +1,69 @@
+{
+  "status": "CPU preparation only",
+  "canonical_label_sha256": "24d789f15bd5edcdc55777de64c202aa67230f9e91055ae38e11915c3b550c50",
+  "synthetic_tests_passed": 14,
+  "compile_and_shell_syntax": "PASS",
+  "density_manifest_runtime_path": "outputs/preparation/density_S001_2026-09-17_v2/manifest.json",
+  "density_manifest_sha256": "817f726133120550e0d4dd5d47211f126cd344041a195b4b8a6b03eeec037585",
+  "density_runs": [
+    {
+      "fraction": 1,
+      "points": 1747284,
+      "native_record_subset_verified": true,
+      "sha256": "a03eec0f3946275deb0f12f695e39975f52ac25b74abe0198e4af8a98dfe5d53"
+    },
+    {
+      "fraction": 0.75,
+      "points": 1310463,
+      "native_record_subset_verified": true,
+      "sha256": "2b4dbade4f7056a91db0f4cff9eafbc1fb1de22f3b2b1886f0f273e7dd11663c"
+    },
+    {
+      "fraction": 0.5,
+      "points": 873642,
+      "native_record_subset_verified": true,
+      "sha256": "fc31b40262b16e798ced4081a38a6dd5fcf7b62c0d28c071e29c5a75a0d7ce7a"
+    },
+    {
+      "fraction": 0.25,
+      "points": 436821,
+      "native_record_subset_verified": true,
+      "sha256": "0479eea82dee4194938ffc97dab09ce0bc17d6cd2cff8ec19cbc7445368c8eed"
+    },
+    {
+      "fraction": 0.125,
+      "points": 218410,
+      "native_record_subset_verified": true,
+      "sha256": "8866584efdd7cb8100f1a850e80be4ac0e9b4aae00dbd0cb4275d27a04588683"
+    }
+  ],
+  "density_train_sites": [
+    "S001",
+    "S017"
+  ],
+  "density_partial_site_warning": "S001 33.64% of site in this tile; S017 fully covered",
+  "wrapper_checks": [
+    {
+      "fixture": "timing_success_check",
+      "exit_code": 0,
+      "wall_seconds": 2,
+      "note": "synthetic wrapper command, not model runtime"
+    },
+    {
+      "fixture": "timing_failure_check",
+      "exit_code": 7,
+      "wall_seconds": 0,
+      "note": "synthetic wrapper command, not model runtime"
+    }
+  ],
+  "sat_build_context_prepared": true,
+  "sat_container_plan_prepared": true,
+  "real_gpu_inference_run": false,
+  "real_baseline_reproduced": false,
+  "real_fine_tuning_run": false,
+  "reference_frozen": false,
+  "acceptance_thresholds_changed": false,
+  "placeholder_image_digest_is_executable": false,
+  "sat_runtime_plan_path": "outputs/preparation/sat_container_plan_2026-09-17_v2/plan.json",
+  "sat_runtime_plan_sha256": "81d4924a1eabdd36a230f1940f960c0f882bb057638c2e93c62d7cd0e769d151"
+}

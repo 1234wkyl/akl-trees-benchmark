@@ -1,0 +1,1646 @@
+{
+  "status": "POST-REVISION CONDITIONAL COMPARISON; NOT FROZEN",
+  "reference_frozen": false,
+  "actual_independent_agreement_available": true,
+  "held_out_results_exposed": true,
+  "model_settings_changed": false,
+  "reference_changed_after_predictions": true,
+  "site_ids": [
+    "S003",
+    "S005",
+    "S007",
+    "S012",
+    "S014",
+    "S016",
+    "S021",
+    "S023"
+  ],
+  "split": "val",
+  "fraction": 0.125,
+  "pretrained_summary": {
+    "tp": 7,
+    "fp": 31,
+    "fn": 134,
+    "precision": 0.18421052631578946,
+    "recall": 0.04964539007092199,
+    "commission_rate": 0.8157894736842105,
+    "omission_rate": 0.950354609929078,
+    "f1": 0.0782122905027933,
+    "median_matched_iou": 0.36248094602910824,
+    "over_segmented_references": 4,
+    "under_segmented_predictions": 0,
+    "over_segmentation_rate": 0.028368794326241134,
+    "under_segmentation_rate": 0.0,
+    "ignored_predictions": 20
+  },
+  "classical_provisional_summary": {
+    "tp": 37,
+    "fp": 64,
+    "fn": 104,
+    "precision": 0.36633663366336633,
+    "recall": 0.2624113475177305,
+    "commission_rate": 0.6336633663366337,
+    "omission_rate": 0.7375886524822695,
+    "f1": 0.30578512396694213,
+    "median_matched_iou": 0.5463146568166598,
+    "over_segmented_references": 17,
+    "under_segmented_predictions": 19,
+    "over_segmentation_rate": 0.12056737588652482,
+    "under_segmentation_rate": 0.18811881188118812,
+    "ignored_predictions": 57
+  },
+  "pretrained_by_site": {
+    "S003": {
+      "tp": 3,
+      "fp": 6,
+      "fn": 25,
+      "n_reference": 28,
+      "n_predictions": 9,
+      "ignored": 0,
+      "matches": [
+        {
+          "reference_id": "S003-ms2p8s4x-expanded-c01",
+          "prediction_id": "10",
+          "iou": 0.5558647324439485,
+          "centroid_distance_m": 1.1343155651554933
+        },
+        {
+          "reference_id": "S003-ms2pgm60",
+          "prediction_id": "12",
+          "iou": 0.5288652920732859,
+          "centroid_distance_m": 0.5501878586937398
+        },
+        {
+          "reference_id": "S003-ms2p5bih",
+          "prediction_id": "6",
+          "iou": 0.4474625817917096,
+          "centroid_distance_m": 1.3785212256937422
+        }
+      ],
+      "ious": [
+        0.5558647324439485,
+        0.5288652920732859,
+        0.4474625817917096
+      ],
+      "unmatched_reference_ids": [
+        "S003-ms2p5hkh",
+        "S003-ms2p5oyn",
+        "S003-ms2p5w24",
+        "S003-ms2p628k",
+        "S003-ms2p68ra",
+        "S003-ms2p6fn5",
+        "S003-ms2p6olv",
+        "S003-ms2p70j7",
+        "S003-ms2p77gm",
+        "S003-ms2p7spq",
+        "S003-ms2p8s4x-expanded-c02",
+        "S003-ms2p9fce-expanded-c01",
+        "S003-ms2p9fce-expanded-c02",
+        "S003-ms2pa8ez-expanded-c01",
+        "S003-ms2pa8ez-expanded-c02",
+        "S003-ms2pa8ez-expanded-c03",
+        "S003-ms2pauya",
+        "S003-ms2pbvrx",
+        "S003-ms2pci99",
+        "S003-ms2pcv5l",
+        "S003-ms2pd59x",
+        "S003-ms2pdbxr",
+        "S003-ms2pdyom",
+        "S003-mv0ncnb8",
+        "S003-mv0ncsqt"
+      ],
+      "false_positive_ids": [
+        "11",
+        "3",
+        "5",
+        "7",
+        "8",
+        "9"
+      ],
+      "ignored_prediction_ids": [],
+      "over_segmented_references": 0,
+      "under_segmented_predictions": 0,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S003-ms2p5bih": 1,
+        "S003-ms2p5hkh": 0,
+        "S003-ms2p5oyn": 0,
+        "S003-ms2p5w24": 0,
+        "S003-ms2p628k": 1,
+        "S003-ms2p68ra": 0,
+        "S003-ms2p6fn5": 0,
+        "S003-ms2p6olv": 0,
+        "S003-ms2p70j7": 0,
+        "S003-ms2p77gm": 0,
+        "S003-ms2p7spq": 0,
+        "S003-ms2pauya": 1,
+        "S003-ms2pbvrx": 0,
+        "S003-ms2pci99": 1,
+        "S003-ms2pcv5l": 0,
+        "S003-ms2pd59x": 0,
+        "S003-ms2pdbxr": 0,
+        "S003-ms2pdyom": 1,
+        "S003-ms2pgm60": 1,
+        "S003-ms2p9fce-expanded-c01": 0,
+        "S003-ms2p9fce-expanded-c02": 1,
+        "S003-ms2pa8ez-expanded-c01": 0,
+        "S003-ms2pa8ez-expanded-c02": 0,
+        "S003-ms2pa8ez-expanded-c03": 0,
+        "S003-ms2p8s4x-expanded-c01": 1,
+        "S003-ms2p8s4x-expanded-c02": 0,
+        "S003-mv0ncnb8": 0,
+        "S003-mv0ncsqt": 0
+      },
+      "prediction_overlap_degrees": {
+        "3": 1,
+        "5": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 0,
+        "10": 1,
+        "11": 1,
+        "12": 1
+      }
+    },
+    "S005": {
+      "tp": 0,
+      "fp": 8,
+      "fn": 19,
+      "n_reference": 19,
+      "n_predictions": 12,
+      "ignored": 4,
+      "matches": [],
+      "ious": [],
+      "unmatched_reference_ids": [
+        "S005-ms2pqpbm",
+        "S005-ms2pqx4b",
+        "S005-ms2pr4j3",
+        "S005-ms2prak3",
+        "S005-ms2prvvf",
+        "S005-ms2ps41g",
+        "S005-ms2psk4g",
+        "S005-ms2pssy6",
+        "S005-ms2pt5pr",
+        "S005-ms2ptc9a",
+        "S005-ms2ptkiv",
+        "S005-ms2pue8c-expanded-c01",
+        "S005-ms2pue8c-expanded-c02",
+        "S005-ms2pxdfh",
+        "S005-ms2py63s-expanded-c01",
+        "S005-ms2py63s-expanded-c02",
+        "S005-ms2py63s-expanded-c03",
+        "S005-mucaixoh",
+        "S005-mucaja92-expanded-c01"
+      ],
+      "false_positive_ids": [
+        "10",
+        "11",
+        "13",
+        "14",
+        "2",
+        "3",
+        "6",
+        "9"
+      ],
+      "ignored_prediction_ids": [
+        "12",
+        "5",
+        "7",
+        "8"
+      ],
+      "over_segmented_references": 2,
+      "under_segmented_predictions": 0,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S005-ms2pqpbm": 2,
+        "S005-ms2pqx4b": 0,
+        "S005-ms2pr4j3": 0,
+        "S005-ms2prak3": 0,
+        "S005-ms2prvvf": 0,
+        "S005-ms2ps41g": 0,
+        "S005-ms2psk4g": 0,
+        "S005-ms2pssy6": 0,
+        "S005-ms2pt5pr": 3,
+        "S005-ms2ptc9a": 0,
+        "S005-ms2ptkiv": 0,
+        "S005-ms2pxdfh": 0,
+        "S005-mucaixoh": 0,
+        "S005-ms2py63s-expanded-c01": 0,
+        "S005-ms2py63s-expanded-c02": 0,
+        "S005-ms2py63s-expanded-c03": 0,
+        "S005-ms2pue8c-expanded-c01": 0,
+        "S005-ms2pue8c-expanded-c02": 1,
+        "S005-mucaja92-expanded-c01": 0
+      },
+      "prediction_overlap_degrees": {
+        "2": 1,
+        "3": 1,
+        "6": 1,
+        "9": 0,
+        "10": 1,
+        "11": 1,
+        "13": 1,
+        "14": 0
+      }
+    },
+    "S007": {
+      "tp": 4,
+      "fp": 12,
+      "fn": 26,
+      "n_reference": 30,
+      "n_predictions": 27,
+      "ignored": 11,
+      "matches": [
+        {
+          "reference_id": "S007-mspffeo8",
+          "prediction_id": "15",
+          "iou": 0.36248094602910824,
+          "centroid_distance_m": 1.7890586540843372
+        },
+        {
+          "reference_id": "S007-mspesjyd-single",
+          "prediction_id": "30",
+          "iou": 0.17855629521363814,
+          "centroid_distance_m": 0.7322172767144333
+        },
+        {
+          "reference_id": "S007-mspeqpmm-expanded-c01",
+          "prediction_id": "14",
+          "iou": 0.17736318273118376,
+          "centroid_distance_m": 1.7409215088541654
+        },
+        {
+          "reference_id": "S007-mspewofj-single",
+          "prediction_id": "17",
+          "iou": 0.09027543313458172,
+          "centroid_distance_m": 1.181050076031862
+        }
+      ],
+      "ious": [
+        0.36248094602910824,
+        0.17855629521363814,
+        0.17736318273118376,
+        0.09027543313458172
+      ],
+      "unmatched_reference_ids": [
+        "S007-mspeqpmm-expanded-c02",
+        "S007-mspeqpmm-expanded-r01-expanded-c01",
+        "S007-mspeqpmm-expanded-r01-expanded-c02",
+        "S007-msperoll-expanded-c01",
+        "S007-msperoll-expanded-c02",
+        "S007-mspes7re",
+        "S007-mspet0de-expanded-c01",
+        "S007-mspet0de-expanded-c02",
+        "S007-mspetcy9-single",
+        "S007-mspetqnp-expanded-c01",
+        "S007-mspetqnp-expanded-c02",
+        "S007-mspeu1dd",
+        "S007-mspeuecl",
+        "S007-mspevauw-single",
+        "S007-mspfeldl",
+        "S007-mspfewwx",
+        "S007-mspffnrt",
+        "S007-mspffxnx",
+        "S007-mspfg5th",
+        "S007-mspfgelv",
+        "S007-mspfgoox",
+        "S007-mspfhxeb",
+        "S007-mspfi4nm",
+        "S007-muca8e0u",
+        "S007-muca8kmr",
+        "S007-mv0ngfn5"
+      ],
+      "false_positive_ids": [
+        "16",
+        "18",
+        "19",
+        "20",
+        "21",
+        "23",
+        "28",
+        "31",
+        "32",
+        "7",
+        "8",
+        "9"
+      ],
+      "ignored_prediction_ids": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "22",
+        "24",
+        "25",
+        "26",
+        "27",
+        "29",
+        "33"
+      ],
+      "over_segmented_references": 2,
+      "under_segmented_predictions": 0,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S007-mspes7re": 1,
+        "S007-mspesjyd-single": 1,
+        "S007-mspetcy9-single": 0,
+        "S007-mspeu1dd": 0,
+        "S007-mspeuecl": 0,
+        "S007-mspevauw-single": 2,
+        "S007-mspewofj-single": 1,
+        "S007-mspfeldl": 1,
+        "S007-mspfewwx": 0,
+        "S007-mspffeo8": 1,
+        "S007-mspffnrt": 0,
+        "S007-mspffxnx": 0,
+        "S007-mspfg5th": 0,
+        "S007-mspfgelv": 0,
+        "S007-mspfgoox": 0,
+        "S007-mspfhxeb": 4,
+        "S007-mspfi4nm": 0,
+        "S007-muca8e0u": 1,
+        "S007-muca8kmr": 0,
+        "S007-mspeqpmm-expanded-c01": 1,
+        "S007-mspeqpmm-expanded-c02": 0,
+        "S007-mspetqnp-expanded-c01": 0,
+        "S007-mspetqnp-expanded-c02": 0,
+        "S007-msperoll-expanded-c01": 0,
+        "S007-msperoll-expanded-c02": 0,
+        "S007-mspet0de-expanded-c01": 0,
+        "S007-mspet0de-expanded-c02": 0,
+        "S007-mspeqpmm-expanded-r01-expanded-c01": 1,
+        "S007-mspeqpmm-expanded-r01-expanded-c02": 0,
+        "S007-mv0ngfn5": 0
+      },
+      "prediction_overlap_degrees": {
+        "7": 0,
+        "8": 1,
+        "9": 0,
+        "14": 1,
+        "15": 1,
+        "16": 1,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "20": 1,
+        "21": 1,
+        "23": 1,
+        "28": 1,
+        "30": 1,
+        "31": 1,
+        "32": 1
+      }
+    },
+    "S012": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 16,
+      "n_reference": 16,
+      "n_predictions": 0,
+      "ignored": 0,
+      "matches": [],
+      "ious": [],
+      "unmatched_reference_ids": [
+        "S012-msrzqhjf",
+        "S012-msrzy4bd-expanded-c01",
+        "S012-msrzy4bd-expanded-c02",
+        "S012-msrzynt8-expanded-c01",
+        "S012-msrzzdj4-expanded-c01",
+        "S012-msrzzwwc-expanded-c01",
+        "S012-mss005js",
+        "S012-mss00wd7",
+        "S012-mss0144c",
+        "S012-mss01jdh",
+        "S012-mss01sa9",
+        "S012-mss0255q",
+        "S012-mucamsyb",
+        "S012-mucan2eg",
+        "S012-mucanaed",
+        "S012-mucanevy"
+      ],
+      "false_positive_ids": [],
+      "ignored_prediction_ids": [],
+      "over_segmented_references": 0,
+      "under_segmented_predictions": 0,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S012-msrzqhjf": 0,
+        "S012-mss005js": 0,
+        "S012-mss00wd7": 0,
+        "S012-mss0144c": 0,
+        "S012-mss01jdh": 0,
+        "S012-mss01sa9": 0,
+        "S012-mss0255q": 0,
+        "S012-mucamsyb": 0,
+        "S012-mucan2eg": 0,
+        "S012-mucanaed": 0,
+        "S012-mucanevy": 0,
+        "S012-msrzzdj4-expanded-c01": 0,
+        "S012-msrzy4bd-expanded-c01": 0,
+        "S012-msrzy4bd-expanded-c02": 0,
+        "S012-msrzynt8-expanded-c01": 0,
+        "S012-msrzzwwc-expanded-c01": 0
+      },
+      "prediction_overlap_degrees": {}
+    },
+    "S014": {
+      "tp": 0,
+      "fp": 2,
+      "fn": 8,
+      "n_reference": 8,
+      "n_predictions": 7,
+      "ignored": 5,
+      "matches": [],
+      "ious": [],
+      "unmatched_reference_ids": [
+        "S014-mss0obmd-expanded-c01",
+        "S014-mss0os8i-expanded-c01",
+        "S014-mss0p3rg",
+        "S014-mss0pzgx",
+        "S014-mss0q69h",
+        "S014-mss0ru02",
+        "S014-mucaa11k-expanded-c01",
+        "S014-mucaa11k-expanded-c02"
+      ],
+      "false_positive_ids": [
+        "1",
+        "2"
+      ],
+      "ignored_prediction_ids": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "over_segmented_references": 0,
+      "under_segmented_predictions": 0,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S014-mss0p3rg": 0,
+        "S014-mss0pzgx": 0,
+        "S014-mss0q69h": 0,
+        "S014-mss0ru02": 0,
+        "S014-mss0obmd-expanded-c01": 1,
+        "S014-mucaa11k-expanded-c01": 1,
+        "S014-mucaa11k-expanded-c02": 0,
+        "S014-mss0os8i-expanded-c01": 0
+      },
+      "prediction_overlap_degrees": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    "S016": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 26,
+      "n_reference": 26,
+      "n_predictions": 0,
+      "ignored": 0,
+      "matches": [],
+      "ious": [],
+      "unmatched_reference_ids": [
+        "S016-author-20261010-south01",
+        "S016-author-20261010-south02",
+        "S016-author-20261010-south03",
+        "S016-author-20261010-west",
+        "S016-author-qa-bridge-north",
+        "S016-author-qa-bridge-south",
+        "S016-author-qa-railway-coherent",
+        "S016-author-qa-west-north",
+        "S016-author-qa-west-south",
+        "S016-mss1954g-expanded-c01",
+        "S016-mss19glc",
+        "S016-mss19rn9",
+        "S016-mss1a1c6",
+        "S016-mss1abxx",
+        "S016-mss1aruu",
+        "S016-mss1bhf4",
+        "S016-mss1bq1c",
+        "S016-mss1bxh9",
+        "S016-mss1c6h7",
+        "S016-mss1cgbn",
+        "S016-mss1cn4r",
+        "S016-mss1cx6e",
+        "S016-mss1d6f7",
+        "S016-mss1dfvk",
+        "S016-mss1ejzd-expanded-c01",
+        "S016-mss1ejzd-expanded-c03"
+      ],
+      "false_positive_ids": [],
+      "ignored_prediction_ids": [],
+      "over_segmented_references": 0,
+      "under_segmented_predictions": 0,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S016-mss19glc": 0,
+        "S016-mss19rn9": 0,
+        "S016-mss1a1c6": 0,
+        "S016-mss1abxx": 0,
+        "S016-mss1aruu": 0,
+        "S016-mss1bhf4": 0,
+        "S016-mss1bq1c": 0,
+        "S016-mss1bxh9": 0,
+        "S016-mss1c6h7": 0,
+        "S016-mss1cgbn": 0,
+        "S016-mss1cn4r": 0,
+        "S016-mss1cx6e": 0,
+        "S016-mss1d6f7": 0,
+        "S016-mss1dfvk": 0,
+        "S016-mss1954g-expanded-c01": 0,
+        "S016-mss1ejzd-expanded-c01": 0,
+        "S016-mss1ejzd-expanded-c03": 0,
+        "S016-author-20261010-west": 0,
+        "S016-author-20261010-south01": 0,
+        "S016-author-20261010-south02": 0,
+        "S016-author-20261010-south03": 0,
+        "S016-author-qa-bridge-north": 0,
+        "S016-author-qa-bridge-south": 0,
+        "S016-author-qa-west-north": 0,
+        "S016-author-qa-west-south": 0,
+        "S016-author-qa-railway-coherent": 0
+      },
+      "prediction_overlap_degrees": {}
+    },
+    "S021": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 13,
+      "n_reference": 13,
+      "n_predictions": 0,
+      "ignored": 0,
+      "matches": [],
+      "ious": [],
+      "unmatched_reference_ids": [
+        "S021-mss2o744",
+        "S021-mss2oa3z",
+        "S021-mss2u3q7-expanded-c01",
+        "S021-mss2vil4",
+        "S021-mss2vv3u",
+        "S021-mss2vxpd",
+        "S021-mss2wfi8",
+        "S021-mucawcmu",
+        "S021-mucax4y5-expanded-c01",
+        "S021-mucax4y5-expanded-c02",
+        "S021-mucaxj6i-expanded-c01",
+        "S021-mucaxj6i-expanded-c02",
+        "S021-mucay2b2"
+      ],
+      "false_positive_ids": [],
+      "ignored_prediction_ids": [],
+      "over_segmented_references": 0,
+      "under_segmented_predictions": 0,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S021-mss2o744": 0,
+        "S021-mss2oa3z": 0,
+        "S021-mss2vil4": 0,
+        "S021-mss2vv3u": 0,
+        "S021-mss2vxpd": 0,
+        "S021-mss2wfi8": 0,
+        "S021-mucawcmu": 0,
+        "S021-mucay2b2": 0,
+        "S021-mucax4y5-expanded-c01": 0,
+        "S021-mucax4y5-expanded-c02": 0,
+        "S021-mucaxj6i-expanded-c01": 0,
+        "S021-mucaxj6i-expanded-c02": 0,
+        "S021-mss2u3q7-expanded-c01": 0
+      },
+      "prediction_overlap_degrees": {}
+    },
+    "S023": {
+      "tp": 0,
+      "fp": 3,
+      "fn": 1,
+      "n_reference": 1,
+      "n_predictions": 3,
+      "ignored": 0,
+      "matches": [],
+      "ious": [],
+      "unmatched_reference_ids": [
+        "S023-mss2y92r"
+      ],
+      "false_positive_ids": [
+        "1",
+        "2",
+        "3"
+      ],
+      "ignored_prediction_ids": [],
+      "over_segmented_references": 0,
+      "under_segmented_predictions": 0,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S023-mss2y92r": 0
+      },
+      "prediction_overlap_degrees": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      }
+    }
+  },
+  "classical_by_site": {
+    "S003": {
+      "tp": 11,
+      "fp": 8,
+      "fn": 17,
+      "n_reference": 28,
+      "n_predictions": 21,
+      "ignored": 2,
+      "matches": [
+        {
+          "reference_id": "S003-ms2pauya",
+          "prediction_id": "heldout_reconstructed_lid_0017380",
+          "iou": 0.7620453306938881,
+          "centroid_distance_m": 0.5084088461477753
+        },
+        {
+          "reference_id": "S003-ms2pa8ez-expanded-c02",
+          "prediction_id": "heldout_reconstructed_lid_0017747",
+          "iou": 0.5865805528156558,
+          "centroid_distance_m": 0.21481357226784306
+        },
+        {
+          "reference_id": "S003-ms2p9fce-expanded-c02",
+          "prediction_id": "heldout_reconstructed_lid_0017436",
+          "iou": 0.5818376695766978,
+          "centroid_distance_m": 0.23284367876699794
+        },
+        {
+          "reference_id": "S003-ms2p5oyn",
+          "prediction_id": "heldout_reconstructed_lid_0017470",
+          "iou": 0.550050898621221,
+          "centroid_distance_m": 0.5822251243767693
+        },
+        {
+          "reference_id": "S003-ms2p77gm",
+          "prediction_id": "akl_tree_trp_ACCT0135758",
+          "iou": 0.5428753851130694,
+          "centroid_distance_m": 1.0669607594058756
+        },
+        {
+          "reference_id": "S003-ms2p70j7",
+          "prediction_id": "heldout_reconstructed_lid_0017900",
+          "iou": 0.5055776357564609,
+          "centroid_distance_m": 1.2464521608057313
+        },
+        {
+          "reference_id": "S003-ms2p6fn5",
+          "prediction_id": "akl_tree_trp_ACCT0135720",
+          "iou": 0.49530383160498187,
+          "centroid_distance_m": 1.2804624536004805
+        },
+        {
+          "reference_id": "S003-ms2p7spq",
+          "prediction_id": "akl_tree_trp_ACCT0135725",
+          "iou": 0.4517262842498188,
+          "centroid_distance_m": 1.9589156785055375
+        },
+        {
+          "reference_id": "S003-ms2p68ra",
+          "prediction_id": "akl_tree_trp_ACCT0250450",
+          "iou": 0.34945731347956055,
+          "centroid_distance_m": 1.6447138345410264
+        },
+        {
+          "reference_id": "S003-ms2p8s4x-expanded-c01",
+          "prediction_id": "akl_tree_trp_ACCT0135723",
+          "iou": 0.3048299441972083,
+          "centroid_distance_m": 0.8028476137127807
+        },
+        {
+          "reference_id": "S003-ms2p5bih",
+          "prediction_id": "heldout_reconstructed_lid_0017295",
+          "iou": 0.29260734138399974,
+          "centroid_distance_m": 0.21114211247064874
+        }
+      ],
+      "ious": [
+        0.7620453306938881,
+        0.5865805528156558,
+        0.5818376695766978,
+        0.550050898621221,
+        0.5428753851130694,
+        0.5055776357564609,
+        0.49530383160498187,
+        0.4517262842498188,
+        0.34945731347956055,
+        0.3048299441972083,
+        0.29260734138399974
+      ],
+      "unmatched_reference_ids": [
+        "S003-ms2p5hkh",
+        "S003-ms2p5w24",
+        "S003-ms2p628k",
+        "S003-ms2p6olv",
+        "S003-ms2p8s4x-expanded-c02",
+        "S003-ms2p9fce-expanded-c01",
+        "S003-ms2pa8ez-expanded-c01",
+        "S003-ms2pa8ez-expanded-c03",
+        "S003-ms2pbvrx",
+        "S003-ms2pci99",
+        "S003-ms2pcv5l",
+        "S003-ms2pd59x",
+        "S003-ms2pdbxr",
+        "S003-ms2pdyom",
+        "S003-ms2pgm60",
+        "S003-mv0ncnb8",
+        "S003-mv0ncsqt"
+      ],
+      "false_positive_ids": [
+        "akl_tree_trp_ACCT0122909",
+        "akl_tree_trp_ACCT0135719",
+        "akl_tree_trp_ACCT0135722",
+        "akl_tree_trp_ACCT0135724",
+        "akl_tree_trp_ACCT0135757",
+        "akl_tree_trp_ACCT0169662",
+        "heldout_reconstructed_lid_0017652",
+        "heldout_reconstructed_lid_0018177"
+      ],
+      "ignored_prediction_ids": [
+        "akl_tree_trp_ACCT0159440",
+        "heldout_reconstructed_lid_0017877"
+      ],
+      "over_segmented_references": 2,
+      "under_segmented_predictions": 4,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S003-ms2p5bih": 1,
+        "S003-ms2p5hkh": 1,
+        "S003-ms2p5oyn": 1,
+        "S003-ms2p5w24": 1,
+        "S003-ms2p628k": 1,
+        "S003-ms2p68ra": 1,
+        "S003-ms2p6fn5": 1,
+        "S003-ms2p6olv": 1,
+        "S003-ms2p70j7": 2,
+        "S003-ms2p77gm": 1,
+        "S003-ms2p7spq": 1,
+        "S003-ms2pauya": 1,
+        "S003-ms2pbvrx": 1,
+        "S003-ms2pci99": 0,
+        "S003-ms2pcv5l": 0,
+        "S003-ms2pd59x": 0,
+        "S003-ms2pdbxr": 0,
+        "S003-ms2pdyom": 2,
+        "S003-ms2pgm60": 0,
+        "S003-ms2p9fce-expanded-c01": 1,
+        "S003-ms2p9fce-expanded-c02": 1,
+        "S003-ms2pa8ez-expanded-c01": 0,
+        "S003-ms2pa8ez-expanded-c02": 1,
+        "S003-ms2pa8ez-expanded-c03": 1,
+        "S003-ms2p8s4x-expanded-c01": 1,
+        "S003-ms2p8s4x-expanded-c02": 1,
+        "S003-mv0ncnb8": 1,
+        "S003-mv0ncsqt": 1
+      },
+      "prediction_overlap_degrees": {
+        "heldout_reconstructed_lid_0017380": 1,
+        "akl_tree_trp_ACCT0122909": 1,
+        "heldout_reconstructed_lid_0017747": 1,
+        "heldout_reconstructed_lid_0017652": 1,
+        "heldout_reconstructed_lid_0017436": 2,
+        "heldout_reconstructed_lid_0018177": 0,
+        "heldout_reconstructed_lid_0017295": 3,
+        "heldout_reconstructed_lid_0017470": 1,
+        "akl_tree_trp_ACCT0169662": 1,
+        "akl_tree_trp_ACCT0135719": 0,
+        "akl_tree_trp_ACCT0250450": 1,
+        "akl_tree_trp_ACCT0135720": 1,
+        "akl_tree_trp_ACCT0135722": 3,
+        "akl_tree_trp_ACCT0135723": 3,
+        "akl_tree_trp_ACCT0135725": 1,
+        "akl_tree_trp_ACCT0135724": 1,
+        "akl_tree_trp_ACCT0135758": 1,
+        "heldout_reconstructed_lid_0017900": 1,
+        "akl_tree_trp_ACCT0135757": 1
+      }
+    },
+    "S005": {
+      "tp": 6,
+      "fp": 10,
+      "fn": 13,
+      "n_reference": 19,
+      "n_predictions": 24,
+      "ignored": 8,
+      "matches": [
+        {
+          "reference_id": "S005-ms2prvvf",
+          "prediction_id": "heldout_reconstructed_lid_0018781",
+          "iou": 0.6850810428944544,
+          "centroid_distance_m": 0.39697102641049026
+        },
+        {
+          "reference_id": "S005-ms2pqx4b",
+          "prediction_id": "heldout_reconstructed_lid_0019039",
+          "iou": 0.680886267900848,
+          "centroid_distance_m": 1.084260187087667
+        },
+        {
+          "reference_id": "S005-ms2ps41g",
+          "prediction_id": "heldout_reconstructed_lid_0018626",
+          "iou": 0.6109174637334218,
+          "centroid_distance_m": 1.9936521889287226
+        },
+        {
+          "reference_id": "S005-ms2pxdfh",
+          "prediction_id": "heldout_reconstructed_lid_0019211",
+          "iou": 0.419320955594573,
+          "centroid_distance_m": 1.441810261091699
+        },
+        {
+          "reference_id": "S005-ms2prak3",
+          "prediction_id": "heldout_reconstructed_lid_0018903",
+          "iou": 0.25652861171204083,
+          "centroid_distance_m": 1.4123857932866306
+        },
+        {
+          "reference_id": "S005-ms2pue8c-expanded-c01",
+          "prediction_id": "heldout_reconstructed_lid_0018378",
+          "iou": 0.2267412453111513,
+          "centroid_distance_m": 0.3692221803478076
+        }
+      ],
+      "ious": [
+        0.6850810428944544,
+        0.680886267900848,
+        0.6109174637334218,
+        0.419320955594573,
+        0.25652861171204083,
+        0.2267412453111513
+      ],
+      "unmatched_reference_ids": [
+        "S005-ms2pqpbm",
+        "S005-ms2pr4j3",
+        "S005-ms2psk4g",
+        "S005-ms2pssy6",
+        "S005-ms2pt5pr",
+        "S005-ms2ptc9a",
+        "S005-ms2ptkiv",
+        "S005-ms2pue8c-expanded-c02",
+        "S005-ms2py63s-expanded-c01",
+        "S005-ms2py63s-expanded-c02",
+        "S005-ms2py63s-expanded-c03",
+        "S005-mucaixoh",
+        "S005-mucaja92-expanded-c01"
+      ],
+      "false_positive_ids": [
+        "heldout_reconstructed_lid_0018225",
+        "heldout_reconstructed_lid_0018273",
+        "heldout_reconstructed_lid_0018293",
+        "heldout_reconstructed_lid_0018339",
+        "heldout_reconstructed_lid_0018357",
+        "heldout_reconstructed_lid_0018394",
+        "heldout_reconstructed_lid_0018419",
+        "heldout_reconstructed_lid_0018429",
+        "heldout_reconstructed_lid_0018637",
+        "heldout_reconstructed_lid_0018978"
+      ],
+      "ignored_prediction_ids": [
+        "heldout_reconstructed_lid_0018222",
+        "heldout_reconstructed_lid_0018258",
+        "heldout_reconstructed_lid_0018307",
+        "heldout_reconstructed_lid_0018315",
+        "heldout_reconstructed_lid_0018326",
+        "heldout_reconstructed_lid_0018341",
+        "heldout_reconstructed_lid_0018536",
+        "heldout_reconstructed_lid_0018652"
+      ],
+      "over_segmented_references": 4,
+      "under_segmented_predictions": 5,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S005-ms2pqpbm": 1,
+        "S005-ms2pqx4b": 1,
+        "S005-ms2pr4j3": 1,
+        "S005-ms2prak3": 1,
+        "S005-ms2prvvf": 1,
+        "S005-ms2ps41g": 1,
+        "S005-ms2psk4g": 2,
+        "S005-ms2pssy6": 1,
+        "S005-ms2pt5pr": 1,
+        "S005-ms2ptc9a": 2,
+        "S005-ms2ptkiv": 1,
+        "S005-ms2pxdfh": 1,
+        "S005-mucaixoh": 2,
+        "S005-ms2py63s-expanded-c01": 1,
+        "S005-ms2py63s-expanded-c02": 1,
+        "S005-ms2py63s-expanded-c03": 0,
+        "S005-ms2pue8c-expanded-c01": 1,
+        "S005-ms2pue8c-expanded-c02": 2,
+        "S005-mucaja92-expanded-c01": 1
+      },
+      "prediction_overlap_degrees": {
+        "heldout_reconstructed_lid_0018394": 0,
+        "heldout_reconstructed_lid_0018273": 0,
+        "heldout_reconstructed_lid_0018637": 1,
+        "heldout_reconstructed_lid_0018357": 2,
+        "heldout_reconstructed_lid_0019211": 1,
+        "heldout_reconstructed_lid_0018293": 2,
+        "heldout_reconstructed_lid_0018339": 4,
+        "heldout_reconstructed_lid_0018626": 1,
+        "heldout_reconstructed_lid_0018225": 3,
+        "heldout_reconstructed_lid_0018378": 2,
+        "heldout_reconstructed_lid_0018781": 1,
+        "heldout_reconstructed_lid_0019039": 1,
+        "heldout_reconstructed_lid_0018419": 1,
+        "heldout_reconstructed_lid_0018903": 1,
+        "heldout_reconstructed_lid_0018978": 1,
+        "heldout_reconstructed_lid_0018429": 1
+      }
+    },
+    "S007": {
+      "tp": 6,
+      "fp": 14,
+      "fn": 24,
+      "n_reference": 30,
+      "n_predictions": 31,
+      "ignored": 11,
+      "matches": [
+        {
+          "reference_id": "S007-mspffeo8",
+          "prediction_id": "heldout_reconstructed_lid_0004807",
+          "iou": 0.6265976040216945,
+          "centroid_distance_m": 0.7192499883418516
+        },
+        {
+          "reference_id": "S007-mspetcy9-single",
+          "prediction_id": "heldout_reconstructed_lid_0004959",
+          "iou": 0.5968293063378475,
+          "centroid_distance_m": 1.6894060640332815
+        },
+        {
+          "reference_id": "S007-mspfeldl",
+          "prediction_id": "heldout_reconstructed_lid_0005004",
+          "iou": 0.59170323915497,
+          "centroid_distance_m": 1.8850598755590144
+        },
+        {
+          "reference_id": "S007-mspfewwx",
+          "prediction_id": "heldout_reconstructed_lid_0004827",
+          "iou": 0.5130696475487719,
+          "centroid_distance_m": 1.5906353329089589
+        },
+        {
+          "reference_id": "S007-mspeqpmm-expanded-c02",
+          "prediction_id": "heldout_reconstructed_lid_0004679",
+          "iou": 0.34055120375396675,
+          "centroid_distance_m": 0.9824963253552929
+        },
+        {
+          "reference_id": "S007-mspetqnp-expanded-c02",
+          "prediction_id": "heldout_reconstructed_lid_0004784",
+          "iou": 0.21231560006095232,
+          "centroid_distance_m": 1.9880073302029708
+        }
+      ],
+      "ious": [
+        0.6265976040216945,
+        0.5968293063378475,
+        0.59170323915497,
+        0.5130696475487719,
+        0.34055120375396675,
+        0.21231560006095232
+      ],
+      "unmatched_reference_ids": [
+        "S007-mspeqpmm-expanded-c01",
+        "S007-mspeqpmm-expanded-r01-expanded-c01",
+        "S007-mspeqpmm-expanded-r01-expanded-c02",
+        "S007-msperoll-expanded-c01",
+        "S007-msperoll-expanded-c02",
+        "S007-mspes7re",
+        "S007-mspesjyd-single",
+        "S007-mspet0de-expanded-c01",
+        "S007-mspet0de-expanded-c02",
+        "S007-mspetqnp-expanded-c01",
+        "S007-mspeu1dd",
+        "S007-mspeuecl",
+        "S007-mspevauw-single",
+        "S007-mspewofj-single",
+        "S007-mspffnrt",
+        "S007-mspffxnx",
+        "S007-mspfg5th",
+        "S007-mspfgelv",
+        "S007-mspfgoox",
+        "S007-mspfhxeb",
+        "S007-mspfi4nm",
+        "S007-muca8e0u",
+        "S007-muca8kmr",
+        "S007-mv0ngfn5"
+      ],
+      "false_positive_ids": [
+        "heldout_reconstructed_lid_0004458",
+        "heldout_reconstructed_lid_0004507",
+        "heldout_reconstructed_lid_0004524",
+        "heldout_reconstructed_lid_0004639",
+        "heldout_reconstructed_lid_0004662",
+        "heldout_reconstructed_lid_0004663",
+        "heldout_reconstructed_lid_0004669",
+        "heldout_reconstructed_lid_0004705",
+        "heldout_reconstructed_lid_0004717",
+        "heldout_reconstructed_lid_0004797",
+        "heldout_reconstructed_lid_0004837",
+        "heldout_reconstructed_lid_0004840",
+        "heldout_reconstructed_lid_0004860",
+        "heldout_reconstructed_lid_0005101"
+      ],
+      "ignored_prediction_ids": [
+        "heldout_reconstructed_lid_0004523",
+        "heldout_reconstructed_lid_0004547",
+        "heldout_reconstructed_lid_0004565",
+        "heldout_reconstructed_lid_0004566",
+        "heldout_reconstructed_lid_0004570",
+        "heldout_reconstructed_lid_0004593",
+        "heldout_reconstructed_lid_0004599",
+        "heldout_reconstructed_lid_0004626",
+        "heldout_reconstructed_lid_0004633",
+        "heldout_reconstructed_lid_0004675",
+        "heldout_reconstructed_lid_0005035"
+      ],
+      "over_segmented_references": 5,
+      "under_segmented_predictions": 7,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S007-mspes7re": 2,
+        "S007-mspesjyd-single": 1,
+        "S007-mspetcy9-single": 1,
+        "S007-mspeu1dd": 0,
+        "S007-mspeuecl": 1,
+        "S007-mspevauw-single": 2,
+        "S007-mspewofj-single": 1,
+        "S007-mspfeldl": 1,
+        "S007-mspfewwx": 1,
+        "S007-mspffeo8": 1,
+        "S007-mspffnrt": 1,
+        "S007-mspffxnx": 1,
+        "S007-mspfg5th": 1,
+        "S007-mspfgelv": 0,
+        "S007-mspfgoox": 0,
+        "S007-mspfhxeb": 2,
+        "S007-mspfi4nm": 0,
+        "S007-muca8e0u": 1,
+        "S007-muca8kmr": 1,
+        "S007-mspeqpmm-expanded-c01": 2,
+        "S007-mspeqpmm-expanded-c02": 1,
+        "S007-mspetqnp-expanded-c01": 1,
+        "S007-mspetqnp-expanded-c02": 1,
+        "S007-msperoll-expanded-c01": 0,
+        "S007-msperoll-expanded-c02": 0,
+        "S007-mspet0de-expanded-c01": 1,
+        "S007-mspet0de-expanded-c02": 1,
+        "S007-mspeqpmm-expanded-r01-expanded-c01": 2,
+        "S007-mspeqpmm-expanded-r01-expanded-c02": 1,
+        "S007-mv0ngfn5": 1
+      },
+      "prediction_overlap_degrees": {
+        "heldout_reconstructed_lid_0004797": 1,
+        "heldout_reconstructed_lid_0005101": 0,
+        "heldout_reconstructed_lid_0004837": 3,
+        "heldout_reconstructed_lid_0004663": 1,
+        "heldout_reconstructed_lid_0004959": 1,
+        "heldout_reconstructed_lid_0004639": 1,
+        "heldout_reconstructed_lid_0004705": 3,
+        "heldout_reconstructed_lid_0004784": 2,
+        "heldout_reconstructed_lid_0005004": 1,
+        "heldout_reconstructed_lid_0004827": 1,
+        "heldout_reconstructed_lid_0004717": 1,
+        "heldout_reconstructed_lid_0004458": 1,
+        "heldout_reconstructed_lid_0004524": 1,
+        "heldout_reconstructed_lid_0004669": 2,
+        "heldout_reconstructed_lid_0004860": 2,
+        "heldout_reconstructed_lid_0004679": 4,
+        "heldout_reconstructed_lid_0004662": 2,
+        "heldout_reconstructed_lid_0004807": 1,
+        "heldout_reconstructed_lid_0004840": 0,
+        "heldout_reconstructed_lid_0004507": 1
+      }
+    },
+    "S012": {
+      "tp": 2,
+      "fp": 7,
+      "fn": 14,
+      "n_reference": 16,
+      "n_predictions": 23,
+      "ignored": 14,
+      "matches": [
+        {
+          "reference_id": "S012-mss01jdh",
+          "prediction_id": "heldout_reconstructed_lid_0015379",
+          "iou": 0.6230032161348587,
+          "centroid_distance_m": 0.748187245683309
+        },
+        {
+          "reference_id": "S012-msrzzdj4-expanded-c01",
+          "prediction_id": "heldout_reconstructed_lid_0015466",
+          "iou": 0.5204480788645458,
+          "centroid_distance_m": 1.8845449361946958
+        }
+      ],
+      "ious": [
+        0.6230032161348587,
+        0.5204480788645458
+      ],
+      "unmatched_reference_ids": [
+        "S012-msrzqhjf",
+        "S012-msrzy4bd-expanded-c01",
+        "S012-msrzy4bd-expanded-c02",
+        "S012-msrzynt8-expanded-c01",
+        "S012-msrzzwwc-expanded-c01",
+        "S012-mss005js",
+        "S012-mss00wd7",
+        "S012-mss0144c",
+        "S012-mss01sa9",
+        "S012-mss0255q",
+        "S012-mucamsyb",
+        "S012-mucan2eg",
+        "S012-mucanaed",
+        "S012-mucanevy"
+      ],
+      "false_positive_ids": [
+        "heldout_reconstructed_lid_0014051",
+        "heldout_reconstructed_lid_0014885",
+        "heldout_reconstructed_lid_0015405",
+        "heldout_reconstructed_lid_0015484",
+        "heldout_reconstructed_lid_0015487",
+        "heldout_reconstructed_lid_0015686",
+        "heldout_reconstructed_lid_0016207"
+      ],
+      "ignored_prediction_ids": [
+        "heldout_reconstructed_lid_0014065",
+        "heldout_reconstructed_lid_0014768",
+        "heldout_reconstructed_lid_0014781",
+        "heldout_reconstructed_lid_0014791",
+        "heldout_reconstructed_lid_0015125",
+        "heldout_reconstructed_lid_0015140",
+        "heldout_reconstructed_lid_0015238",
+        "heldout_reconstructed_lid_0015245",
+        "heldout_reconstructed_lid_0015319",
+        "heldout_reconstructed_lid_0015321",
+        "heldout_reconstructed_lid_0015438",
+        "heldout_reconstructed_lid_0015441",
+        "heldout_reconstructed_lid_0016114",
+        "heldout_reconstructed_lid_0016155"
+      ],
+      "over_segmented_references": 2,
+      "under_segmented_predictions": 2,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S012-msrzqhjf": 0,
+        "S012-mss005js": 1,
+        "S012-mss00wd7": 1,
+        "S012-mss0144c": 0,
+        "S012-mss01jdh": 1,
+        "S012-mss01sa9": 0,
+        "S012-mss0255q": 0,
+        "S012-mucamsyb": 1,
+        "S012-mucan2eg": 2,
+        "S012-mucanaed": 0,
+        "S012-mucanevy": 0,
+        "S012-msrzzdj4-expanded-c01": 1,
+        "S012-msrzy4bd-expanded-c01": 0,
+        "S012-msrzy4bd-expanded-c02": 2,
+        "S012-msrzynt8-expanded-c01": 1,
+        "S012-msrzzwwc-expanded-c01": 1
+      },
+      "prediction_overlap_degrees": {
+        "heldout_reconstructed_lid_0015405": 1,
+        "heldout_reconstructed_lid_0015487": 1,
+        "heldout_reconstructed_lid_0016207": 1,
+        "heldout_reconstructed_lid_0014885": 0,
+        "heldout_reconstructed_lid_0015686": 1,
+        "heldout_reconstructed_lid_0015484": 2,
+        "heldout_reconstructed_lid_0015379": 1,
+        "heldout_reconstructed_lid_0014051": 3,
+        "heldout_reconstructed_lid_0015466": 1
+      }
+    },
+    "S014": {
+      "tp": 2,
+      "fp": 3,
+      "fn": 6,
+      "n_reference": 8,
+      "n_predictions": 15,
+      "ignored": 10,
+      "matches": [
+        {
+          "reference_id": "S014-mss0os8i-expanded-c01",
+          "prediction_id": "akl_tree_trp_ACCT0198677",
+          "iou": 0.5463146568166598,
+          "centroid_distance_m": 1.3171305254910477
+        },
+        {
+          "reference_id": "S014-mss0p3rg",
+          "prediction_id": "akl_tree_trp_ACCT0198668",
+          "iou": 0.5270485775865701,
+          "centroid_distance_m": 1.264890302447018
+        }
+      ],
+      "ious": [
+        0.5463146568166598,
+        0.5270485775865701
+      ],
+      "unmatched_reference_ids": [
+        "S014-mss0obmd-expanded-c01",
+        "S014-mss0pzgx",
+        "S014-mss0q69h",
+        "S014-mss0ru02",
+        "S014-mucaa11k-expanded-c01",
+        "S014-mucaa11k-expanded-c02"
+      ],
+      "false_positive_ids": [
+        "akl_tree_trp_ACCT0142797",
+        "akl_tree_trp_ACCT0156346",
+        "akl_tree_trp_ACCT0198675"
+      ],
+      "ignored_prediction_ids": [
+        "akl_tree_trp_ACCT0142798",
+        "akl_tree_trp_ACCT0142799",
+        "akl_tree_trp_ACCT0142800",
+        "akl_tree_trp_ACCT0142801",
+        "akl_tree_trp_ACCT0142802",
+        "akl_tree_trp_ACCT0155124",
+        "akl_tree_trp_ACCT0198676",
+        "heldout_reconstructed_lid_0021533",
+        "heldout_reconstructed_lid_0021539",
+        "heldout_reconstructed_lid_0021599"
+      ],
+      "over_segmented_references": 0,
+      "under_segmented_predictions": 0,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S014-mss0p3rg": 1,
+        "S014-mss0pzgx": 0,
+        "S014-mss0q69h": 0,
+        "S014-mss0ru02": 0,
+        "S014-mss0obmd-expanded-c01": 0,
+        "S014-mucaa11k-expanded-c01": 0,
+        "S014-mucaa11k-expanded-c02": 1,
+        "S014-mss0os8i-expanded-c01": 1
+      },
+      "prediction_overlap_degrees": {
+        "akl_tree_trp_ACCT0156346": 0,
+        "akl_tree_trp_ACCT0198675": 0,
+        "akl_tree_trp_ACCT0198677": 1,
+        "akl_tree_trp_ACCT0198668": 1,
+        "akl_tree_trp_ACCT0142797": 1
+      }
+    },
+    "S016": {
+      "tp": 9,
+      "fp": 8,
+      "fn": 17,
+      "n_reference": 26,
+      "n_predictions": 17,
+      "ignored": 0,
+      "matches": [
+        {
+          "reference_id": "S016-mss1cgbn",
+          "prediction_id": "akl_tree_trp_ACCT0169828",
+          "iou": 0.7057182739650303,
+          "centroid_distance_m": 0.380715573822961
+        },
+        {
+          "reference_id": "S016-mss1aruu",
+          "prediction_id": "akl_tree_trp_ACCT0157951",
+          "iou": 0.6998870762147115,
+          "centroid_distance_m": 1.0590815260126263
+        },
+        {
+          "reference_id": "S016-mss1dfvk",
+          "prediction_id": "akl_tree_osm_node_3610321972",
+          "iou": 0.6869687365256,
+          "centroid_distance_m": 0.4234390099292386
+        },
+        {
+          "reference_id": "S016-mss19rn9",
+          "prediction_id": "akl_tree_trp_ACCT0157962",
+          "iou": 0.6607653132330903,
+          "centroid_distance_m": 1.2659020547037583
+        },
+        {
+          "reference_id": "S016-mss1d6f7",
+          "prediction_id": "akl_tree_trp_ACCT0157963",
+          "iou": 0.6594545415368507,
+          "centroid_distance_m": 0.6437725528417668
+        },
+        {
+          "reference_id": "S016-mss1cx6e",
+          "prediction_id": "akl_tree_trp_ACCT0157952",
+          "iou": 0.645970007954348,
+          "centroid_distance_m": 1.1362554727132275
+        },
+        {
+          "reference_id": "S016-mss1a1c6",
+          "prediction_id": "akl_tree_trp_ACCT0157954",
+          "iou": 0.598546001052407,
+          "centroid_distance_m": 1.6769170524575259
+        },
+        {
+          "reference_id": "S016-mss19glc",
+          "prediction_id": "akl_tree_trp_ACCT0157955",
+          "iou": 0.5308796341046713,
+          "centroid_distance_m": 1.8440369559649965
+        },
+        {
+          "reference_id": "S016-mss1cn4r",
+          "prediction_id": "akl_tree_trp_ACCT0239391",
+          "iou": 0.4332583178264539,
+          "centroid_distance_m": 1.3424746938650505
+        }
+      ],
+      "ious": [
+        0.7057182739650303,
+        0.6998870762147115,
+        0.6869687365256,
+        0.6607653132330903,
+        0.6594545415368507,
+        0.645970007954348,
+        0.598546001052407,
+        0.5308796341046713,
+        0.4332583178264539
+      ],
+      "unmatched_reference_ids": [
+        "S016-author-20261010-south01",
+        "S016-author-20261010-south02",
+        "S016-author-20261010-south03",
+        "S016-author-20261010-west",
+        "S016-author-qa-bridge-north",
+        "S016-author-qa-bridge-south",
+        "S016-author-qa-railway-coherent",
+        "S016-author-qa-west-north",
+        "S016-author-qa-west-south",
+        "S016-mss1954g-expanded-c01",
+        "S016-mss1abxx",
+        "S016-mss1bhf4",
+        "S016-mss1bq1c",
+        "S016-mss1bxh9",
+        "S016-mss1c6h7",
+        "S016-mss1ejzd-expanded-c01",
+        "S016-mss1ejzd-expanded-c03"
+      ],
+      "false_positive_ids": [
+        "akl_tree_trp_ACCT0039465",
+        "akl_tree_trp_ACCT0157953",
+        "akl_tree_trp_ACCT0157964",
+        "akl_tree_trp_ACCT0239392",
+        "heldout_reconstructed_lid_0021430",
+        "heldout_reconstructed_lid_0021432",
+        "heldout_reconstructed_lid_0021433",
+        "heldout_reconstructed_lid_0021495"
+      ],
+      "ignored_prediction_ids": [],
+      "over_segmented_references": 1,
+      "under_segmented_predictions": 0,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S016-mss19glc": 1,
+        "S016-mss19rn9": 1,
+        "S016-mss1a1c6": 1,
+        "S016-mss1abxx": 1,
+        "S016-mss1aruu": 1,
+        "S016-mss1bhf4": 1,
+        "S016-mss1bq1c": 0,
+        "S016-mss1bxh9": 0,
+        "S016-mss1c6h7": 0,
+        "S016-mss1cgbn": 1,
+        "S016-mss1cn4r": 2,
+        "S016-mss1cx6e": 1,
+        "S016-mss1d6f7": 1,
+        "S016-mss1dfvk": 1,
+        "S016-mss1954g-expanded-c01": 0,
+        "S016-mss1ejzd-expanded-c01": 0,
+        "S016-mss1ejzd-expanded-c03": 0,
+        "S016-author-20261010-west": 0,
+        "S016-author-20261010-south01": 0,
+        "S016-author-20261010-south02": 0,
+        "S016-author-20261010-south03": 0,
+        "S016-author-qa-bridge-north": 0,
+        "S016-author-qa-bridge-south": 0,
+        "S016-author-qa-west-north": 0,
+        "S016-author-qa-west-south": 0,
+        "S016-author-qa-railway-coherent": 0
+      },
+      "prediction_overlap_degrees": {
+        "akl_tree_osm_node_3610321972": 1,
+        "akl_tree_trp_ACCT0239391": 1,
+        "akl_tree_trp_ACCT0239392": 1,
+        "akl_tree_trp_ACCT0169828": 1,
+        "akl_tree_trp_ACCT0157963": 1,
+        "akl_tree_trp_ACCT0157962": 1,
+        "akl_tree_trp_ACCT0039465": 1,
+        "akl_tree_trp_ACCT0157951": 1,
+        "akl_tree_trp_ACCT0157952": 1,
+        "akl_tree_trp_ACCT0157953": 1,
+        "akl_tree_trp_ACCT0157954": 1,
+        "akl_tree_trp_ACCT0157955": 1,
+        "heldout_reconstructed_lid_0021432": 0,
+        "heldout_reconstructed_lid_0021433": 0,
+        "heldout_reconstructed_lid_0021430": 0,
+        "heldout_reconstructed_lid_0021495": 0,
+        "akl_tree_trp_ACCT0157964": 0
+      }
+    },
+    "S021": {
+      "tp": 1,
+      "fp": 13,
+      "fn": 12,
+      "n_reference": 13,
+      "n_predictions": 25,
+      "ignored": 11,
+      "matches": [
+        {
+          "reference_id": "S021-mucax4y5-expanded-c02",
+          "prediction_id": "heldout_reconstructed_lid_0011985",
+          "iou": 0.42076108271654755,
+          "centroid_distance_m": 1.65181503729567
+        }
+      ],
+      "ious": [
+        0.42076108271654755
+      ],
+      "unmatched_reference_ids": [
+        "S021-mss2o744",
+        "S021-mss2oa3z",
+        "S021-mss2u3q7-expanded-c01",
+        "S021-mss2vil4",
+        "S021-mss2vv3u",
+        "S021-mss2vxpd",
+        "S021-mss2wfi8",
+        "S021-mucawcmu",
+        "S021-mucax4y5-expanded-c01",
+        "S021-mucaxj6i-expanded-c01",
+        "S021-mucaxj6i-expanded-c02",
+        "S021-mucay2b2"
+      ],
+      "false_positive_ids": [
+        "heldout_reconstructed_lid_0011813",
+        "heldout_reconstructed_lid_0011859",
+        "heldout_reconstructed_lid_0011875",
+        "heldout_reconstructed_lid_0011881",
+        "heldout_reconstructed_lid_0011885",
+        "heldout_reconstructed_lid_0011923",
+        "heldout_reconstructed_lid_0011959",
+        "heldout_reconstructed_lid_0011975",
+        "heldout_reconstructed_lid_0011981",
+        "heldout_reconstructed_lid_0011989",
+        "heldout_reconstructed_lid_0011992",
+        "heldout_reconstructed_lid_0012042",
+        "heldout_reconstructed_lid_0012092"
+      ],
+      "ignored_prediction_ids": [
+        "heldout_reconstructed_lid_0011753",
+        "heldout_reconstructed_lid_0011802",
+        "heldout_reconstructed_lid_0011814",
+        "heldout_reconstructed_lid_0011837",
+        "heldout_reconstructed_lid_0011844",
+        "heldout_reconstructed_lid_0011915",
+        "heldout_reconstructed_lid_0011924",
+        "heldout_reconstructed_lid_0011998",
+        "heldout_reconstructed_lid_0011999",
+        "heldout_reconstructed_lid_0012024",
+        "heldout_reconstructed_lid_0012043"
+      ],
+      "over_segmented_references": 3,
+      "under_segmented_predictions": 1,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S021-mss2o744": 0,
+        "S021-mss2oa3z": 0,
+        "S021-mss2vil4": 0,
+        "S021-mss2vv3u": 0,
+        "S021-mss2vxpd": 0,
+        "S021-mss2wfi8": 2,
+        "S021-mucawcmu": 1,
+        "S021-mucay2b2": 0,
+        "S021-mucax4y5-expanded-c01": 1,
+        "S021-mucax4y5-expanded-c02": 1,
+        "S021-mucaxj6i-expanded-c01": 2,
+        "S021-mucaxj6i-expanded-c02": 1,
+        "S021-mss2u3q7-expanded-c01": 3
+      },
+      "prediction_overlap_degrees": {
+        "heldout_reconstructed_lid_0011985": 1,
+        "heldout_reconstructed_lid_0011981": 1,
+        "heldout_reconstructed_lid_0011975": 1,
+        "heldout_reconstructed_lid_0011885": 1,
+        "heldout_reconstructed_lid_0011992": 0,
+        "heldout_reconstructed_lid_0011989": 0,
+        "heldout_reconstructed_lid_0011859": 1,
+        "heldout_reconstructed_lid_0011923": 1,
+        "heldout_reconstructed_lid_0011959": 1,
+        "heldout_reconstructed_lid_0012092": 0,
+        "heldout_reconstructed_lid_0011881": 1,
+        "heldout_reconstructed_lid_0011875": 2,
+        "heldout_reconstructed_lid_0012042": 0,
+        "heldout_reconstructed_lid_0011813": 1
+      }
+    },
+    "S023": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "n_reference": 1,
+      "n_predictions": 2,
+      "ignored": 1,
+      "matches": [],
+      "ious": [],
+      "unmatched_reference_ids": [
+        "S023-mss2y92r"
+      ],
+      "false_positive_ids": [
+        "heldout_reconstructed_lid_0011700"
+      ],
+      "ignored_prediction_ids": [
+        "heldout_reconstructed_lid_0011418"
+      ],
+      "over_segmented_references": 0,
+      "under_segmented_predictions": 0,
+      "diagnostic_overlap_rule": "intersection / min(crown areas) >= 0.10; no distance filter",
+      "reference_overlap_degrees": {
+        "S023-mss2y92r": 0
+      },
+      "prediction_overlap_degrees": {
+        "heldout_reconstructed_lid_0011700": 0
+      }
+    }
+  },
+  "bootstrap": {
+    "unit": "paired_site",
+    "stratification": "none",
+    "iterations": 2000,
+    "seed": 42,
+    "rng": "PCG64",
+    "numpy_version": "2.2.6",
+    "sites": [
+      "S003",
+      "S005",
+      "S007",
+      "S012",
+      "S014",
+      "S016",
+      "S021",
+      "S023"
+    ],
+    "intervals": {
+      "precision": {
+        "lower": 0.0,
+        "upper": 0.28125,
+        "valid_replicates": 1998
+      },
+      "recall": {
+        "lower": 0.0,
+        "upper": 0.09444553805774278,
+        "valid_replicates": 2000
+      },
+      "commission_rate": {
+        "lower": 0.71875,
+        "upper": 1.0,
+        "valid_replicates": 1998
+      },
+      "omission_rate": {
+        "lower": 0.9055544619422572,
+        "upper": 1.0,
+        "valid_replicates": 2000
+      },
+      "f1": {
+        "lower": 0.0,
+        "upper": 0.13575099942889773,
+        "valid_replicates": 2000
+      },
+      "median_matched_iou": {
+        "lower": 0.17795973897241096,
+        "upper": 0.5288652920732859,
+        "valid_replicates": 1814
+      },
+      "over_segmentation_rate": {
+        "lower": 0.0,
+        "upper": 0.06134969325153374,
+        "valid_replicates": 2000
+      },
+      "under_segmentation_rate": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "valid_replicates": 1998
+      }
+    },
+    "limitation": "Few sites; within-site correlation preserved, between-site dependence not modelled. No stratum-specific interval from a single site.",
+    "f1_improvement": {
+      "lower": -0.33317961214841185,
+      "upper": -0.11560483716184013,
+      "valid_replicates": 2000
+    },
+    "positive_improvement_ci_excludes_zero": false
+  },
+  "sources": {
+    "reference": "1dc69fe5f9431c54aab1630525a04eb34615b7676342c4bf3f36f79d2ff87616",
+    "policy": "f4d9b73e87c2b034396d772c2af03ebc66f6a0d76c51c4943bd4e63d8ec402ef",
+    "scenario": "e83d22b8695dc5ee6ac91700bf82c3502b3ab5f45bea4425708d6186436cabc8",
+    "sat": "9ee6a4ee6236bd3abd6c8964fdea848ad4759b056aa515de7d674304202a5f80",
+    "classical": "b90ec68fd6070c29f808692c35c72ad8fbd3dcb30a35e95b6a5182983decf1f4",
+    "sat_assembly": "fda96761ed5c35a73bde925989e61a04d0cd16f07f7fef021baeb6a4c314cc0c",
+    "classical_receipt": "eec8ee6f20106dc6a2c0bdcb327c3cfb479e1e740aba262da70a1d8b344509b0"
+  },
+  "acceptance_declared": false
+}

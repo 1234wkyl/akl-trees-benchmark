@@ -1,0 +1,38 @@
+{
+  "scope": "historical crown stage on eight training sites; retained frozen seeds",
+  "verdict": "strong functional reproduction evidence; exact frozen-baseline certification pending",
+  "download_failure_resolved": true,
+  "original_discrepancies": 10,
+  "original_discrepancies_resolved": 10,
+  "new_discrepancies": 1,
+  "frozen_seed_inside_crowns": 126,
+  "recovered_frozen_ids": 126,
+  "all_four_attribute_matches": 125,
+  "attribute_match_absolute_tolerance": 1e-06,
+  "remaining_discrepancy": {
+    "site_id": "S010",
+    "tree_id": "akl_tree_lid_0849199",
+    "frozen_area_m2": 221,
+    "recovered_area_m2": 219,
+    "cause_in_current_controls": "two pixels rejected by the replacement 5x5 mean greenness gate"
+  },
+  "supplied_historical_kernel_changed": false,
+  "segmentation_parameters_tuned": false,
+  "frozen_database_unchanged": true,
+  "supplied_chm_source_hashes_verified": 40,
+  "reference_labels_used": false,
+  "heldout_sites_used": false,
+  "historical_input_identity_verified": false,
+  "producer_commit_verified": false,
+  "original_frozen_crown_geometry_compared": false,
+  "detection_canonicalisation_cleanup_replayed": false,
+  "reference_freeze_implied": false,
+  "M3_complete": false,
+  "remaining_requirements": [
+    "producer revision and input/settings record",
+    "original mask/greenness provenance",
+    "lossless frozen crown geometry or authoritative regeneration path",
+    "training-only baseline tuning"
+  ],
+  "evidence_archive_sha256": "f77b78c6665704ba050b4b09bf8c3d710fc09d87b3207571d5e6512223753f37"
+}

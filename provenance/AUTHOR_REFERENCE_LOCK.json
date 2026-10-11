@@ -1,0 +1,30 @@
+{
+  "status": "author_locked",
+  "locked_on": "2026-10-10",
+  "recorded_utc": "2026-10-09T18:08:25.327113+00:00",
+  "source_json": "data/labels/crown_labels_XZ_confirmed_2026-10-10.json",
+  "source_json_sha256": "a8766662d51c16cf5cf87df3cbd8046512e1f493f2055f58374da3f878dbeb76",
+  "site_definitions_sha256": "78b8513a2153d380b3761c8f642b8d23c14216e7aeb3af67865b5070fc0eb1fe",
+  "evaluation_policy_sha256": "7962a6a0fff654dbdb6c8442fc449fa3d111c76491b97d90c239e784ac16e8d0",
+  "class_counts": {
+    "tree": 458,
+    "tree_group": 142,
+    "not_tree": 41,
+    "uncertain": 4
+  },
+  "tree_counts_by_split": {
+    "train": 147,
+    "val": 141,
+    "test": 170
+  },
+  "post_revision_reference": true,
+  "held_out_results_previously_exposed": true,
+  "supervisor_freeze_confirmed": false,
+  "original_blind_agreement_replaced": false,
+  "point_labels_manually_checked": false,
+  "scope": "Author-confirmed final reference; all further evaluation retains disclosure of previous test exposure and post-revision annotation. It is not a claim of a new independent blind benchmark.",
+  "reference_gpkg": "data/exports/evaluation_reference.gpkg",
+  "reference_gpkg_sha256": "1dc69fe5f9431c54aab1630525a04eb34615b7676342c4bf3f36f79d2ff87616",
+  "derivation_receipt_sha256": "b74f276de506153e436740bc3394ff9c3af633ee222ec4ee893c7e8381046b1f",
+  "authority": "Author-confirmed research source"
+}

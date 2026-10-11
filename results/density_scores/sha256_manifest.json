@@ -1,0 +1,18 @@
+{
+  "test_fraction_0.125.json": "b6ab98edc839b7a43e553d9fba38b5eb7b69c76527215ba10430f9d08f9755f0",
+  "density_curve.png": "39c931f7b7991c71ce8a86b8afd1e8306a43b18e5a40c34486f952dd0859d447",
+  "val_density_vs_full_bootstrap.json": "55562f8f68f01a9e46ad6be37eb325152b83c852613b7d4e2afbd79e5d02dcb0",
+  "test_fraction_0.75.json": "7db0c108cdd80353468a8d30a0a265f798d83ffa6db18fde2d0eb2a1e3204a3a",
+  "test_fraction_1.json": "8dd8b786b40ebfa030b3aae02441a07b16161028276a0863b3e44f3a2bd32468",
+  "val_fraction_1.json": "03d8bd540fc3ec6ff74e48e85a589e378e77fe5ece3bfa6c73fd97e3d665059f",
+  "test_fraction_0.25.json": "0f0c2a973edb7ef083fb25ddb3ad1dbe85bc8dd2d958300d684257f7d7603d7d",
+  "density_metrics.csv": "7970c60c5fb52731d1916c384ff2813920f24b5eeeaf769234e4a2d05bcb50f6",
+  "val_fraction_0.125.json": "42e0e2bdee059e4ec41f2d7cbacef4a38aedb1cd58d58c765609fe5284c10729",
+  "val_fraction_0.25.json": "1e90bf84db475e7dba1e5230b88e2fb45fa14ae37540a2414add430df9def414",
+  "val_fraction_0.5.json": "2c86fe7212c53d0fe5244bdb0517a50e130a72dc972a8a31b3057c951027abcb",
+  "executed_source.py": "ceef24b66ee8f1603ad81a8983c390c7b8ffedfa657902c8825b5638d15e3ebd",
+  "test_fraction_0.5.json": "51d41b98c91f06049bb1ca4898787bf7b4c39dbcad91283bb1f7d36f58aac244",
+  "test_density_vs_full_bootstrap.json": "e6fb1a9ad7b349d11df040821f860b05a0568d24b9c8a5251a4cc6384b45e867",
+  "receipt.json": "d2901d7cb59081b4b1163f583a9ed56398e7c078ca17ee1a4b43afa3e0d2b609",
+  "val_fraction_0.75.json": "ff477adf762ce4e4f12e18d8bb3a9031a524a0121b328db5263de0719cd55101"
+}

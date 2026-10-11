@@ -1,0 +1,36 @@
+{
+  "recorded_on": "2026-10-10",
+  "primary_object_iou": 0.5,
+  "supplementary_object_iou": 0.4,
+  "supplementary_status": "Post-hoc, literature-supported matching sensitivity; not a predeclared reliability gate",
+  "overall_rater_F1_gate": null,
+  "freeze_requires": "Documented object-level adjudication and explicit reference freeze; no automatic numeric approval",
+  "reference_frozen": false,
+  "model_acceptance_changed": false,
+  "sources": [
+    {
+      "doi": "10.1371/journal.pcbi.1009180",
+      "basis": "NEON crown benchmark examined IoU 0.3\u20130.6 and adopted 0.4; not an overall rater-F1 passing threshold"
+    },
+    {
+      "doi": "10.1186/s12874-018-0606-7",
+      "basis": "Reliability thresholds require a context and consequences; alpha thresholds are not transferable to tree F1"
+    },
+    {
+      "doi": "10.3390/rs16152786",
+      "basis": "Manual crown labels can omit individuals or merge multiple trees; boundary agreement alone does not establish truth"
+    }
+  ],
+  "post_revision_working_QA_target": {
+    "matching_iou": 0.4,
+    "site_F1_minimum": 0.8,
+    "site_matched_median_IoU_minimum": 0.6,
+    "applies_to": [
+      "S016",
+      "S020"
+    ],
+    "scope": "Author harmonisation correspondence only, not original independent agreement or formal freeze",
+    "status": "Researcher-selected operational target after examining correspondence; not a universal or predeclared gate",
+    "rationale": "Require substantial one-to-one correspondence in both sites, not only a favorable pooled value; require geometric agreement as well as presence."
+  }
+}

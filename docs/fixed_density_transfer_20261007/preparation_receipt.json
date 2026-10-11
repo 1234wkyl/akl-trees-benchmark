@@ -1,0 +1,19 @@
+{
+  "status": "ALL FOUR FIXED DENSITY INPUT QUEUES COMPLETE",
+  "fractions": [
+    0.75,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "tiles_per_fraction": 19,
+  "density_protocol_sha256": "3947eaf67fa4f0e39a57cc6e0ced3a7d132ba657d8c71cc4954af80fab3e4caa",
+  "queue_plan_sha256": {
+    "0.75": "e3081345c9af2496d7c82cb4cb65c96106bfdbeb1cd8d8073c89455589ad523a",
+    "0.5": "446e144ca50314728715294202f81e917b0fd20efff21def8f584f624d0046f1",
+    "0.25": "5df33933385aad83d292c371984a243a1b75c7a868824f81bead5cc193b8c459",
+    "0.125": "fe2c2391a96c28761cc66c2f31670d5fc821aacab207634a2be129f3c1be7fa5"
+  },
+  "reference_frozen": false,
+  "model_settings_changed": false
+}

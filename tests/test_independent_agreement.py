@@ -58,6 +58,25 @@ class IndependentAgreementCases(unittest.TestCase):
         with tempfile.TemporaryDirectory() as td:
             p,sites=self.write_fixture(td,complete=False)
             with self.assertRaisesRegex(ValueError,'complete'):intake.audit_json(p,'TW',sites,['S016','S020'])
+    def test_loader_preserves_polygon_holes(self):
+        with tempfile.TemporaryDirectory() as td:
+            p,sites=self.write_fixture(td);d=json.loads(p.read_text())
+            x0,y0,_,_=sites['S016']['bbox_epsg2193']
+            d['sites']['S016']['labels'][0]['holes_world']=[[[x0+11,y0+11],[x0+13,y0+11],[x0+13,y0+13],[x0+11,y0+13]]]
+            p.write_text(json.dumps(d))
+            frame,_=a.load_independent_json(p,'TW',sites)
+            geom=frame[frame.site_id=='S016'].geometry.iloc[0]
+            self.assertAlmostEqual(geom.area,21);self.assertEqual(len(geom.interiors),1)
+    def test_revision_attribution_is_explicit_and_author_only(self):
+        with tempfile.TemporaryDirectory() as td:
+            p,sites=self.write_fixture(td);d=json.loads(p.read_text());d['labeller']='XZ'
+            for rec in d['sites'].values():rec['labels'][0]['labeller']='Codex_AI_refinement_of_XZ'
+            p.write_text(json.dumps(d))
+            with self.assertRaisesRegex(ValueError,'mixed labellers'):a.load_independent_json(p,'XZ',sites)
+            frame,_=a.load_independent_json(p,'XZ',sites,allow_revision_attribution=True)
+            self.assertEqual(len(frame),2)
+            d['labeller']='TW';p.write_text(json.dumps(d))
+            with self.assertRaisesRegex(ValueError,'mixed labellers'):a.load_independent_json(p,'TW',sites,allow_revision_attribution=True)
     def test_duplicate_ids_rejected(self):
         with tempfile.TemporaryDirectory() as td:
             p,sites=self.write_fixture(td,duplicate=True)

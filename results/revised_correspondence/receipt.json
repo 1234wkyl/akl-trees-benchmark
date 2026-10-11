@@ -1,0 +1,40 @@
+{
+  "run_id": "20261009T160741Z_postrevision_correspondence",
+  "started_utc": "2026-10-09T16:07:41.105049+00:00",
+  "completed_utc": "2026-10-09T16:07:43.777337+00:00",
+  "exit_code": 0,
+  "xz_source": "/Users/zhangxi/Desktop/791\u9879\u76ee\u6587\u4ef6/Starter_Kit/outputs/reference_author_review_20261010_completed/crown_labels_XZ_2026-10-10_reviewed.json",
+  "xz_sha256": "ac0b681a0ed5b4faaf10098128d3aa7d3f2eeae401a4b99f953a42cb9dc272f4",
+  "tw_source": "/Users/zhangxi/Desktop/791\u9879\u76ee\u6587\u4ef6/Starter_Kit/data/labels/crown_labels_TW_2026-10-09.json",
+  "tw_sha256": "19f4f8958489cf40aa00aefa0f7c22f3d65dba1b1838a7b98913b7a70d504185",
+  "comparison_kind": "post_revision_correspondence",
+  "independent_blind_agreement": false,
+  "reference_frozen": false,
+  "labels_modified": false,
+  "command": [
+    "/opt/miniconda3/envs/akl-benchmark/bin/python",
+    "/Users/zhangxi/Desktop/791\u9879\u76ee\u6587\u4ef6/Starter_Kit/scripts/05_interrater_agreement.py",
+    "--a",
+    "XZ",
+    "--b",
+    "TW",
+    "--json-a",
+    "outputs/independent_agreement/TW_2026-10-10_completed_review/inputs/XZ_revised.json",
+    "--json-b",
+    "outputs/independent_agreement/TW_2026-10-10_completed_review/inputs/TW_original.json",
+    "--sites",
+    "S016",
+    "S020",
+    "--iou",
+    "0.5",
+    "--post-revision",
+    "--output",
+    "outputs/independent_agreement/TW_2026-10-10_completed_review/agreement.md"
+  ],
+  "code_sha256": {
+    "80_compare_revised_annotations.py": "a7732d1038863c496fecdd5dae68479460a2bc251bafb7b1870f9ebffe8adf9a",
+    "05_interrater_agreement.py": "4c8079076f05f022aea52848e15fdf83a8d18810addea9b5350f0df7de521b50",
+    "31_receive_independent_labels.py": "b638248c5dcb2303fb40cf54a64c6e473c4c4ad5c9d29bc7418e864164f190d7",
+    "annotation_coverage.py": "95ac31fd142f9cc9f5a7eb43f700436bfddd820a9cc11cefd761c3ea80e47777"
+  }
+}

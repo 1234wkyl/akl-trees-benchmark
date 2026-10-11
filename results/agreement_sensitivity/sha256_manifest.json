@@ -1,0 +1,13 @@
+{
+  "index.html": "203a0a55a91cccc8ac36e4ac5fd7559086fdbe4a8ee1ec303c65484afe6304a1",
+  "inputs/TW_original.json": "19f4f8958489cf40aa00aefa0f7c22f3d65dba1b1838a7b98913b7a70d504185",
+  "inputs/XZ_revised.json": "ac0b681a0ed5b4faaf10098128d3aa7d3f2eeae401a4b99f953a42cb9dc272f4",
+  "metrics.json": "1f033a3d76da0d843d34314729ecd6c85da35f4c57d6ae9b3f878bbfb11b8f44",
+  "policy.json": "700978b9c049c9597fea8770b24e033d17aa06c8c931dcd9bec3f5aa663f7d56",
+  "receipt.json": "9fca5e10a96680ebf7a823544e4a0b2a9efa8669978b77631ac1d34d90deb39f",
+  "region_links.json": "cbdf8770adb75290bcbb68beb3a0ca2422e7cd9d949f0f651cddc3784b2df2a0",
+  "region_object_coverage.csv": "a5a913745d513f6b1d6cfc7c8f3a5762e86da929d803e5769af5c4b62821c2f9",
+  "report.md": "7b8cae50c19f1a0224eee44cd05153ca06decaa0cba4a41191b857b6735421ca",
+  "visual_review/S016_regions.png": "921b490620743f1f3b7ac000f538069ce7938e500449cd59c9614e4e2540dca4",
+  "visual_review/S020_regions.png": "04fd2dd41b0d39a671835c6746d5f67d418c07b98622825b7f1534aedcec102e"
+}

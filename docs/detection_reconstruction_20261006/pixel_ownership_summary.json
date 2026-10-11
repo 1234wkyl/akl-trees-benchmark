@@ -1,0 +1,20 @@
+{
+  "status": "READ-ONLY SEED OWNERSHIP DIAGNOSIS; NO PARAMETER OR PIXEL CHANGE",
+  "changed_target_pixels": 9,
+  "near_equidistant_both": 9,
+  "mismatching_frozen_ids": [
+    "akl_tree_lid_0197611",
+    "akl_tree_lid_0832289",
+    "akl_tree_lid_0832313",
+    "akl_tree_lid_0832539",
+    "akl_tree_lid_0832611",
+    "akl_tree_lid_0832617",
+    "akl_tree_lid_0832692",
+    "akl_tree_lid_0849199",
+    "akl_tree_lid_0849242",
+    "akl_tree_lid_1039104",
+    "akl_tree_lid_1039114"
+  ],
+  "probe_comparison_sha256": "e6441b111a8b41cca6a9542e3d73dbf299b411aee0f07ea42bc94863f30e1978",
+  "note": "Distance gaps diagnose tie sensitivity; this does not identify the historical SciPy/PROJ runtime or license a per-object correction."
+}

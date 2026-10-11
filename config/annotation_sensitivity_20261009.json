@@ -1,0 +1,28 @@
+{
+  "recorded_on": "2026-10-09",
+  "status": "post-hoc exploratory sensitivity requested after inspecting revised-label correspondence",
+  "sites": ["S016", "S020"],
+  "object_classes": ["tree"],
+  "iou_thresholds": [0.50, 0.40, 0.30, 0.25],
+  "smaller_area_overlap_threshold": 0.50,
+  "centroid_tolerance_m": 2.0,
+  "region_classes": ["tree", "tree_group"],
+  "area_tolerances_m": [0.0, 0.5, 1.0, 2.0],
+  "covered_object_fraction_threshold": 0.50,
+  "object_rule": "one-to-one greedy; descending overlap then stable label IDs; centroid view uses existing benchmark descending IoU, distance, stable IDs within 2 m",
+  "region_rule": "union tree and tree_group per rater within fixed sites; remove internal boundaries; preserve polygon holes; no disagreement-derived exclusion masks",
+  "tolerant_area_rule": "A-support = area(A intersect buffer(B,d))/area(A), B-support = area(B intersect buffer(A,d))/area(B); harmonic mean. Buffers intersect site domain. At d=0 this equals canopy Dice.",
+  "many_to_many_rule": "region links require positive intersection covering at least 50% of the smaller polygon; linked-object fractions are not one-to-one detection F1. Also report each polygon's coverage by the other rater's entire region union.",
+  "uncertainty_rule": "exclude uncertain and not_tree classes from vegetation views; retain all confirmed trees; never create masks from TW uncertain regions",
+  "sources": [
+    {
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009180",
+      "basis": "NEON benchmark distinguishes detection and delineation, examines IoU sensitivity and uses 0.4. Threshold inclusivity and pooled counts here retain the project implementation; this is not a replication of that benchmark."
+    },
+    {
+      "file": "config/reference_review_policy.json",
+      "basis": "Existing 2 m centroid tolerance is reused as an exploratory rater-location view; the original rater protocol is not replaced."
+    }
+  ],
+  "interpretation": "Report all settings; do not select a favorable threshold as evidence of passing. Larger tolerances allow more boundary disagreement. These revised labels are not independent blind annotations. No automatic freeze or model scoring changes."
+}

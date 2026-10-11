@@ -116,7 +116,7 @@ def class_crosstab(class_pairs):
     return counts
 
 
-def load_independent_json(path, who, sites):
+def load_independent_json(path, who, sites, allow_revision_attribution=False):
     """Validate a single independent export; keep completed zero-object sites."""
     import geopandas as gpd
     from shapely.geometry import Polygon
@@ -145,14 +145,23 @@ def load_independent_json(path, who, sites):
             if not isinstance(lid,str) or not lid or lid in seen:
                 raise ValueError(f'{path.name}: missing/duplicate label ID')
             seen.add(lid)
-            if label.get('labeller') not in (None, '', who):
+            allowed_attributions={None,'',who}
+            if allow_revision_attribution and who=='XZ':
+                allowed_attributions.add('Codex_AI_refinement_of_XZ')
+            if label.get('labeller') not in allowed_attributions:
                 raise ValueError(f'{path.name}: mixed labellers')
             if label.get('cls') not in {'tree','tree_group','uncertain','not_tree'}:
                 raise ValueError(f'{path.name}: unknown class')
             coords=np.asarray(label.get('world'),dtype=float)
             if coords.ndim!=2 or coords.shape[1]!=2 or len(coords)<3 or not np.isfinite(coords).all():
                 raise ValueError(f'{path.name}: finite planar world coordinates required for {lid}')
-            poly = Polygon(coords)
+            holes=label.get('holes_world',[])
+            if not isinstance(holes,list):raise ValueError(f'{path.name}: hole list required for {lid}')
+            for hole in holes:
+                h=np.asarray(hole,dtype=float)
+                if h.ndim!=2 or h.shape[1]!=2 or len(h)<3 or not np.isfinite(h).all():
+                    raise ValueError(f'{path.name}: finite polygon hole coordinates required for {lid}')
+            poly = Polygon(coords,holes=holes)
             if not poly.is_valid:
                 poly = poly.buffer(0)
             if poly.is_empty or not poly.is_valid:
@@ -172,6 +181,7 @@ def main() -> int:
     ap.add_argument('--json-a', type=Path, help='original independent JSON for labeller A')
     ap.add_argument('--json-b', type=Path, help='original independent JSON for labeller B')
     ap.add_argument('--sites', nargs='+', help='explicit sites to compare, including completed zero-object sites')
+    ap.add_argument('--post-revision',action='store_true',help='Non-independent correspondence after author revision; retain recorded author refinement attribution')
     args = ap.parse_args()
     if not 0 < args.iou <= 1:
         ap.error("--iou must be greater than zero and at most one")
@@ -186,7 +196,7 @@ def main() -> int:
     if args.json_a:
         definition = json.loads((KIT_ROOT/'data/sites/reference_sites.json').read_text())
         site_definitions = {s['site_id']:s for s in definition['sites']}
-        A, complete_a = load_independent_json(args.json_a, args.a, site_definitions)
+        A, complete_a = load_independent_json(args.json_a, args.a, site_definitions,allow_revision_attribution=args.post_revision)
         B, complete_b = load_independent_json(args.json_b, args.b, site_definitions)
         shared = sorted(complete_a & complete_b)
         sources = [args.json_a, args.json_b]
@@ -268,7 +278,7 @@ def main() -> int:
               f"median IoU={format_stat(r['median_iou'])}")
 
     lines = [
-        "# Inter-rater agreement", "",
+        "# Post-revision annotation correspondence" if args.post_revision else "# Inter-rater agreement", "",
         f"Labellers: **{args.a}** and **{args.b}**. Shared sites: {len(shared)}. "
         f"Match rule: one-to-one greedy, IoU >= {args.iou}.", "",
         "| Metric | Value |", "|---|--:|",
@@ -279,6 +289,8 @@ def main() -> int:
         f"| Median IoU of matched objects | {format_stat(med_iou)} |",
         f"| Cohen's kappa on matched classes | {format_stat(kappa)} |",
     ]
+    if args.post_revision:
+        lines[2:2]=["The author revision follows inspection of returned supervisor labels. This is not independent blind agreement and does not replace the preserved original comparison. Original annotation IDs, geometry and refinement attributions remain in the source JSON.",""]
     lines += ["", "| Site | " + f"{args.a} | {args.b} | matched | only {args.a} | only {args.b} |",
               "|---|--:|--:|--:|--:|--:|"]
     for r in per_site:
@@ -340,7 +352,9 @@ def main() -> int:
               'recall_B_relative_to_A':tot_m/tot_a if tot_a else None,
               'directional_metric_note':'Annotation correspondence only; neither rater is declared field truth.',
               'geometry_rule':'buffer(0) repair for invalid JSON polygons; no boundary clipping',
-              'canonical_reference_written':False}
+              'canonical_reference_written':False,
+              'comparison_kind':'post_revision_correspondence' if args.post_revision else 'original_rater_comparison',
+              'independent_blind_agreement':not args.post_revision}
     report.with_name(report.stem+'_provenance.json').write_text(json.dumps(metadata,indent=2)+'\n')
     print(f"\nWrote {report}")
     return 0

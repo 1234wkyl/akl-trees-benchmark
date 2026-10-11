@@ -1,0 +1,93 @@
+{
+  "check": "four delivered tiles around S001, full record read",
+  "tiles": [
+    {
+      "tile": "pc_BA31_1000_3848.laz",
+      "fully_read_points": 1071244,
+      "header_min": [
+        1754562.0,
+        5918642.0
+      ],
+      "header_max": [
+        1755038.0,
+        5919358.0
+      ],
+      "actual_min": [
+        1754562.0,
+        5918642.0
+      ],
+      "actual_max": [
+        1755038.0,
+        5919358.0
+      ],
+      "header_matches_actual": true
+    },
+    {
+      "tile": "pc_BA31_1000_3849.laz",
+      "fully_read_points": 1759575,
+      "header_min": [
+        1755042.0,
+        5918642.0
+      ],
+      "header_max": [
+        1755518.0,
+        5919358.0
+      ],
+      "actual_min": [
+        1755042.0,
+        5918642.0
+      ],
+      "actual_max": [
+        1755518.0,
+        5919358.0
+      ],
+      "header_matches_actual": true
+    },
+    {
+      "tile": "pc_BA31_1000_3948.laz",
+      "fully_read_points": 1044415,
+      "header_min": [
+        1754562.0,
+        5917922.0
+      ],
+      "header_max": [
+        1755038.0,
+        5918638.0
+      ],
+      "actual_min": [
+        1754562.0,
+        5917922.0
+      ],
+      "actual_max": [
+        1755038.0,
+        5918638.0
+      ],
+      "header_matches_actual": true
+    },
+    {
+      "tile": "pc_BA31_1000_3949.laz",
+      "fully_read_points": 1441533,
+      "header_min": [
+        1755042.0,
+        5917922.0
+      ],
+      "header_max": [
+        1755518.0,
+        5918638.0
+      ],
+      "actual_min": [
+        1755042.0,
+        5917922.0
+      ],
+      "actual_max": [
+        1755518.0,
+        5918638.0
+      ],
+      "header_matches_actual": true
+    }
+  ],
+  "observed_x_gap_m": 4,
+  "observed_y_gap_m": 4,
+  "cause": "not established; no inputs modified",
+  "model_results_computed": false
+}

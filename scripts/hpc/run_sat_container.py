@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Pinned, isolated training-tile SAT invocation. Plan locally; execute on VM."""
+"""Pinned, isolated SAT invocation; held-out prediction needs an inference-only protocol."""
 import argparse
 import json
 import os
@@ -12,6 +12,7 @@ from pathlib import Path
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from benchmark.common import ROOT, sha256, site_definitions, write_json
+from benchmark.inference_scenario import validate_inference_scenario
 
 
 def main():
@@ -21,6 +22,8 @@ def main():
     ap.add_argument('--image',required=True,help='immutable local sha256 image ID or repo@sha256 digest')
     ap.add_argument('--output',type=Path,help='defaults to BENCHMARK_OUTPUT_DIR/sat')
     ap.add_argument('--execute',action='store_true',help='requires Docker/NVIDIA on the VM; otherwise write plan only')
+    ap.add_argument('--inference-scenario',type=Path,
+                    help='explicit assumption-only pretrained prediction protocol; no scoring permission')
     args=ap.parse_args()
     if not re.fullmatch(r'(?:[^\s]+@)?sha256:[0-9a-f]{64}',args.image):
         ap.error('pin an immutable sha256 image ID/digest, not a mutable tag')
@@ -34,6 +37,8 @@ def main():
     if out.exists():ap.error('use a fresh output folder')
     source=args.source.resolve();input_dir=args.input.resolve()
     expected=json.loads((ROOT/'config/segmentanytree_source.json').read_text())
+    scenario=validate_inference_scenario(args.inference_scenario) if args.inference_scenario else None
+    if scenario and scenario['image']!=args.image:raise ValueError('scenario immutable image differs')
     commit=subprocess.check_output(['git','-C',str(source),'rev-parse','HEAD'],text=True).strip()
     if commit!=expected['commit']:raise ValueError('unexpected source commit')
     changes=subprocess.check_output(['git','-C',str(source),'diff','--name-only','HEAD'],text=True).splitlines()
@@ -55,7 +60,7 @@ def main():
         if crs is None or crs.to_epsg()!=2193:raise ValueError('geographic EPSG:2193 LAZ required')
         bounds=box(*h.mins[:2],*h.maxs[:2])
         overlaps=[s for s in site_definitions().values() if box(*s['bbox_epsg2193']).intersection(bounds).area>0]
-        if not overlaps or any(s['split']!='train' for s in overlaps):
+        if not overlaps or (not scenario and any(s['split']!='train' for s in overlaps)):
             raise ValueError('this development runner refuses held-out tiles; freeze and final run manifest required first')
     if any(p.is_symlink() for p in source.rglob('*')):
         raise ValueError('inspect upstream symlinks before copying executable code')
@@ -74,11 +79,14 @@ def main():
                 'set -e; python3 benchmark_preflight.py; bash run_inference.sh /benchmark-input /benchmark-output/predictions false']
     plan={'status':'PLANNED ONLY','source_commit':commit,'checkpoint':expected,
           'input_file':str(laz[0]),'input_sha256':sha256(laz[0]),'image':args.image,
-          'training_sites':[s['site_id'] for s in overlaps],
+          'training_sites':[s['site_id'] for s in overlaps if s['split']=='train'],
+          'prediction_site_ids':[s['site_id'] for s in overlaps],
           'docker_command_argv':docker_cmd,'clean_output_argument':'false',
           'container_cache':'isolated tmpfs; no shared cache mounted',
           'upstream_default_entrypoint_overridden':True,
-          'held_out_inference_permitted':False,
+          'held_out_inference_permitted':bool(scenario),
+          'inference_scenario_sha256':sha256(args.inference_scenario) if scenario else None,
+          'evaluation_permitted':False,
           'notes':'Source code is copied per run; checkpoint and input are readonly. Input sidecars are not sent to upstream. Architecture loading and container compatibility are unverified until VM execution.'}
     write_json(out/'plan.json',plan)
     if not args.execute:

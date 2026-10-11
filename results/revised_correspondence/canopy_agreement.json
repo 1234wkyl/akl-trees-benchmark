@@ -1,0 +1,136 @@
+{
+  "role": "supplementary extent/boundary agreement; does not replace primary instance/class results",
+  "primary_metric_changed": false,
+  "automatic_pass_or_freeze": false,
+  "policy": {
+    "recorded_on": "2026-10-06",
+    "status": "supplementary protocol recorded before receiving the original TW export",
+    "vegetation_classes": [
+      "tree",
+      "tree_group"
+    ],
+    "coverage_geometry": "union vegetation polygons separately per rater, intersect fixed site domain; exact vector areas; internal instance divisions disappear",
+    "boundary_geometry": "natural boundary of each un-clipped vegetation union intersected with site domain; do not introduce artificial site-clip edges",
+    "boundary_sample_spacing_m": 0.25,
+    "boundary_tolerances_m": [
+      0.5,
+      1.0
+    ],
+    "boundary_rule": "length-weighted midpoint samples at intervals at most 0.25 m, distance to other rater's continuous boundary; symmetric harmonic mean of matched length fractions",
+    "tolerance_basis": "0.5 m and 1.0 m sensitivity scales relative to the delivered 1 m CHM grid; project choices, not universal thresholds",
+    "uncertainty_policy": "uncertain and not_tree polygons are not vegetation; no disagreement-derived exclusion masks; uncertain areas reported separately",
+    "empty_policy": "both vegetation sets empty: coverage IoU/Dice undefined; one empty: zero; both natural boundary sets empty: boundary F1 undefined",
+    "primary_policy": "retain config/independent_agreement.json unchanged; always report primary single-tree agreement and matched-class kappa",
+    "acceptance_rule": "no new automatic passing threshold or freeze criterion",
+    "limitations": "Extent agreement can be high despite wrong tree counts, merges, class disagreements or incomplete coverage. Two sites do not establish reliability in all strata. Boundary F1 is supplementary and approximately length-weighted; it is not Boundary IoU or object-detection F1."
+  },
+  "pooled_area": {
+    "area_a_m2": 2503.158147429052,
+    "area_b_m2": 2041.4261124058348,
+    "intersection_m2": 1770.8834587242904,
+    "union_m2": 2773.700801110596,
+    "symmetric_difference_m2": 1002.8173423863054,
+    "coverage_iou": 0.6384551131164633,
+    "coverage_dice": 0.7793379360903874
+  },
+  "pooled_boundary": [
+    {
+      "boundary_length_a_m": 1386.828317463551,
+      "boundary_length_b_m": 1206.30235608739,
+      "matched_boundary_length_a_m": 654.3182252284631,
+      "matched_boundary_length_b_m": 669.3413534865316,
+      "tolerance_m": 0.5,
+      "fraction_a_near_b": 0.47180910354151323,
+      "fraction_b_near_a": 0.5548703027137596,
+      "boundary_f1": 0.5099797629331136
+    },
+    {
+      "boundary_length_a_m": 1386.828317463551,
+      "boundary_length_b_m": 1206.30235608739,
+      "matched_boundary_length_a_m": 958.8869617161085,
+      "matched_boundary_length_b_m": 988.2656039871472,
+      "tolerance_m": 1.0,
+      "fraction_a_near_b": 0.691424417601936,
+      "fraction_b_near_a": 0.8192519885251328,
+      "boundary_f1": 0.7499300667406751
+    }
+  ],
+  "per_site": [
+    {
+      "site_id": "S016",
+      "area_a_m2": 716.7033107879569,
+      "area_b_m2": 642.6151782340797,
+      "intersection_m2": 553.9415982682982,
+      "union_m2": 805.3768907537384,
+      "symmetric_difference_m2": 251.4352924854402,
+      "coverage_iou": 0.6878041878627456,
+      "coverage_dice": 0.8150284171693011,
+      "vegetation_objects_a": 26,
+      "vegetation_objects_b": 24,
+      "vegetation_outside_site_a_m2": 0.0,
+      "vegetation_outside_site_b_m2": 0.3789594433651473,
+      "uncertain_area_a_m2": 0.0,
+      "uncertain_area_b_m2": 21.09489577838705,
+      "boundary": [
+        {
+          "tolerance_m": 0.5,
+          "boundary_length_a_m": 480.3262479113607,
+          "boundary_length_b_m": 461.40552135954744,
+          "matched_boundary_length_a_m": 278.7097635673895,
+          "matched_boundary_length_b_m": 286.8650875266186,
+          "fraction_a_near_b": 0.5802509539699827,
+          "fraction_b_near_a": 0.6217201014009556,
+          "boundary_f1": 0.6002701651228818
+        },
+        {
+          "tolerance_m": 1.0,
+          "boundary_length_a_m": 480.3262479113607,
+          "boundary_length_b_m": 461.40552135954744,
+          "matched_boundary_length_a_m": 392.1839848151993,
+          "matched_boundary_length_b_m": 406.3709668105697,
+          "fraction_a_near_b": 0.8164950104654136,
+          "fraction_b_near_a": 0.8807241092676644,
+          "boundary_f1": 0.8473942255926715
+        }
+      ]
+    },
+    {
+      "site_id": "S020",
+      "area_a_m2": 1786.454836641095,
+      "area_b_m2": 1398.810934171755,
+      "intersection_m2": 1216.9418604559924,
+      "union_m2": 1968.3239103568576,
+      "symmetric_difference_m2": 751.3820499008652,
+      "coverage_iou": 0.618263007451533,
+      "coverage_dice": 0.7641069524603218,
+      "vegetation_objects_a": 43,
+      "vegetation_objects_b": 34,
+      "vegetation_outside_site_a_m2": 0.0,
+      "vegetation_outside_site_b_m2": -2.2737367544323206e-13,
+      "uncertain_area_a_m2": 0.0,
+      "uncertain_area_b_m2": 241.94269820860018,
+      "boundary": [
+        {
+          "tolerance_m": 0.5,
+          "boundary_length_a_m": 906.5020695521903,
+          "boundary_length_b_m": 744.8968347278426,
+          "matched_boundary_length_a_m": 375.60846166107365,
+          "matched_boundary_length_b_m": 382.476265959913,
+          "fraction_a_near_b": 0.414349259948875,
+          "fraction_b_near_a": 0.5134620636422164,
+          "boundary_f1": 0.4586118334027569
+        },
+        {
+          "tolerance_m": 1.0,
+          "boundary_length_a_m": 906.5020695521903,
+          "boundary_length_b_m": 744.8968347278426,
+          "matched_boundary_length_a_m": 566.7029769009092,
+          "matched_boundary_length_b_m": 581.8946371765775,
+          "fraction_a_near_b": 0.6251535390105166,
+          "fraction_b_near_a": 0.7811748017283225,
+          "boundary_f1": 0.6945094936076366
+        }
+      ]
+    }
+  ]
+}

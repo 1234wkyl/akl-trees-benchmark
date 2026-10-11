@@ -1,0 +1,30 @@
+{
+  "20261006T032149Z_inverse_crown_global_gli_002_589365": {
+    "command": "python scripts/51_attempt_historical_crowns.py --phase run --source /home/ubuntu/Xi_Zhang_Benchmark/source_reference --chm /home/ubuntu/Xi_Zhang_Benchmark/chm/reference_sites.vrt --chm-manifest /home/ubuntu/Xi_Zhang_Benchmark/provenance/original_chm_manifest.json --database /home/ubuntu/baselines/xi-capstone-20260730/akl_trees.sqlite --intake outputs/nectar/20260920T142229Z_gpu_v100_4319/baseline_intake/intake_report.json --mask-cache outputs/nectar/20261006T023550Z_historical_mask_recovery/current_osm_cache --seed-order historical-chunk --greenness outputs/nectar/20261006T023550Z_historical_mask_recovery/current_greenness_complete/greenness.vrt --crown-gli-threshold 0.02 --output outputs/nectar/20261006T032149Z_inverse_classical_reconstruction/gli_002",
+    "wall_seconds": 148,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T032657Z_inverse_crown_adapter_tests_589585": {
+    "command": "python -m pytest -q tests/test_historical_crown_attempt.py",
+    "wall_seconds": 2,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T032700Z_inverse_crown_global_threshold_screen_589655": {
+    "command": "python scripts/scan_global_greenness_thresholds.py --recovery outputs/nectar/20261006T023550Z_historical_mask_recovery --output outputs/nectar/20261006T032149Z_inverse_classical_reconstruction/threshold_screen",
+    "wall_seconds": 40,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T032822Z_inverse_crown_global_threshold_conflict_589834": {
+    "command": "python scripts/diagnose_global_threshold_conflict.py --recovery outputs/nectar/20261006T023550Z_historical_mask_recovery --output outputs/nectar/20261006T032149Z_inverse_classical_reconstruction/threshold_conflict",
+    "wall_seconds": 38,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  }
+}

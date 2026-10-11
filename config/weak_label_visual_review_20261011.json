@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-11",
+  "scope": "three explicit training-only weak-instance abstentions",
+  "reviewer_type": "assistant visual inspection; not field or certified human point annotation",
+  "global_height_filter_applied": false,
+  "changes": [
+    {
+      "site_id": "S008",
+      "treeID": 25,
+      "label_id": "ALTO:akl_tree_lid_0832587",
+      "label_source": "ALTO",
+      "source_ply_sha256": "c6b342826cde7260a4c6785a856f2925c1afb5959b1e966a92fa82a3c33e3e51",
+      "local_z_cut_m": 16.0,
+      "world_elevation_cut_m": 39.0,
+      "minimum_observed_vertical_gap_m": 6.87,
+      "expected_changed_points": 58,
+      "reason": "Two side views show a detached lower return layer beneath the main crown. RGB/CHM and XY guidance do not establish the lower layer's ownership; withdraw its definite instance assignment and retain it as unknown. No biological non-tree claim is made."
+    },
+    {
+      "site_id": "S010",
+      "treeID": 42,
+      "label_id": "ALTO:akl_tree_pc4_3488682_11828056",
+      "label_source": "ALTO",
+      "source_ply_sha256": "f0b7c0bba06e9398326af68466f4fd8c62c61a6971d8a7ca98690c7f2e4fef03",
+      "local_z_cut_m": 12.0,
+      "world_elevation_cut_m": 29.0,
+      "minimum_observed_vertical_gap_m": 3.89,
+      "expected_changed_points": 46,
+      "reason": "Two side views show a detached lower return layer beneath the main crown. RGB/CHM and XY guidance do not establish the lower layer's ownership; withdraw its definite instance assignment and retain it as unknown. No biological non-tree claim is made."
+    },
+    {
+      "site_id": "S019",
+      "treeID": 10,
+      "label_id": "S019-mss2b5zl",
+      "label_source": "manual_crown_guidance",
+      "source_ply_sha256": "76c58343cd7d3a9339a383aaf0134cd7bfaa4689f79b6e9b35eb2f83a6b61720",
+      "local_z_cut_m": 12.0,
+      "world_elevation_cut_m": 38.0,
+      "minimum_observed_vertical_gap_m": 7.27,
+      "expected_changed_points": 17,
+      "reason": "Two side views show a detached lower return layer beneath the main crown. RGB/CHM and XY guidance do not establish the lower layer's ownership; withdraw its definite instance assignment and retain it as unknown. No biological non-tree claim is made."
+    }
+  ]
+}

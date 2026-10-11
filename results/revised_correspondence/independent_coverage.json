@@ -1,0 +1,16 @@
+{
+  "recorded_on": "2026-10-06",
+  "status": "supplementary protocol recorded before receiving the original TW export",
+  "vegetation_classes": ["tree", "tree_group"],
+  "coverage_geometry": "union vegetation polygons separately per rater, intersect fixed site domain; exact vector areas; internal instance divisions disappear",
+  "boundary_geometry": "natural boundary of each un-clipped vegetation union intersected with site domain; do not introduce artificial site-clip edges",
+  "boundary_sample_spacing_m": 0.25,
+  "boundary_tolerances_m": [0.5, 1.0],
+  "boundary_rule": "length-weighted midpoint samples at intervals at most 0.25 m, distance to other rater's continuous boundary; symmetric harmonic mean of matched length fractions",
+  "tolerance_basis": "0.5 m and 1.0 m sensitivity scales relative to the delivered 1 m CHM grid; project choices, not universal thresholds",
+  "uncertainty_policy": "uncertain and not_tree polygons are not vegetation; no disagreement-derived exclusion masks; uncertain areas reported separately",
+  "empty_policy": "both vegetation sets empty: coverage IoU/Dice undefined; one empty: zero; both natural boundary sets empty: boundary F1 undefined",
+  "primary_policy": "retain config/independent_agreement.json unchanged; always report primary single-tree agreement and matched-class kappa",
+  "acceptance_rule": "no new automatic passing threshold or freeze criterion",
+  "limitations": "Extent agreement can be high despite wrong tree counts, merges, class disagreements or incomplete coverage. Two sites do not establish reliability in all strata. Boundary F1 is supplementary and approximately length-weighted; it is not Boundary IoU or object-detection F1."
+}

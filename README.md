@@ -1,45 +1,44 @@
-# Auckland Airborne LiDAR Tree-Crown Benchmark
+# Auckland urban tree benchmark
 
-This private research repository contains the code, site definitions, original annotations, and versioned evidence for comparing a frozen Auckland classical detector with SegmentAnyTree on sparse airborne LiDAR. The benchmark uses 24 spatially separated 100 m × 100 m sites across eight landscape strata. Training, validation, and test sites are assigned before model evaluation.
+A reproducible comparison of a classical CHM pipeline and SegmentAnyTree on sparse urban airborne LiDAR, including nested density transfer and two weak-supervision adaptation experiments.
 
-## Current status — 29 September 2026
+## Research snapshot: 12 October 2026
 
-- The original annotation export contains 492 polygons: 219 individual crowns, 228 tree groups, 41 selected non-tree confusers, and four uncertain regions. The current author **pre-freeze** export `crown_labels_XZ_2026-09-22-2.json` contains 523 polygons: 249 individual crowns, 229 groups, 41 selected non-tree confusers and four uncertain regions. It supersedes the 234- and 240-tree working drafts for the freeze discussion, but is not the final frozen reference. The original 219-tree export remains the first XZ input for blind agreement.
-- Two independent blind annotations for S016 and S020 are pending. No inter-rater statistic or locked validation/test result is reported yet.
-- The 30 July frozen classical database has been received and checked read-only. Its 441 site-level detection records match the site caches. The exact generating code/parameters and associated crown geometry are still being verified, so classical reproduction and training-only tuning remain open.
-- The pinned SegmentAnyTree pretrained model has run on the standalone Nectar V100. All 14 source tiles needed by the eight training sites have audited full-density predictions. Eight site-context merges and 56 training-only crown-conversion comparisons are complete. Their provisional best micro F1 is 0.2243 under an unfrozen reference, so these outputs remain **development diagnostics**, not benchmark results. Fine-tuning requires checked point-level labels.
+Experimental execution is complete. The analysis uses 24 sites in eight strata and an author-confirmed reference containing 458 individual crowns (147 training, 141 validation, 170 test), 142 unresolved tree groups, 41 non-tree regions and four uncertain regions. Original blind annotations and post-review correspondence are preserved separately.
 
-See [experimental status](docs/EXPERIMENT_STATUS.md), [reference freeze review](docs/REFERENCE_SET_FREEZE_REVIEW.md), and [decisions](docs/DECISIONS.md) for the evidence and scope of these statements.
+| Fixed test model | Precision | Recall | F1 | Matched median IoU |
+| --- | ---: | ---: | ---: | ---: |
+| Classical, training-selected 3 m setting | 0.4588 | 0.2294 | 0.3059 | 0.5352 |
+| SegmentAnyTree pretrained | 0.1618 | 0.3588 | 0.2230 | 0.4712 |
+| SegmentAnyTree weak pilot | 0.2500 | 0.1471 | 0.1852 | 0.3879 |
+| SegmentAnyTree Alto-assisted weak revision | 0.2381 | 0.1471 | 0.1818 | 0.4568 |
 
-## Repository layout
+No model meets all predeclared acceptance criteria. The Alto-assisted revision does not demonstrate an F1 improvement over the original weak pilot. Reported uncertainty uses paired whole-site bootstrap (2,000 resamples, seed 42). Prior held-out exposure and post-review annotation are disclosed; these results are exploratory, not a newly blind confirmatory benchmark.
 
-| Path | Purpose |
-|---|---|
-| `config/` | Fixed project thresholds and draft scoring/model metadata |
-| `data/labels/` | Original author annotations; preserve unchanged for blind agreement |
-| `data/sites/` | Site definitions, source-tile list, and RGB/CHM chips |
-| `data/exports/` | Original derived reference geometry |
-| `docs/group_refinement_2026-09-18/` | Versioned group-review drafts and the current 22 September pre-freeze JSON |
-| `scripts/` | Annotation, geometry QA, evaluation, baseline intake, density, and model-output workflows |
-| `scripts/hpc/` | Standalone GPU VM execution helpers |
-| `tests/` | Synthetic and workflow checks |
-| `labeller/` | Browser annotation and visual-review tools |
+## Repository contents
 
-Large LAZ tiles, the frozen 11.54 GB baseline database, the upstream model source and checkpoint, personal communications, the dissertation, and VM output archives are held outside this repository. File hashes and run receipts are maintained with their associated external data. The site chips in this private repository are research inputs, not a public redistribution license.
+- `scripts/`: evaluation, point preparation, site assembly, density experiments, historical reconstruction, weak adaptation and reporting.
+- `scripts/benchmark/`: shared geometry, matching, weak-loss and provenance implementations.
+- `scripts/hpc/`: direct standalone Nectar VM and container execution.
+- `config/`: fixed research configurations and operational scoring policies.
+- `data/sites/`: site definitions, stratification and required tile list.
+- `data/labels/`: the final author reference and two original independent exports.
+- `data/exports/`: final scoring geometry and repair provenance.
+- `tests/`: synthetic and workflow checks for the delivered pipeline.
+- `results/`: compact counts, model/density tables, bootstrap results and rater correspondence.
+- `provenance/`: input hashes, source/checkpoint identities, experiment ledger and release manifest.
+- `docs/`: annotation protocol, major decisions, methods, results and delivery requirements.
 
-## Quick start
+Raw LAZ, imagery, raster tiles, the frozen database, upstream model weights, full prediction files, scientific logs and the dissertation are delivered in the separate complete local package. They are intentionally excluded from Git. Correspondence, weekly updates, authoring history and superseded annotation drafts are excluded.
+
+## Start here
 
 ```bash
-conda env create -f environment.yml
-conda activate akl-benchmark
-python -m pytest -q
-python scripts/00_check_environment.py
+conda env create -f environment.vm.yml
+conda activate akl-benchmark-prep
+python -m pytest tests -q
 ```
 
-The browser labeller can be started with `make label`. Original annotations must be exported to a new file; do not overwrite `data/labels/crown_labels_XZ_2026-08-13.json`. The evaluation command and its required inputs are described in [RUNBOOK.md](RUNBOOK.md). The source project uses a standalone Nectar GPU VM directly; no SLURM scheduler is assumed.
+Use [RUNBOOK.md](RUNBOOK.md) for the delivered analysis commands and the complete package's execution/handover guides for GPU regeneration. Build new outputs in fresh directories and retain source hashes and run IDs. Completed experiments do not need rerunning to inspect their results.
 
-## Evaluation boundaries
-
-Only individual crowns enter the primary tree denominator. Unresolved groups and uncertain regions have explicit exclusion handling, while selected `not_tree` polygons support a supplementary confuser audit rather than an exhaustive background map. The 2 m model-matching tolerance and IoU ≥ 0.50 inter-rater matching rule serve different analyses. Predeclared thresholds in `config/project.json` are unchanged. No validation or test prediction may be used to revise labels, tune parameters, or choose the crown-conversion method.
-
-This repository records an unfinished study. Empty dissertation result cells and missing benchmark metrics are intentional until reference adjudication, verified baseline reproduction, configuration lock, and once-only held-out runs are complete.
+[Protocol](docs/ANNOTATION_PROTOCOL.md) · [Results](docs/RESULTS.md) · [Major decisions](docs/DECISIONS.md) · [Provenance](docs/PROVENANCE.md) · [Delivery requirements](docs/DELIVERY_REQUIREMENTS.md)

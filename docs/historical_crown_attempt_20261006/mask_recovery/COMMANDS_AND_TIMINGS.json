@@ -1,0 +1,114 @@
+{
+  "20261006T023609Z_historical_nonveg_recovery_retry_587491": {
+    "command": "python scripts/51_attempt_historical_crowns.py --phase masks --source /home/ubuntu/Xi_Zhang_Benchmark/source_reference --chm /home/ubuntu/Xi_Zhang_Benchmark/chm/reference_sites.vrt --chm-manifest /home/ubuntu/Xi_Zhang_Benchmark/provenance/original_chm_manifest.json --mask-cache outputs/nectar/20261006T023550Z_historical_mask_recovery/current_osm_cache --output outputs/nectar/20261006T023550Z_historical_mask_recovery/mask_retry --osm-endpoints https://overpass-api.de/api/interpreter --osm-http-method POST --osm-query-timeout 25",
+    "wall_seconds": 31,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T023728Z_historical_complete_masks_training_crowns_587530": {
+    "command": "python scripts/51_attempt_historical_crowns.py --phase run --source /home/ubuntu/Xi_Zhang_Benchmark/source_reference --chm /home/ubuntu/Xi_Zhang_Benchmark/chm/reference_sites.vrt --chm-manifest /home/ubuntu/Xi_Zhang_Benchmark/provenance/original_chm_manifest.json --database /home/ubuntu/baselines/xi-capstone-20260730/akl_trees.sqlite --intake outputs/nectar/20260920T142229Z_gpu_v100_4319/baseline_intake/intake_report.json --mask-cache outputs/nectar/20261006T023550Z_historical_mask_recovery/current_osm_cache --output outputs/nectar/20261006T023550Z_historical_mask_recovery/training_crowns_complete_masks",
+    "wall_seconds": 149,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T024037Z_historical_seed_order_tests_587735": {
+    "command": "python -m unittest discover -s tests -p test_historical_crown_attempt.py -v",
+    "wall_seconds": 2,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T024040Z_historical_original_seed_order_complete_masks_587805": {
+    "command": "python scripts/51_attempt_historical_crowns.py --phase run --source /home/ubuntu/Xi_Zhang_Benchmark/source_reference --chm /home/ubuntu/Xi_Zhang_Benchmark/chm/reference_sites.vrt --chm-manifest /home/ubuntu/Xi_Zhang_Benchmark/provenance/original_chm_manifest.json --database /home/ubuntu/baselines/xi-capstone-20260730/akl_trees.sqlite --intake outputs/nectar/20260920T142229Z_gpu_v100_4319/baseline_intake/intake_report.json --mask-cache outputs/nectar/20261006T023550Z_historical_mask_recovery/current_osm_cache --seed-order historical-chunk --output outputs/nectar/20261006T023550Z_historical_mask_recovery/training_crowns_historical_order",
+    "wall_seconds": 153,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T024552Z_prepare_public_linz_building_substitute_588013": {
+    "command": "python outputs/nectar/20261006T023550Z_historical_mask_recovery/convert_public_buildings.py outputs/nectar/20261006T023550Z_historical_mask_recovery",
+    "wall_seconds": 1,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T024555Z_historical_linz_buildings_complete_nonveg_588052": {
+    "command": "python scripts/51_attempt_historical_crowns.py --phase run --source /home/ubuntu/Xi_Zhang_Benchmark/source_reference --chm /home/ubuntu/Xi_Zhang_Benchmark/chm/reference_sites.vrt --chm-manifest /home/ubuntu/Xi_Zhang_Benchmark/provenance/original_chm_manifest.json --database /home/ubuntu/baselines/xi-capstone-20260730/akl_trees.sqlite --intake outputs/nectar/20260920T142229Z_gpu_v100_4319/baseline_intake/intake_report.json --mask-cache outputs/nectar/20261006T023550Z_historical_mask_recovery/current_osm_cache --seed-order historical-chunk --building-outlines outputs/nectar/20261006T023550Z_historical_mask_recovery/linz_current_buildings.gpkg --building-provenance outputs/nectar/20261006T023550Z_historical_mask_recovery/linz_current_buildings_provenance.json --output outputs/nectar/20261006T023550Z_historical_mask_recovery/training_crowns_linz_buildings",
+    "wall_seconds": 136,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T025047Z_rebuild_current_greenness_training_halos_588257": {
+    "command": "python outputs/nectar/20261006T023550Z_historical_mask_recovery/rebuild_current_greenness.py --source outputs/nectar/20261006T023550Z_historical_mask_recovery/build_greenness_mask.py --source-sha256 1b287cc0fb706213455f850106e0743d7f9d379cb32dee571d4f1b0d828ba6fc --supplied-scripts /home/ubuntu/Xi_Zhang_Benchmark/source_reference/scripts --plan outputs/nectar/20261006T023550Z_historical_mask_recovery/training_crowns_historical_order/plan.json --output outputs/nectar/20261006T023550Z_historical_mask_recovery/current_greenness",
+    "wall_seconds": 47,
+    "exit_code": 1,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T025228Z_rebuild_current_greenness_preserve_source_nodata_588316": {
+    "command": "python outputs/nectar/20261006T023550Z_historical_mask_recovery/rebuild_current_greenness.py --source outputs/nectar/20261006T023550Z_historical_mask_recovery/build_greenness_mask.py --source-sha256 1b287cc0fb706213455f850106e0743d7f9d379cb32dee571d4f1b0d828ba6fc --supplied-scripts /home/ubuntu/Xi_Zhang_Benchmark/source_reference/scripts --plan outputs/nectar/20261006T023550Z_historical_mask_recovery/training_crowns_historical_order/plan.json --tile-cache outputs/nectar/20261006T023550Z_historical_mask_recovery/current_greenness/tiles_z18 --output outputs/nectar/20261006T023550Z_historical_mask_recovery/current_greenness_complete",
+    "wall_seconds": 14,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T025303Z_historical_mask_input_provenance_tests_588360": {
+    "command": "python -m unittest discover -s tests -p test_historical_crown_attempt.py -v",
+    "wall_seconds": 2,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T025306Z_historical_complete_osm_current_greenness_588430": {
+    "command": "python scripts/51_attempt_historical_crowns.py --phase run --source /home/ubuntu/Xi_Zhang_Benchmark/source_reference --chm /home/ubuntu/Xi_Zhang_Benchmark/chm/reference_sites.vrt --chm-manifest /home/ubuntu/Xi_Zhang_Benchmark/provenance/original_chm_manifest.json --database /home/ubuntu/baselines/xi-capstone-20260730/akl_trees.sqlite --intake outputs/nectar/20260920T142229Z_gpu_v100_4319/baseline_intake/intake_report.json --mask-cache outputs/nectar/20261006T023550Z_historical_mask_recovery/current_osm_cache --seed-order historical-chunk --greenness outputs/nectar/20261006T023550Z_historical_mask_recovery/current_greenness_complete/greenness.vrt --output outputs/nectar/20261006T023550Z_historical_mask_recovery/training_crowns_osm_greenness",
+    "wall_seconds": 151,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T025618Z_historical_linz_buildings_current_greenness_588641": {
+    "command": "python scripts/51_attempt_historical_crowns.py --phase run --source /home/ubuntu/Xi_Zhang_Benchmark/source_reference --chm /home/ubuntu/Xi_Zhang_Benchmark/chm/reference_sites.vrt --chm-manifest /home/ubuntu/Xi_Zhang_Benchmark/provenance/original_chm_manifest.json --database /home/ubuntu/baselines/xi-capstone-20260730/akl_trees.sqlite --intake outputs/nectar/20260920T142229Z_gpu_v100_4319/baseline_intake/intake_report.json --mask-cache outputs/nectar/20261006T023550Z_historical_mask_recovery/current_osm_cache --seed-order historical-chunk --greenness outputs/nectar/20261006T023550Z_historical_mask_recovery/current_greenness_complete/greenness.vrt --building-outlines outputs/nectar/20261006T023550Z_historical_mask_recovery/linz_current_buildings.gpkg --building-provenance outputs/nectar/20261006T023550Z_historical_mask_recovery/linz_current_buildings_provenance.json --output outputs/nectar/20261006T023550Z_historical_mask_recovery/training_crowns_linz_greenness",
+    "wall_seconds": 133,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T025844Z_diagnose_remaining_greenness_pixels_588847": {
+    "command": "python outputs/nectar/20261006T023550Z_historical_mask_recovery/diagnose_remaining_greenness_pixels.py outputs/nectar/20261006T023550Z_historical_mask_recovery",
+    "wall_seconds": 19,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T025904Z_audit_frozen_seed_history_588917": {
+    "command": "python outputs/nectar/20261006T023550Z_historical_mask_recovery/audit_frozen_seed_history.py /home/ubuntu/baselines/xi-capstone-20260730/akl_trees.sqlite outputs/nectar/20261006T023550Z_historical_mask_recovery/FROZEN_INPUT_HISTORY.json outputs/nectar/20261006T023550Z_historical_mask_recovery/cleanup_inferred_without_crowns.py",
+    "wall_seconds": 8,
+    "exit_code": 1,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T025913Z_summarise_controlled_historical_recovery_588946": {
+    "command": "python outputs/nectar/20261006T023550Z_historical_mask_recovery/summarise_controlled_recovery.py outputs/nectar/20261006T023550Z_historical_mask_recovery",
+    "wall_seconds": 1,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T025954Z_audit_frozen_seed_history_receipt_588990": {
+    "command": "python outputs/nectar/20261006T023550Z_historical_mask_recovery/audit_frozen_seed_history_v2.py /home/ubuntu/baselines/xi-capstone-20260730/akl_trees.sqlite outputs/nectar/20261006T023550Z_historical_mask_recovery/FROZEN_INPUT_HISTORY_VERIFIED.json outputs/nectar/20261006T023550Z_historical_mask_recovery/cleanup_inferred_without_crowns.py",
+    "wall_seconds": 8,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  },
+  "20261006T030003Z_archive_historical_mask_recovery_589013": {
+    "command": "python outputs/nectar/20261006T023550Z_historical_mask_recovery/archive_recovery.py outputs/nectar/20261006T023550Z_historical_mask_recovery outputs/benchmarks outputs/nectar/historical_mask_recovery_20261006_evidence.tar.gz",
+    "wall_seconds": 15,
+    "exit_code": 0,
+    "resolution_seconds": 1,
+    "scope": "command including tee; environment inventory excluded"
+  }
+}

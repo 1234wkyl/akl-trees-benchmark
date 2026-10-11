@@ -1,0 +1,131 @@
+{
+  "status": "training-only selection, not held-out acceptance",
+  "provisional_reconstruction": true,
+  "historical_certification_implied": false,
+  "reference_frozen": false,
+  "selection_rule": "largest micro F1, then median matched IoU, then stable trial ID",
+  "selected": {
+    "id": "h35",
+    "parameters": {
+      "crown_minimum_height_m": 3.5,
+      "detector_minimum_height_m": 5.0,
+      "detector_gli_threshold": 0.06,
+      "crown_gli_threshold": 0.03,
+      "other_constants": "unchanged supplied source"
+    },
+    "metrics": {
+      "tp": 22,
+      "fp": 22,
+      "fn": 60,
+      "precision": 0.5,
+      "recall": 0.2682926829268293,
+      "commission_rate": 0.5,
+      "omission_rate": 0.7317073170731707,
+      "f1": 0.3492063492063492,
+      "median_matched_iou": 0.48577356229621327,
+      "over_segmented_references": 5,
+      "under_segmented_predictions": 5,
+      "over_segmentation_rate": 0.06097560975609756,
+      "under_segmentation_rate": 0.11363636363636363,
+      "ignored_predictions": 104
+    },
+    "predictions_sha256": "bf5a40ce08866cd41f5c145c18088eaa0e74e5532c8f08bbc18818fe6bdf2c23"
+  },
+  "ranked_trials": [
+    {
+      "id": "h35",
+      "parameters": {
+        "crown_minimum_height_m": 3.5,
+        "detector_minimum_height_m": 5.0,
+        "detector_gli_threshold": 0.06,
+        "crown_gli_threshold": 0.03,
+        "other_constants": "unchanged supplied source"
+      },
+      "metrics": {
+        "tp": 22,
+        "fp": 22,
+        "fn": 60,
+        "precision": 0.5,
+        "recall": 0.2682926829268293,
+        "commission_rate": 0.5,
+        "omission_rate": 0.7317073170731707,
+        "f1": 0.3492063492063492,
+        "median_matched_iou": 0.48577356229621327,
+        "over_segmented_references": 5,
+        "under_segmented_predictions": 5,
+        "over_segmentation_rate": 0.06097560975609756,
+        "under_segmentation_rate": 0.11363636363636363,
+        "ignored_predictions": 104
+      },
+      "predictions_sha256": "bf5a40ce08866cd41f5c145c18088eaa0e74e5532c8f08bbc18818fe6bdf2c23"
+    },
+    {
+      "id": "h3",
+      "parameters": {
+        "crown_minimum_height_m": 3.0,
+        "detector_minimum_height_m": 5.0,
+        "detector_gli_threshold": 0.06,
+        "crown_gli_threshold": 0.03,
+        "other_constants": "unchanged supplied source"
+      },
+      "metrics": {
+        "tp": 22,
+        "fp": 27,
+        "fn": 60,
+        "precision": 0.4489795918367347,
+        "recall": 0.2682926829268293,
+        "commission_rate": 0.5510204081632653,
+        "omission_rate": 0.7317073170731707,
+        "f1": 0.33587786259541985,
+        "median_matched_iou": 0.46241740511997215,
+        "over_segmented_references": 5,
+        "under_segmented_predictions": 5,
+        "over_segmentation_rate": 0.06097560975609756,
+        "under_segmentation_rate": 0.10204081632653061,
+        "ignored_predictions": 105
+      },
+      "predictions_sha256": "35b49a69e5767a7849801106637fab90ef1ac69f5c375c1ff050d46210f284f1"
+    },
+    {
+      "id": "h25",
+      "parameters": {
+        "crown_minimum_height_m": 2.5,
+        "detector_minimum_height_m": 5.0,
+        "detector_gli_threshold": 0.06,
+        "crown_gli_threshold": 0.03,
+        "other_constants": "unchanged supplied source"
+      },
+      "metrics": {
+        "tp": 21,
+        "fp": 30,
+        "fn": 61,
+        "precision": 0.4117647058823529,
+        "recall": 0.25609756097560976,
+        "commission_rate": 0.5882352941176471,
+        "omission_rate": 0.7439024390243902,
+        "f1": 0.3157894736842105,
+        "median_matched_iou": 0.49831604233697707,
+        "over_segmented_references": 5,
+        "under_segmented_predictions": 6,
+        "over_segmentation_rate": 0.06097560975609756,
+        "under_segmentation_rate": 0.11764705882352941,
+        "ignored_predictions": 110
+      },
+      "predictions_sha256": "b81a932d47060a550b572876950af8043f937ea680f38d0fc1ee4c31f3c1676f"
+    }
+  ],
+  "site_ids": [
+    "S001",
+    "S006",
+    "S008",
+    "S010",
+    "S015",
+    "S017",
+    "S019",
+    "S024"
+  ],
+  "reference_sha256": "a2aa1db778c9d110d4fe824125f33d8111480b456e479547d49908e92bcf6107",
+  "policy_sha256": "f4d9b73e87c2b034396d772c2af03ebc66f6a0d76c51c4943bd4e63d8ec402ef",
+  "trials_sha256": "74967f94f6e25997f7b5dda4ef63c36e3522519d3d057cc4e3890d507127725e",
+  "reproduction_record_sha256": "3fc0129e03c2b53a836e13abcd63154f05a8fd9b9ce121930327c3e462f507df"
+}

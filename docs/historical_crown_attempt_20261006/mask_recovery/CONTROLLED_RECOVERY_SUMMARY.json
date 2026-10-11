@@ -1,0 +1,433 @@
+{
+  "historical_baseline_verified": false,
+  "reference_labels_used": false,
+  "original_mismatch_ids": [
+    "akl_tree_lid_0832979",
+    "akl_tree_lid_0849121",
+    "akl_tree_lid_0849184",
+    "akl_tree_lid_0849816",
+    "akl_tree_lid_1034614",
+    "akl_tree_lid_1035054",
+    "akl_tree_lid_1035288",
+    "akl_tree_trp_ACCT0235518",
+    "akl_tree_trp_ACCT0251441",
+    "akl_tree_trp_ACCT0251731"
+  ],
+  "variants": {
+    "complete_osm": {
+      "frozen_crowns": 126,
+      "ids_recovered": 126,
+      "four_attribute_matches": 116,
+      "original10_resolved_ids": [],
+      "original10_remaining_ids": [
+        "akl_tree_lid_0832979",
+        "akl_tree_lid_0849121",
+        "akl_tree_lid_0849184",
+        "akl_tree_lid_0849816",
+        "akl_tree_lid_1034614",
+        "akl_tree_lid_1035054",
+        "akl_tree_lid_1035288",
+        "akl_tree_trp_ACCT0235518",
+        "akl_tree_trp_ACCT0251441",
+        "akl_tree_trp_ACCT0251731"
+      ],
+      "new_mismatch_ids": [],
+      "extra_seed_inside_ids": [],
+      "current_mask_coverage_complete": true,
+      "database_unchanged": true,
+      "database_sha256": "0aa08032104ff21e38f0d3819c5fce2de0fad7cbe71012a3b797cce6a88b6bff",
+      "by_site": {
+        "S001": {
+          "frozen_crowns_with_seed_inside": 11,
+          "reproduced_frozen_ids": 11,
+          "all_scalars_match_at_1e_6": 10,
+          "extra_seed_inside_ids": 0
+        },
+        "S006": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 20,
+          "extra_seed_inside_ids": 0
+        },
+        "S008": {
+          "frozen_crowns_with_seed_inside": 25,
+          "reproduced_frozen_ids": 25,
+          "all_scalars_match_at_1e_6": 24,
+          "extra_seed_inside_ids": 0
+        },
+        "S010": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 17,
+          "extra_seed_inside_ids": 0
+        },
+        "S015": {
+          "frozen_crowns_with_seed_inside": 15,
+          "reproduced_frozen_ids": 15,
+          "all_scalars_match_at_1e_6": 15,
+          "extra_seed_inside_ids": 0
+        },
+        "S017": {
+          "frozen_crowns_with_seed_inside": 14,
+          "reproduced_frozen_ids": 14,
+          "all_scalars_match_at_1e_6": 10,
+          "extra_seed_inside_ids": 0
+        },
+        "S019": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 20,
+          "extra_seed_inside_ids": 0
+        },
+        "S024": {
+          "frozen_crowns_with_seed_inside": 1,
+          "reproduced_frozen_ids": 1,
+          "all_scalars_match_at_1e_6": 0,
+          "extra_seed_inside_ids": 0
+        }
+      }
+    },
+    "historical_seed_order": {
+      "frozen_crowns": 126,
+      "ids_recovered": 126,
+      "four_attribute_matches": 116,
+      "original10_resolved_ids": [],
+      "original10_remaining_ids": [
+        "akl_tree_lid_0832979",
+        "akl_tree_lid_0849121",
+        "akl_tree_lid_0849184",
+        "akl_tree_lid_0849816",
+        "akl_tree_lid_1034614",
+        "akl_tree_lid_1035054",
+        "akl_tree_lid_1035288",
+        "akl_tree_trp_ACCT0235518",
+        "akl_tree_trp_ACCT0251441",
+        "akl_tree_trp_ACCT0251731"
+      ],
+      "new_mismatch_ids": [],
+      "extra_seed_inside_ids": [],
+      "current_mask_coverage_complete": true,
+      "database_unchanged": true,
+      "database_sha256": "0aa08032104ff21e38f0d3819c5fce2de0fad7cbe71012a3b797cce6a88b6bff",
+      "by_site": {
+        "S001": {
+          "frozen_crowns_with_seed_inside": 11,
+          "reproduced_frozen_ids": 11,
+          "all_scalars_match_at_1e_6": 10,
+          "extra_seed_inside_ids": 0
+        },
+        "S006": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 20,
+          "extra_seed_inside_ids": 0
+        },
+        "S008": {
+          "frozen_crowns_with_seed_inside": 25,
+          "reproduced_frozen_ids": 25,
+          "all_scalars_match_at_1e_6": 24,
+          "extra_seed_inside_ids": 0
+        },
+        "S010": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 17,
+          "extra_seed_inside_ids": 0
+        },
+        "S015": {
+          "frozen_crowns_with_seed_inside": 15,
+          "reproduced_frozen_ids": 15,
+          "all_scalars_match_at_1e_6": 15,
+          "extra_seed_inside_ids": 0
+        },
+        "S017": {
+          "frozen_crowns_with_seed_inside": 14,
+          "reproduced_frozen_ids": 14,
+          "all_scalars_match_at_1e_6": 10,
+          "extra_seed_inside_ids": 0
+        },
+        "S019": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 20,
+          "extra_seed_inside_ids": 0
+        },
+        "S024": {
+          "frozen_crowns_with_seed_inside": 1,
+          "reproduced_frozen_ids": 1,
+          "all_scalars_match_at_1e_6": 0,
+          "extra_seed_inside_ids": 0
+        }
+      }
+    },
+    "linz_buildings": {
+      "frozen_crowns": 126,
+      "ids_recovered": 125,
+      "four_attribute_matches": 100,
+      "original10_resolved_ids": [],
+      "original10_remaining_ids": [
+        "akl_tree_lid_0832979",
+        "akl_tree_lid_0849121",
+        "akl_tree_lid_0849184",
+        "akl_tree_lid_0849816",
+        "akl_tree_lid_1034614",
+        "akl_tree_lid_1035054",
+        "akl_tree_lid_1035288",
+        "akl_tree_trp_ACCT0235518",
+        "akl_tree_trp_ACCT0251441",
+        "akl_tree_trp_ACCT0251731"
+      ],
+      "new_mismatch_ids": [
+        "akl_tree_lid_1039368",
+        "akl_tree_lid_1041091",
+        "akl_tree_lid_1041132",
+        "akl_tree_lid_1041661",
+        "akl_tree_lid_1042208",
+        "akl_tree_lid_1042255",
+        "akl_tree_lid_1042380",
+        "akl_tree_lid_1042548",
+        "akl_tree_lid_1042807",
+        "akl_tree_lid_1042881",
+        "akl_tree_not_385",
+        "akl_tree_trp_ACCT0077249",
+        "akl_tree_trp_ACCT0084149",
+        "akl_tree_trp_ACCT0227987",
+        "akl_tree_trp_ACCT0251461",
+        "akl_tree_trp_ACCT0251728"
+      ],
+      "extra_seed_inside_ids": [],
+      "current_mask_coverage_complete": true,
+      "database_unchanged": true,
+      "database_sha256": "0aa08032104ff21e38f0d3819c5fce2de0fad7cbe71012a3b797cce6a88b6bff",
+      "by_site": {
+        "S001": {
+          "frozen_crowns_with_seed_inside": 11,
+          "reproduced_frozen_ids": 10,
+          "all_scalars_match_at_1e_6": 7,
+          "extra_seed_inside_ids": 0
+        },
+        "S006": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 20,
+          "extra_seed_inside_ids": 0
+        },
+        "S008": {
+          "frozen_crowns_with_seed_inside": 25,
+          "reproduced_frozen_ids": 25,
+          "all_scalars_match_at_1e_6": 24,
+          "extra_seed_inside_ids": 0
+        },
+        "S010": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 17,
+          "extra_seed_inside_ids": 0
+        },
+        "S015": {
+          "frozen_crowns_with_seed_inside": 15,
+          "reproduced_frozen_ids": 15,
+          "all_scalars_match_at_1e_6": 14,
+          "extra_seed_inside_ids": 0
+        },
+        "S017": {
+          "frozen_crowns_with_seed_inside": 14,
+          "reproduced_frozen_ids": 14,
+          "all_scalars_match_at_1e_6": 8,
+          "extra_seed_inside_ids": 0
+        },
+        "S019": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 10,
+          "extra_seed_inside_ids": 0
+        },
+        "S024": {
+          "frozen_crowns_with_seed_inside": 1,
+          "reproduced_frozen_ids": 1,
+          "all_scalars_match_at_1e_6": 0,
+          "extra_seed_inside_ids": 0
+        }
+      }
+    },
+    "osm_greenness": {
+      "frozen_crowns": 126,
+      "ids_recovered": 126,
+      "four_attribute_matches": 125,
+      "original10_resolved_ids": [
+        "akl_tree_lid_0832979",
+        "akl_tree_lid_0849121",
+        "akl_tree_lid_0849184",
+        "akl_tree_lid_0849816",
+        "akl_tree_lid_1034614",
+        "akl_tree_lid_1035054",
+        "akl_tree_lid_1035288",
+        "akl_tree_trp_ACCT0235518",
+        "akl_tree_trp_ACCT0251441",
+        "akl_tree_trp_ACCT0251731"
+      ],
+      "original10_remaining_ids": [],
+      "new_mismatch_ids": [
+        "akl_tree_lid_0849199"
+      ],
+      "extra_seed_inside_ids": [],
+      "current_mask_coverage_complete": true,
+      "database_unchanged": true,
+      "database_sha256": "0aa08032104ff21e38f0d3819c5fce2de0fad7cbe71012a3b797cce6a88b6bff",
+      "by_site": {
+        "S001": {
+          "frozen_crowns_with_seed_inside": 11,
+          "reproduced_frozen_ids": 11,
+          "all_scalars_match_at_1e_6": 11,
+          "extra_seed_inside_ids": 0
+        },
+        "S006": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 20,
+          "extra_seed_inside_ids": 0
+        },
+        "S008": {
+          "frozen_crowns_with_seed_inside": 25,
+          "reproduced_frozen_ids": 25,
+          "all_scalars_match_at_1e_6": 25,
+          "extra_seed_inside_ids": 0
+        },
+        "S010": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 19,
+          "extra_seed_inside_ids": 0
+        },
+        "S015": {
+          "frozen_crowns_with_seed_inside": 15,
+          "reproduced_frozen_ids": 15,
+          "all_scalars_match_at_1e_6": 15,
+          "extra_seed_inside_ids": 0
+        },
+        "S017": {
+          "frozen_crowns_with_seed_inside": 14,
+          "reproduced_frozen_ids": 14,
+          "all_scalars_match_at_1e_6": 14,
+          "extra_seed_inside_ids": 0
+        },
+        "S019": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 20,
+          "extra_seed_inside_ids": 0
+        },
+        "S024": {
+          "frozen_crowns_with_seed_inside": 1,
+          "reproduced_frozen_ids": 1,
+          "all_scalars_match_at_1e_6": 1,
+          "extra_seed_inside_ids": 0
+        }
+      }
+    },
+    "linz_greenness": {
+      "frozen_crowns": 126,
+      "ids_recovered": 125,
+      "four_attribute_matches": 106,
+      "original10_resolved_ids": [
+        "akl_tree_lid_0832979",
+        "akl_tree_lid_0849121",
+        "akl_tree_lid_0849184",
+        "akl_tree_lid_0849816",
+        "akl_tree_lid_1035054",
+        "akl_tree_lid_1035288",
+        "akl_tree_trp_ACCT0251441"
+      ],
+      "original10_remaining_ids": [
+        "akl_tree_lid_1034614",
+        "akl_tree_trp_ACCT0235518",
+        "akl_tree_trp_ACCT0251731"
+      ],
+      "new_mismatch_ids": [
+        "akl_tree_lid_0849199",
+        "akl_tree_lid_1039368",
+        "akl_tree_lid_1041091",
+        "akl_tree_lid_1041132",
+        "akl_tree_lid_1041661",
+        "akl_tree_lid_1042208",
+        "akl_tree_lid_1042255",
+        "akl_tree_lid_1042380",
+        "akl_tree_lid_1042548",
+        "akl_tree_lid_1042807",
+        "akl_tree_lid_1042881",
+        "akl_tree_not_385",
+        "akl_tree_trp_ACCT0077249",
+        "akl_tree_trp_ACCT0084149",
+        "akl_tree_trp_ACCT0227987",
+        "akl_tree_trp_ACCT0251461",
+        "akl_tree_trp_ACCT0251728"
+      ],
+      "extra_seed_inside_ids": [],
+      "current_mask_coverage_complete": true,
+      "database_unchanged": true,
+      "database_sha256": "0aa08032104ff21e38f0d3819c5fce2de0fad7cbe71012a3b797cce6a88b6bff",
+      "by_site": {
+        "S001": {
+          "frozen_crowns_with_seed_inside": 11,
+          "reproduced_frozen_ids": 10,
+          "all_scalars_match_at_1e_6": 7,
+          "extra_seed_inside_ids": 0
+        },
+        "S006": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 20,
+          "extra_seed_inside_ids": 0
+        },
+        "S008": {
+          "frozen_crowns_with_seed_inside": 25,
+          "reproduced_frozen_ids": 25,
+          "all_scalars_match_at_1e_6": 25,
+          "extra_seed_inside_ids": 0
+        },
+        "S010": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 19,
+          "extra_seed_inside_ids": 0
+        },
+        "S015": {
+          "frozen_crowns_with_seed_inside": 15,
+          "reproduced_frozen_ids": 15,
+          "all_scalars_match_at_1e_6": 14,
+          "extra_seed_inside_ids": 0
+        },
+        "S017": {
+          "frozen_crowns_with_seed_inside": 14,
+          "reproduced_frozen_ids": 14,
+          "all_scalars_match_at_1e_6": 11,
+          "extra_seed_inside_ids": 0
+        },
+        "S019": {
+          "frozen_crowns_with_seed_inside": 20,
+          "reproduced_frozen_ids": 20,
+          "all_scalars_match_at_1e_6": 10,
+          "extra_seed_inside_ids": 0
+        },
+        "S024": {
+          "frozen_crowns_with_seed_inside": 1,
+          "reproduced_frozen_ids": 1,
+          "all_scalars_match_at_1e_6": 0,
+          "extra_seed_inside_ids": 0
+        }
+      }
+    }
+  },
+  "seed_order_control": {
+    "same_ids": true,
+    "scalar_rows_identical": true,
+    "same_topology_all_candidates": true
+  },
+  "input_hashes": {
+    "complete_osm": "d4625d2ac632e923f8b1dffe706b3105292523a72e04040644dc1581116e2049",
+    "historical_seed_order": "9eccd1964f02002575bd5da4587686b61d856ef294b00e58ea7cebbda6699445",
+    "linz_buildings": "bf24171b3deb966363cab9c0d2799bc4a08dc8534ad3eab75eee6281665c4759",
+    "osm_greenness": "6f9dbd19818783c5f9ee97dbcc48a1676d397607f99afc342f2241e130c64b62",
+    "linz_greenness": "ee56883bcb84a2bd43a6f47426984b7e6a58c6607f8e1816fad53db10db7f468"
+  }
+}

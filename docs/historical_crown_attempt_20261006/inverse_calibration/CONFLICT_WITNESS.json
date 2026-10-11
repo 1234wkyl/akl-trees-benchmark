@@ -1,0 +1,61 @@
+{
+  "status": "TRAINING-ONLY INVERSE PARAMETER SCREEN; NOT HISTORICAL IDENTIFICATION",
+  "input_plan_sha256": "9eccd1964f02002575bd5da4587686b61d856ef294b00e58ea7cebbda6699445",
+  "reference_labels_read": false,
+  "polygon_shape_filters_checked": false,
+  "source_kernel_full_run_still_required": true,
+  "historical_input_identity_verified": false,
+  "thresholds": [
+    {
+      "threshold": 0.02397063560783863,
+      "compared": 126,
+      "all_four_support_attributes_match": 120,
+      "mismatches": [
+        {
+          "tree_id": "akl_tree_lid_0832979",
+          "site_id": "S008",
+          "frozen_area_m2": 107.0,
+          "support_area_m2": 122.0,
+          "area_delta_m2": 15.0
+        },
+        {
+          "tree_id": "akl_tree_trp_ACCT0235518",
+          "site_id": "S024",
+          "frozen_area_m2": 21.0,
+          "support_area_m2": 23.0,
+          "area_delta_m2": 2.0
+        },
+        {
+          "tree_id": "akl_tree_lid_1034614",
+          "site_id": "S001",
+          "frozen_area_m2": 31.0,
+          "support_area_m2": 32.0,
+          "area_delta_m2": 1.0
+        },
+        {
+          "tree_id": "akl_tree_trp_ACCT0251441",
+          "site_id": "S017",
+          "frozen_area_m2": 41.0,
+          "support_area_m2": 42.0,
+          "area_delta_m2": 1.0
+        },
+        {
+          "tree_id": "akl_tree_lid_1035054",
+          "site_id": "S017",
+          "frozen_area_m2": 32.0,
+          "support_area_m2": 36.0,
+          "area_delta_m2": 4.0
+        },
+        {
+          "tree_id": "akl_tree_lid_1035288",
+          "site_id": "S017",
+          "frozen_area_m2": 50.0,
+          "support_area_m2": 52.0,
+          "area_delta_m2": 2.0
+        }
+      ]
+    }
+  ],
+  "threshold_comparison_dtype": "float32",
+  "fixed_scope": "only global GLI threshold varies; CHM, exclusions, seed assignment and all other parameters fixed"
+}

@@ -12,9 +12,9 @@
   "bootstrap_stratification": "none",
   "bootstrap_iterations": 2000,
   "random_seed": 42,
-  "note": "Research-side operational interpretation fixed at Xi request. Ordinary scored TP/(TP+FP) implements both original precision thresholds; all thresholds unchanged. Group/uncertain exclusion is explicit and reported. Tim did not confirm omitted questions. Reference freeze remains pending independent labels and supervisor decision.",
+  "note": "Fixed operational scoring interpretation: ordinary scored TP/(TP+FP) implements both precision criteria; ambiguity exclusion and ignored counts are explicit. Author reference locking and earlier held-out exposure are recorded separately. Acceptance thresholds are unchanged.",
   "distance_reference_status": "researcher_adopted_before_heldout_results",
-  "method_record": "docs/review_2026-09-18/\u8bba\u6587\u4f9d\u636e\u4e0e\u8bc4\u4f30\u53e3\u5f84.md",
-  "researcher_decision_record": "docs/progress_2026-09-18/EVALUATION_DECISIONS.md",
+  "method_record": "docs/ANNOTATION_PROTOCOL.md",
+  "researcher_decision_record": "docs/DECISIONS.md",
   "fixed_before_model_results_on": "2026-09-18"
 }

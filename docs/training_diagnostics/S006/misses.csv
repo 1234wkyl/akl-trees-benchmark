@@ -1,4 +1,0 @@
-site_id,reference_id,reference_area_m2,inside_positive_instance_points,buffered_positive_instance_points,nearest_prediction_id,nearest_centroid_distance_m,nearest_crown_iou,candidate_centroids_within_2m,diagnostic_category
-S006,S006-mspe9dc2,173.28361356986434,377,398,1202,2.5338546099105144,0.09419611817065168,0,no_centroid_within_2m
-S006,S006-mspea022,129.91434975853468,109,158,1205,2.9261780679858096,0.15826533901529477,0,no_centroid_within_2m
-S006,S006-mspeer8c-single,117.04510544042677,330,449,1267,2.70570925807658,0.3316812928711963,0,no_centroid_within_2m

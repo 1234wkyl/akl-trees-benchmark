@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stage one explicitly named training-only LAZ tile for SAT inference."""
+"""Stage one named LAZ; held-out inputs require an explicit inference-only scenario."""
 import argparse
 import json
 import shutil
@@ -9,6 +9,7 @@ import laspy
 import numpy as np
 
 from benchmark.common import ROOT, sha256, write_json
+from benchmark.inference_scenario import validate_inference_scenario
 
 
 DEFAULT_PLAN = ROOT / 'docs/project_status_2026-09-18/tile_coverage_preflight/coverage_plan.json'
@@ -21,21 +22,27 @@ def main():
     parser.add_argument('--coverage-plan', type=Path, default=DEFAULT_PLAN)
     parser.add_argument('--source-dir', type=Path, default=ROOT.parent / 'Xi_Zhang_Benchmark/laz')
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--inference-scenario', type=Path,
+                        help='explicit assumption-only prediction protocol; does not permit scoring or tuning')
     args = parser.parse_args()
     if args.output.exists():
         parser.error('use a fresh output directory')
     plan = json.loads(args.coverage_plan.read_text())
+    scenario = validate_inference_scenario(args.inference_scenario) if args.inference_scenario else None
     tiles = {row['tile']: row for row in plan['tiles']}
     if args.tile not in tiles:
         raise ValueError('tile is absent from the verified coverage plan')
     record = tiles[args.tile]
     held_out = record.get('held_out_intersecting_sites', [])
     training_sites = sorted(set(record.get('intersecting_sites', [])) - set(held_out))
-    if held_out or not training_sites or record.get('safe_full_tile_for_development') is not True:
+    if not scenario and (held_out or not training_sites or record.get('safe_full_tile_for_development') is not True):
         raise ValueError(f'tile is not safe for training-only development: held_out={held_out}')
     source = args.source_dir / args.tile
     if not source.is_file():
         raise FileNotFoundError(source)
+    source_hash = sha256(source)
+    if source_hash != record['sha256']:
+        raise ValueError('source hash differs from the verified coverage plan')
     cloud = laspy.read(source)
     crs = cloud.header.parse_crs()
     if crs is None or crs.to_epsg() != 2193:
@@ -60,13 +67,14 @@ def main():
     filtered = input_dir / f'{source.stem}_noise_excluded.laz'
     cloud.write(filtered)
     provenance = {
-        'status': 'TRAINING-ONLY TILE STAGED; MODEL NOT RUN',
+        'status': ('ASSUMPTION-ONLY INFERENCE TILE STAGED; NO SCORING' if scenario else 'TRAINING-ONLY TILE STAGED; MODEL NOT RUN'),
         'tile': args.tile,
         'training_sites': training_sites,
         'held_out_intersecting_sites': held_out,
-        'safe_full_tile_for_development': True,
+        'safe_full_tile_for_development': not held_out,
+        'intersecting_sites': record['intersecting_sites'],
         'source': str(source.resolve()),
-        'source_sha256': sha256(source),
+        'source_sha256': source_hash,
         'raw_copy_sha256': sha256(raw_copy),
         'input_laz': str(filtered.resolve()),
         'input_laz_sha256': sha256(filtered),
@@ -78,7 +86,9 @@ def main():
         'bbox_epsg2193': list(map(float, actual)),
         'coverage_plan_sha256': sha256(args.coverage_plan),
         'reference_labels_used': False,
-        'held_out_inference_permitted': False,
+        'held_out_inference_permitted': bool(scenario),
+        'inference_scenario_sha256': sha256(args.inference_scenario) if scenario else None,
+        'evaluation_permitted': False,
     }
     write_json(args.output / 'provenance.json', provenance)
     write_json(args.output / 'SHA256_manifest.json', {

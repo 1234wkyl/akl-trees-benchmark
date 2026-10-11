@@ -1,0 +1,88 @@
+{
+  "status": "TRAINING-ONLY FRESH DETECTION AND CROWN COMPARISON",
+  "frozen_seed_coordinates_used_for_generation": false,
+  "original_ids_reassigned_to_generated_objects": false,
+  "frozen_crowns": 126,
+  "seed_coordinate_matches": 126,
+  "crown_matches": 126,
+  "four_attribute_matches": 115,
+  "extra_accepted_seed_inside_crowns": [],
+  "rejected_inferred_peaks_inside_sites": [
+    {
+      "site_id": "S017",
+      "generated_id": "reconstructed_lid_0008070",
+      "x": 1755400.499999999,
+      "y": 5919206.5,
+      "reason": "no accepted crown intersecting this site; not retained as a published detection"
+    }
+  ],
+  "by_site": {
+    "S001": {
+      "frozen_crowns": 11,
+      "regenerated_seed_coordinates_match": 11,
+      "crowns_recovered": 11,
+      "four_attribute_matches": 11
+    },
+    "S006": {
+      "frozen_crowns": 20,
+      "regenerated_seed_coordinates_match": 20,
+      "crowns_recovered": 20,
+      "four_attribute_matches": 19
+    },
+    "S008": {
+      "frozen_crowns": 25,
+      "regenerated_seed_coordinates_match": 25,
+      "crowns_recovered": 25,
+      "four_attribute_matches": 19
+    },
+    "S010": {
+      "frozen_crowns": 20,
+      "regenerated_seed_coordinates_match": 20,
+      "crowns_recovered": 20,
+      "four_attribute_matches": 18
+    },
+    "S015": {
+      "frozen_crowns": 15,
+      "regenerated_seed_coordinates_match": 15,
+      "crowns_recovered": 15,
+      "four_attribute_matches": 13
+    },
+    "S017": {
+      "frozen_crowns": 14,
+      "regenerated_seed_coordinates_match": 14,
+      "crowns_recovered": 14,
+      "four_attribute_matches": 14
+    },
+    "S019": {
+      "frozen_crowns": 20,
+      "regenerated_seed_coordinates_match": 20,
+      "crowns_recovered": 20,
+      "four_attribute_matches": 20
+    },
+    "S024": {
+      "frozen_crowns": 1,
+      "regenerated_seed_coordinates_match": 1,
+      "crowns_recovered": 1,
+      "four_attribute_matches": 1
+    }
+  },
+  "raw_reconstruction_summary_sha256": "c4c24d5890df915a25cc85bd19d944c6b6f6deac1d3250a66feb808439b3fb89",
+  "crown_input_sha256": "30b071c790c96934d96ba2ceac599c40c68bd5e4494003577e24cb8805525d6d",
+  "database_sha256_from_verified_reconstruction": "0aa08032104ff21e38f0d3819c5fce2de0fad7cbe71012a3b797cce6a88b6bff",
+  "reporting_correction": {
+    "field": "crown_parameters.greenness_enabled",
+    "raw_summary_value": false,
+    "actual_execution_value": true,
+    "evidence": "executed_source.py passes gli_chunk from the fingerprinted greenness VRT; old no-GLI plan metadata was inherited incorrectly; numerical outputs unchanged"
+  },
+  "historical_reproduction_verified": false,
+  "cleanup_scope": "only a post-crown retained detection view within training sites; no global cleanup/database deletion",
+  "limitations": [
+    "retained non-inferred inventory is used; raw pre-canonical inventory and deleted entries are unavailable",
+    "current masks and greenness are replacement inputs",
+    "CHM is the supplied bounded VRT, not a replay of all metropolitan DSM/DEM acquisition",
+    "local peak IDs do not recreate the original metropolitan enumeration",
+    "source detector GLI reader uses core bounds with halo-array out_shape; retained unchanged for this replay",
+    "original frozen crown geometry unavailable; cleanup recipe unconfirmed; this output is before unverified cleanup"
+  ]
+}

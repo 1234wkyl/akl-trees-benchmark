@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE",
+  "sources": {
+    "val": {
+      "revised_comparison_sha256": "e375457375d94b05c707667b6635a622ca274acd05e87b53362adb5e8f27ac5d",
+      "previous_comparison_sha256": "c89915fbb972916673492cdebd9dc944186d311518b98b6b710b7d909ce99cdf",
+      "reference_sha256": "1dc69fe5f9431c54aab1630525a04eb34615b7676342c4bf3f36f79d2ff87616",
+      "policy_sha256": "f4d9b73e87c2b034396d772c2af03ebc66f6a0d76c51c4943bd4e63d8ec402ef",
+      "previous_checkpoint_sha256": "fc3f14d6294f47a9b8007b4def63c4fead3ab8fe3bf4951d5283998276d5e86e",
+      "revised_checkpoint_sha256": "a488ee51c9e6ec6dccff7d7d5e8aa33be31d21a7fe9332487ab2c2e30928b2c6",
+      "revised_predictions_epsg": 2193
+    },
+    "test": {
+      "revised_comparison_sha256": "65fa887d68558f40a82654953e90973541203bb0739b70be89a9b60b8753931d",
+      "previous_comparison_sha256": "16aa3248d02da4ba793a15872c60281569746a8133afee8066d5a983894a783d",
+      "reference_sha256": "1dc69fe5f9431c54aab1630525a04eb34615b7676342c4bf3f36f79d2ff87616",
+      "policy_sha256": "f4d9b73e87c2b034396d772c2af03ebc66f6a0d76c51c4943bd4e63d8ec402ef",
+      "previous_checkpoint_sha256": "fc3f14d6294f47a9b8007b4def63c4fead3ab8fe3bf4951d5283998276d5e86e",
+      "revised_checkpoint_sha256": "a488ee51c9e6ec6dccff7d7d5e8aa33be31d21a7fe9332487ab2c2e30928b2c6",
+      "revised_predictions_epsg": 2193
+    }
+  },
+  "model_retuned": false,
+  "inference_restarted": false,
+  "scope": "Post-revision exploratory comparison; previous test exposure retained",
+  "source_code_sha256": "93733ec2416c9dd2c0f52502bda014de1fe9fce8426e555d2dcb4acc2ab95260",
+  "output_sha256": {
+    "figure_7_6_alto_revision.svg": "7ad19992146aa511bc40a3375f83cc7d08a083c0964f023b636f7a0e06df285c",
+    "site_revision_changes.csv": "6286bc925c02229787a56b5338b5b5dc7e2d12eb5cf014196600733a1ceacaee",
+    "figure_7_6_alto_revision.png": "a0deaafa6eb98429cf60687dbe1b5cdee8d0795fce60785de853aeadc0e150dc",
+    "paired_revision_comparison.json": "2e55ee7ff935f77857e1a45615291606730c8072a5786e58efe5576fe1cb980e"
+  }
+}

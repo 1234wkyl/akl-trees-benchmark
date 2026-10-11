@@ -1,0 +1,35 @@
+{
+  "tree_id": "akl_tree_lid_0849199",
+  "site_id": "S010",
+  "source": "same complete current OSM, supplied CHM, retained frozen seeds; GLI toggled only",
+  "before_GLI_support_pixels": 221,
+  "after_GLI_support_pixels": 219,
+  "removed_pixels": [
+    {
+      "row": 376,
+      "column": 317,
+      "x_2193": 1744388.5,
+      "y_2193": 5914104.5,
+      "chm_m": 18.71656608581543,
+      "GLI": 0.095238097012043,
+      "mean_5x5_GLI": 0.02397063560783863,
+      "threshold": 0.03
+    },
+    {
+      "row": 376,
+      "column": 318,
+      "x_2193": 1744389.5,
+      "y_2193": 5914104.5,
+      "chm_m": 18.295494079589844,
+      "GLI": 0.2054794579744339,
+      "mean_5x5_GLI": 0.029740825295448303,
+      "threshold": 0.03
+    }
+  ],
+  "area_relative_error_percent": -0.9049773755656109,
+  "frozen_mean_chm_m": 20.2520694732666,
+  "mean_chm_before_GLI_m": 20.2520694732666,
+  "mean_chm_after_GLI_m": 20.268016815185547,
+  "historical_GLI_available": false,
+  "conclusion": "The replacement GLI gate removes exactly two pixels for this crown. Its historical greenness values cannot be recovered from the frozen scalar table; no threshold or mask pixel was altered to force agreement."
+}

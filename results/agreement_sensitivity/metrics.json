@@ -1,0 +1,3170 @@
+{
+  "policy": {
+    "recorded_on": "2026-10-09",
+    "status": "post-hoc exploratory sensitivity requested after inspecting revised-label correspondence",
+    "sites": [
+      "S016",
+      "S020"
+    ],
+    "object_classes": [
+      "tree"
+    ],
+    "iou_thresholds": [
+      0.5,
+      0.4,
+      0.3,
+      0.25
+    ],
+    "smaller_area_overlap_threshold": 0.5,
+    "centroid_tolerance_m": 2.0,
+    "region_classes": [
+      "tree",
+      "tree_group"
+    ],
+    "area_tolerances_m": [
+      0.0,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "covered_object_fraction_threshold": 0.5,
+    "object_rule": "one-to-one greedy; descending overlap then stable label IDs; centroid view uses existing benchmark descending IoU, distance, stable IDs within 2 m",
+    "region_rule": "union tree and tree_group per rater within fixed sites; remove internal boundaries; preserve polygon holes; no disagreement-derived exclusion masks",
+    "tolerant_area_rule": "A-support = area(A intersect buffer(B,d))/area(A), B-support = area(B intersect buffer(A,d))/area(B); harmonic mean. Buffers intersect site domain. At d=0 this equals canopy Dice.",
+    "many_to_many_rule": "region links require positive intersection covering at least 50% of the smaller polygon; linked-object fractions are not one-to-one detection F1. Also report each polygon's coverage by the other rater's entire region union.",
+    "uncertainty_rule": "exclude uncertain and not_tree classes from vegetation views; retain all confirmed trees; never create masks from TW uncertain regions",
+    "sources": [
+      {
+        "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009180",
+        "basis": "NEON benchmark distinguishes detection and delineation, examines IoU sensitivity and uses 0.4. Threshold inclusivity and pooled counts here retain the project implementation; this is not a replication of that benchmark."
+      },
+      {
+        "file": "config/reference_review_policy.json",
+        "basis": "Existing 2 m centroid tolerance is reused as an exploratory rater-location view; the original rater protocol is not replaced."
+      }
+    ],
+    "interpretation": "Report all settings; do not select a favorable threshold as evidence of passing. Larger tolerances allow more boundary disagreement. These revised labels are not independent blind annotations. No automatic freeze or model scoring changes."
+  },
+  "object_sensitivity": [
+    {
+      "method": "IoU >= 0.50",
+      "n_a": 69,
+      "n_b": 58,
+      "matched": 51,
+      "f1": 0.8031496062992126,
+      "median_matched_iou": 0.6825594215462638,
+      "per_site": [
+        {
+          "site_id": "S016",
+          "n_a": 26,
+          "n_b": 24,
+          "pairs": [
+            {
+              "id_a": "S016-mss1d6f7",
+              "id_b": "S016-mv0cfj4w",
+              "overlap_value": 0.8000772437843829,
+              "iou": 0.8000772437843829,
+              "centroid_distance_m": 0.3653170854896021
+            },
+            {
+              "id_a": "S016-mss1a1c6",
+              "id_b": "S016-mv0cjs7d",
+              "overlap_value": 0.7974812050824017,
+              "iou": 0.7974812050824017,
+              "centroid_distance_m": 0.5343842338679056
+            },
+            {
+              "id_a": "S016-mss1cn4r",
+              "id_b": "S016-mv0cnujm",
+              "overlap_value": 0.7859768598299728,
+              "iou": 0.7859768598299728,
+              "centroid_distance_m": 0.23882413267742927
+            },
+            {
+              "id_a": "S016-mss1bxh9",
+              "id_b": "S016-mv0cmmy7",
+              "overlap_value": 0.7633667410602728,
+              "iou": 0.7633667410602728,
+              "centroid_distance_m": 0.44959113135437057
+            },
+            {
+              "id_a": "S016-mss1cgbn",
+              "id_b": "S016-mv0clq3b",
+              "overlap_value": 0.7506435186393292,
+              "iou": 0.7506435186393292,
+              "centroid_distance_m": 0.247807386546268
+            },
+            {
+              "id_a": "S016-mss1abxx",
+              "id_b": "S016-mv0ck7rx",
+              "overlap_value": 0.742706618038517,
+              "iou": 0.742706618038517,
+              "centroid_distance_m": 0.685479680741453
+            },
+            {
+              "id_a": "S016-author-qa-west-south",
+              "id_b": "S016-mv0cm8rk",
+              "overlap_value": 0.7355434543533101,
+              "iou": 0.7355434543533101,
+              "centroid_distance_m": 0.09118516466958548
+            },
+            {
+              "id_a": "S016-author-qa-west-north",
+              "id_b": "S016-mv0cmbut",
+              "overlap_value": 0.7334029539538951,
+              "iou": 0.7334029539538951,
+              "centroid_distance_m": 0.2229800375760595
+            },
+            {
+              "id_a": "S016-author-20261010-south03",
+              "id_b": "S016-mv0cnlj9",
+              "overlap_value": 0.728148565320922,
+              "iou": 0.728148565320922,
+              "centroid_distance_m": 0.45673781186539325
+            },
+            {
+              "id_a": "S016-mss19rn9",
+              "id_b": "S016-mv0cgfjv",
+              "overlap_value": 0.7238616698863541,
+              "iou": 0.7238616698863541,
+              "centroid_distance_m": 1.2243885255347529
+            },
+            {
+              "id_a": "S016-mss1cx6e",
+              "id_b": "S016-mv0ckibu",
+              "overlap_value": 0.7215131155102948,
+              "iou": 0.7215131155102948,
+              "centroid_distance_m": 0.9321875074795408
+            },
+            {
+              "id_a": "S016-mss1aruu",
+              "id_b": "S016-mv0ckt8h",
+              "overlap_value": 0.7176847412640074,
+              "iou": 0.7176847412640074,
+              "centroid_distance_m": 0.6879080301595034
+            },
+            {
+              "id_a": "S016-author-20261010-south02",
+              "id_b": "S016-mv0cnhyw",
+              "overlap_value": 0.6737245423505518,
+              "iou": 0.6737245423505518,
+              "centroid_distance_m": 0.37034651900950305
+            },
+            {
+              "id_a": "S016-author-20261010-west",
+              "id_b": "S016-mv0cm016",
+              "overlap_value": 0.6629163868583076,
+              "iou": 0.6629163868583076,
+              "centroid_distance_m": 0.17210716723932148
+            },
+            {
+              "id_a": "S016-mss1ejzd-expanded-c03",
+              "id_b": "S016-mv0cm4n3",
+              "overlap_value": 0.6562675576571814,
+              "iou": 0.6562675576571814,
+              "centroid_distance_m": 0.11226693862121344
+            },
+            {
+              "id_a": "S016-author-qa-bridge-north",
+              "id_b": "S016-mv0cmvf5",
+              "overlap_value": 0.6280325771013894,
+              "iou": 0.6280325771013894,
+              "centroid_distance_m": 0.4811654627519864
+            },
+            {
+              "id_a": "S016-mss1c6h7",
+              "id_b": "S016-mv0cnb4v",
+              "overlap_value": 0.6268199801867389,
+              "iou": 0.6268199801867389,
+              "centroid_distance_m": 0.8003972851071415
+            },
+            {
+              "id_a": "S016-mss1ejzd-expanded-c01",
+              "id_b": "S016-mv0cmgyu",
+              "overlap_value": 0.6157795679654702,
+              "iou": 0.6157795679654702,
+              "centroid_distance_m": 0.28341519463137105
+            },
+            {
+              "id_a": "S016-author-qa-railway-coherent",
+              "id_b": "S016-mv0cn240",
+              "overlap_value": 0.6109465287113413,
+              "iou": 0.6109465287113413,
+              "centroid_distance_m": 1.1706644813456384
+            },
+            {
+              "id_a": "S016-author-qa-bridge-south",
+              "id_b": "S016-mv0cmrk4",
+              "overlap_value": 0.6025055112975538,
+              "iou": 0.6025055112975538,
+              "centroid_distance_m": 1.044775397371216
+            },
+            {
+              "id_a": "S016-mss1dfvk",
+              "id_b": "S016-mv0cf9mq",
+              "overlap_value": 0.6021028924318683,
+              "iou": 0.6021028924318683,
+              "centroid_distance_m": 0.9773924317945991
+            },
+            {
+              "id_a": "S016-mss19glc",
+              "id_b": "S016-mv0cjfkd",
+              "overlap_value": 0.5922036941769456,
+              "iou": 0.5922036941769456,
+              "centroid_distance_m": 1.5070086991728628
+            },
+            {
+              "id_a": "S016-mss1bhf4",
+              "id_b": "S016-mv0cl70f",
+              "overlap_value": 0.5088770866518845,
+              "iou": 0.5088770866518845,
+              "centroid_distance_m": 0.5967022918093629
+            },
+            {
+              "id_a": "S016-author-20261010-south01",
+              "id_b": "S016-mv0cne32",
+              "overlap_value": 0.5022450734078105,
+              "iou": 0.5022450734078105,
+              "centroid_distance_m": 0.3497599050811513
+            }
+          ]
+        },
+        {
+          "site_id": "S020",
+          "n_a": 43,
+          "n_b": 34,
+          "pairs": [
+            {
+              "id_a": "S020-mss2j946",
+              "id_b": "S020-mv0cv1aw",
+              "overlap_value": 0.8490898014295964,
+              "iou": 0.8490898014295964,
+              "centroid_distance_m": 1.2822553326412576
+            },
+            {
+              "id_a": "S020-mss2gtpi",
+              "id_b": "S020-mv0czlus",
+              "overlap_value": 0.8001992372603851,
+              "iou": 0.8001992372603851,
+              "centroid_distance_m": 0.2843541217583166
+            },
+            {
+              "id_a": "S020-mss2h3fs",
+              "id_b": "S020-mv0cxw64",
+              "overlap_value": 0.7914566544339943,
+              "iou": 0.7914566544339943,
+              "centroid_distance_m": 0.5245495909435056
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c03",
+              "id_b": "S020-mv0cyl11",
+              "overlap_value": 0.7905677056788836,
+              "iou": 0.7905677056788836,
+              "centroid_distance_m": 0.4414361285553906
+            },
+            {
+              "id_a": "S020-mss2e7yy",
+              "id_b": "S020-mv0cttl6",
+              "overlap_value": 0.7674026796763747,
+              "iou": 0.7674026796763747,
+              "centroid_distance_m": 0.4431817201606812
+            },
+            {
+              "id_a": "S020-mss2fcfk",
+              "id_b": "S020-mv0ctnuh",
+              "overlap_value": 0.7612462384357582,
+              "iou": 0.7612462384357582,
+              "centroid_distance_m": 0.29951175564968496
+            },
+            {
+              "id_a": "S020-mss2igg6-single",
+              "id_b": "S020-mv0d0c6b",
+              "overlap_value": 0.7572548329399825,
+              "iou": 0.7572548329399825,
+              "centroid_distance_m": 0.45563716810169125
+            },
+            {
+              "id_a": "S020-mss2dyzz",
+              "id_b": "S020-mv0crolo",
+              "overlap_value": 0.7476959901149496,
+              "iou": 0.7476959901149496,
+              "centroid_distance_m": 1.6953918048972576
+            },
+            {
+              "id_a": "S020-author-qa-park-north",
+              "id_b": "S020-mv0cyhgd",
+              "overlap_value": 0.7446176759967706,
+              "iou": 0.7446176759967706,
+              "centroid_distance_m": 0.6074332058445531
+            },
+            {
+              "id_a": "S020-mss2gap0",
+              "id_b": "S020-mv0cwrnq",
+              "overlap_value": 0.7411550405325846,
+              "iou": 0.7411550405325846,
+              "centroid_distance_m": 0.5092642365372055
+            },
+            {
+              "id_a": "S020-mss2hq7o",
+              "id_b": "S020-mv0cv8oa",
+              "overlap_value": 0.7321927930535791,
+              "iou": 0.7321927930535791,
+              "centroid_distance_m": 0.3194097136616498
+            },
+            {
+              "id_a": "S020-author-20261010-east01",
+              "id_b": "S020-mv0ctjz2",
+              "overlap_value": 0.7157222129096494,
+              "iou": 0.7157222129096494,
+              "centroid_distance_m": 0.07423490565868361
+            },
+            {
+              "id_a": "S020-author-20261010-north01",
+              "id_b": "S020-mv0cubdr",
+              "overlap_value": 0.7146172259241443,
+              "iou": 0.7146172259241443,
+              "centroid_distance_m": 0.11715378059929941
+            },
+            {
+              "id_a": "S020-author-qa-road-west",
+              "id_b": "S020-mv0czsvx",
+              "overlap_value": 0.6825594215462638,
+              "iou": 0.6825594215462638,
+              "centroid_distance_m": 0.28386488517272285
+            },
+            {
+              "id_a": "S020-mss2esi4",
+              "id_b": "S020-mv0d03qj",
+              "overlap_value": 0.6787675183019459,
+              "iou": 0.6787675183019459,
+              "centroid_distance_m": 0.781167806015501
+            },
+            {
+              "id_a": "S020-mss2efk9",
+              "id_b": "S020-mv0cuksa",
+              "overlap_value": 0.672954268014867,
+              "iou": 0.672954268014867,
+              "centroid_distance_m": 0.6472713176410376
+            },
+            {
+              "id_a": "S020-mss2hf4v",
+              "id_b": "S020-mv0d0pr7",
+              "overlap_value": 0.6333334337009296,
+              "iou": 0.6333334337009296,
+              "centroid_distance_m": 0.8030734424191567
+            },
+            {
+              "id_a": "S020-mss2foer",
+              "id_b": "S020-mv0cu7wx",
+              "overlap_value": 0.6219321249769834,
+              "iou": 0.6219321249769834,
+              "centroid_distance_m": 1.2860631789486157
+            },
+            {
+              "id_a": "S020-author-qa-road-lower",
+              "id_b": "S020-mv0czwlp",
+              "overlap_value": 0.5946557524565996,
+              "iou": 0.5946557524565996,
+              "centroid_distance_m": 0.6279109086864647
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c02",
+              "id_b": "S020-mv0cvfwl",
+              "overlap_value": 0.5658147962949596,
+              "iou": 0.5658147962949596,
+              "centroid_distance_m": 0.1538151888812668
+            },
+            {
+              "id_a": "S020-author-qa-orange-west",
+              "id_b": "S020-mv0cz7xi",
+              "overlap_value": 0.5484054818247248,
+              "iou": 0.5484054818247248,
+              "centroid_distance_m": 0.726183170137587
+            },
+            {
+              "id_a": "S020-author-qa-park-south",
+              "id_b": "S020-mv0cy1mv",
+              "overlap_value": 0.5436114326996673,
+              "iou": 0.5436114326996673,
+              "centroid_distance_m": 1.559820377897553
+            },
+            {
+              "id_a": "S020-author-qa-orange-north",
+              "id_b": "S020-mv0czbkk",
+              "overlap_value": 0.5321092347876385,
+              "iou": 0.5321092347876385,
+              "centroid_distance_m": 0.8028889914331127
+            },
+            {
+              "id_a": "S020-author-20261010-north03",
+              "id_b": "S020-mv0ctx7d",
+              "overlap_value": 0.5154776764216801,
+              "iou": 0.5154776764216801,
+              "centroid_distance_m": 0.4293756613762895
+            },
+            {
+              "id_a": "S020-author-qa-south-garden",
+              "id_b": "S020-mv0czf32",
+              "overlap_value": 0.5136584126050066,
+              "iou": 0.5136584126050066,
+              "centroid_distance_m": 0.9715861792875026
+            },
+            {
+              "id_a": "S020-author-qa-garden-west",
+              "id_b": "S020-mv0cynj7",
+              "overlap_value": 0.5081877436035462,
+              "iou": 0.5081877436035462,
+              "centroid_distance_m": 0.7522133607898096
+            },
+            {
+              "id_a": "S020-mss2gioe",
+              "id_b": "S020-mv0cv56v",
+              "overlap_value": 0.5000778289484956,
+              "iou": 0.5000778289484956,
+              "centroid_distance_m": 0.4762501721026854
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "method": "IoU >= 0.40",
+      "n_a": 69,
+      "n_b": 58,
+      "matched": 55,
+      "f1": 0.8661417322834646,
+      "median_matched_iou": 0.6737245423505518,
+      "per_site": [
+        {
+          "site_id": "S016",
+          "n_a": 26,
+          "n_b": 24,
+          "pairs": [
+            {
+              "id_a": "S016-mss1d6f7",
+              "id_b": "S016-mv0cfj4w",
+              "overlap_value": 0.8000772437843829,
+              "iou": 0.8000772437843829,
+              "centroid_distance_m": 0.3653170854896021
+            },
+            {
+              "id_a": "S016-mss1a1c6",
+              "id_b": "S016-mv0cjs7d",
+              "overlap_value": 0.7974812050824017,
+              "iou": 0.7974812050824017,
+              "centroid_distance_m": 0.5343842338679056
+            },
+            {
+              "id_a": "S016-mss1cn4r",
+              "id_b": "S016-mv0cnujm",
+              "overlap_value": 0.7859768598299728,
+              "iou": 0.7859768598299728,
+              "centroid_distance_m": 0.23882413267742927
+            },
+            {
+              "id_a": "S016-mss1bxh9",
+              "id_b": "S016-mv0cmmy7",
+              "overlap_value": 0.7633667410602728,
+              "iou": 0.7633667410602728,
+              "centroid_distance_m": 0.44959113135437057
+            },
+            {
+              "id_a": "S016-mss1cgbn",
+              "id_b": "S016-mv0clq3b",
+              "overlap_value": 0.7506435186393292,
+              "iou": 0.7506435186393292,
+              "centroid_distance_m": 0.247807386546268
+            },
+            {
+              "id_a": "S016-mss1abxx",
+              "id_b": "S016-mv0ck7rx",
+              "overlap_value": 0.742706618038517,
+              "iou": 0.742706618038517,
+              "centroid_distance_m": 0.685479680741453
+            },
+            {
+              "id_a": "S016-author-qa-west-south",
+              "id_b": "S016-mv0cm8rk",
+              "overlap_value": 0.7355434543533101,
+              "iou": 0.7355434543533101,
+              "centroid_distance_m": 0.09118516466958548
+            },
+            {
+              "id_a": "S016-author-qa-west-north",
+              "id_b": "S016-mv0cmbut",
+              "overlap_value": 0.7334029539538951,
+              "iou": 0.7334029539538951,
+              "centroid_distance_m": 0.2229800375760595
+            },
+            {
+              "id_a": "S016-author-20261010-south03",
+              "id_b": "S016-mv0cnlj9",
+              "overlap_value": 0.728148565320922,
+              "iou": 0.728148565320922,
+              "centroid_distance_m": 0.45673781186539325
+            },
+            {
+              "id_a": "S016-mss19rn9",
+              "id_b": "S016-mv0cgfjv",
+              "overlap_value": 0.7238616698863541,
+              "iou": 0.7238616698863541,
+              "centroid_distance_m": 1.2243885255347529
+            },
+            {
+              "id_a": "S016-mss1cx6e",
+              "id_b": "S016-mv0ckibu",
+              "overlap_value": 0.7215131155102948,
+              "iou": 0.7215131155102948,
+              "centroid_distance_m": 0.9321875074795408
+            },
+            {
+              "id_a": "S016-mss1aruu",
+              "id_b": "S016-mv0ckt8h",
+              "overlap_value": 0.7176847412640074,
+              "iou": 0.7176847412640074,
+              "centroid_distance_m": 0.6879080301595034
+            },
+            {
+              "id_a": "S016-author-20261010-south02",
+              "id_b": "S016-mv0cnhyw",
+              "overlap_value": 0.6737245423505518,
+              "iou": 0.6737245423505518,
+              "centroid_distance_m": 0.37034651900950305
+            },
+            {
+              "id_a": "S016-author-20261010-west",
+              "id_b": "S016-mv0cm016",
+              "overlap_value": 0.6629163868583076,
+              "iou": 0.6629163868583076,
+              "centroid_distance_m": 0.17210716723932148
+            },
+            {
+              "id_a": "S016-mss1ejzd-expanded-c03",
+              "id_b": "S016-mv0cm4n3",
+              "overlap_value": 0.6562675576571814,
+              "iou": 0.6562675576571814,
+              "centroid_distance_m": 0.11226693862121344
+            },
+            {
+              "id_a": "S016-author-qa-bridge-north",
+              "id_b": "S016-mv0cmvf5",
+              "overlap_value": 0.6280325771013894,
+              "iou": 0.6280325771013894,
+              "centroid_distance_m": 0.4811654627519864
+            },
+            {
+              "id_a": "S016-mss1c6h7",
+              "id_b": "S016-mv0cnb4v",
+              "overlap_value": 0.6268199801867389,
+              "iou": 0.6268199801867389,
+              "centroid_distance_m": 0.8003972851071415
+            },
+            {
+              "id_a": "S016-mss1ejzd-expanded-c01",
+              "id_b": "S016-mv0cmgyu",
+              "overlap_value": 0.6157795679654702,
+              "iou": 0.6157795679654702,
+              "centroid_distance_m": 0.28341519463137105
+            },
+            {
+              "id_a": "S016-author-qa-railway-coherent",
+              "id_b": "S016-mv0cn240",
+              "overlap_value": 0.6109465287113413,
+              "iou": 0.6109465287113413,
+              "centroid_distance_m": 1.1706644813456384
+            },
+            {
+              "id_a": "S016-author-qa-bridge-south",
+              "id_b": "S016-mv0cmrk4",
+              "overlap_value": 0.6025055112975538,
+              "iou": 0.6025055112975538,
+              "centroid_distance_m": 1.044775397371216
+            },
+            {
+              "id_a": "S016-mss1dfvk",
+              "id_b": "S016-mv0cf9mq",
+              "overlap_value": 0.6021028924318683,
+              "iou": 0.6021028924318683,
+              "centroid_distance_m": 0.9773924317945991
+            },
+            {
+              "id_a": "S016-mss19glc",
+              "id_b": "S016-mv0cjfkd",
+              "overlap_value": 0.5922036941769456,
+              "iou": 0.5922036941769456,
+              "centroid_distance_m": 1.5070086991728628
+            },
+            {
+              "id_a": "S016-mss1bhf4",
+              "id_b": "S016-mv0cl70f",
+              "overlap_value": 0.5088770866518845,
+              "iou": 0.5088770866518845,
+              "centroid_distance_m": 0.5967022918093629
+            },
+            {
+              "id_a": "S016-author-20261010-south01",
+              "id_b": "S016-mv0cne32",
+              "overlap_value": 0.5022450734078105,
+              "iou": 0.5022450734078105,
+              "centroid_distance_m": 0.3497599050811513
+            }
+          ]
+        },
+        {
+          "site_id": "S020",
+          "n_a": 43,
+          "n_b": 34,
+          "pairs": [
+            {
+              "id_a": "S020-mss2j946",
+              "id_b": "S020-mv0cv1aw",
+              "overlap_value": 0.8490898014295964,
+              "iou": 0.8490898014295964,
+              "centroid_distance_m": 1.2822553326412576
+            },
+            {
+              "id_a": "S020-mss2gtpi",
+              "id_b": "S020-mv0czlus",
+              "overlap_value": 0.8001992372603851,
+              "iou": 0.8001992372603851,
+              "centroid_distance_m": 0.2843541217583166
+            },
+            {
+              "id_a": "S020-mss2h3fs",
+              "id_b": "S020-mv0cxw64",
+              "overlap_value": 0.7914566544339943,
+              "iou": 0.7914566544339943,
+              "centroid_distance_m": 0.5245495909435056
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c03",
+              "id_b": "S020-mv0cyl11",
+              "overlap_value": 0.7905677056788836,
+              "iou": 0.7905677056788836,
+              "centroid_distance_m": 0.4414361285553906
+            },
+            {
+              "id_a": "S020-mss2e7yy",
+              "id_b": "S020-mv0cttl6",
+              "overlap_value": 0.7674026796763747,
+              "iou": 0.7674026796763747,
+              "centroid_distance_m": 0.4431817201606812
+            },
+            {
+              "id_a": "S020-mss2fcfk",
+              "id_b": "S020-mv0ctnuh",
+              "overlap_value": 0.7612462384357582,
+              "iou": 0.7612462384357582,
+              "centroid_distance_m": 0.29951175564968496
+            },
+            {
+              "id_a": "S020-mss2igg6-single",
+              "id_b": "S020-mv0d0c6b",
+              "overlap_value": 0.7572548329399825,
+              "iou": 0.7572548329399825,
+              "centroid_distance_m": 0.45563716810169125
+            },
+            {
+              "id_a": "S020-mss2dyzz",
+              "id_b": "S020-mv0crolo",
+              "overlap_value": 0.7476959901149496,
+              "iou": 0.7476959901149496,
+              "centroid_distance_m": 1.6953918048972576
+            },
+            {
+              "id_a": "S020-author-qa-park-north",
+              "id_b": "S020-mv0cyhgd",
+              "overlap_value": 0.7446176759967706,
+              "iou": 0.7446176759967706,
+              "centroid_distance_m": 0.6074332058445531
+            },
+            {
+              "id_a": "S020-mss2gap0",
+              "id_b": "S020-mv0cwrnq",
+              "overlap_value": 0.7411550405325846,
+              "iou": 0.7411550405325846,
+              "centroid_distance_m": 0.5092642365372055
+            },
+            {
+              "id_a": "S020-mss2hq7o",
+              "id_b": "S020-mv0cv8oa",
+              "overlap_value": 0.7321927930535791,
+              "iou": 0.7321927930535791,
+              "centroid_distance_m": 0.3194097136616498
+            },
+            {
+              "id_a": "S020-author-20261010-east01",
+              "id_b": "S020-mv0ctjz2",
+              "overlap_value": 0.7157222129096494,
+              "iou": 0.7157222129096494,
+              "centroid_distance_m": 0.07423490565868361
+            },
+            {
+              "id_a": "S020-author-20261010-north01",
+              "id_b": "S020-mv0cubdr",
+              "overlap_value": 0.7146172259241443,
+              "iou": 0.7146172259241443,
+              "centroid_distance_m": 0.11715378059929941
+            },
+            {
+              "id_a": "S020-author-qa-road-west",
+              "id_b": "S020-mv0czsvx",
+              "overlap_value": 0.6825594215462638,
+              "iou": 0.6825594215462638,
+              "centroid_distance_m": 0.28386488517272285
+            },
+            {
+              "id_a": "S020-mss2esi4",
+              "id_b": "S020-mv0d03qj",
+              "overlap_value": 0.6787675183019459,
+              "iou": 0.6787675183019459,
+              "centroid_distance_m": 0.781167806015501
+            },
+            {
+              "id_a": "S020-mss2efk9",
+              "id_b": "S020-mv0cuksa",
+              "overlap_value": 0.672954268014867,
+              "iou": 0.672954268014867,
+              "centroid_distance_m": 0.6472713176410376
+            },
+            {
+              "id_a": "S020-mss2hf4v",
+              "id_b": "S020-mv0d0pr7",
+              "overlap_value": 0.6333334337009296,
+              "iou": 0.6333334337009296,
+              "centroid_distance_m": 0.8030734424191567
+            },
+            {
+              "id_a": "S020-mss2foer",
+              "id_b": "S020-mv0cu7wx",
+              "overlap_value": 0.6219321249769834,
+              "iou": 0.6219321249769834,
+              "centroid_distance_m": 1.2860631789486157
+            },
+            {
+              "id_a": "S020-author-qa-road-lower",
+              "id_b": "S020-mv0czwlp",
+              "overlap_value": 0.5946557524565996,
+              "iou": 0.5946557524565996,
+              "centroid_distance_m": 0.6279109086864647
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c02",
+              "id_b": "S020-mv0cvfwl",
+              "overlap_value": 0.5658147962949596,
+              "iou": 0.5658147962949596,
+              "centroid_distance_m": 0.1538151888812668
+            },
+            {
+              "id_a": "S020-author-qa-orange-west",
+              "id_b": "S020-mv0cz7xi",
+              "overlap_value": 0.5484054818247248,
+              "iou": 0.5484054818247248,
+              "centroid_distance_m": 0.726183170137587
+            },
+            {
+              "id_a": "S020-author-qa-park-south",
+              "id_b": "S020-mv0cy1mv",
+              "overlap_value": 0.5436114326996673,
+              "iou": 0.5436114326996673,
+              "centroid_distance_m": 1.559820377897553
+            },
+            {
+              "id_a": "S020-author-qa-orange-north",
+              "id_b": "S020-mv0czbkk",
+              "overlap_value": 0.5321092347876385,
+              "iou": 0.5321092347876385,
+              "centroid_distance_m": 0.8028889914331127
+            },
+            {
+              "id_a": "S020-author-20261010-north03",
+              "id_b": "S020-mv0ctx7d",
+              "overlap_value": 0.5154776764216801,
+              "iou": 0.5154776764216801,
+              "centroid_distance_m": 0.4293756613762895
+            },
+            {
+              "id_a": "S020-author-qa-south-garden",
+              "id_b": "S020-mv0czf32",
+              "overlap_value": 0.5136584126050066,
+              "iou": 0.5136584126050066,
+              "centroid_distance_m": 0.9715861792875026
+            },
+            {
+              "id_a": "S020-author-qa-garden-west",
+              "id_b": "S020-mv0cynj7",
+              "overlap_value": 0.5081877436035462,
+              "iou": 0.5081877436035462,
+              "centroid_distance_m": 0.7522133607898096
+            },
+            {
+              "id_a": "S020-mss2gioe",
+              "id_b": "S020-mv0cv56v",
+              "overlap_value": 0.5000778289484956,
+              "iou": 0.5000778289484956,
+              "centroid_distance_m": 0.4762501721026854
+            },
+            {
+              "id_a": "S020-mss2i41d-single",
+              "id_b": "S020-mv0cx398",
+              "overlap_value": 0.4566211921760037,
+              "iou": 0.4566211921760037,
+              "centroid_distance_m": 1.612637580032129
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c01",
+              "id_b": "S020-mv0cvclz",
+              "overlap_value": 0.45419464434996043,
+              "iou": 0.45419464434996043,
+              "centroid_distance_m": 1.2672815738980014
+            },
+            {
+              "id_a": "S020-author-20261010-north02",
+              "id_b": "S020-mv0cuf4v",
+              "overlap_value": 0.4403681608287519,
+              "iou": 0.4403681608287519,
+              "centroid_distance_m": 1.0523069897611692
+            },
+            {
+              "id_a": "S020-mss2lw2d-expanded-c02",
+              "id_b": "S020-mv0cvs2o",
+              "overlap_value": 0.4070762755828814,
+              "iou": 0.4070762755828814,
+              "centroid_distance_m": 2.6887115747875656
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "method": "IoU >= 0.30",
+      "n_a": 69,
+      "n_b": 58,
+      "matched": 55,
+      "f1": 0.8661417322834646,
+      "median_matched_iou": 0.6737245423505518,
+      "per_site": [
+        {
+          "site_id": "S016",
+          "n_a": 26,
+          "n_b": 24,
+          "pairs": [
+            {
+              "id_a": "S016-mss1d6f7",
+              "id_b": "S016-mv0cfj4w",
+              "overlap_value": 0.8000772437843829,
+              "iou": 0.8000772437843829,
+              "centroid_distance_m": 0.3653170854896021
+            },
+            {
+              "id_a": "S016-mss1a1c6",
+              "id_b": "S016-mv0cjs7d",
+              "overlap_value": 0.7974812050824017,
+              "iou": 0.7974812050824017,
+              "centroid_distance_m": 0.5343842338679056
+            },
+            {
+              "id_a": "S016-mss1cn4r",
+              "id_b": "S016-mv0cnujm",
+              "overlap_value": 0.7859768598299728,
+              "iou": 0.7859768598299728,
+              "centroid_distance_m": 0.23882413267742927
+            },
+            {
+              "id_a": "S016-mss1bxh9",
+              "id_b": "S016-mv0cmmy7",
+              "overlap_value": 0.7633667410602728,
+              "iou": 0.7633667410602728,
+              "centroid_distance_m": 0.44959113135437057
+            },
+            {
+              "id_a": "S016-mss1cgbn",
+              "id_b": "S016-mv0clq3b",
+              "overlap_value": 0.7506435186393292,
+              "iou": 0.7506435186393292,
+              "centroid_distance_m": 0.247807386546268
+            },
+            {
+              "id_a": "S016-mss1abxx",
+              "id_b": "S016-mv0ck7rx",
+              "overlap_value": 0.742706618038517,
+              "iou": 0.742706618038517,
+              "centroid_distance_m": 0.685479680741453
+            },
+            {
+              "id_a": "S016-author-qa-west-south",
+              "id_b": "S016-mv0cm8rk",
+              "overlap_value": 0.7355434543533101,
+              "iou": 0.7355434543533101,
+              "centroid_distance_m": 0.09118516466958548
+            },
+            {
+              "id_a": "S016-author-qa-west-north",
+              "id_b": "S016-mv0cmbut",
+              "overlap_value": 0.7334029539538951,
+              "iou": 0.7334029539538951,
+              "centroid_distance_m": 0.2229800375760595
+            },
+            {
+              "id_a": "S016-author-20261010-south03",
+              "id_b": "S016-mv0cnlj9",
+              "overlap_value": 0.728148565320922,
+              "iou": 0.728148565320922,
+              "centroid_distance_m": 0.45673781186539325
+            },
+            {
+              "id_a": "S016-mss19rn9",
+              "id_b": "S016-mv0cgfjv",
+              "overlap_value": 0.7238616698863541,
+              "iou": 0.7238616698863541,
+              "centroid_distance_m": 1.2243885255347529
+            },
+            {
+              "id_a": "S016-mss1cx6e",
+              "id_b": "S016-mv0ckibu",
+              "overlap_value": 0.7215131155102948,
+              "iou": 0.7215131155102948,
+              "centroid_distance_m": 0.9321875074795408
+            },
+            {
+              "id_a": "S016-mss1aruu",
+              "id_b": "S016-mv0ckt8h",
+              "overlap_value": 0.7176847412640074,
+              "iou": 0.7176847412640074,
+              "centroid_distance_m": 0.6879080301595034
+            },
+            {
+              "id_a": "S016-author-20261010-south02",
+              "id_b": "S016-mv0cnhyw",
+              "overlap_value": 0.6737245423505518,
+              "iou": 0.6737245423505518,
+              "centroid_distance_m": 0.37034651900950305
+            },
+            {
+              "id_a": "S016-author-20261010-west",
+              "id_b": "S016-mv0cm016",
+              "overlap_value": 0.6629163868583076,
+              "iou": 0.6629163868583076,
+              "centroid_distance_m": 0.17210716723932148
+            },
+            {
+              "id_a": "S016-mss1ejzd-expanded-c03",
+              "id_b": "S016-mv0cm4n3",
+              "overlap_value": 0.6562675576571814,
+              "iou": 0.6562675576571814,
+              "centroid_distance_m": 0.11226693862121344
+            },
+            {
+              "id_a": "S016-author-qa-bridge-north",
+              "id_b": "S016-mv0cmvf5",
+              "overlap_value": 0.6280325771013894,
+              "iou": 0.6280325771013894,
+              "centroid_distance_m": 0.4811654627519864
+            },
+            {
+              "id_a": "S016-mss1c6h7",
+              "id_b": "S016-mv0cnb4v",
+              "overlap_value": 0.6268199801867389,
+              "iou": 0.6268199801867389,
+              "centroid_distance_m": 0.8003972851071415
+            },
+            {
+              "id_a": "S016-mss1ejzd-expanded-c01",
+              "id_b": "S016-mv0cmgyu",
+              "overlap_value": 0.6157795679654702,
+              "iou": 0.6157795679654702,
+              "centroid_distance_m": 0.28341519463137105
+            },
+            {
+              "id_a": "S016-author-qa-railway-coherent",
+              "id_b": "S016-mv0cn240",
+              "overlap_value": 0.6109465287113413,
+              "iou": 0.6109465287113413,
+              "centroid_distance_m": 1.1706644813456384
+            },
+            {
+              "id_a": "S016-author-qa-bridge-south",
+              "id_b": "S016-mv0cmrk4",
+              "overlap_value": 0.6025055112975538,
+              "iou": 0.6025055112975538,
+              "centroid_distance_m": 1.044775397371216
+            },
+            {
+              "id_a": "S016-mss1dfvk",
+              "id_b": "S016-mv0cf9mq",
+              "overlap_value": 0.6021028924318683,
+              "iou": 0.6021028924318683,
+              "centroid_distance_m": 0.9773924317945991
+            },
+            {
+              "id_a": "S016-mss19glc",
+              "id_b": "S016-mv0cjfkd",
+              "overlap_value": 0.5922036941769456,
+              "iou": 0.5922036941769456,
+              "centroid_distance_m": 1.5070086991728628
+            },
+            {
+              "id_a": "S016-mss1bhf4",
+              "id_b": "S016-mv0cl70f",
+              "overlap_value": 0.5088770866518845,
+              "iou": 0.5088770866518845,
+              "centroid_distance_m": 0.5967022918093629
+            },
+            {
+              "id_a": "S016-author-20261010-south01",
+              "id_b": "S016-mv0cne32",
+              "overlap_value": 0.5022450734078105,
+              "iou": 0.5022450734078105,
+              "centroid_distance_m": 0.3497599050811513
+            }
+          ]
+        },
+        {
+          "site_id": "S020",
+          "n_a": 43,
+          "n_b": 34,
+          "pairs": [
+            {
+              "id_a": "S020-mss2j946",
+              "id_b": "S020-mv0cv1aw",
+              "overlap_value": 0.8490898014295964,
+              "iou": 0.8490898014295964,
+              "centroid_distance_m": 1.2822553326412576
+            },
+            {
+              "id_a": "S020-mss2gtpi",
+              "id_b": "S020-mv0czlus",
+              "overlap_value": 0.8001992372603851,
+              "iou": 0.8001992372603851,
+              "centroid_distance_m": 0.2843541217583166
+            },
+            {
+              "id_a": "S020-mss2h3fs",
+              "id_b": "S020-mv0cxw64",
+              "overlap_value": 0.7914566544339943,
+              "iou": 0.7914566544339943,
+              "centroid_distance_m": 0.5245495909435056
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c03",
+              "id_b": "S020-mv0cyl11",
+              "overlap_value": 0.7905677056788836,
+              "iou": 0.7905677056788836,
+              "centroid_distance_m": 0.4414361285553906
+            },
+            {
+              "id_a": "S020-mss2e7yy",
+              "id_b": "S020-mv0cttl6",
+              "overlap_value": 0.7674026796763747,
+              "iou": 0.7674026796763747,
+              "centroid_distance_m": 0.4431817201606812
+            },
+            {
+              "id_a": "S020-mss2fcfk",
+              "id_b": "S020-mv0ctnuh",
+              "overlap_value": 0.7612462384357582,
+              "iou": 0.7612462384357582,
+              "centroid_distance_m": 0.29951175564968496
+            },
+            {
+              "id_a": "S020-mss2igg6-single",
+              "id_b": "S020-mv0d0c6b",
+              "overlap_value": 0.7572548329399825,
+              "iou": 0.7572548329399825,
+              "centroid_distance_m": 0.45563716810169125
+            },
+            {
+              "id_a": "S020-mss2dyzz",
+              "id_b": "S020-mv0crolo",
+              "overlap_value": 0.7476959901149496,
+              "iou": 0.7476959901149496,
+              "centroid_distance_m": 1.6953918048972576
+            },
+            {
+              "id_a": "S020-author-qa-park-north",
+              "id_b": "S020-mv0cyhgd",
+              "overlap_value": 0.7446176759967706,
+              "iou": 0.7446176759967706,
+              "centroid_distance_m": 0.6074332058445531
+            },
+            {
+              "id_a": "S020-mss2gap0",
+              "id_b": "S020-mv0cwrnq",
+              "overlap_value": 0.7411550405325846,
+              "iou": 0.7411550405325846,
+              "centroid_distance_m": 0.5092642365372055
+            },
+            {
+              "id_a": "S020-mss2hq7o",
+              "id_b": "S020-mv0cv8oa",
+              "overlap_value": 0.7321927930535791,
+              "iou": 0.7321927930535791,
+              "centroid_distance_m": 0.3194097136616498
+            },
+            {
+              "id_a": "S020-author-20261010-east01",
+              "id_b": "S020-mv0ctjz2",
+              "overlap_value": 0.7157222129096494,
+              "iou": 0.7157222129096494,
+              "centroid_distance_m": 0.07423490565868361
+            },
+            {
+              "id_a": "S020-author-20261010-north01",
+              "id_b": "S020-mv0cubdr",
+              "overlap_value": 0.7146172259241443,
+              "iou": 0.7146172259241443,
+              "centroid_distance_m": 0.11715378059929941
+            },
+            {
+              "id_a": "S020-author-qa-road-west",
+              "id_b": "S020-mv0czsvx",
+              "overlap_value": 0.6825594215462638,
+              "iou": 0.6825594215462638,
+              "centroid_distance_m": 0.28386488517272285
+            },
+            {
+              "id_a": "S020-mss2esi4",
+              "id_b": "S020-mv0d03qj",
+              "overlap_value": 0.6787675183019459,
+              "iou": 0.6787675183019459,
+              "centroid_distance_m": 0.781167806015501
+            },
+            {
+              "id_a": "S020-mss2efk9",
+              "id_b": "S020-mv0cuksa",
+              "overlap_value": 0.672954268014867,
+              "iou": 0.672954268014867,
+              "centroid_distance_m": 0.6472713176410376
+            },
+            {
+              "id_a": "S020-mss2hf4v",
+              "id_b": "S020-mv0d0pr7",
+              "overlap_value": 0.6333334337009296,
+              "iou": 0.6333334337009296,
+              "centroid_distance_m": 0.8030734424191567
+            },
+            {
+              "id_a": "S020-mss2foer",
+              "id_b": "S020-mv0cu7wx",
+              "overlap_value": 0.6219321249769834,
+              "iou": 0.6219321249769834,
+              "centroid_distance_m": 1.2860631789486157
+            },
+            {
+              "id_a": "S020-author-qa-road-lower",
+              "id_b": "S020-mv0czwlp",
+              "overlap_value": 0.5946557524565996,
+              "iou": 0.5946557524565996,
+              "centroid_distance_m": 0.6279109086864647
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c02",
+              "id_b": "S020-mv0cvfwl",
+              "overlap_value": 0.5658147962949596,
+              "iou": 0.5658147962949596,
+              "centroid_distance_m": 0.1538151888812668
+            },
+            {
+              "id_a": "S020-author-qa-orange-west",
+              "id_b": "S020-mv0cz7xi",
+              "overlap_value": 0.5484054818247248,
+              "iou": 0.5484054818247248,
+              "centroid_distance_m": 0.726183170137587
+            },
+            {
+              "id_a": "S020-author-qa-park-south",
+              "id_b": "S020-mv0cy1mv",
+              "overlap_value": 0.5436114326996673,
+              "iou": 0.5436114326996673,
+              "centroid_distance_m": 1.559820377897553
+            },
+            {
+              "id_a": "S020-author-qa-orange-north",
+              "id_b": "S020-mv0czbkk",
+              "overlap_value": 0.5321092347876385,
+              "iou": 0.5321092347876385,
+              "centroid_distance_m": 0.8028889914331127
+            },
+            {
+              "id_a": "S020-author-20261010-north03",
+              "id_b": "S020-mv0ctx7d",
+              "overlap_value": 0.5154776764216801,
+              "iou": 0.5154776764216801,
+              "centroid_distance_m": 0.4293756613762895
+            },
+            {
+              "id_a": "S020-author-qa-south-garden",
+              "id_b": "S020-mv0czf32",
+              "overlap_value": 0.5136584126050066,
+              "iou": 0.5136584126050066,
+              "centroid_distance_m": 0.9715861792875026
+            },
+            {
+              "id_a": "S020-author-qa-garden-west",
+              "id_b": "S020-mv0cynj7",
+              "overlap_value": 0.5081877436035462,
+              "iou": 0.5081877436035462,
+              "centroid_distance_m": 0.7522133607898096
+            },
+            {
+              "id_a": "S020-mss2gioe",
+              "id_b": "S020-mv0cv56v",
+              "overlap_value": 0.5000778289484956,
+              "iou": 0.5000778289484956,
+              "centroid_distance_m": 0.4762501721026854
+            },
+            {
+              "id_a": "S020-mss2i41d-single",
+              "id_b": "S020-mv0cx398",
+              "overlap_value": 0.4566211921760037,
+              "iou": 0.4566211921760037,
+              "centroid_distance_m": 1.612637580032129
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c01",
+              "id_b": "S020-mv0cvclz",
+              "overlap_value": 0.45419464434996043,
+              "iou": 0.45419464434996043,
+              "centroid_distance_m": 1.2672815738980014
+            },
+            {
+              "id_a": "S020-author-20261010-north02",
+              "id_b": "S020-mv0cuf4v",
+              "overlap_value": 0.4403681608287519,
+              "iou": 0.4403681608287519,
+              "centroid_distance_m": 1.0523069897611692
+            },
+            {
+              "id_a": "S020-mss2lw2d-expanded-c02",
+              "id_b": "S020-mv0cvs2o",
+              "overlap_value": 0.4070762755828814,
+              "iou": 0.4070762755828814,
+              "centroid_distance_m": 2.6887115747875656
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "method": "IoU >= 0.25",
+      "n_a": 69,
+      "n_b": 58,
+      "matched": 56,
+      "f1": 0.8818897637795275,
+      "median_matched_iou": 0.6733394051827094,
+      "per_site": [
+        {
+          "site_id": "S016",
+          "n_a": 26,
+          "n_b": 24,
+          "pairs": [
+            {
+              "id_a": "S016-mss1d6f7",
+              "id_b": "S016-mv0cfj4w",
+              "overlap_value": 0.8000772437843829,
+              "iou": 0.8000772437843829,
+              "centroid_distance_m": 0.3653170854896021
+            },
+            {
+              "id_a": "S016-mss1a1c6",
+              "id_b": "S016-mv0cjs7d",
+              "overlap_value": 0.7974812050824017,
+              "iou": 0.7974812050824017,
+              "centroid_distance_m": 0.5343842338679056
+            },
+            {
+              "id_a": "S016-mss1cn4r",
+              "id_b": "S016-mv0cnujm",
+              "overlap_value": 0.7859768598299728,
+              "iou": 0.7859768598299728,
+              "centroid_distance_m": 0.23882413267742927
+            },
+            {
+              "id_a": "S016-mss1bxh9",
+              "id_b": "S016-mv0cmmy7",
+              "overlap_value": 0.7633667410602728,
+              "iou": 0.7633667410602728,
+              "centroid_distance_m": 0.44959113135437057
+            },
+            {
+              "id_a": "S016-mss1cgbn",
+              "id_b": "S016-mv0clq3b",
+              "overlap_value": 0.7506435186393292,
+              "iou": 0.7506435186393292,
+              "centroid_distance_m": 0.247807386546268
+            },
+            {
+              "id_a": "S016-mss1abxx",
+              "id_b": "S016-mv0ck7rx",
+              "overlap_value": 0.742706618038517,
+              "iou": 0.742706618038517,
+              "centroid_distance_m": 0.685479680741453
+            },
+            {
+              "id_a": "S016-author-qa-west-south",
+              "id_b": "S016-mv0cm8rk",
+              "overlap_value": 0.7355434543533101,
+              "iou": 0.7355434543533101,
+              "centroid_distance_m": 0.09118516466958548
+            },
+            {
+              "id_a": "S016-author-qa-west-north",
+              "id_b": "S016-mv0cmbut",
+              "overlap_value": 0.7334029539538951,
+              "iou": 0.7334029539538951,
+              "centroid_distance_m": 0.2229800375760595
+            },
+            {
+              "id_a": "S016-author-20261010-south03",
+              "id_b": "S016-mv0cnlj9",
+              "overlap_value": 0.728148565320922,
+              "iou": 0.728148565320922,
+              "centroid_distance_m": 0.45673781186539325
+            },
+            {
+              "id_a": "S016-mss19rn9",
+              "id_b": "S016-mv0cgfjv",
+              "overlap_value": 0.7238616698863541,
+              "iou": 0.7238616698863541,
+              "centroid_distance_m": 1.2243885255347529
+            },
+            {
+              "id_a": "S016-mss1cx6e",
+              "id_b": "S016-mv0ckibu",
+              "overlap_value": 0.7215131155102948,
+              "iou": 0.7215131155102948,
+              "centroid_distance_m": 0.9321875074795408
+            },
+            {
+              "id_a": "S016-mss1aruu",
+              "id_b": "S016-mv0ckt8h",
+              "overlap_value": 0.7176847412640074,
+              "iou": 0.7176847412640074,
+              "centroid_distance_m": 0.6879080301595034
+            },
+            {
+              "id_a": "S016-author-20261010-south02",
+              "id_b": "S016-mv0cnhyw",
+              "overlap_value": 0.6737245423505518,
+              "iou": 0.6737245423505518,
+              "centroid_distance_m": 0.37034651900950305
+            },
+            {
+              "id_a": "S016-author-20261010-west",
+              "id_b": "S016-mv0cm016",
+              "overlap_value": 0.6629163868583076,
+              "iou": 0.6629163868583076,
+              "centroid_distance_m": 0.17210716723932148
+            },
+            {
+              "id_a": "S016-mss1ejzd-expanded-c03",
+              "id_b": "S016-mv0cm4n3",
+              "overlap_value": 0.6562675576571814,
+              "iou": 0.6562675576571814,
+              "centroid_distance_m": 0.11226693862121344
+            },
+            {
+              "id_a": "S016-author-qa-bridge-north",
+              "id_b": "S016-mv0cmvf5",
+              "overlap_value": 0.6280325771013894,
+              "iou": 0.6280325771013894,
+              "centroid_distance_m": 0.4811654627519864
+            },
+            {
+              "id_a": "S016-mss1c6h7",
+              "id_b": "S016-mv0cnb4v",
+              "overlap_value": 0.6268199801867389,
+              "iou": 0.6268199801867389,
+              "centroid_distance_m": 0.8003972851071415
+            },
+            {
+              "id_a": "S016-mss1ejzd-expanded-c01",
+              "id_b": "S016-mv0cmgyu",
+              "overlap_value": 0.6157795679654702,
+              "iou": 0.6157795679654702,
+              "centroid_distance_m": 0.28341519463137105
+            },
+            {
+              "id_a": "S016-author-qa-railway-coherent",
+              "id_b": "S016-mv0cn240",
+              "overlap_value": 0.6109465287113413,
+              "iou": 0.6109465287113413,
+              "centroid_distance_m": 1.1706644813456384
+            },
+            {
+              "id_a": "S016-author-qa-bridge-south",
+              "id_b": "S016-mv0cmrk4",
+              "overlap_value": 0.6025055112975538,
+              "iou": 0.6025055112975538,
+              "centroid_distance_m": 1.044775397371216
+            },
+            {
+              "id_a": "S016-mss1dfvk",
+              "id_b": "S016-mv0cf9mq",
+              "overlap_value": 0.6021028924318683,
+              "iou": 0.6021028924318683,
+              "centroid_distance_m": 0.9773924317945991
+            },
+            {
+              "id_a": "S016-mss19glc",
+              "id_b": "S016-mv0cjfkd",
+              "overlap_value": 0.5922036941769456,
+              "iou": 0.5922036941769456,
+              "centroid_distance_m": 1.5070086991728628
+            },
+            {
+              "id_a": "S016-mss1bhf4",
+              "id_b": "S016-mv0cl70f",
+              "overlap_value": 0.5088770866518845,
+              "iou": 0.5088770866518845,
+              "centroid_distance_m": 0.5967022918093629
+            },
+            {
+              "id_a": "S016-author-20261010-south01",
+              "id_b": "S016-mv0cne32",
+              "overlap_value": 0.5022450734078105,
+              "iou": 0.5022450734078105,
+              "centroid_distance_m": 0.3497599050811513
+            }
+          ]
+        },
+        {
+          "site_id": "S020",
+          "n_a": 43,
+          "n_b": 34,
+          "pairs": [
+            {
+              "id_a": "S020-mss2j946",
+              "id_b": "S020-mv0cv1aw",
+              "overlap_value": 0.8490898014295964,
+              "iou": 0.8490898014295964,
+              "centroid_distance_m": 1.2822553326412576
+            },
+            {
+              "id_a": "S020-mss2gtpi",
+              "id_b": "S020-mv0czlus",
+              "overlap_value": 0.8001992372603851,
+              "iou": 0.8001992372603851,
+              "centroid_distance_m": 0.2843541217583166
+            },
+            {
+              "id_a": "S020-mss2h3fs",
+              "id_b": "S020-mv0cxw64",
+              "overlap_value": 0.7914566544339943,
+              "iou": 0.7914566544339943,
+              "centroid_distance_m": 0.5245495909435056
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c03",
+              "id_b": "S020-mv0cyl11",
+              "overlap_value": 0.7905677056788836,
+              "iou": 0.7905677056788836,
+              "centroid_distance_m": 0.4414361285553906
+            },
+            {
+              "id_a": "S020-mss2e7yy",
+              "id_b": "S020-mv0cttl6",
+              "overlap_value": 0.7674026796763747,
+              "iou": 0.7674026796763747,
+              "centroid_distance_m": 0.4431817201606812
+            },
+            {
+              "id_a": "S020-mss2fcfk",
+              "id_b": "S020-mv0ctnuh",
+              "overlap_value": 0.7612462384357582,
+              "iou": 0.7612462384357582,
+              "centroid_distance_m": 0.29951175564968496
+            },
+            {
+              "id_a": "S020-mss2igg6-single",
+              "id_b": "S020-mv0d0c6b",
+              "overlap_value": 0.7572548329399825,
+              "iou": 0.7572548329399825,
+              "centroid_distance_m": 0.45563716810169125
+            },
+            {
+              "id_a": "S020-mss2dyzz",
+              "id_b": "S020-mv0crolo",
+              "overlap_value": 0.7476959901149496,
+              "iou": 0.7476959901149496,
+              "centroid_distance_m": 1.6953918048972576
+            },
+            {
+              "id_a": "S020-author-qa-park-north",
+              "id_b": "S020-mv0cyhgd",
+              "overlap_value": 0.7446176759967706,
+              "iou": 0.7446176759967706,
+              "centroid_distance_m": 0.6074332058445531
+            },
+            {
+              "id_a": "S020-mss2gap0",
+              "id_b": "S020-mv0cwrnq",
+              "overlap_value": 0.7411550405325846,
+              "iou": 0.7411550405325846,
+              "centroid_distance_m": 0.5092642365372055
+            },
+            {
+              "id_a": "S020-mss2hq7o",
+              "id_b": "S020-mv0cv8oa",
+              "overlap_value": 0.7321927930535791,
+              "iou": 0.7321927930535791,
+              "centroid_distance_m": 0.3194097136616498
+            },
+            {
+              "id_a": "S020-author-20261010-east01",
+              "id_b": "S020-mv0ctjz2",
+              "overlap_value": 0.7157222129096494,
+              "iou": 0.7157222129096494,
+              "centroid_distance_m": 0.07423490565868361
+            },
+            {
+              "id_a": "S020-author-20261010-north01",
+              "id_b": "S020-mv0cubdr",
+              "overlap_value": 0.7146172259241443,
+              "iou": 0.7146172259241443,
+              "centroid_distance_m": 0.11715378059929941
+            },
+            {
+              "id_a": "S020-author-qa-road-west",
+              "id_b": "S020-mv0czsvx",
+              "overlap_value": 0.6825594215462638,
+              "iou": 0.6825594215462638,
+              "centroid_distance_m": 0.28386488517272285
+            },
+            {
+              "id_a": "S020-mss2esi4",
+              "id_b": "S020-mv0d03qj",
+              "overlap_value": 0.6787675183019459,
+              "iou": 0.6787675183019459,
+              "centroid_distance_m": 0.781167806015501
+            },
+            {
+              "id_a": "S020-mss2efk9",
+              "id_b": "S020-mv0cuksa",
+              "overlap_value": 0.672954268014867,
+              "iou": 0.672954268014867,
+              "centroid_distance_m": 0.6472713176410376
+            },
+            {
+              "id_a": "S020-mss2hf4v",
+              "id_b": "S020-mv0d0pr7",
+              "overlap_value": 0.6333334337009296,
+              "iou": 0.6333334337009296,
+              "centroid_distance_m": 0.8030734424191567
+            },
+            {
+              "id_a": "S020-mss2foer",
+              "id_b": "S020-mv0cu7wx",
+              "overlap_value": 0.6219321249769834,
+              "iou": 0.6219321249769834,
+              "centroid_distance_m": 1.2860631789486157
+            },
+            {
+              "id_a": "S020-author-qa-road-lower",
+              "id_b": "S020-mv0czwlp",
+              "overlap_value": 0.5946557524565996,
+              "iou": 0.5946557524565996,
+              "centroid_distance_m": 0.6279109086864647
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c02",
+              "id_b": "S020-mv0cvfwl",
+              "overlap_value": 0.5658147962949596,
+              "iou": 0.5658147962949596,
+              "centroid_distance_m": 0.1538151888812668
+            },
+            {
+              "id_a": "S020-author-qa-orange-west",
+              "id_b": "S020-mv0cz7xi",
+              "overlap_value": 0.5484054818247248,
+              "iou": 0.5484054818247248,
+              "centroid_distance_m": 0.726183170137587
+            },
+            {
+              "id_a": "S020-author-qa-park-south",
+              "id_b": "S020-mv0cy1mv",
+              "overlap_value": 0.5436114326996673,
+              "iou": 0.5436114326996673,
+              "centroid_distance_m": 1.559820377897553
+            },
+            {
+              "id_a": "S020-author-qa-orange-north",
+              "id_b": "S020-mv0czbkk",
+              "overlap_value": 0.5321092347876385,
+              "iou": 0.5321092347876385,
+              "centroid_distance_m": 0.8028889914331127
+            },
+            {
+              "id_a": "S020-author-20261010-north03",
+              "id_b": "S020-mv0ctx7d",
+              "overlap_value": 0.5154776764216801,
+              "iou": 0.5154776764216801,
+              "centroid_distance_m": 0.4293756613762895
+            },
+            {
+              "id_a": "S020-author-qa-south-garden",
+              "id_b": "S020-mv0czf32",
+              "overlap_value": 0.5136584126050066,
+              "iou": 0.5136584126050066,
+              "centroid_distance_m": 0.9715861792875026
+            },
+            {
+              "id_a": "S020-author-qa-garden-west",
+              "id_b": "S020-mv0cynj7",
+              "overlap_value": 0.5081877436035462,
+              "iou": 0.5081877436035462,
+              "centroid_distance_m": 0.7522133607898096
+            },
+            {
+              "id_a": "S020-mss2gioe",
+              "id_b": "S020-mv0cv56v",
+              "overlap_value": 0.5000778289484956,
+              "iou": 0.5000778289484956,
+              "centroid_distance_m": 0.4762501721026854
+            },
+            {
+              "id_a": "S020-mss2i41d-single",
+              "id_b": "S020-mv0cx398",
+              "overlap_value": 0.4566211921760037,
+              "iou": 0.4566211921760037,
+              "centroid_distance_m": 1.612637580032129
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c01",
+              "id_b": "S020-mv0cvclz",
+              "overlap_value": 0.45419464434996043,
+              "iou": 0.45419464434996043,
+              "centroid_distance_m": 1.2672815738980014
+            },
+            {
+              "id_a": "S020-author-20261010-north02",
+              "id_b": "S020-mv0cuf4v",
+              "overlap_value": 0.4403681608287519,
+              "iou": 0.4403681608287519,
+              "centroid_distance_m": 1.0523069897611692
+            },
+            {
+              "id_a": "S020-mss2lw2d-expanded-c02",
+              "id_b": "S020-mv0cvs2o",
+              "overlap_value": 0.4070762755828814,
+              "iou": 0.4070762755828814,
+              "centroid_distance_m": 2.6887115747875656
+            },
+            {
+              "id_a": "S020-mss2lw2d-expanded-c01",
+              "id_b": "S020-mv0cw0jc",
+              "overlap_value": 0.2539450103470455,
+              "iou": 0.2539450103470455,
+              "centroid_distance_m": 3.2018883651382444
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "method": "Smaller-area overlap >= 0.50",
+      "n_a": 69,
+      "n_b": 58,
+      "matched": 56,
+      "f1": 0.8818897637795275,
+      "median_matched_iou": 0.6733394051827094,
+      "per_site": [
+        {
+          "site_id": "S016",
+          "n_a": 26,
+          "n_b": 24,
+          "pairs": [
+            {
+              "id_a": "S016-author-20261010-west",
+              "id_b": "S016-mv0cm016",
+              "overlap_value": 0.9985093826518529,
+              "iou": 0.6629163868583076,
+              "centroid_distance_m": 0.17210716723932148
+            },
+            {
+              "id_a": "S016-author-20261010-south01",
+              "id_b": "S016-mv0cne32",
+              "overlap_value": 0.9826576735589986,
+              "iou": 0.5022450734078105,
+              "centroid_distance_m": 0.3497599050811513
+            },
+            {
+              "id_a": "S016-mss1ejzd-expanded-c03",
+              "id_b": "S016-mv0cm4n3",
+              "overlap_value": 0.9817433024191898,
+              "iou": 0.6562675576571814,
+              "centroid_distance_m": 0.11226693862121344
+            },
+            {
+              "id_a": "S016-mss1cgbn",
+              "id_b": "S016-mv0clq3b",
+              "overlap_value": 0.9789501809323754,
+              "iou": 0.7506435186393292,
+              "centroid_distance_m": 0.247807386546268
+            },
+            {
+              "id_a": "S016-mss1cn4r",
+              "id_b": "S016-mv0cnujm",
+              "overlap_value": 0.9761520049517537,
+              "iou": 0.7859768598299728,
+              "centroid_distance_m": 0.23882413267742927
+            },
+            {
+              "id_a": "S016-author-qa-west-south",
+              "id_b": "S016-mv0cm8rk",
+              "overlap_value": 0.9695742263800433,
+              "iou": 0.7355434543533101,
+              "centroid_distance_m": 0.09118516466958548
+            },
+            {
+              "id_a": "S016-mss1c6h7",
+              "id_b": "S016-mv0cnb4v",
+              "overlap_value": 0.9590266805879104,
+              "iou": 0.6268199801867389,
+              "centroid_distance_m": 0.8003972851071415
+            },
+            {
+              "id_a": "S016-mss1bxh9",
+              "id_b": "S016-mv0cmmy7",
+              "overlap_value": 0.9544088027797228,
+              "iou": 0.7633667410602728,
+              "centroid_distance_m": 0.44959113135437057
+            },
+            {
+              "id_a": "S016-mss1ejzd-expanded-c01",
+              "id_b": "S016-mv0cmgyu",
+              "overlap_value": 0.9455180716091561,
+              "iou": 0.6157795679654702,
+              "centroid_distance_m": 0.28341519463137105
+            },
+            {
+              "id_a": "S016-mss1d6f7",
+              "id_b": "S016-mv0cfj4w",
+              "overlap_value": 0.9344032932145161,
+              "iou": 0.8000772437843829,
+              "centroid_distance_m": 0.3653170854896021
+            },
+            {
+              "id_a": "S016-mss1bhf4",
+              "id_b": "S016-mv0cl70f",
+              "overlap_value": 0.913254798694171,
+              "iou": 0.5088770866518845,
+              "centroid_distance_m": 0.5967022918093629
+            },
+            {
+              "id_a": "S016-author-qa-west-north",
+              "id_b": "S016-mv0cmbut",
+              "overlap_value": 0.9093811324110629,
+              "iou": 0.7334029539538951,
+              "centroid_distance_m": 0.2229800375760595
+            },
+            {
+              "id_a": "S016-mss1aruu",
+              "id_b": "S016-mv0ckt8h",
+              "overlap_value": 0.9070311242799012,
+              "iou": 0.7176847412640074,
+              "centroid_distance_m": 0.6879080301595034
+            },
+            {
+              "id_a": "S016-mss1a1c6",
+              "id_b": "S016-mv0cjs7d",
+              "overlap_value": 0.9052879688027402,
+              "iou": 0.7974812050824017,
+              "centroid_distance_m": 0.5343842338679056
+            },
+            {
+              "id_a": "S016-author-20261010-south03",
+              "id_b": "S016-mv0cnlj9",
+              "overlap_value": 0.8917752967973529,
+              "iou": 0.728148565320922,
+              "centroid_distance_m": 0.45673781186539325
+            },
+            {
+              "id_a": "S016-mss19glc",
+              "id_b": "S016-mv0cjfkd",
+              "overlap_value": 0.8874372237544372,
+              "iou": 0.5922036941769456,
+              "centroid_distance_m": 1.5070086991728628
+            },
+            {
+              "id_a": "S016-mss19rn9",
+              "id_b": "S016-mv0cgfjv",
+              "overlap_value": 0.8861118245027949,
+              "iou": 0.7238616698863541,
+              "centroid_distance_m": 1.2243885255347529
+            },
+            {
+              "id_a": "S016-mss1abxx",
+              "id_b": "S016-mv0ck7rx",
+              "overlap_value": 0.8823384426439111,
+              "iou": 0.742706618038517,
+              "centroid_distance_m": 0.685479680741453
+            },
+            {
+              "id_a": "S016-author-qa-railway-coherent",
+              "id_b": "S016-mv0cn240",
+              "overlap_value": 0.8810869976848286,
+              "iou": 0.6109465287113413,
+              "centroid_distance_m": 1.1706644813456384
+            },
+            {
+              "id_a": "S016-author-20261010-south02",
+              "id_b": "S016-mv0cnhyw",
+              "overlap_value": 0.8803209307592397,
+              "iou": 0.6737245423505518,
+              "centroid_distance_m": 0.37034651900950305
+            },
+            {
+              "id_a": "S016-mss1cx6e",
+              "id_b": "S016-mv0ckibu",
+              "overlap_value": 0.8766669268030529,
+              "iou": 0.7215131155102948,
+              "centroid_distance_m": 0.9321875074795408
+            },
+            {
+              "id_a": "S016-author-qa-bridge-north",
+              "id_b": "S016-mv0cmvf5",
+              "overlap_value": 0.8578334969486466,
+              "iou": 0.6280325771013894,
+              "centroid_distance_m": 0.4811654627519864
+            },
+            {
+              "id_a": "S016-author-qa-bridge-south",
+              "id_b": "S016-mv0cmrk4",
+              "overlap_value": 0.8478381410234777,
+              "iou": 0.6025055112975538,
+              "centroid_distance_m": 1.044775397371216
+            },
+            {
+              "id_a": "S016-mss1dfvk",
+              "id_b": "S016-mv0cf9mq",
+              "overlap_value": 0.7636088241529199,
+              "iou": 0.6021028924318683,
+              "centroid_distance_m": 0.9773924317945991
+            }
+          ]
+        },
+        {
+          "site_id": "S020",
+          "n_a": 43,
+          "n_b": 34,
+          "pairs": [
+            {
+              "id_a": "S020-mss2makf-expanded-c02",
+              "id_b": "S020-mv0cvfwl",
+              "overlap_value": 1.0,
+              "iou": 0.5658147962949596,
+              "centroid_distance_m": 0.1538151888812668
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c01",
+              "id_b": "S020-mv0cvclz",
+              "overlap_value": 0.9993947819350997,
+              "iou": 0.45419464434996043,
+              "centroid_distance_m": 1.2672815738980014
+            },
+            {
+              "id_a": "S020-mss2gioe",
+              "id_b": "S020-mv0cv56v",
+              "overlap_value": 0.990664596512497,
+              "iou": 0.5000778289484956,
+              "centroid_distance_m": 0.4762501721026854
+            },
+            {
+              "id_a": "S020-mss2igg6-single",
+              "id_b": "S020-mv0d0c6b",
+              "overlap_value": 0.9863325253183528,
+              "iou": 0.7572548329399825,
+              "centroid_distance_m": 0.45563716810169125
+            },
+            {
+              "id_a": "S020-mss2gap0",
+              "id_b": "S020-mv0cwrnq",
+              "overlap_value": 0.9847290276098909,
+              "iou": 0.7411550405325846,
+              "centroid_distance_m": 0.5092642365372055
+            },
+            {
+              "id_a": "S020-author-20261010-north01",
+              "id_b": "S020-mv0cubdr",
+              "overlap_value": 0.9774680286405968,
+              "iou": 0.7146172259241443,
+              "centroid_distance_m": 0.11715378059929941
+            },
+            {
+              "id_a": "S020-mss2efk9",
+              "id_b": "S020-mv0cuksa",
+              "overlap_value": 0.9649744884387915,
+              "iou": 0.672954268014867,
+              "centroid_distance_m": 0.6472713176410376
+            },
+            {
+              "id_a": "S020-mss2fcfk",
+              "id_b": "S020-mv0ctnuh",
+              "overlap_value": 0.9626674706459843,
+              "iou": 0.7612462384357582,
+              "centroid_distance_m": 0.29951175564968496
+            },
+            {
+              "id_a": "S020-mss2gtpi",
+              "id_b": "S020-mv0czlus",
+              "overlap_value": 0.9621654029788423,
+              "iou": 0.8001992372603851,
+              "centroid_distance_m": 0.2843541217583166
+            },
+            {
+              "id_a": "S020-mss2hq7o",
+              "id_b": "S020-mv0cv8oa",
+              "overlap_value": 0.9543333897445985,
+              "iou": 0.7321927930535791,
+              "centroid_distance_m": 0.3194097136616498
+            },
+            {
+              "id_a": "S020-mss2j946",
+              "id_b": "S020-mv0cv1aw",
+              "overlap_value": 0.9528702170402138,
+              "iou": 0.8490898014295964,
+              "centroid_distance_m": 1.2822553326412576
+            },
+            {
+              "id_a": "S020-mss2foer",
+              "id_b": "S020-mv0cu2br",
+              "overlap_value": 0.9527802720996592,
+              "iou": 0.148019743665962,
+              "centroid_distance_m": 4.339346282838957
+            },
+            {
+              "id_a": "S020-mss2h3fs",
+              "id_b": "S020-mv0cxw64",
+              "overlap_value": 0.9433064941409287,
+              "iou": 0.7914566544339943,
+              "centroid_distance_m": 0.5245495909435056
+            },
+            {
+              "id_a": "S020-mss2dyzz",
+              "id_b": "S020-mv0crolo",
+              "overlap_value": 0.9417476834146564,
+              "iou": 0.7476959901149496,
+              "centroid_distance_m": 1.6953918048972576
+            },
+            {
+              "id_a": "S020-mss2e7yy",
+              "id_b": "S020-mv0cttl6",
+              "overlap_value": 0.9271215824267547,
+              "iou": 0.7674026796763747,
+              "centroid_distance_m": 0.4431817201606812
+            },
+            {
+              "id_a": "S020-author-qa-road-west",
+              "id_b": "S020-mv0czsvx",
+              "overlap_value": 0.9267131866098758,
+              "iou": 0.6825594215462638,
+              "centroid_distance_m": 0.28386488517272285
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c03",
+              "id_b": "S020-mv0cyl11",
+              "overlap_value": 0.9027982561250817,
+              "iou": 0.7905677056788836,
+              "centroid_distance_m": 0.4414361285553906
+            },
+            {
+              "id_a": "S020-author-qa-park-north",
+              "id_b": "S020-mv0cyhgd",
+              "overlap_value": 0.8928081345619733,
+              "iou": 0.7446176759967706,
+              "centroid_distance_m": 0.6074332058445531
+            },
+            {
+              "id_a": "S020-mss2hf4v",
+              "id_b": "S020-mv0d0pr7",
+              "overlap_value": 0.891573301574651,
+              "iou": 0.6333334337009296,
+              "centroid_distance_m": 0.8030734424191567
+            },
+            {
+              "id_a": "S020-author-20261010-north03",
+              "id_b": "S020-mv0ctx7d",
+              "overlap_value": 0.8663327093491349,
+              "iou": 0.5154776764216801,
+              "centroid_distance_m": 0.4293756613762895
+            },
+            {
+              "id_a": "S020-author-20261010-east01",
+              "id_b": "S020-mv0ctjz2",
+              "overlap_value": 0.8450571875954299,
+              "iou": 0.7157222129096494,
+              "centroid_distance_m": 0.07423490565868361
+            },
+            {
+              "id_a": "S020-mss2esi4",
+              "id_b": "S020-mv0d03qj",
+              "overlap_value": 0.8300174920254938,
+              "iou": 0.6787675183019459,
+              "centroid_distance_m": 0.781167806015501
+            },
+            {
+              "id_a": "S020-author-qa-orange-west",
+              "id_b": "S020-mv0cz7xi",
+              "overlap_value": 0.8180111751830823,
+              "iou": 0.5484054818247248,
+              "centroid_distance_m": 0.726183170137587
+            },
+            {
+              "id_a": "S020-author-qa-orange-north",
+              "id_b": "S020-mv0czbkk",
+              "overlap_value": 0.8143291914015237,
+              "iou": 0.5321092347876385,
+              "centroid_distance_m": 0.8028889914331127
+            },
+            {
+              "id_a": "S020-author-qa-road-lower",
+              "id_b": "S020-mv0czwlp",
+              "overlap_value": 0.7726427610705254,
+              "iou": 0.5946557524565996,
+              "centroid_distance_m": 0.6279109086864647
+            },
+            {
+              "id_a": "S020-author-qa-park-south",
+              "id_b": "S020-mv0cy1mv",
+              "overlap_value": 0.7525435235366194,
+              "iou": 0.5436114326996673,
+              "centroid_distance_m": 1.559820377897553
+            },
+            {
+              "id_a": "S020-author-qa-south-garden",
+              "id_b": "S020-mv0czf32",
+              "overlap_value": 0.7492898181873365,
+              "iou": 0.5136584126050066,
+              "centroid_distance_m": 0.9715861792875026
+            },
+            {
+              "id_a": "S020-author-qa-garden-west",
+              "id_b": "S020-mv0cynj7",
+              "overlap_value": 0.7180254813869544,
+              "iou": 0.5081877436035462,
+              "centroid_distance_m": 0.7522133607898096
+            },
+            {
+              "id_a": "S020-mss2lw2d-expanded-c02",
+              "id_b": "S020-mv0cvv4z",
+              "overlap_value": 0.670515825806094,
+              "iou": 0.11338431113260153,
+              "centroid_distance_m": 4.258541907743605
+            },
+            {
+              "id_a": "S020-mss2i41d-single",
+              "id_b": "S020-mv0cx398",
+              "overlap_value": 0.6514603898185584,
+              "iou": 0.4566211921760037,
+              "centroid_distance_m": 1.612637580032129
+            },
+            {
+              "id_a": "S020-author-20261010-north02",
+              "id_b": "S020-mv0cuf4v",
+              "overlap_value": 0.6374420858456613,
+              "iou": 0.4403681608287519,
+              "centroid_distance_m": 1.0523069897611692
+            },
+            {
+              "id_a": "S020-mss2lw2d-expanded-c01",
+              "id_b": "S020-mv0cw0jc",
+              "overlap_value": 0.530252722575314,
+              "iou": 0.2539450103470455,
+              "centroid_distance_m": 3.2018883651382444
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "method": "Centroid distance <= 2 m",
+      "n_a": 69,
+      "n_b": 58,
+      "matched": 54,
+      "f1": 0.8503937007874016,
+      "median_matched_iou": 0.6762460303262489,
+      "per_site": [
+        {
+          "site_id": "S016",
+          "n_a": 26,
+          "n_b": 24,
+          "pairs": [
+            {
+              "id_a": "S016-mss1d6f7",
+              "id_b": "S016-mv0cfj4w",
+              "iou": 0.8000772437843829,
+              "centroid_distance_m": 0.3653170854896021
+            },
+            {
+              "id_a": "S016-mss1a1c6",
+              "id_b": "S016-mv0cjs7d",
+              "iou": 0.7974812050824017,
+              "centroid_distance_m": 0.5343842338679056
+            },
+            {
+              "id_a": "S016-mss1cn4r",
+              "id_b": "S016-mv0cnujm",
+              "iou": 0.7859768598299728,
+              "centroid_distance_m": 0.23882413267742927
+            },
+            {
+              "id_a": "S016-mss1bxh9",
+              "id_b": "S016-mv0cmmy7",
+              "iou": 0.7633667410602728,
+              "centroid_distance_m": 0.44959113135437057
+            },
+            {
+              "id_a": "S016-mss1cgbn",
+              "id_b": "S016-mv0clq3b",
+              "iou": 0.7506435186393292,
+              "centroid_distance_m": 0.247807386546268
+            },
+            {
+              "id_a": "S016-mss1abxx",
+              "id_b": "S016-mv0ck7rx",
+              "iou": 0.742706618038517,
+              "centroid_distance_m": 0.685479680741453
+            },
+            {
+              "id_a": "S016-author-qa-west-south",
+              "id_b": "S016-mv0cm8rk",
+              "iou": 0.7355434543533101,
+              "centroid_distance_m": 0.09118516466958548
+            },
+            {
+              "id_a": "S016-author-qa-west-north",
+              "id_b": "S016-mv0cmbut",
+              "iou": 0.7334029539538951,
+              "centroid_distance_m": 0.2229800375760595
+            },
+            {
+              "id_a": "S016-author-20261010-south03",
+              "id_b": "S016-mv0cnlj9",
+              "iou": 0.728148565320922,
+              "centroid_distance_m": 0.45673781186539325
+            },
+            {
+              "id_a": "S016-mss19rn9",
+              "id_b": "S016-mv0cgfjv",
+              "iou": 0.7238616698863541,
+              "centroid_distance_m": 1.2243885255347529
+            },
+            {
+              "id_a": "S016-mss1cx6e",
+              "id_b": "S016-mv0ckibu",
+              "iou": 0.7215131155102948,
+              "centroid_distance_m": 0.9321875074795408
+            },
+            {
+              "id_a": "S016-mss1aruu",
+              "id_b": "S016-mv0ckt8h",
+              "iou": 0.7176847412640074,
+              "centroid_distance_m": 0.6879080301595034
+            },
+            {
+              "id_a": "S016-author-20261010-south02",
+              "id_b": "S016-mv0cnhyw",
+              "iou": 0.6737245423505518,
+              "centroid_distance_m": 0.37034651900950305
+            },
+            {
+              "id_a": "S016-author-20261010-west",
+              "id_b": "S016-mv0cm016",
+              "iou": 0.6629163868583076,
+              "centroid_distance_m": 0.17210716723932148
+            },
+            {
+              "id_a": "S016-mss1ejzd-expanded-c03",
+              "id_b": "S016-mv0cm4n3",
+              "iou": 0.6562675576571814,
+              "centroid_distance_m": 0.11226693862121344
+            },
+            {
+              "id_a": "S016-author-qa-bridge-north",
+              "id_b": "S016-mv0cmvf5",
+              "iou": 0.6280325771013894,
+              "centroid_distance_m": 0.4811654627519864
+            },
+            {
+              "id_a": "S016-mss1c6h7",
+              "id_b": "S016-mv0cnb4v",
+              "iou": 0.6268199801867389,
+              "centroid_distance_m": 0.8003972851071415
+            },
+            {
+              "id_a": "S016-mss1ejzd-expanded-c01",
+              "id_b": "S016-mv0cmgyu",
+              "iou": 0.6157795679654702,
+              "centroid_distance_m": 0.28341519463137105
+            },
+            {
+              "id_a": "S016-author-qa-railway-coherent",
+              "id_b": "S016-mv0cn240",
+              "iou": 0.6109465287113413,
+              "centroid_distance_m": 1.1706644813456384
+            },
+            {
+              "id_a": "S016-author-qa-bridge-south",
+              "id_b": "S016-mv0cmrk4",
+              "iou": 0.6025055112975538,
+              "centroid_distance_m": 1.044775397371216
+            },
+            {
+              "id_a": "S016-mss1dfvk",
+              "id_b": "S016-mv0cf9mq",
+              "iou": 0.6021028924318683,
+              "centroid_distance_m": 0.9773924317945991
+            },
+            {
+              "id_a": "S016-mss19glc",
+              "id_b": "S016-mv0cjfkd",
+              "iou": 0.5922036941769456,
+              "centroid_distance_m": 1.5070086991728628
+            },
+            {
+              "id_a": "S016-mss1bhf4",
+              "id_b": "S016-mv0cl70f",
+              "iou": 0.5088770866518845,
+              "centroid_distance_m": 0.5967022918093629
+            },
+            {
+              "id_a": "S016-author-20261010-south01",
+              "id_b": "S016-mv0cne32",
+              "iou": 0.5022450734078105,
+              "centroid_distance_m": 0.3497599050811513
+            }
+          ]
+        },
+        {
+          "site_id": "S020",
+          "n_a": 43,
+          "n_b": 34,
+          "pairs": [
+            {
+              "id_a": "S020-mss2j946",
+              "id_b": "S020-mv0cv1aw",
+              "iou": 0.8490898014295964,
+              "centroid_distance_m": 1.2822553326412576
+            },
+            {
+              "id_a": "S020-mss2gtpi",
+              "id_b": "S020-mv0czlus",
+              "iou": 0.8001992372603851,
+              "centroid_distance_m": 0.2843541217583166
+            },
+            {
+              "id_a": "S020-mss2h3fs",
+              "id_b": "S020-mv0cxw64",
+              "iou": 0.7914566544339943,
+              "centroid_distance_m": 0.5245495909435056
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c03",
+              "id_b": "S020-mv0cyl11",
+              "iou": 0.7905677056788836,
+              "centroid_distance_m": 0.4414361285553906
+            },
+            {
+              "id_a": "S020-mss2e7yy",
+              "id_b": "S020-mv0cttl6",
+              "iou": 0.7674026796763747,
+              "centroid_distance_m": 0.4431817201606812
+            },
+            {
+              "id_a": "S020-mss2fcfk",
+              "id_b": "S020-mv0ctnuh",
+              "iou": 0.7612462384357582,
+              "centroid_distance_m": 0.29951175564968496
+            },
+            {
+              "id_a": "S020-mss2igg6-single",
+              "id_b": "S020-mv0d0c6b",
+              "iou": 0.7572548329399825,
+              "centroid_distance_m": 0.45563716810169125
+            },
+            {
+              "id_a": "S020-mss2dyzz",
+              "id_b": "S020-mv0crolo",
+              "iou": 0.7476959901149496,
+              "centroid_distance_m": 1.6953918048972576
+            },
+            {
+              "id_a": "S020-author-qa-park-north",
+              "id_b": "S020-mv0cyhgd",
+              "iou": 0.7446176759967706,
+              "centroid_distance_m": 0.6074332058445531
+            },
+            {
+              "id_a": "S020-mss2gap0",
+              "id_b": "S020-mv0cwrnq",
+              "iou": 0.7411550405325846,
+              "centroid_distance_m": 0.5092642365372055
+            },
+            {
+              "id_a": "S020-mss2hq7o",
+              "id_b": "S020-mv0cv8oa",
+              "iou": 0.7321927930535791,
+              "centroid_distance_m": 0.3194097136616498
+            },
+            {
+              "id_a": "S020-author-20261010-east01",
+              "id_b": "S020-mv0ctjz2",
+              "iou": 0.7157222129096494,
+              "centroid_distance_m": 0.07423490565868361
+            },
+            {
+              "id_a": "S020-author-20261010-north01",
+              "id_b": "S020-mv0cubdr",
+              "iou": 0.7146172259241443,
+              "centroid_distance_m": 0.11715378059929941
+            },
+            {
+              "id_a": "S020-author-qa-road-west",
+              "id_b": "S020-mv0czsvx",
+              "iou": 0.6825594215462638,
+              "centroid_distance_m": 0.28386488517272285
+            },
+            {
+              "id_a": "S020-mss2esi4",
+              "id_b": "S020-mv0d03qj",
+              "iou": 0.6787675183019459,
+              "centroid_distance_m": 0.781167806015501
+            },
+            {
+              "id_a": "S020-mss2efk9",
+              "id_b": "S020-mv0cuksa",
+              "iou": 0.672954268014867,
+              "centroid_distance_m": 0.6472713176410376
+            },
+            {
+              "id_a": "S020-mss2hf4v",
+              "id_b": "S020-mv0d0pr7",
+              "iou": 0.6333334337009296,
+              "centroid_distance_m": 0.8030734424191567
+            },
+            {
+              "id_a": "S020-mss2foer",
+              "id_b": "S020-mv0cu7wx",
+              "iou": 0.6219321249769834,
+              "centroid_distance_m": 1.2860631789486157
+            },
+            {
+              "id_a": "S020-author-qa-road-lower",
+              "id_b": "S020-mv0czwlp",
+              "iou": 0.5946557524565996,
+              "centroid_distance_m": 0.6279109086864647
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c02",
+              "id_b": "S020-mv0cvfwl",
+              "iou": 0.5658147962949596,
+              "centroid_distance_m": 0.1538151888812668
+            },
+            {
+              "id_a": "S020-author-qa-orange-west",
+              "id_b": "S020-mv0cz7xi",
+              "iou": 0.5484054818247248,
+              "centroid_distance_m": 0.726183170137587
+            },
+            {
+              "id_a": "S020-author-qa-park-south",
+              "id_b": "S020-mv0cy1mv",
+              "iou": 0.5436114326996673,
+              "centroid_distance_m": 1.559820377897553
+            },
+            {
+              "id_a": "S020-author-qa-orange-north",
+              "id_b": "S020-mv0czbkk",
+              "iou": 0.5321092347876385,
+              "centroid_distance_m": 0.8028889914331127
+            },
+            {
+              "id_a": "S020-author-20261010-north03",
+              "id_b": "S020-mv0ctx7d",
+              "iou": 0.5154776764216801,
+              "centroid_distance_m": 0.4293756613762895
+            },
+            {
+              "id_a": "S020-author-qa-south-garden",
+              "id_b": "S020-mv0czf32",
+              "iou": 0.5136584126050066,
+              "centroid_distance_m": 0.9715861792875026
+            },
+            {
+              "id_a": "S020-author-qa-garden-west",
+              "id_b": "S020-mv0cynj7",
+              "iou": 0.5081877436035462,
+              "centroid_distance_m": 0.7522133607898096
+            },
+            {
+              "id_a": "S020-mss2gioe",
+              "id_b": "S020-mv0cv56v",
+              "iou": 0.5000778289484956,
+              "centroid_distance_m": 0.4762501721026854
+            },
+            {
+              "id_a": "S020-mss2i41d-single",
+              "id_b": "S020-mv0cx398",
+              "iou": 0.4566211921760037,
+              "centroid_distance_m": 1.612637580032129
+            },
+            {
+              "id_a": "S020-mss2makf-expanded-c01",
+              "id_b": "S020-mv0cvclz",
+              "iou": 0.45419464434996043,
+              "centroid_distance_m": 1.2672815738980014
+            },
+            {
+              "id_a": "S020-author-20261010-north02",
+              "id_b": "S020-mv0cuf4v",
+              "iou": 0.4403681608287519,
+              "centroid_distance_m": 1.0523069897611692
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "region_per_site": [
+    {
+      "site_id": "S016",
+      "area_a_m2": 716.7033107879569,
+      "area_b_m2": 642.6151782340797,
+      "intersection_m2": 553.9415982682982,
+      "union_m2": 805.3768907537384,
+      "symmetric_difference_m2": 251.4352924854402,
+      "coverage_iou": 0.6878041878627456,
+      "coverage_dice": 0.8150284171693011,
+      "n_a": 26,
+      "n_b": 24,
+      "linked_a": 24,
+      "linked_b": 24,
+      "multiply_linked_a": 0,
+      "multiply_linked_b": 0,
+      "degree_a": {
+        "S016-mss19glc": 1,
+        "S016-mss19rn9": 1,
+        "S016-mss1a1c6": 1,
+        "S016-mss1abxx": 1,
+        "S016-mss1aruu": 1,
+        "S016-mss1bhf4": 1,
+        "S016-mss1bq1c": 0,
+        "S016-mss1bxh9": 1,
+        "S016-mss1c6h7": 1,
+        "S016-mss1cgbn": 1,
+        "S016-mss1cn4r": 1,
+        "S016-mss1cx6e": 1,
+        "S016-mss1d6f7": 1,
+        "S016-mss1dfvk": 1,
+        "S016-mss1954g-expanded-c01": 0,
+        "S016-mss1ejzd-expanded-c01": 1,
+        "S016-mss1ejzd-expanded-c03": 1,
+        "S016-author-20261010-west": 1,
+        "S016-author-20261010-south01": 1,
+        "S016-author-20261010-south02": 1,
+        "S016-author-20261010-south03": 1,
+        "S016-author-qa-bridge-north": 1,
+        "S016-author-qa-bridge-south": 1,
+        "S016-author-qa-west-north": 1,
+        "S016-author-qa-west-south": 1,
+        "S016-author-qa-railway-coherent": 1
+      },
+      "degree_b": {
+        "S016-mv0cf9mq": 1,
+        "S016-mv0cfj4w": 1,
+        "S016-mv0cgfjv": 1,
+        "S016-mv0cjfkd": 1,
+        "S016-mv0cjs7d": 1,
+        "S016-mv0ck7rx": 1,
+        "S016-mv0ckibu": 1,
+        "S016-mv0ckt8h": 1,
+        "S016-mv0cl70f": 1,
+        "S016-mv0clq3b": 1,
+        "S016-mv0cm016": 1,
+        "S016-mv0cm4n3": 1,
+        "S016-mv0cm8rk": 1,
+        "S016-mv0cmbut": 1,
+        "S016-mv0cmgyu": 1,
+        "S016-mv0cmmy7": 1,
+        "S016-mv0cmrk4": 1,
+        "S016-mv0cmvf5": 1,
+        "S016-mv0cn240": 1,
+        "S016-mv0cnb4v": 1,
+        "S016-mv0cne32": 1,
+        "S016-mv0cnhyw": 1,
+        "S016-mv0cnlj9": 1,
+        "S016-mv0cnujm": 1
+      }
+    },
+    {
+      "site_id": "S020",
+      "area_a_m2": 1786.454836641095,
+      "area_b_m2": 1398.810934171755,
+      "intersection_m2": 1216.9418604559924,
+      "union_m2": 1968.3239103568576,
+      "symmetric_difference_m2": 751.3820499008652,
+      "coverage_iou": 0.618263007451533,
+      "coverage_dice": 0.7641069524603218,
+      "n_a": 43,
+      "n_b": 34,
+      "linked_a": 32,
+      "linked_b": 34,
+      "multiply_linked_a": 2,
+      "multiply_linked_b": 0,
+      "degree_a": {
+        "S020-mss2dyzz": 1,
+        "S020-mss2e7yy": 1,
+        "S020-mss2efk9": 1,
+        "S020-mss2esi4": 1,
+        "S020-mss2f5r7": 0,
+        "S020-mss2fcfk": 1,
+        "S020-mss2foer": 2,
+        "S020-mss2gap0": 1,
+        "S020-mss2gioe": 1,
+        "S020-mss2gtpi": 1,
+        "S020-mss2h3fs": 1,
+        "S020-mss2hf4v": 1,
+        "S020-mss2hq7o": 1,
+        "S020-mss2i41d-single": 1,
+        "S020-mss2igg6-single": 1,
+        "S020-mss2j946": 1,
+        "S020-mss2lw2d-expanded-c01": 1,
+        "S020-mss2lw2d-expanded-c02": 2,
+        "S020-mss2lw2d-expanded-c03": 0,
+        "S020-mss2lw2d-expanded-c04": 0,
+        "S020-mss2lw2d-expanded-c05": 0,
+        "S020-mss2makf-expanded-c01": 1,
+        "S020-mss2makf-expanded-c02": 1,
+        "S020-mss2makf-expanded-c03": 1,
+        "S020-mss2mxew-expanded-c02": 0,
+        "S020-mv0nujpa": 0,
+        "S020-mv0nuqh3": 0,
+        "S020-mv0nuv8n": 0,
+        "S020-mv0nver8": 0,
+        "S020-author-20261010-north01": 1,
+        "S020-author-20261010-north02": 1,
+        "S020-author-20261010-north03": 1,
+        "S020-author-20261010-east01": 1,
+        "S020-author-20261010-east02": 0,
+        "S020-author-20261010-east03": 0,
+        "S020-author-qa-garden-west": 1,
+        "S020-author-qa-orange-west": 1,
+        "S020-author-qa-orange-north": 1,
+        "S020-author-qa-south-garden": 1,
+        "S020-author-qa-road-west": 1,
+        "S020-author-qa-road-lower": 1,
+        "S020-author-qa-park-north": 1,
+        "S020-author-qa-park-south": 1
+      },
+      "degree_b": {
+        "S020-mv0crolo": 1,
+        "S020-mv0ctjz2": 1,
+        "S020-mv0ctnuh": 1,
+        "S020-mv0cttl6": 1,
+        "S020-mv0ctx7d": 1,
+        "S020-mv0cu2br": 1,
+        "S020-mv0cu7wx": 1,
+        "S020-mv0cubdr": 1,
+        "S020-mv0cuf4v": 1,
+        "S020-mv0cuksa": 1,
+        "S020-mv0cv1aw": 1,
+        "S020-mv0cv56v": 1,
+        "S020-mv0cv8oa": 1,
+        "S020-mv0cvclz": 1,
+        "S020-mv0cvfwl": 1,
+        "S020-mv0cvs2o": 1,
+        "S020-mv0cvv4z": 1,
+        "S020-mv0cw0jc": 1,
+        "S020-mv0cwrnq": 1,
+        "S020-mv0cx398": 1,
+        "S020-mv0cxw64": 1,
+        "S020-mv0cy1mv": 1,
+        "S020-mv0cyhgd": 1,
+        "S020-mv0cyl11": 1,
+        "S020-mv0cynj7": 1,
+        "S020-mv0cz7xi": 1,
+        "S020-mv0czbkk": 1,
+        "S020-mv0czf32": 1,
+        "S020-mv0czlus": 1,
+        "S020-mv0czsvx": 1,
+        "S020-mv0czwlp": 1,
+        "S020-mv0d03qj": 1,
+        "S020-mv0d0c6b": 1,
+        "S020-mv0d0pr7": 1
+      }
+    }
+  ],
+  "region_pooled": {
+    "area_a_m2": 2503.158147429052,
+    "area_b_m2": 2041.4261124058348,
+    "intersection_m2": 1770.8834587242904,
+    "union_m2": 2773.700801110596,
+    "symmetric_difference_m2": 1002.8173423863054,
+    "coverage_iou": 0.6384551131164633,
+    "coverage_dice": 0.7793379360903874
+  },
+  "tolerant_area_per_site": {
+    "0.0": [
+      {
+        "site_id": "S016",
+        "tolerance_m": 0.0,
+        "area_a_m2": 716.7033107879569,
+        "area_b_m2": 642.6151782340796,
+        "supported_area_a_m2": 553.9415982682983,
+        "supported_area_b_m2": 553.9415982682982,
+        "fraction_a_supported": 0.7729022455041887,
+        "fraction_b_supported": 0.8620113825984342,
+        "tolerant_area_f": 0.8150284171693013
+      },
+      {
+        "site_id": "S020",
+        "tolerance_m": 0.0,
+        "area_a_m2": 1786.4548366410947,
+        "area_b_m2": 1398.810934171755,
+        "supported_area_a_m2": 1216.9418604559924,
+        "supported_area_b_m2": 1216.9418604559921,
+        "fraction_a_supported": 0.6812049403633932,
+        "fraction_b_supported": 0.869983091157742,
+        "tolerant_area_f": 0.7641069524603218
+      }
+    ],
+    "0.5": [
+      {
+        "site_id": "S016",
+        "tolerance_m": 0.5,
+        "area_a_m2": 716.7033107879569,
+        "area_b_m2": 642.6151782340796,
+        "supported_area_a_m2": 631.9414836705955,
+        "supported_area_b_m2": 624.6192619634159,
+        "fraction_a_supported": 0.8817337302039632,
+        "fraction_b_supported": 0.9719958119879506,
+        "tolerant_area_f": 0.9246672435649596
+      },
+      {
+        "site_id": "S020",
+        "tolerance_m": 0.5,
+        "area_a_m2": 1786.4548366410947,
+        "area_b_m2": 1398.810934171755,
+        "supported_area_a_m2": 1369.3007523495671,
+        "supported_area_b_m2": 1327.7852434273482,
+        "fraction_a_supported": 0.7664905511544509,
+        "fraction_b_supported": 0.949224238237413,
+        "tolerant_area_f": 0.8481262900270815
+      }
+    ],
+    "1.0": [
+      {
+        "site_id": "S016",
+        "tolerance_m": 1.0,
+        "area_a_m2": 716.7033107879569,
+        "area_b_m2": 642.6151782340796,
+        "supported_area_a_m2": 668.161753668965,
+        "supported_area_b_m2": 639.7848698042745,
+        "fraction_a_supported": 0.9322710577887183,
+        "fraction_b_supported": 0.9955956402436947,
+        "tolerant_area_f": 0.9628933386391432
+      },
+      {
+        "site_id": "S020",
+        "tolerance_m": 1.0,
+        "area_a_m2": 1786.4548366410947,
+        "area_b_m2": 1398.810934171755,
+        "supported_area_a_m2": 1451.4994850882154,
+        "supported_area_b_m2": 1375.221492481164,
+        "fraction_a_supported": 0.8125027598331762,
+        "fraction_b_supported": 0.9831360757095036,
+        "tolerant_area_f": 0.8897120723768661
+      }
+    ],
+    "2.0": [
+      {
+        "site_id": "S016",
+        "tolerance_m": 2.0,
+        "area_a_m2": 716.7033107879569,
+        "area_b_m2": 642.6151782340796,
+        "supported_area_a_m2": 695.870384143318,
+        "supported_area_b_m2": 642.6151782340797,
+        "fraction_a_supported": 0.9709322863016571,
+        "fraction_b_supported": 1.0000000000000002,
+        "tolerant_area_f": 0.9852517948483727
+      },
+      {
+        "site_id": "S020",
+        "tolerance_m": 2.0,
+        "area_a_m2": 1786.4548366410947,
+        "area_b_m2": 1398.810934171755,
+        "supported_area_a_m2": 1531.5308115111307,
+        "supported_area_b_m2": 1393.992361683266,
+        "fraction_a_supported": 0.8573017241178769,
+        "fraction_b_supported": 0.9965552367580383,
+        "tolerant_area_f": 0.9216984273130764
+      }
+    ]
+  },
+  "tolerant_area_pooled": [
+    {
+      "tolerance_m": 0.0,
+      "area_a_m2": 2503.1581474290515,
+      "area_b_m2": 2041.4261124058346,
+      "supported_area_a_m2": 1770.8834587242907,
+      "supported_area_b_m2": 1770.8834587242904,
+      "fraction_a_supported": 0.7074596787035342,
+      "fraction_b_supported": 0.8674736979029294,
+      "tolerant_area_f": 0.7793379360903875
+    },
+    {
+      "tolerance_m": 0.5,
+      "area_a_m2": 2503.1581474290515,
+      "area_b_m2": 2041.4261124058346,
+      "supported_area_a_m2": 2001.2422360201626,
+      "supported_area_b_m2": 1952.404505390764,
+      "fraction_a_supported": 0.7994869353642727,
+      "fraction_b_supported": 0.9563924422862613,
+      "tolerant_area_f": 0.8709291451581421
+    },
+    {
+      "tolerance_m": 1.0,
+      "area_a_m2": 2503.1581474290515,
+      "area_b_m2": 2041.4261124058346,
+      "supported_area_a_m2": 2119.6612387571804,
+      "supported_area_b_m2": 2015.0063622854386,
+      "fraction_a_supported": 0.8467947744069811,
+      "fraction_b_supported": 0.9870581893903276,
+      "tolerant_area_f": 0.9115624134670031
+    },
+    {
+      "tolerance_m": 2.0,
+      "area_a_m2": 2503.1581474290515,
+      "area_b_m2": 2041.4261124058346,
+      "supported_area_a_m2": 2227.4011956544487,
+      "supported_area_b_m2": 2036.6075399173455,
+      "fraction_a_supported": 0.8898363844658286,
+      "fraction_b_supported": 0.9976396047551237,
+      "tolerant_area_f": 0.9406594033141865
+    }
+  ],
+  "majority_coverage": {
+    "XZ": {
+      "total": 69,
+      "majority_covered": 55
+    },
+    "TW": {
+      "total": 58,
+      "majority_covered": 58
+    }
+  },
+  "region_links": [
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss19glc",
+      "id_b": "S016-mv0cjfkd",
+      "smaller_overlap": 0.897075547770304,
+      "iou": 0.5964803283248172
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss19rn9",
+      "id_b": "S016-mv0cgfjv",
+      "smaller_overlap": 0.886111824502795,
+      "iou": 0.7238616698863544
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss1a1c6",
+      "id_b": "S016-mv0cjs7d",
+      "smaller_overlap": 0.9052879688027401,
+      "iou": 0.7974812050824016
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss1abxx",
+      "id_b": "S016-mv0ck7rx",
+      "smaller_overlap": 0.8823384426439111,
+      "iou": 0.742706618038517
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss1aruu",
+      "id_b": "S016-mv0ckt8h",
+      "smaller_overlap": 0.9070311242799014,
+      "iou": 0.7176847412640074
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss1bhf4",
+      "id_b": "S016-mv0cl70f",
+      "smaller_overlap": 0.9132547986941711,
+      "iou": 0.5088770866518846
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss1bxh9",
+      "id_b": "S016-mv0cmmy7",
+      "smaller_overlap": 0.9544088027797231,
+      "iou": 0.7633667410602728
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss1c6h7",
+      "id_b": "S016-mv0cnb4v",
+      "smaller_overlap": 0.9590266805879103,
+      "iou": 0.6268199801867387
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss1cgbn",
+      "id_b": "S016-mv0clq3b",
+      "smaller_overlap": 0.9789501809323753,
+      "iou": 0.7506435186393292
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss1cn4r",
+      "id_b": "S016-mv0cnujm",
+      "smaller_overlap": 0.9761520049517537,
+      "iou": 0.7859768598299729
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss1cx6e",
+      "id_b": "S016-mv0ckibu",
+      "smaller_overlap": 0.8766669268030527,
+      "iou": 0.7215131155102946
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss1d6f7",
+      "id_b": "S016-mv0cfj4w",
+      "smaller_overlap": 0.9344032932145162,
+      "iou": 0.8000772437843834
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss1dfvk",
+      "id_b": "S016-mv0cf9mq",
+      "smaller_overlap": 0.7636088241529198,
+      "iou": 0.6021028924318683
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss1ejzd-expanded-c01",
+      "id_b": "S016-mv0cmgyu",
+      "smaller_overlap": 0.9455180716091561,
+      "iou": 0.6157795679654702
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-mss1ejzd-expanded-c03",
+      "id_b": "S016-mv0cm4n3",
+      "smaller_overlap": 0.9817433024191901,
+      "iou": 0.6562675576571816
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-author-20261010-west",
+      "id_b": "S016-mv0cm016",
+      "smaller_overlap": 0.9985093826518529,
+      "iou": 0.6629163868583076
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-author-20261010-south01",
+      "id_b": "S016-mv0cne32",
+      "smaller_overlap": 0.9826576735589984,
+      "iou": 0.5022450734078103
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-author-20261010-south02",
+      "id_b": "S016-mv0cnhyw",
+      "smaller_overlap": 0.8803209307592397,
+      "iou": 0.6737245423505518
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-author-20261010-south03",
+      "id_b": "S016-mv0cnlj9",
+      "smaller_overlap": 0.8917752967973529,
+      "iou": 0.728148565320922
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-author-qa-bridge-north",
+      "id_b": "S016-mv0cmvf5",
+      "smaller_overlap": 0.8578334969486464,
+      "iou": 0.6280325771013892
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-author-qa-bridge-south",
+      "id_b": "S016-mv0cmrk4",
+      "smaller_overlap": 0.8478381410234775,
+      "iou": 0.6025055112975538
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-author-qa-west-north",
+      "id_b": "S016-mv0cmbut",
+      "smaller_overlap": 0.9093811324110627,
+      "iou": 0.7334029539538951
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-author-qa-west-south",
+      "id_b": "S016-mv0cm8rk",
+      "smaller_overlap": 0.9695742263800433,
+      "iou": 0.7355434543533101
+    },
+    {
+      "site_id": "S016",
+      "id_a": "S016-author-qa-railway-coherent",
+      "id_b": "S016-mv0cn240",
+      "smaller_overlap": 0.8810869976848286,
+      "iou": 0.6109465287113413
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2dyzz",
+      "id_b": "S020-mv0crolo",
+      "smaller_overlap": 0.9417476834146564,
+      "iou": 0.7476959901149498
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2e7yy",
+      "id_b": "S020-mv0cttl6",
+      "smaller_overlap": 0.9271215824267549,
+      "iou": 0.7674026796763747
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2efk9",
+      "id_b": "S020-mv0cuksa",
+      "smaller_overlap": 0.9649744884387916,
+      "iou": 0.6729542680148671
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2esi4",
+      "id_b": "S020-mv0d03qj",
+      "smaller_overlap": 0.8300174920254938,
+      "iou": 0.6787675183019461
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2fcfk",
+      "id_b": "S020-mv0ctnuh",
+      "smaller_overlap": 0.9626674706459842,
+      "iou": 0.761246238435758
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2foer",
+      "id_b": "S020-mv0cu2br",
+      "smaller_overlap": 0.952780272099659,
+      "iou": 0.148019743665962
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2foer",
+      "id_b": "S020-mv0cu7wx",
+      "smaller_overlap": 0.875556946856819,
+      "iou": 0.6219321249769834
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2gap0",
+      "id_b": "S020-mv0cwrnq",
+      "smaller_overlap": 0.9847290276098908,
+      "iou": 0.7411550405325846
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2gioe",
+      "id_b": "S020-mv0cv56v",
+      "smaller_overlap": 0.990664596512497,
+      "iou": 0.5000778289484955
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2gtpi",
+      "id_b": "S020-mv0czlus",
+      "smaller_overlap": 0.9621654029788423,
+      "iou": 0.8001992372603849
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2h3fs",
+      "id_b": "S020-mv0cxw64",
+      "smaller_overlap": 0.9433064941409288,
+      "iou": 0.7914566544339946
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2hf4v",
+      "id_b": "S020-mv0d0pr7",
+      "smaller_overlap": 0.891573301574651,
+      "iou": 0.6333334337009299
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2hq7o",
+      "id_b": "S020-mv0cv8oa",
+      "smaller_overlap": 0.9543333897445985,
+      "iou": 0.7321927930535789
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2i41d-single",
+      "id_b": "S020-mv0cx398",
+      "smaller_overlap": 0.6514603898185585,
+      "iou": 0.4566211921760037
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2igg6-single",
+      "id_b": "S020-mv0d0c6b",
+      "smaller_overlap": 0.9863325253183528,
+      "iou": 0.7572548329399825
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2j946",
+      "id_b": "S020-mv0cv1aw",
+      "smaller_overlap": 0.9528702170402138,
+      "iou": 0.8490898014295964
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2lw2d-expanded-c01",
+      "id_b": "S020-mv0cw0jc",
+      "smaller_overlap": 0.5302527225753138,
+      "iou": 0.2539450103470454
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2lw2d-expanded-c02",
+      "id_b": "S020-mv0cvs2o",
+      "smaller_overlap": 0.5970504725254006,
+      "iou": 0.4070762755828814
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2lw2d-expanded-c02",
+      "id_b": "S020-mv0cvv4z",
+      "smaller_overlap": 0.670515825806094,
+      "iou": 0.11338431113260153
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2makf-expanded-c01",
+      "id_b": "S020-mv0cvclz",
+      "smaller_overlap": 0.9993947819350995,
+      "iou": 0.45419464434996043
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2makf-expanded-c02",
+      "id_b": "S020-mv0cvfwl",
+      "smaller_overlap": 1.0,
+      "iou": 0.5658147962949596
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-mss2makf-expanded-c03",
+      "id_b": "S020-mv0cyl11",
+      "smaller_overlap": 0.9027982561250814,
+      "iou": 0.7905677056788836
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-author-20261010-north01",
+      "id_b": "S020-mv0cubdr",
+      "smaller_overlap": 0.9774680286405968,
+      "iou": 0.7146172259241441
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-author-20261010-north02",
+      "id_b": "S020-mv0cuf4v",
+      "smaller_overlap": 0.6374420858456613,
+      "iou": 0.4403681608287519
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-author-20261010-north03",
+      "id_b": "S020-mv0ctx7d",
+      "smaller_overlap": 0.8663327093491349,
+      "iou": 0.5154776764216801
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-author-20261010-east01",
+      "id_b": "S020-mv0ctjz2",
+      "smaller_overlap": 0.8450571875954299,
+      "iou": 0.7157222129096494
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-author-qa-garden-west",
+      "id_b": "S020-mv0cynj7",
+      "smaller_overlap": 0.7180254813869543,
+      "iou": 0.5081877436035462
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-author-qa-orange-west",
+      "id_b": "S020-mv0cz7xi",
+      "smaller_overlap": 0.8180111751830823,
+      "iou": 0.5484054818247248
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-author-qa-orange-north",
+      "id_b": "S020-mv0czbkk",
+      "smaller_overlap": 0.8143291914015237,
+      "iou": 0.5321092347876385
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-author-qa-south-garden",
+      "id_b": "S020-mv0czf32",
+      "smaller_overlap": 0.7492898181873365,
+      "iou": 0.5136584126050066
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-author-qa-road-west",
+      "id_b": "S020-mv0czsvx",
+      "smaller_overlap": 0.9267131866098758,
+      "iou": 0.6825594215462638
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-author-qa-road-lower",
+      "id_b": "S020-mv0czwlp",
+      "smaller_overlap": 0.7726427610705253,
+      "iou": 0.5946557524565994
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-author-qa-park-north",
+      "id_b": "S020-mv0cyhgd",
+      "smaller_overlap": 0.8928081345619733,
+      "iou": 0.7446176759967706
+    },
+    {
+      "site_id": "S020",
+      "id_a": "S020-author-qa-park-south",
+      "id_b": "S020-mv0cy1mv",
+      "smaller_overlap": 0.7525435235366194,
+      "iou": 0.5436114326996673
+    }
+  ],
+  "independent_blind_agreement": false,
+  "posthoc_exploratory": true,
+  "original_matching_policy_changed": false,
+  "labels_modified": false,
+  "reference_frozen": false
+}

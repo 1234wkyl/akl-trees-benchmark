@@ -1,0 +1,17 @@
+{
+  "recorded_on": "2026-09-18",
+  "status": "prepared_before_original_TW_return",
+  "sites": ["S016", "S020"],
+  "original_XZ_path": "data/labels/crown_labels_XZ_2026-08-13.json",
+  "original_XZ_sha256": "24d789f15bd5edcdc55777de64c202aa67230f9e91055ae38e11915c3b550c50",
+  "iou_threshold": 0.5,
+  "matching": "one-to-one greedy descending IoU, ties ascending stable A/B IDs",
+  "geometry_rule": "buffer(0) repair of invalid polygons with an audit; no site boundary clipping in rater agreement",
+  "primary_annotation_view": "class-restricted tree F1 and matched crown median IoU, with denominators",
+  "other_views": "all-class pooled agreement, each class separately, per-site results, confusion and matched-class Cohen kappa",
+  "kappa_scope": "pooled spatially matched class pairs only; does not include absent background, unmatched objects or true-negative counts",
+  "coordinate_guard_margin_m": 5,
+  "overlap_diagnostic_threshold": 0.1,
+  "adjudication": "manual after original independent comparison; never automatically freeze or overwrite original labels",
+  "limitations": "Two sites cover only small_subcanopy and canopy_edge; hard negatives are selective, not exhaustive. Rater agreement is not model performance. Undefined denominators/kappa remain null."
+}

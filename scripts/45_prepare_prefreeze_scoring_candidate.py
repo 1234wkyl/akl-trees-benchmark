@@ -52,7 +52,9 @@ def main():
             if label_class not in CLASSES:
                 raise ValueError(f'unknown class: {label_class}')
             seen.add(label_id)
-            raw = Polygon(label['world'])
+            # Partial group extraction can leave interior rings. The coordinate
+            # arrays remain authoritative when a browser export is edited.
+            raw = Polygon(label['world'], holes=label.get('holes_world', []))
             repaired = raw if raw.is_valid else raw.buffer(0)
             if repaired.is_empty or not repaired.is_valid or repaired.geom_type not in {'Polygon', 'MultiPolygon'}:
                 raise ValueError(f'geometry cannot be repaired: {label_id}')

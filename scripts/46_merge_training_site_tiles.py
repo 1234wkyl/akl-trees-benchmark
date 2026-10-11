@@ -19,6 +19,7 @@ from shapely.geometry import box
 from shapely.ops import unary_union
 
 from benchmark.common import ROOT, sha256, site_definitions, write_json
+from benchmark.inference_scenario import validate_inference_scenario
 
 DEFAULT_PLAN = ROOT / 'docs/project_status_2026-09-18/tile_coverage_preflight/coverage_plan.json'
 
@@ -43,7 +44,7 @@ class UnionFind:
         return True
 
 
-def _load_tile(tile_name, prediction_path, audit_path, footprint, context):
+def _load_tile(tile_name, prediction_path, audit_path, footprint, context, verified_input=None):
     audit = json.loads(audit_path.read_text())
     if audit.get('prediction_sha256') != sha256(prediction_path):
         raise ValueError(f'{tile_name}: coordinate audit does not bind prediction')
@@ -61,8 +62,34 @@ def _load_tile(tile_name, prediction_path, audit_path, footprint, context):
         raise ValueError(f'{tile_name}: empty or non-finite prediction')
     expected = np.asarray(footprint, dtype=float)
     actual = np.asarray([cloud.x.min(), cloud.y.min(), cloud.x.max(), cloud.y.max()])
-    if np.max(np.abs(actual - expected)) > .02:
-        raise ValueError(f'{tile_name}: prediction extent differs from coverage plan')
+    extent = {'raw_coverage_bbox_epsg2193': expected.tolist(),
+              'prediction_bbox_epsg2193': actual.tolist(),
+              'prediction_minus_raw_bbox_m': (actual - expected).tolist(),
+              'validation_basis': 'raw coverage extent'}
+    if verified_input is None:
+        if np.max(np.abs(actual - expected)) > .02:
+            raise ValueError(f'{tile_name}: prediction extent differs from coverage plan')
+    else:
+        verified_input = Path(verified_input)
+        input_hash = sha256(verified_input)
+        if audit.get('input_sha256') != input_hash:
+            raise ValueError(f'{tile_name}: audit does not bind verified filtered input')
+        if audit.get('point_count_equal') is not True or audit.get('bidirectional_coordinate_coverage_ok') is not True:
+            raise ValueError(f'{tile_name}: complete coordinate coverage audit required')
+        staged = laspy.read(verified_input)
+        if staged.header.parse_crs() is None or staged.header.parse_crs().to_epsg() != 2193:
+            raise ValueError(f'{tile_name}: verified input CRS mismatch')
+        if len(staged.points) != len(cloud.points) or audit.get('input_points') != len(staged.points):
+            raise ValueError(f'{tile_name}: verified input point count mismatch')
+        filtered_bbox = np.asarray([staged.x.min(), staged.y.min(), staged.x.max(), staged.y.max()])
+        if not np.isfinite(filtered_bbox).all() or np.max(np.abs(actual - filtered_bbox)) > .002:
+            raise ValueError(f'{tile_name}: prediction extent differs from audited filtered input')
+        if (np.any(filtered_bbox[:2] < expected[:2] - .02) or
+                np.any(filtered_bbox[2:] > expected[2:] + .02)):
+            raise ValueError(f'{tile_name}: filtered input extends outside raw coverage')
+        extent.update(validation_basis='hash-bound filtered inference input and bidirectional coordinate audit',
+                      verified_input=str(verified_input.resolve()), verified_input_sha256=input_hash,
+                      filtered_bbox_epsg2193=filtered_bbox.tolist())
     keep = ((xyz[:, 0] >= context[0]) & (xyz[:, 0] <= context[2]) &
             (xyz[:, 1] >= context[1]) & (xyz[:, 1] <= context[3]))
     margin = np.minimum.reduce((xyz[:, 0] - expected[0], expected[2] - xyz[:, 0],
@@ -77,7 +104,7 @@ def _load_tile(tile_name, prediction_path, audit_path, footprint, context):
             'semantic': semantic[keep],
             'margin': margin[keep], 'prediction_sha256': sha256(prediction_path),
             'audit_sha256': sha256(audit_path), 'points_full_tile': len(cloud.points),
-            'points_context': int(keep.sum())}
+            'points_context': int(keep.sum()), 'extent_validation': extent}
 
 
 def merge_tiles(tiles):
@@ -162,13 +189,18 @@ def main():
                         metavar=('SOURCE_TILE_NAME', 'RECONCILED_PREDICTION', 'COORDINATE_AUDIT'))
     parser.add_argument('--coverage-plan', type=Path, default=DEFAULT_PLAN)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--inference-scenario', type=Path)
+    parser.add_argument('--verified-input', nargs=2, action='append',
+                        metavar=('SOURCE_TILE_NAME', 'FILTERED_INPUT_LAZ'),
+                        help='audit-bound actual model input; retains raw footprint diagnostics')
     args = parser.parse_args()
     if args.output.exists():
         parser.error('use a fresh output directory')
     if not math.isfinite(args.context_m) or args.context_m < 0:
         parser.error('finite nonnegative context required')
     sites = site_definitions()
-    if args.site_id not in sites or sites[args.site_id]['split'] != 'train':
+    scenario = validate_inference_scenario(args.inference_scenario) if args.inference_scenario else None
+    if args.site_id not in sites or (not scenario and sites[args.site_id]['split'] != 'train'):
         raise ValueError('this pre-freeze merger accepts training sites only')
     plan = json.loads(args.coverage_plan.read_text())
     plan_sites = {row['site_id']: row for row in plan['sites']}
@@ -179,8 +211,11 @@ def main():
         raise ValueError(f'provide each planned site tile exactly once; expected {sorted(expected)}')
     conflicts = {name: plan_tiles[name].get('held_out_intersecting_sites', [])
                  for name in expected if plan_tiles[name].get('held_out_intersecting_sites')}
-    if conflicts:
+    if conflicts and not scenario:
         raise ValueError(f'training merge rejected because required tiles touch held-out sites: {conflicts}')
+    verified = dict(args.verified_input or [])
+    if args.verified_input and (len(verified) != len(args.verified_input) or set(verified) != expected):
+        raise ValueError('provide each planned filtered input exactly once')
     site = sites[args.site_id]
     site_box = box(*site['bbox_epsg2193'])
     context = site_box.buffer(args.context_m, cap_style=3).bounds
@@ -189,14 +224,15 @@ def main():
         prediction, audit = Path(prediction), Path(audit)
         if tile_name not in plan_tiles or not prediction.is_file() or not audit.is_file():
             raise ValueError(f'{tile_name}: missing plan, prediction or audit')
-        record = _load_tile(tile_name, prediction, audit, plan_tiles[tile_name]['bbox_epsg2193'], context)
+        record = _load_tile(tile_name, prediction, audit, plan_tiles[tile_name]['bbox_epsg2193'], context, verified.get(tile_name))
         loaded.append(record)
         tile_receipts.append({'tile': tile_name, 'prediction': str(prediction.resolve()),
                               'prediction_sha256': record['prediction_sha256'],
                               'coordinate_audit': str(audit.resolve()),
                               'coordinate_audit_sha256': record['audit_sha256'],
                               'points_full_tile': record['points_full_tile'],
-                              'points_context': record['points_context']})
+                              'points_context': record['points_context'],
+                              'extent_validation': record['extent_validation']})
     merged = merge_tiles(loaded)
     args.output.mkdir(parents=True)
     target = args.output / f'{args.site_id}_merged_points.laz'
@@ -213,8 +249,8 @@ def main():
         gpd.GeoDataFrame({'site_id': [args.site_id], 'domain': ['header_bbox_unobserved']},
                          geometry=[unobserved], crs=2193).to_file(coverage_path, layer='unobserved_header_domain', driver='GPKG')
     report = {
-        'status': 'TRAINING-SITE MULTI-TILE MERGE COMPLETED',
-        'site_id': args.site_id, 'split': 'train', 'stratum': site['stratum'],
+        'status': ('ASSUMPTION-ONLY SITE MERGE COMPLETED; NO SCORING' if scenario else 'TRAINING-SITE MULTI-TILE MERGE COMPLETED'),
+        'site_id': args.site_id, 'split': site['split'], 'stratum': site['stratum'],
         'context_m': args.context_m, 'expected_source_tiles': sorted(expected),
         'tiles': tile_receipts, 'merge': {key: value for key, value in merged.items() if key not in {'xyz', 'instance', 'semantic', 'source_tile'}},
         'duplicate_rule': 'exact XYZ; select greatest source-tile interior margin then stable tile/row order',
@@ -230,6 +266,8 @@ def main():
         'coverage_plan_sha256': sha256(args.coverage_plan),
         'site_definitions_sha256': sha256(ROOT / 'data/sites/reference_sites.json'),
         'reference_frozen': False, 'benchmark_scores_created': False,
+        'inference_scenario_sha256': sha256(args.inference_scenario) if scenario else None,
+        'evaluation_permitted': False,
     }
     write_json(args.output / 'merge_receipt.json', report)
     write_json(args.output / 'SHA256_manifest.json',

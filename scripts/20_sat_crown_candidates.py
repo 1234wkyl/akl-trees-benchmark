@@ -10,6 +10,7 @@ import numpy as np
 from shapely import concave_hull
 from shapely.geometry import MultiPoint
 from benchmark.common import sha256, write_json
+from benchmark.inference_scenario import validate_inference_scenario
 
 
 def main():
@@ -27,6 +28,7 @@ def main():
     ap.add_argument('--buffer-m',type=float,default=0,
                     help='optional fixed outward buffer applied after hull construction')
     ap.add_argument('--output',type=Path,required=True)
+    ap.add_argument('--inference-scenario',type=Path)
     args=ap.parse_args()
     if args.output.exists():ap.error('use a fresh output folder')
     if not np.isfinite(args.concave_ratio) or not 0<=args.concave_ratio<=1:
@@ -34,14 +36,23 @@ def main():
     if not np.isfinite(args.buffer_m) or args.buffer_m<0:
         ap.error('--buffer-m must be finite and nonnegative')
     verification_path = args.coordinate_audit or args.merge_receipt
+    scenario=validate_inference_scenario(args.inference_scenario) if args.inference_scenario else None
+    if scenario:
+        choice=scenario['point_to_crown_conversion']
+        if (args.hull_method!=choice['method'] or args.buffer_m!=choice['buffer_m']
+                or args.tree_semantic_values!=[scenario['semantic_output_tree_value']]):
+            raise ValueError('held-out conversion must retain the training-selected fixed method and taxonomy')
     audit=json.loads(verification_path.read_text())
     if args.coordinate_audit:
         if audit.get('prediction_sha256')!=sha256(args.prediction) or audit.get('epsg2193_coordinate_consistency') is not True or audit.get('uint16_boundary_warning'):
             raise ValueError('require matching successful restored-coordinate audit, without ID-boundary warning')
         verification_type = 'coordinate_audit'
     else:
-        if (audit.get('status') != 'TRAINING-SITE MULTI-TILE MERGE COMPLETED' or
-                audit.get('split') != 'train' or
+        valid_scope=(audit.get('status')=='ASSUMPTION-ONLY SITE MERGE COMPLETED; NO SCORING'
+                     and audit.get('inference_scenario_sha256')==sha256(args.inference_scenario)
+                     and audit.get('evaluation_permitted') is False) if scenario else (
+                         audit.get('status')=='TRAINING-SITE MULTI-TILE MERGE COMPLETED' and audit.get('split')=='train')
+        if (not valid_scope or
                 audit.get('output_laz_sha256') != sha256(args.prediction) or
                 audit.get('benchmark_scores_created') is not False):
             raise ValueError('require matching completed training-site merge receipt')

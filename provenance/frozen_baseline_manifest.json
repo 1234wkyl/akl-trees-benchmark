@@ -1,0 +1,128 @@
+{
+  "label": "xi-capstone",
+  "frozen_at_utc": "2026-07-30T06:43:43+00:00",
+  "purpose": "Frozen baseline for the capstone benchmark. Detection development must not modify the live inputs fingerprinted here.",
+  "source_database": "/Users/timwelch/Dropbox/Files/Research/AKL_trees/data/processed/akl_trees.sqlite",
+  "source_database_mtime_utc": "2026-07-13T00:37:40+00:00",
+  "snapshot_database": "/Volumes/T7/Data/AKL_trees/baselines/xi-capstone-20260730/akl_trees.sqlite",
+  "database_bytes": 11539324928,
+  "critical_tables": [
+    "trees",
+    "tree_lidar_pilot",
+    "tree_crown_pilot",
+    "tree_context_pilot",
+    "tree_pointcloud_pilot",
+    "tree_species_attributes"
+  ],
+  "tables": {
+    "canopy_cover_by_board": {
+      "rows": 21
+    },
+    "current_database_remediation_runs": {
+      "rows": 2
+    },
+    "itree_genus_ref": {
+      "rows": 1895
+    },
+    "itree_species_ref": {
+      "rows": 9115
+    },
+    "kauri_dieback_surveillance": {
+      "rows": 52047
+    },
+    "run_metadata": {
+      "rows": 16
+    },
+    "source_semantics_runs": {
+      "rows": 1
+    },
+    "tree_assets_pilot": {
+      "rows": 1416984
+    },
+    "tree_context_pilot": {
+      "rows": 1416984,
+      "checksum": "9149672749068445496"
+    },
+    "tree_crown_pilot": {
+      "rows": 1416984,
+      "checksum": "1989859353786094648"
+    },
+    "tree_hard_negative_candidates": {
+      "rows": 0
+    },
+    "tree_impervious_pilot": {
+      "rows": 1430363
+    },
+    "tree_lidar_pilot": {
+      "rows": 1430363,
+      "checksum": "2919636763999144402"
+    },
+    "tree_low_canopy_candidates": {
+      "rows": 828309
+    },
+    "tree_pointcloud_pilot": {
+      "rows": 1444293,
+      "checksum": "6201253285541341619"
+    },
+    "tree_root_zone_pilot": {
+      "rows": 1416984
+    },
+    "tree_species_attributes": {
+      "rows": 1444293,
+      "checksum": "8271145941656794062"
+    },
+    "tree_species_class_predictions": {
+      "rows": 1367481
+    },
+    "tree_taxon_correction_audit": {
+      "rows": 367
+    },
+    "tree_trajectory_canonical_link_audit": {
+      "rows": 18053
+    },
+    "tree_trajectory_fate_audit": {
+      "rows": 1688521
+    },
+    "tree_trajectory_pilot": {
+      "rows": 2371898
+    },
+    "tree_valuation_pilot": {
+      "rows": 1416984
+    },
+    "tree_valuation_scenarios": {
+      "rows": 27309
+    },
+    "trees": {
+      "rows": 1444293,
+      "checksum": "2143594495980569163"
+    }
+  },
+  "tracked_inputs": {
+    "chm_vrt": "/Users/timwelch/Dropbox/Files/Research/AKL_trees/data/interim/auckland_metro_v1_lidar/chm.vrt",
+    "chm_dir": "/Users/timwelch/Dropbox/Files/Research/AKL_trees/data/interim/auckland_metro_v1_lidar",
+    "imagery_z18": "/Users/timwelch/Dropbox/Files/Research/AKL_trees/data/raw/esri_world_imagery/tiles_z18",
+    "laz_root": "/Volumes/T7/Data/AKL_trees/point_cloud_2024/auckland_metro_v1"
+  },
+  "input_fingerprints": {
+    "chm_vrt": {
+      "exists": true,
+      "sha256": "f9bf97b855feb480a3d9af868aa19c895b1d83dd991c21de55e882fdaa4c472b",
+      "bytes": 566336
+    },
+    "chm_dir": {
+      "exists": true,
+      "files": 1313,
+      "bytes": 2981542525
+    },
+    "imagery_z18": {
+      "exists": true,
+      "files": 117600,
+      "bytes": 1869806187
+    },
+    "laz_root": {
+      "exists": true,
+      "files": 3157,
+      "bytes": 35016607420
+    }
+  }
+}

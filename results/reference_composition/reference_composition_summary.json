@@ -1,0 +1,707 @@
+{
+  "status": "pre-freeze composition comparison",
+  "original": {
+    "path": "/Users/zhangxi/Desktop/791\u9879\u76ee\u6587\u4ef6/Starter_Kit/data/labels/crown_labels_XZ_2026-08-13.json",
+    "sha256": "24d789f15bd5edcdc55777de64c202aa67230f9e91055ae38e11915c3b550c50"
+  },
+  "current": {
+    "path": "/Users/zhangxi/Desktop/791\u9879\u76ee\u6587\u4ef6/Starter_Kit/data/labels/crown_labels_XZ_confirmed_2026-10-10.json",
+    "sha256": "a8766662d51c16cf5cf87df3cbd8046512e1f493f2055f58374da3f878dbeb76"
+  },
+  "site_definitions": {
+    "path": "/Users/zhangxi/Desktop/791\u9879\u76ee\u6587\u4ef6/Starter_Kit/data/sites/reference_sites.json",
+    "sha256": "78b8513a2153d380b3761c8f642b8d23c14216e7aeb3af67865b5070fc0eb1fe"
+  },
+  "class_totals": {
+    "tree": {
+      "original": 219,
+      "current": 458
+    },
+    "tree_group": {
+      "original": 228,
+      "current": 142
+    },
+    "not_tree": {
+      "original": 41,
+      "current": 41
+    },
+    "uncertain": {
+      "original": 4,
+      "current": 4
+    }
+  },
+  "rows": [
+    {
+      "class": "tree",
+      "stratum": "open_street_trees",
+      "split": "train",
+      "original": 25,
+      "current": 36
+    },
+    {
+      "class": "tree",
+      "stratum": "open_street_trees",
+      "split": "val",
+      "original": 17,
+      "current": 28
+    },
+    {
+      "class": "tree",
+      "stratum": "open_street_trees",
+      "split": "test",
+      "original": 33,
+      "current": 41
+    },
+    {
+      "class": "tree",
+      "stratum": "park_open_grown",
+      "split": "train",
+      "original": 6,
+      "current": 22
+    },
+    {
+      "class": "tree",
+      "stratum": "park_open_grown",
+      "split": "val",
+      "original": 11,
+      "current": 19
+    },
+    {
+      "class": "tree",
+      "stratum": "park_open_grown",
+      "split": "test",
+      "original": 9,
+      "current": 17
+    },
+    {
+      "class": "tree",
+      "stratum": "dense_broadleaf",
+      "split": "train",
+      "original": 4,
+      "current": 17
+    },
+    {
+      "class": "tree",
+      "stratum": "dense_broadleaf",
+      "split": "val",
+      "original": 10,
+      "current": 30
+    },
+    {
+      "class": "tree",
+      "stratum": "dense_broadleaf",
+      "split": "test",
+      "original": 10,
+      "current": 17
+    },
+    {
+      "class": "tree",
+      "stratum": "conifer_dominant",
+      "split": "train",
+      "original": 1,
+      "current": 8
+    },
+    {
+      "class": "tree",
+      "stratum": "conifer_dominant",
+      "split": "val",
+      "original": 5,
+      "current": 16
+    },
+    {
+      "class": "tree",
+      "stratum": "conifer_dominant",
+      "split": "test",
+      "original": 5,
+      "current": 14
+    },
+    {
+      "class": "tree",
+      "stratum": "palm_present",
+      "split": "train",
+      "original": 10,
+      "current": 20
+    },
+    {
+      "class": "tree",
+      "stratum": "palm_present",
+      "split": "val",
+      "original": 3,
+      "current": 8
+    },
+    {
+      "class": "tree",
+      "stratum": "palm_present",
+      "split": "test",
+      "original": 7,
+      "current": 19
+    },
+    {
+      "class": "tree",
+      "stratum": "small_subcanopy",
+      "split": "train",
+      "original": 13,
+      "current": 24
+    },
+    {
+      "class": "tree",
+      "stratum": "small_subcanopy",
+      "split": "val",
+      "original": 14,
+      "current": 26
+    },
+    {
+      "class": "tree",
+      "stratum": "small_subcanopy",
+      "split": "test",
+      "original": 5,
+      "current": 18
+    },
+    {
+      "class": "tree",
+      "stratum": "canopy_edge",
+      "split": "train",
+      "original": 10,
+      "current": 19
+    },
+    {
+      "class": "tree",
+      "stratum": "canopy_edge",
+      "split": "val",
+      "original": 5,
+      "current": 13
+    },
+    {
+      "class": "tree",
+      "stratum": "canopy_edge",
+      "split": "test",
+      "original": 13,
+      "current": 43
+    },
+    {
+      "class": "tree",
+      "stratum": "hard_negative_built",
+      "split": "train",
+      "original": 1,
+      "current": 1
+    },
+    {
+      "class": "tree",
+      "stratum": "hard_negative_built",
+      "split": "val",
+      "original": 1,
+      "current": 1
+    },
+    {
+      "class": "tree",
+      "stratum": "hard_negative_built",
+      "split": "test",
+      "original": 1,
+      "current": 1
+    },
+    {
+      "class": "tree_group",
+      "stratum": "open_street_trees",
+      "split": "train",
+      "original": 18,
+      "current": 11
+    },
+    {
+      "class": "tree_group",
+      "stratum": "open_street_trees",
+      "split": "val",
+      "original": 13,
+      "current": 9
+    },
+    {
+      "class": "tree_group",
+      "stratum": "open_street_trees",
+      "split": "test",
+      "original": 11,
+      "current": 6
+    },
+    {
+      "class": "tree_group",
+      "stratum": "park_open_grown",
+      "split": "train",
+      "original": 17,
+      "current": 9
+    },
+    {
+      "class": "tree_group",
+      "stratum": "park_open_grown",
+      "split": "val",
+      "original": 11,
+      "current": 8
+    },
+    {
+      "class": "tree_group",
+      "stratum": "park_open_grown",
+      "split": "test",
+      "original": 6,
+      "current": 4
+    },
+    {
+      "class": "tree_group",
+      "stratum": "dense_broadleaf",
+      "split": "train",
+      "original": 20,
+      "current": 12
+    },
+    {
+      "class": "tree_group",
+      "stratum": "dense_broadleaf",
+      "split": "val",
+      "original": 14,
+      "current": 4
+    },
+    {
+      "class": "tree_group",
+      "stratum": "dense_broadleaf",
+      "split": "test",
+      "original": 15,
+      "current": 10
+    },
+    {
+      "class": "tree_group",
+      "stratum": "conifer_dominant",
+      "split": "train",
+      "original": 10,
+      "current": 7
+    },
+    {
+      "class": "tree_group",
+      "stratum": "conifer_dominant",
+      "split": "val",
+      "original": 15,
+      "current": 13
+    },
+    {
+      "class": "tree_group",
+      "stratum": "conifer_dominant",
+      "split": "test",
+      "original": 7,
+      "current": 5
+    },
+    {
+      "class": "tree_group",
+      "stratum": "palm_present",
+      "split": "train",
+      "original": 10,
+      "current": 5
+    },
+    {
+      "class": "tree_group",
+      "stratum": "palm_present",
+      "split": "val",
+      "original": 6,
+      "current": 4
+    },
+    {
+      "class": "tree_group",
+      "stratum": "palm_present",
+      "split": "test",
+      "original": 12,
+      "current": 10
+    },
+    {
+      "class": "tree_group",
+      "stratum": "small_subcanopy",
+      "split": "train",
+      "original": 4,
+      "current": 4
+    },
+    {
+      "class": "tree_group",
+      "stratum": "small_subcanopy",
+      "split": "val",
+      "original": 3,
+      "current": 0
+    },
+    {
+      "class": "tree_group",
+      "stratum": "small_subcanopy",
+      "split": "test",
+      "original": 8,
+      "current": 4
+    },
+    {
+      "class": "tree_group",
+      "stratum": "canopy_edge",
+      "split": "train",
+      "original": 11,
+      "current": 6
+    },
+    {
+      "class": "tree_group",
+      "stratum": "canopy_edge",
+      "split": "val",
+      "original": 7,
+      "current": 8
+    },
+    {
+      "class": "tree_group",
+      "stratum": "canopy_edge",
+      "split": "test",
+      "original": 7,
+      "current": 0
+    },
+    {
+      "class": "tree_group",
+      "stratum": "hard_negative_built",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "tree_group",
+      "stratum": "hard_negative_built",
+      "split": "val",
+      "original": 1,
+      "current": 1
+    },
+    {
+      "class": "tree_group",
+      "stratum": "hard_negative_built",
+      "split": "test",
+      "original": 2,
+      "current": 2
+    },
+    {
+      "class": "not_tree",
+      "stratum": "open_street_trees",
+      "split": "train",
+      "original": 5,
+      "current": 5
+    },
+    {
+      "class": "not_tree",
+      "stratum": "open_street_trees",
+      "split": "val",
+      "original": 3,
+      "current": 3
+    },
+    {
+      "class": "not_tree",
+      "stratum": "open_street_trees",
+      "split": "test",
+      "original": 3,
+      "current": 3
+    },
+    {
+      "class": "not_tree",
+      "stratum": "park_open_grown",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "park_open_grown",
+      "split": "val",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "park_open_grown",
+      "split": "test",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "dense_broadleaf",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "dense_broadleaf",
+      "split": "val",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "dense_broadleaf",
+      "split": "test",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "conifer_dominant",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "conifer_dominant",
+      "split": "val",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "conifer_dominant",
+      "split": "test",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "palm_present",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "palm_present",
+      "split": "val",
+      "original": 1,
+      "current": 1
+    },
+    {
+      "class": "not_tree",
+      "stratum": "palm_present",
+      "split": "test",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "small_subcanopy",
+      "split": "train",
+      "original": 10,
+      "current": 10
+    },
+    {
+      "class": "not_tree",
+      "stratum": "small_subcanopy",
+      "split": "val",
+      "original": 7,
+      "current": 7
+    },
+    {
+      "class": "not_tree",
+      "stratum": "small_subcanopy",
+      "split": "test",
+      "original": 11,
+      "current": 11
+    },
+    {
+      "class": "not_tree",
+      "stratum": "canopy_edge",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "canopy_edge",
+      "split": "val",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "canopy_edge",
+      "split": "test",
+      "original": 1,
+      "current": 1
+    },
+    {
+      "class": "not_tree",
+      "stratum": "hard_negative_built",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "hard_negative_built",
+      "split": "val",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "not_tree",
+      "stratum": "hard_negative_built",
+      "split": "test",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "open_street_trees",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "open_street_trees",
+      "split": "val",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "open_street_trees",
+      "split": "test",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "park_open_grown",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "park_open_grown",
+      "split": "val",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "park_open_grown",
+      "split": "test",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "dense_broadleaf",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "dense_broadleaf",
+      "split": "val",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "dense_broadleaf",
+      "split": "test",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "conifer_dominant",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "conifer_dominant",
+      "split": "val",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "conifer_dominant",
+      "split": "test",
+      "original": 1,
+      "current": 1
+    },
+    {
+      "class": "uncertain",
+      "stratum": "palm_present",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "palm_present",
+      "split": "val",
+      "original": 3,
+      "current": 3
+    },
+    {
+      "class": "uncertain",
+      "stratum": "palm_present",
+      "split": "test",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "small_subcanopy",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "small_subcanopy",
+      "split": "val",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "small_subcanopy",
+      "split": "test",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "canopy_edge",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "canopy_edge",
+      "split": "val",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "canopy_edge",
+      "split": "test",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "hard_negative_built",
+      "split": "train",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "hard_negative_built",
+      "split": "val",
+      "original": 0,
+      "current": 0
+    },
+    {
+      "class": "uncertain",
+      "stratum": "hard_negative_built",
+      "split": "test",
+      "original": 0,
+      "current": 0
+    }
+  ]
+}

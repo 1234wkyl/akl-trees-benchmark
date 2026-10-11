@@ -22,10 +22,12 @@ from PIL import Image,ImageDraw
 from shapely.geometry import Polygon,box
 
 from benchmark.common import ROOT,sha256,site_definitions,write_json
+from benchmark.annotation_coverage import coverage_agreement
 
 spec=importlib.util.spec_from_file_location('agreement',Path(__file__).with_name('05_interrater_agreement.py'))
 agreement=importlib.util.module_from_spec(spec);spec.loader.exec_module(agreement)
 POLICY=ROOT/'config/independent_agreement.json'
+COVERAGE_POLICY=ROOT/'config/independent_coverage.json'
 
 
 def audit_json(path,who,sites,required,margin=5):
@@ -128,11 +130,13 @@ def main():
     shutil.copyfile(xz,source_a);shutil.copyfile(args.tim_json,source_b)
     source_a.chmod(0o444);source_b.chmod(0o444)
     shutil.copyfile(POLICY,out/'agreement_policy.json');shutil.copyfile(ROOT/'data/sites/reference_sites.json',out/'site_definitions.json')
+    shutil.copyfile(COVERAGE_POLICY,out/'coverage_policy.json')
     receipt={'status':'received_not_yet_validated','synthetic_only':args.synthetic_test,'received_at':datetime.now(timezone.utc).isoformat(),
         'teacher_input_name':args.tim_json.name,'XZ_sha256':sha256(source_a),'teacher_sha256':sha256(source_b),
         'policy_sha256':sha256(POLICY),'site_definitions_sha256':sha256(ROOT/'data/sites/reference_sites.json'),
+        'supplementary_coverage_policy_sha256':sha256(COVERAGE_POLICY),
         'sites':required,'source_reference_written':False,'reference_frozen':False,'manual_adjudication_required':True,
-        'code_sha256':{str(p.relative_to(ROOT)):sha256(p) for p in [Path(__file__),ROOT/'scripts/05_interrater_agreement.py',ROOT/'scripts/benchmark/common.py']},
+        'code_sha256':{str(p.relative_to(ROOT)):sha256(p) for p in [Path(__file__),ROOT/'scripts/05_interrater_agreement.py',ROOT/'scripts/benchmark/common.py',ROOT/'scripts/benchmark/annotation_coverage.py']},
         'python_version':sys.version,
         'library_versions':{name:importlib.metadata.version(name) for name in ['numpy','geopandas','shapely','pyogrio','Pillow']}}
     try:
@@ -156,6 +160,23 @@ def main():
         metrics=json.loads((out/'agreement_provenance.json').read_text())
         metrics.update(synthetic_only=args.synthetic_test,reference_frozen=False,
             individual_tree_view=metrics['per_class'].get('tree'),limitations=policy['limitations'])
+        frames={sid:(a[a.site_id==sid],b[b.site_id==sid]) for sid in required}
+        coverage=coverage_agreement(frames,sites,json.loads(COVERAGE_POLICY.read_text()))
+        coverage.update(synthetic_only=args.synthetic_test,reference_frozen=False)
+        metrics['supplementary_canopy_agreement']=coverage
+        write_json(out/'canopy_agreement.json',coverage)
+        lines=['# Supplementary canopy coverage agreement','','Primary single-tree and class results remain in agreement.md. Coverage Dice is not object agreement F1. No passing threshold or freeze is granted.','',
+               '| Site | Area A (m²) | Area B (m²) | Intersection (m²) | Union (m²) | Coverage IoU | Coverage Dice |',
+               '|---|---:|---:|---:|---:|---:|---:|']
+        for row in [*coverage['per_site'],dict(site_id='Pooled',**coverage['pooled_area'])]:
+            lines.append('| {} | {:.3f} | {:.3f} | {:.3f} | {:.3f} | {} | {} |'.format(row['site_id'],row['area_a_m2'],row['area_b_m2'],row['intersection_m2'],row['union_m2'],agreement.format_stat(row['coverage_iou']),agreement.format_stat(row['coverage_dice'])))
+        lines+=['','## Supplementary boundary agreement','','| Tolerance (m) | Pooled boundary F1 |','|---|---:|']
+        lines += ['| {} | {} |'.format(row['tolerance_m'],agreement.format_stat(row['boundary_f1'])) for row in coverage['pooled_boundary']]
+        lines+=['','Lengths, per-site metrics, uncertain areas and outside-site areas are recorded in canopy_agreement.json. Every recorded tolerance is reported; no tolerance is selected from the returned results. Artificial site-clip edges are excluded from boundary linework. These views do not establish individual tree counts or independent field truth.']
+        if args.synthetic_test:lines.insert(0,'**SYNTHETIC TEST ONLY — NOT TEACHER AGREEMENT.**\n')
+        (out/'canopy_agreement.md').write_text('\n'.join(lines)+'\n')
+        with (out/'agreement.md').open('a') as f:
+            f.write('\n## Supplementary coverage and boundary views\n\nSee [canopy_agreement.md](canopy_agreement.md) for tree + tree_group union coverage and fixed-distance boundary sensitivity. These do not replace the original single-tree F1, matched IoU or matched-class kappa above.\n')
         write_json(out/'agreement_provenance.json',metrics)
         write_json(out/'metrics.json',metrics)
         with (out/'agreement_pairs.csv').open() as f:pairs=list(csv.DictReader(f))

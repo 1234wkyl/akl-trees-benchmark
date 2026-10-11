@@ -1,0 +1,165 @@
+{
+  "scope": "Measured wrapper throughput; not billing or an area-matched model cost ratio",
+  "weak": {
+    "model_wrapper_wall_seconds": 64941,
+    "allocated_device_wall_hours": 18.039166666666667,
+    "raw_header_envelope_union_km2": 6.475304080000035,
+    "allocated_device_wall_hours_per_envelope_km2": 2.7858408568615927,
+    "tile_timings": [
+      {
+        "tile": "pc_BA31_1000_4121.laz",
+        "run_id": "20261009T182616Z_weak_fixed_pc_BA31_1000_4121_noise_excluded_2759331",
+        "wall_seconds": 3185,
+        "timing_sha256": "e9f40526ab4cde16e3bd7eb3d02d6665fb410233d9c1338e38b3eebae7d8d36a",
+        "metadata_sha256": "755b059610e5b477d65f7e8c3b34f1efee0fbc9372b0883ca1bb3403bc310da3"
+      },
+      {
+        "tile": "pc_BA31_1000_4221.laz",
+        "run_id": "20261009T191948Z_weak_fixed_pc_BA31_1000_4221_noise_excluded_2783478",
+        "wall_seconds": 4069,
+        "timing_sha256": "c27d3a2645643f60cb3b43e8d7afdf55c98dc8ef36e354037c3a7d9d0c2d2778",
+        "metadata_sha256": "2a29eeebcbcc3e6a062546396ea028571a509a9598b07e6d845d2b1f7816111f"
+      },
+      {
+        "tile": "pc_BA31_1000_4349.laz",
+        "run_id": "20261009T202813Z_weak_fixed_pc_BA31_1000_4349_noise_excluded_2806530",
+        "wall_seconds": 3655,
+        "timing_sha256": "636bd79f7c9c2da68722c9f03b8d7f8b07b51e2a0db4302c56ce862712b843f5",
+        "metadata_sha256": "ffb4e2f59bfafbf917a18175d8ac51f421008398db14435051bcd17ee0d10b9c"
+      },
+      {
+        "tile": "pc_BA31_1000_4350.laz",
+        "run_id": "20261009T212949Z_weak_fixed_pc_BA31_1000_4350_noise_excluded_2829693",
+        "wall_seconds": 3845,
+        "timing_sha256": "d4059d751cbb6a465002e4a4f136e52e7786165fca8063375137c346e39f1969",
+        "metadata_sha256": "ed46d46b576ba488236cd2be05f0e7420a5d5410d083f233a01b5b19fd8231ca"
+      },
+      {
+        "tile": "pc_BA31_1000_4439.laz",
+        "run_id": "20261009T223438Z_weak_fixed_pc_BA31_1000_4439_noise_excluded_2852813",
+        "wall_seconds": 2568,
+        "timing_sha256": "2fcf9a8fd6ee4fa36ddd15369e1b6fec2614de40f8a6422b44df7e9fd70db7ea",
+        "metadata_sha256": "8282f15b5f69a1f752f37eaefd6026bbf0d8f99432e88bd1908ce706c2aa503d"
+      },
+      {
+        "tile": "pc_BA31_1000_4440.laz",
+        "run_id": "20261009T231748Z_weak_fixed_pc_BA31_1000_4440_noise_excluded_2875812",
+        "wall_seconds": 3345,
+        "timing_sha256": "e62c37d99847b98e088cd4ac0c57dad505e4da762ad445ae6701bd363365386e",
+        "metadata_sha256": "0a4f4d2c69d764e596177ba36478f48562b1ce1be468d6e393c1900b319dbb03"
+      },
+      {
+        "tile": "pc_BA31_1000_4538.laz",
+        "run_id": "20261010T001402Z_weak_fixed_pc_BA31_1000_4538_noise_excluded_2898915",
+        "wall_seconds": 2940,
+        "timing_sha256": "9f2c865f9478b6128ac9990e4ebbe794746c1b597e926347eea916c1f3b62413",
+        "metadata_sha256": "8c61bdb08ad07e295c1f5940ad5f97444c70f9a2ff3cc63ce13d9ce5a2de17d9"
+      },
+      {
+        "tile": "pc_BA32_1000_2602.laz",
+        "run_id": "20261010T010341Z_weak_fixed_pc_BA32_1000_2602_noise_excluded_2922316",
+        "wall_seconds": 3021,
+        "timing_sha256": "b64e808596a9239097c21f258c0a3ba800a9ea7b265d1f90961d5e1006a0a7bf",
+        "metadata_sha256": "17aee73ec971ac4654344f439d4f4bf7463e34b4d5f2583aae62562ebb44363a"
+      },
+      {
+        "tile": "pc_BA32_1000_3009.laz",
+        "run_id": "20261010T015432Z_weak_fixed_pc_BA32_1000_3009_noise_excluded_2945432",
+        "wall_seconds": 3476,
+        "timing_sha256": "383202fc12a1196ac6c5fd344d529443e9c94eaa46f59cd03a604076d601ff6e",
+        "metadata_sha256": "56f24d22c41b595b2e47b7c613385653307c5fb2053d1a3f869736b267ee1577"
+      },
+      {
+        "tile": "pc_BA32_1000_3311.laz",
+        "run_id": "20261010T025300Z_weak_fixed_pc_BA32_1000_3311_noise_excluded_2968517",
+        "wall_seconds": 2206,
+        "timing_sha256": "98149bbaf980a7f736e3facfffa5e18c147c983fada8fefff947d6c615a3895c",
+        "metadata_sha256": "770cfe165c6ce1ab92923c2e638669f037b8029572a681cd0018ec06f8b6475e"
+      },
+      {
+        "tile": "pc_BA32_1000_3602.laz",
+        "run_id": "20261010T033006Z_weak_fixed_pc_BA32_1000_3602_noise_excluded_2983779",
+        "wall_seconds": 3275,
+        "timing_sha256": "4db4eef4f07ee73b2952a0ae09750b285142f4f993f628c482e0e93d8a468ec8",
+        "metadata_sha256": "b7de0f514760b9c16050486286e0b92b80647b9332476754c49822bedd0375f9"
+      },
+      {
+        "tile": "pc_BA32_1000_3606.laz",
+        "run_id": "20261010T042505Z_weak_fixed_pc_BA32_1000_3606_noise_excluded_3006844",
+        "wall_seconds": 2815,
+        "timing_sha256": "bb1800aed2f5b809b86d2daf9fc14022c6fad86843ac23e36afc704a076b20cb",
+        "metadata_sha256": "e6f31eeb7207255c8682ad00c69da3232382c0293070808c3fde72c05cf603aa"
+      },
+      {
+        "tile": "pc_BA32_1000_4204.laz",
+        "run_id": "20261010T051218Z_weak_fixed_pc_BA32_1000_4204_noise_excluded_3029948",
+        "wall_seconds": 4277,
+        "timing_sha256": "dba399ed327b51bc855a331918b80e00ff45957ea8c6e777d0fb2e84704dc1dc",
+        "metadata_sha256": "7292babe9a20f11b9bdfcf1a61a4f0e8149afc52d76ed497b16f1d43a6ce7af2"
+      },
+      {
+        "tile": "pc_BA32_1000_4234.laz",
+        "run_id": "20261010T062428Z_weak_fixed_pc_BA32_1000_4234_noise_excluded_3053135",
+        "wall_seconds": 3811,
+        "timing_sha256": "82453661b1c3bdfe4446e0d2c0b4505915cca2c9894cbf2c5960e5f24ea8924c",
+        "metadata_sha256": "3f0de13acfa9fe3475f772c077cf24fe8a160b16d96aac435e66ffa196270634"
+      },
+      {
+        "tile": "pc_BA32_1000_4235.laz",
+        "run_id": "20261010T072827Z_weak_fixed_pc_BA32_1000_4235_noise_excluded_3076032",
+        "wall_seconds": 1928,
+        "timing_sha256": "46fe996a918efb61f3ccd56244edfadca6f68711f0f71f25606d94d1f8376140",
+        "metadata_sha256": "4b67487b9f5d27491ab45c89daf5cc9785185f5b0ccbb58435ac36f8b9aaef0d"
+      },
+      {
+        "tile": "pc_BA32_1000_4843.laz",
+        "run_id": "20261010T080049Z_weak_fixed_pc_BA32_1000_4843_noise_excluded_3092557",
+        "wall_seconds": 2881,
+        "timing_sha256": "d7291a4d7a763865d03683163b4a1e138159f85502c9fa58cc0424520b1934bb",
+        "metadata_sha256": "bb38f64ed79726636cc4c8c9d1dd47381f8d5b50c863dabb9afcbaf4867dad26"
+      },
+      {
+        "tile": "pc_BB31_1000_2120.laz",
+        "run_id": "20261010T084919Z_weak_fixed_pc_BB31_1000_2120_noise_excluded_3115770",
+        "wall_seconds": 5546,
+        "timing_sha256": "27e78726142577ef2129242d0c6f6ad6b3295c91f2bdebb77cc225623009a564",
+        "metadata_sha256": "f6c054600a944f1832ecdf0939c248a5ea54a0bbd1f9918c2941fafcfe425edf"
+      },
+      {
+        "tile": "pc_BB32_1000_0136.laz",
+        "run_id": "20261010T102217Z_weak_fixed_pc_BB32_1000_0136_noise_excluded_3138876",
+        "wall_seconds": 4896,
+        "timing_sha256": "2834a1a77c425bb37f7d9ec09416f941c8f597a4e7f6af44e0879dcb16ba0865",
+        "metadata_sha256": "5a908a8cc71cb6f300712d5a266ff8c632b7f28c85fac561bf998025dbe787d4"
+      },
+      {
+        "tile": "pc_BB32_1000_1524.laz",
+        "run_id": "20261010T114426Z_weak_fixed_pc_BB32_1000_1524_noise_excluded_3162037",
+        "wall_seconds": 3202,
+        "timing_sha256": "a7f2e6804638a9a0c4724d5f071c460e9148ca351b3834e3b2c273a1481dcd02",
+        "metadata_sha256": "24919c565484b2400191731e436f8b20b76de631fe00f64fc1faa89e20aa7ed8"
+      }
+    ],
+    "includes": "container, preprocessing, inference, postprocessing and I/O",
+    "excludes": "training, coordinate audit, site assembly, staging, idle and environment setup"
+  },
+  "classical": {
+    "run_id": "20261009T183429Z_confirmed_classical_h3_predictions_rebound_2762598",
+    "wall_seconds": 612,
+    "timing_sha256": "2caf6f12a8fc695fb9e998f6d8f87a15666fea3ead8dcada1a6c96fce22ad3dd",
+    "metadata_sha256": "01621876b87fc52f234bdc639ab4d8f596e1b517e36d5879675e97724c4f5226",
+    "selected_grid_envelope_union_km2": 22.020096,
+    "wall_hours_per_grid_envelope_km2": 0.007720220656622025
+  },
+  "billing_rate": null,
+  "service_units": null,
+  "billed_GPU_hours": null,
+  "limits": [
+    "Raw tile-header rectangles are a technical coverage proxy.",
+    "Classical chunks contain nodata and have different support from SAT tiles.",
+    "GPU allocated wall time does not measure active CUDA kernel time."
+  ],
+  "queue_sha256": "485e09ed76538d696120cd6292a61374d70dfd2a33914046f0e602a8303e35bc",
+  "coverage_plan_sha256": "1bd9dc05e647b07b79a42ae3984433a9d2f6cb62bde37536654122b77a47e271",
+  "classical_plan_sha256": "dfaa74ba2dc4a08ff6966291ae1db1e50d122d9899e66d3f63e60297c9a59362"
+}

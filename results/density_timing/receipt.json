@@ -1,0 +1,1119 @@
+{
+  "scope": "Successful prediction-wrapper allocation throughput; not provider billing, CUDA-kernel time or area-matched classical/GPU cost",
+  "source_sha256": "bba3aafce2ac12449ab2415b75448420d6069659aba76ac4f40e0ec082c4da6f",
+  "full_density_cost_sha256": "f7e0a2fe1718221a784cf141b0493749f733047132665eb3ab55541783514c50",
+  "queue_sha256": {
+    "0.75": "1524769b81f462ed3b7d3e19b981bafec5629bbac1cea63de80c4e3993c6e001",
+    "0.5": "47e813b2e8ae70f310ea521f7d338017c12f230aac5dcf1765766c65a964026c",
+    "0.25": "abeaf388dd268756566520f7c382deb5149307f8ae8cb79a60ee689a01a258a8",
+    "0.125": "db2515861a1e27e13ef92595135d5de5d74fe3151f075abd6b060838e83d052b"
+  },
+  "script_sha256": "102f7f1b718c238162a66e518a81f9dab201e15af0fe974edfc35f2cf3dbb6c3",
+  "results": [
+    {
+      "fraction": 0.75,
+      "tiles": 19,
+      "wall_seconds": 60723,
+      "allocated_device_wall_hours": 16.8675,
+      "raw_header_envelope_union_km2": 6.475304080000035,
+      "allocated_device_wall_hours_per_header_envelope_km2": 2.604896973425209,
+      "runs": [
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA31_1000_4121.laz",
+          "run_id": "20261007T023742Z_sat_pretrained_pc_BA31_1000_4121_training_tile_1031079",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4121/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4121/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3102,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "10503a15ecb5e208d2aee0baf73ab0ec78e0a8d1f54751bc1ed87f6beb432ebd",
+          "metadata_sha256": "3e1a29416b1ef575ec4dfee512fda4244e659bc9dccfb182f1e52cadca57262b"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA31_1000_4221.laz",
+          "run_id": "20261007T032943Z_sat_pretrained_pc_BA31_1000_4221_training_tile_1054500",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4221/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4221/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3851,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "0ab2e78eb546cdfb41828a727352f50faacf9f172708799513ed384a50ca28ad",
+          "metadata_sha256": "4ca40b813634a79cfef08828e7367f95e8015fba5a6bacb56dabae52614aa256"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA31_1000_4349.laz",
+          "run_id": "20261007T043422Z_sat_pretrained_pc_BA31_1000_4349_training_tile_1078482",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4349/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4349/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3569,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "04ee167f7ec0efc1a50f71b890bda7321f747ad4eee81f7e55df8f0f5ff1e831",
+          "metadata_sha256": "38485bec51bb948b2fa50ee6032288d2bfa2e3bd631f1d4054707e244b7bfdcc"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA31_1000_4350.laz",
+          "run_id": "20261007T053424Z_sat_pretrained_pc_BA31_1000_4350_training_tile_1101835",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4350/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4350/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3699,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "a22a5d8d80d55bf487b19bbc889958e74d213efea5c0e7550ed142d5a4d5157d",
+          "metadata_sha256": "4638779b0995ca3c1a9767a87684d203c81c9d466540ed8bb3a09cb450b79daf"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA31_1000_4439.laz",
+          "run_id": "20261007T063635Z_sat_pretrained_pc_BA31_1000_4439_training_tile_1125450",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4439/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4439/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2538,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "6904bd4d0319265444a0af25c3ebaaf462fa771f56659c58d0b5c8661776d111",
+          "metadata_sha256": "dbb27fe39ed0c398d5f802d6fcf553b9730e96cebb4015eb9fff7c0f225f2701"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA31_1000_4440.laz",
+          "run_id": "20261007T071910Z_sat_pretrained_pc_BA31_1000_4440_training_tile_1148802",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4440/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4440/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3252,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "3334d353e53e428a6934b91323789809bf3ca987616137f56c47cdba11edb57c",
+          "metadata_sha256": "1dc7e04b5ce86fd849e67f36963e1c992200ff44a258a5d0b41e07a4676edfa6"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA31_1000_4538.laz",
+          "run_id": "20261007T081345Z_sat_pretrained_pc_BA31_1000_4538_training_tile_1172166",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4538/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA31_1000_4538/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2862,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "5094aad29eb2082191374d7a5cf2fbf8682140afd254998a0e5d75a50b378a15",
+          "metadata_sha256": "ef9b7afb14365ed1c1af2edab24272624b685428bca2c790d649aa4722d116bd"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA32_1000_2602.laz",
+          "run_id": "20261007T090156Z_sat_pretrained_pc_BA32_1000_2602_training_tile_1195340",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_2602/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_2602/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2902,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "886da7ec134ca644eb90270a11867f4640ae674e4d760aece7c98aba8ccf5a94",
+          "metadata_sha256": "7fa7379077fdca20646102c6fcc99b30839726f6ff51c6fa643a332eb2df4f7a"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA32_1000_3009.laz",
+          "run_id": "20261007T095041Z_sat_pretrained_pc_BA32_1000_3009_training_tile_1218644",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_3009/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_3009/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3378,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "01ce9b7564be64ffcd025e96ab73a905e893ee6c6045d88db84289fabf557793",
+          "metadata_sha256": "84f822a72e2471a315ef13ed118a0bd601a5def20bda51a6b605e3dabf78f3c1"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA32_1000_3311.laz",
+          "run_id": "20261007T104725Z_sat_pretrained_pc_BA32_1000_3311_training_tile_1241922",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_3311/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_3311/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 1951,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "b4dd07568b9a7c4c105213e9e9dc73f7d0e7c5e3fd898aef678ddc8d7ab01499",
+          "metadata_sha256": "70fc9a4a31fa2042128a0c2d740ed4cc15edb1cc3f2164017c06c283d01a3a9e"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA32_1000_3602.laz",
+          "run_id": "20261007T112010Z_sat_pretrained_pc_BA32_1000_3602_training_tile_1257316",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_3602/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_3602/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2977,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "ce52bb8dfdd4a4f5a75d01443e347d62039cacbc49163e269999d1e2d4ca7a22",
+          "metadata_sha256": "7c383968f27c4cde8e5ebd7b21fc68d496bf782a009fe0b504670dbb4dfc7aac"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA32_1000_3606.laz",
+          "run_id": "20261007T121007Z_sat_pretrained_pc_BA32_1000_3606_training_tile_1280607",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_3606/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_3606/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2583,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "e839f4e49976550df2f84cfbdb248142fb6c107736d85a7afbdc5361e06b29bb",
+          "metadata_sha256": "44af404a59d99aabaed91e27badb715094ced14221ce13e58d33d7908b60f1cd"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA32_1000_4204.laz",
+          "run_id": "20261007T125325Z_sat_pretrained_pc_BA32_1000_4204_training_tile_1304495",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_4204/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_4204/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3813,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "3b91721bda0c3446824bb275f26c55542a7edf7c9b724369207fac486d35d3bf",
+          "metadata_sha256": "a4e47f1d5c8aad59edce3c75b57293cd5886370f0e27523741fae54e8a530969"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA32_1000_4234.laz",
+          "run_id": "20261007T135731Z_sat_pretrained_pc_BA32_1000_4234_training_tile_1328102",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_4234/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_4234/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3198,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "b31b91e3e4b01e37bead7dec691af115bebb35bb51375ebd47ade7f3fd970bb0",
+          "metadata_sha256": "5cb9e1bf12d24cd39f496ed4069051fd4a2b87b47561322536ee443f5452108f"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA32_1000_4235.laz",
+          "run_id": "20261007T145109Z_sat_pretrained_pc_BA32_1000_4235_training_tile_1351215",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_4235/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_4235/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 1751,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "345ef7174c0329f5bcfaababd0158e67f18f108bd0be13796e9ac7e6b7080276",
+          "metadata_sha256": "c59d4ed8bbdc4019c11e74bd5dab0bf6110353695bd7f573b27054b3d2377b57"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BA32_1000_4843.laz",
+          "run_id": "20261007T152032Z_sat_pretrained_pc_BA32_1000_4843_training_tile_1367280",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_4843/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BA32_1000_4843/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2719,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "4eb3ead6d9e1f42461c7ae617981d649e34c5de947ba41b6c8eaadf9c81964d3",
+          "metadata_sha256": "80d570f527e474750f4b6a54593bf8e1e828c78ba256ca2bcc8fac40ca88cfe8"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BB31_1000_2120.laz",
+          "run_id": "20261007T160613Z_sat_pretrained_pc_BB31_1000_2120_training_tile_1390635",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BB31_1000_2120/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BB31_1000_2120/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 5027,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "8ff81caeb993e4ffe1c2c84f0eac0006a39d4d6ba8746c724f2d9c878897dba3",
+          "metadata_sha256": "acd4775b416f4a88b103fc86e3627f00ad5ba9fc05d672e30da719a3af324a4f"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BB32_1000_0136.laz",
+          "run_id": "20261007T173024Z_sat_pretrained_pc_BB32_1000_0136_training_tile_1419032",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BB32_1000_0136/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BB32_1000_0136/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 4549,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "f69c13345b0b05ce9ea0a530f7eeff9d9567dc8193108dd9efac59bf9a9e7d3d",
+          "metadata_sha256": "116a79b76c74984847006939633f8c1dc4aaff9960f726701aefcd32f73eb357"
+        },
+        {
+          "fraction": "0.75",
+          "tile": "pc_BB32_1000_1524.laz",
+          "run_id": "20261007T184638Z_sat_pretrained_pc_BB32_1000_1524_training_tile_1442377",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BB32_1000_1524/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/pc_BB32_1000_1524/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.75/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3002,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "910fd0f646b7c09f3a9fe6bb636beff8f8ea794cceb243e43c5c2e56b7c94fc0",
+          "metadata_sha256": "ae2e0ce056c9d5c375bc3d299287821e5e829f8420cd7bb1b0c1f45b78cb6450"
+        }
+      ]
+    },
+    {
+      "fraction": 0.5,
+      "tiles": 19,
+      "wall_seconds": 55450,
+      "allocated_device_wall_hours": 15.402777777777779,
+      "raw_header_envelope_union_km2": 6.475304080000035,
+      "allocated_device_wall_hours_per_header_envelope_km2": 2.3786956701155715,
+      "runs": [
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA31_1000_4121.laz",
+          "run_id": "20261007T193935Z_sat_pretrained_pc_BA31_1000_4121_training_tile_1468260",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4121/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4121/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2870,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "51626f74c6bc39d43a9708ab1c49c20463bc36a65dd31c38c2d74e5ee375d114",
+          "metadata_sha256": "f7dbfa52f2432a6b53aa0fb42bf4845da41602b060192f6bd3a25b0218661c62"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA31_1000_4221.laz",
+          "run_id": "20261007T202740Z_sat_pretrained_pc_BA31_1000_4221_training_tile_1491629",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4221/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4221/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3442,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "a34d537b01f6ddbc7374ccffecaafe632aefbf1aaa4a59284bc7ad3d86c6061b",
+          "metadata_sha256": "6a3cb6f0adf9939e7717ef2e5c587306994b66ae5c484bd9589a2e62f43df883"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA31_1000_4349.laz",
+          "run_id": "20261007T212522Z_sat_pretrained_pc_BA31_1000_4349_training_tile_1515012",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4349/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4349/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3317,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "0b9d06aecc1a4c7b159e298ef01321f8f5760c61ea233d7a370099fa85a67dda",
+          "metadata_sha256": "db277775a6d284147e901cae59496168eecb972a1abb9c439c1cb706e16ff6a7"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA31_1000_4350.laz",
+          "run_id": "20261007T222100Z_sat_pretrained_pc_BA31_1000_4350_training_tile_1538362",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4350/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4350/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3455,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "d1dc4c9c41b15aec00c0dff95751595489af5f6e688b5e0f6f9fa4da1bebb0df",
+          "metadata_sha256": "e34d7418181cd3baa63be46933ed349a1600779f346688ad719e2192fdea20c2"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA31_1000_4439.laz",
+          "run_id": "20261007T231858Z_sat_pretrained_pc_BA31_1000_4439_training_tile_1561987",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4439/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4439/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2552,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "89bd1cc35805fa5088eca69188ffc323495daee58cb0317b6845ff4a73e548a1",
+          "metadata_sha256": "4d2143b55236ef6e1474602b22f6fcf904a589ddfdf055185f1de65ab50bc3b8"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA31_1000_4440.laz",
+          "run_id": "20261008T000143Z_sat_pretrained_pc_BA31_1000_4440_training_tile_1585398",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4440/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4440/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2978,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "3a708c2244968bea6fdf3bec31a7407818859f174401d7ded2cb1f55b1815510",
+          "metadata_sha256": "fef9f080790939f11eb09778aa107fd7ed6828b614b3bcc4119bf0144dea5ea8"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA31_1000_4538.laz",
+          "run_id": "20261008T005138Z_sat_pretrained_pc_BA31_1000_4538_training_tile_1608857",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4538/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA31_1000_4538/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2648,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "f4c4ffe51c0a43974b457932ffd48459a348558b0baf3676e990af142bab283b",
+          "metadata_sha256": "d96921e9bb8210836e0527e69b72255f8adeb69871a59ffafdc4cace022b0f96"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA32_1000_2602.laz",
+          "run_id": "20261008T013607Z_sat_pretrained_pc_BA32_1000_2602_training_tile_1631959",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_2602/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_2602/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2694,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "816a3850e29239b8403526b39db4d8e2c20f9012ee3905cb3e57211604345e64",
+          "metadata_sha256": "c8b8c92c1f652101407d35b78cdbd80074d169f023b8de1068930f2165c6489c"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA32_1000_3009.laz",
+          "run_id": "20261008T022118Z_sat_pretrained_pc_BA32_1000_3009_training_tile_1655211",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_3009/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_3009/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3055,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "3ac788ef64f6c6ba609a8d74e05cbcd1092e77155633e4406b8d95722df2ef7a",
+          "metadata_sha256": "63389c136c2d4c55f6e314ed80285a1207123962e0da53ed8c47447098369bb8"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA32_1000_3311.laz",
+          "run_id": "20261008T031230Z_sat_pretrained_pc_BA32_1000_3311_training_tile_1678688",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_3311/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_3311/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 1833,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "61d4ce0cea1c38d296f918d6946300cdcc76a4efc48e01eae075863b4a77a9eb",
+          "metadata_sha256": "52415881851cba9e6a73ca5d09b861cbf57b9ef9bf649257fee9fbde82ad3181"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA32_1000_3602.laz",
+          "run_id": "20261008T034315Z_sat_pretrained_pc_BA32_1000_3602_training_tile_1694016",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_3602/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_3602/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2873,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "fa74c87335f7950db55b6adbbabe6993152fd09ccb9a6969b32fd383b822f0af",
+          "metadata_sha256": "1b4b16087b87da14ea2a0989506a0eeb9b60b83715177c082dc9187d081750e3"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA32_1000_3606.laz",
+          "run_id": "20261008T043122Z_sat_pretrained_pc_BA32_1000_3606_training_tile_1717327",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_3606/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_3606/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2608,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "3b141cc60ea3153bfceaac8e9e6559ee03f50334f07b0737d6ca325183898a59",
+          "metadata_sha256": "311a96ff61255a304292ea1f82bf9df41f5be04b88d5d67213bf8b30889920a9"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA32_1000_4204.laz",
+          "run_id": "20261008T051501Z_sat_pretrained_pc_BA32_1000_4204_training_tile_1740769",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_4204/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_4204/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3352,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "b0dc80367b8626b0be1ae302d862beb7f09792f512b5777a4b2bfa623e2baab4",
+          "metadata_sha256": "399dd0ccd37ceee248c4f8de26c82f7648255a4642b6cb03ddb719ae9b162e05"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA32_1000_4234.laz",
+          "run_id": "20261008T061116Z_sat_pretrained_pc_BA32_1000_4234_training_tile_1764127",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_4234/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_4234/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2878,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "e6c9eb71ab3a3b23489812efcc91c52922db91e365b7dc78f1743eb7dabc6165",
+          "metadata_sha256": "2539f3afea4cca87fe5306e4ae42d333a101cabfbfecae7f9cb869a82b163087"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA32_1000_4235.laz",
+          "run_id": "20261008T065930Z_sat_pretrained_pc_BA32_1000_4235_training_tile_1787075",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_4235/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_4235/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 1590,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "954715178cb0ba356fe5c6f4439a6ef3cd6a67fc126ce062ab81815ab577da88",
+          "metadata_sha256": "c5e284161a966ee4477e05c91b25f7545fd2756d7d48a12db40471e66e97bbf0"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BA32_1000_4843.laz",
+          "run_id": "20261008T072610Z_sat_pretrained_pc_BA32_1000_4843_training_tile_1802261",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_4843/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BA32_1000_4843/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2478,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "42c5d9a9b58e3269b40786719442de122010d6da230467b4fd5bb74e45316875",
+          "metadata_sha256": "919ef2c8fcee18bc409097d44eff6cbda6faee6893d06e4c69c58f874ba1e2e8"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BB31_1000_2120.laz",
+          "run_id": "20261008T080745Z_sat_pretrained_pc_BB31_1000_2120_training_tile_1825572",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BB31_1000_2120/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BB31_1000_2120/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 4195,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "2ad0c6288890db83d33dd65c0078fbdecf03b4496dd680a0efa29bc2ed37a9a8",
+          "metadata_sha256": "9a5a0e11463bf1dac332f746fe431f8a52a2adf14101f969145b4f2e301c362f"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BB32_1000_0136.laz",
+          "run_id": "20261008T091756Z_sat_pretrained_pc_BB32_1000_0136_training_tile_1849141",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BB32_1000_0136/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BB32_1000_0136/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3970,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "d02c223bd354acf1a995e919edfd51146a8edd795dd7916082f691f49b2febc1",
+          "metadata_sha256": "90fbe3c821d213818146ea5b3c026e8d920ead8e2f627b3574ac1515c849fc7a"
+        },
+        {
+          "fraction": "0.5",
+          "tile": "pc_BB32_1000_1524.laz",
+          "run_id": "20261008T102425Z_sat_pretrained_pc_BB32_1000_1524_training_tile_1872692",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BB32_1000_1524/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/pc_BB32_1000_1524/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.5/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2662,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "3810243c9aea863d5d147d789791513c77efbc724af84152572ae5a43102df1e",
+          "metadata_sha256": "357ff625a8cac4072cc9e5b6756bb3edf10950bd6c629741feb166ce627da0de"
+        }
+      ]
+    },
+    {
+      "fraction": 0.25,
+      "tiles": 19,
+      "wall_seconds": 50146,
+      "allocated_device_wall_hours": 13.929444444444444,
+      "raw_header_envelope_union_km2": 6.475304080000035,
+      "allocated_device_wall_hours_per_header_envelope_km2": 2.1511645279281413,
+      "runs": [
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA31_1000_4121.laz",
+          "run_id": "20261008T111124Z_sat_pretrained_pc_BA31_1000_4121_training_tile_1898613",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4121/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4121/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2674,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "61cda4d3c98f0b945d1cfb9f80da5ef55affb406572b345d6f1382c538706d32",
+          "metadata_sha256": "213ec437a5b10e74a3ae51fc12b40c5cf8456c8c9dbc3f537daa4b1226d5e079"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA31_1000_4221.laz",
+          "run_id": "20261008T115608Z_sat_pretrained_pc_BA31_1000_4221_training_tile_1922090",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4221/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4221/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3009,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "2feba63e5a6f27790f04c59fac5a6f3db799a9ae08ba37ade6cdc4860174d597",
+          "metadata_sha256": "c6fe2f5063c654a5a90eaafccf4c69d81fcb2a8e70bd048999871c070faa2dd7"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA31_1000_4349.laz",
+          "run_id": "20261008T124629Z_sat_pretrained_pc_BA31_1000_4349_training_tile_1945336",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4349/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4349/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2938,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "77e5fd42771c9e7d893930696cde86237bbe75791fa1e613648d385c2f8fe0c6",
+          "metadata_sha256": "d84e348e7c75e9dd1c718ba643908db80863bdae06de00a3e45fa9d5f5f3b87d"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA31_1000_4350.laz",
+          "run_id": "20261008T133540Z_sat_pretrained_pc_BA31_1000_4350_training_tile_1968545",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4350/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4350/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3030,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "c170e586c618d90238a42debfd674eaa5cd489e676cf3b2147bb96b4e5858105",
+          "metadata_sha256": "22bac5a8076bb139a28ac00653f22067a42d9bb138b594944709b97ce932f416"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA31_1000_4439.laz",
+          "run_id": "20261008T142623Z_sat_pretrained_pc_BA31_1000_4439_training_tile_1991765",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4439/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4439/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2429,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "751c2af7a8b589370256a568869b64e89dd29ac665366be83bd030f4c3f16878",
+          "metadata_sha256": "5b54954db4b3d5fc097dac82d10ccb44ea1a78614f9d6b7416493863802e7341"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA31_1000_4440.laz",
+          "run_id": "20261008T150701Z_sat_pretrained_pc_BA31_1000_4440_training_tile_2014968",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4440/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4440/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2758,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "95eae4a8931ad9650fd64f9c7b1600fa4a0a18169921f4885d06870799d8ea71",
+          "metadata_sha256": "d1c3ffb9da7ec390e577ff9be4e63721e50946baa3fca56665a8b941b8906f58"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA31_1000_4538.laz",
+          "run_id": "20261008T155310Z_sat_pretrained_pc_BA31_1000_4538_training_tile_2038376",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4538/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA31_1000_4538/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2507,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "7d35de20e82e10a21f0762c4098b42ad785a4e65a5c5d731d3e5c230173e625d",
+          "metadata_sha256": "976ba3e9e7221168eb8fc5215297cf90179ebe4c3ee0e884fb0a3ed2c7499ca5"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA32_1000_2602.laz",
+          "run_id": "20261008T163510Z_sat_pretrained_pc_BA32_1000_2602_training_tile_2061536",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_2602/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_2602/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2595,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "11a6c62a7d4511cacc274f256a8d88599c8d80bded1cd1c530d90c21312fcd82",
+          "metadata_sha256": "42456fba14952746b86fad7d91879627cc7c782244143301225f75b8322c3e79"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA32_1000_3009.laz",
+          "run_id": "20261008T171836Z_sat_pretrained_pc_BA32_1000_3009_training_tile_2084753",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_3009/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_3009/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2839,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "a5a395275d2e3c351d062b6c28f628a2feedee279068fb39d2afd70084eaa28e",
+          "metadata_sha256": "a4160c50ed5b77ca2a5869798f05438a5f29fbe8651076c53089616c942b5d50"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA32_1000_3311.laz",
+          "run_id": "20261008T180606Z_sat_pretrained_pc_BA32_1000_3311_training_tile_2108124",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_3311/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_3311/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 1730,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "b6b514ae48fe0dd56951aa0322ad0b2433aebb40e2994dbeb7a3715b0b62afee",
+          "metadata_sha256": "971d4f2d8ab0a25a15835fa09c7ea1557376904051c34356ba2dcacb0f127936"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA32_1000_3602.laz",
+          "run_id": "20261008T183504Z_sat_pretrained_pc_BA32_1000_3602_training_tile_2123923",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_3602/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_3602/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2698,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "8f5d79902467da75d2536b0512dcace9294f2004369742e6668c2d50bd1858b6",
+          "metadata_sha256": "c0f27c67eb07ef696833c928b528003235ace8e43e1c8f92680cb04b650141f6"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA32_1000_3606.laz",
+          "run_id": "20261008T192012Z_sat_pretrained_pc_BA32_1000_3606_training_tile_2147232",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_3606/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_3606/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2476,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "0027a50973ad5b1f5b79514f3912c68252fd09538eed389b99c5a32cc2d2c437",
+          "metadata_sha256": "e5b8e83ac115e39b1584c8115f732b690b5f34d9efda34a183543759d0eab656"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA32_1000_4204.laz",
+          "run_id": "20261008T200137Z_sat_pretrained_pc_BA32_1000_4204_training_tile_2170656",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_4204/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_4204/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2998,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "db5fae12c70caed8236cf7dd9126e2a1ef7e790fa069576cbaad5caeb6b1d3e6",
+          "metadata_sha256": "88f3b367009e368764074bf3658182d7d7c58892afd1f2bae5f37eedbdc39a4a"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA32_1000_4234.laz",
+          "run_id": "20261008T205149Z_sat_pretrained_pc_BA32_1000_4234_training_tile_2193908",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_4234/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_4234/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2566,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "06c87ddac2f6699257830401e72b590038b00182d2f24f5e1bf22fdba29dc627",
+          "metadata_sha256": "9dbc1439c5a78528ec7911edd0ee7654a517bfe417dd9932ce9ff534234a834f"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA32_1000_4235.laz",
+          "run_id": "20261008T213445Z_sat_pretrained_pc_BA32_1000_4235_training_tile_2216302",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_4235/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_4235/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 1413,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "2a8aa8973e9ab47ab2caa1786f20323aad760c8c70ccac0c365910da6a6e2d06",
+          "metadata_sha256": "c5c19c04be03252b131cbfa48e6272260bee55cc848c74c87cf5c889c90de815"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BA32_1000_4843.laz",
+          "run_id": "20261008T215825Z_sat_pretrained_pc_BA32_1000_4843_training_tile_2229821",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_4843/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BA32_1000_4843/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2510,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "450d34bd775756e2c7fe2353838f06c9b6021824a9ababa657c782ff98346ea3",
+          "metadata_sha256": "61cf5643e7a59619fb5260f83305d6a18395310e5afbd027f666703a3b428f65"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BB31_1000_2120.laz",
+          "run_id": "20261008T224027Z_sat_pretrained_pc_BB31_1000_2120_training_tile_2253124",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BB31_1000_2120/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BB31_1000_2120/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3330,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "7b749276f03ae86948bea972c921b8fa867cdd98bef9ed823e10d55f7f25f496",
+          "metadata_sha256": "8da518fd10015f55752879815fa7f443e5d95990ea46d8bdfbb7d2448e459e5a"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BB32_1000_0136.laz",
+          "run_id": "20261008T233608Z_sat_pretrained_pc_BB32_1000_0136_training_tile_2276581",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BB32_1000_0136/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BB32_1000_0136/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 3264,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "ac5a312e97dc5720f90e34440b2382f8cbfc7328b5454a927c21f3e2cdfcf4a2",
+          "metadata_sha256": "3ff9b9bcfc7d3e57adffc44216a785d74999711077686300cdd48e54e622af98"
+        },
+        {
+          "fraction": "0.25",
+          "tile": "pc_BB32_1000_1524.laz",
+          "run_id": "20261009T003044Z_sat_pretrained_pc_BB32_1000_1524_training_tile_2299866",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BB32_1000_1524/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/pc_BB32_1000_1524/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.25/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2382,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "c5510a7ae05c1bec1711e70586850d15cd2ffbf04df1e2ece5bd8748231057e6",
+          "metadata_sha256": "7661331573a17907dd355b19aaa9fddcb7a19f33824776835948a8a11e588fb6"
+        }
+      ]
+    },
+    {
+      "fraction": 0.125,
+      "tiles": 19,
+      "wall_seconds": 46690,
+      "allocated_device_wall_hours": 12.969444444444445,
+      "raw_header_envelope_union_km2": 6.475304080000035,
+      "allocated_device_wall_hours_per_header_envelope_km2": 2.0029089420684585,
+      "runs": [
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA31_1000_4121.laz",
+          "run_id": "20261009T011245Z_sat_pretrained_pc_BA31_1000_4121_training_tile_2325510",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4121/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4121/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2413,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "1215b8d746cd5ee1a4006c595a34945ccaad90bf455443a887f7e9ed0a11430c",
+          "metadata_sha256": "a30630869fb01350b9001b9614850f96ccc93365166915bef3527ab964c0ee35"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA31_1000_4221.laz",
+          "run_id": "20261009T015306Z_sat_pretrained_pc_BA31_1000_4221_training_tile_2348717",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4221/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4221/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2739,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "02b8eef7cb2e68ab76f8700aa3cb80623f021a45b11179abdddfe8556cea4e2a",
+          "metadata_sha256": "5d6d4be35d73d46b58abd64fc4ce41dc0971962036a777ebba798569ba93788e"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA31_1000_4349.laz",
+          "run_id": "20261009T023854Z_sat_pretrained_pc_BA31_1000_4349_training_tile_2372137",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4349/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4349/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2705,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "a803716adae5028027b8702bac41da5ba95bd30fb55b125df8636a764a0a1050",
+          "metadata_sha256": "38e18de7a2b754f700943cddb7bf4fcfdd6f6509ecfc1ee7cc5f4adf825cb272"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA31_1000_4350.laz",
+          "run_id": "20261009T032408Z_sat_pretrained_pc_BA31_1000_4350_training_tile_2395542",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4350/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4350/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2745,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "2e64fe05f254af76255fcb837f7c9cc15ce7d161cbb1f1c318890b939bb2659d",
+          "metadata_sha256": "93bca01178ba7e64e58c62e66d9fab5d7baa6a92ee199f5940e67e681eb46ba0"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA31_1000_4439.laz",
+          "run_id": "20261009T041003Z_sat_pretrained_pc_BA31_1000_4439_training_tile_2418761",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4439/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4439/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2261,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "ecaf3aa7125b52b3c75ff3c8da0ece943e7116ef3bb4da7140f67b3211c7ecf6",
+          "metadata_sha256": "ce630353b3a188ae15c51426e54ed9acb0b6e0698f32bdc1073a499ec6bd149b"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA31_1000_4440.laz",
+          "run_id": "20261009T044751Z_sat_pretrained_pc_BA31_1000_4440_training_tile_2441936",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4440/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4440/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2571,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "f240db651cfbaaa296ce7bbb0be9738f496a94dde1172cb82f27ece1aca5f678",
+          "metadata_sha256": "034c3cd68a7f390081dc96c2e10a1842d0e4212aae98e0d37ba658cf86166709"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA31_1000_4538.laz",
+          "run_id": "20261009T053050Z_sat_pretrained_pc_BA31_1000_4538_training_tile_2465346",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4538/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA31_1000_4538/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2524,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "c64807237a9d6589c24d91318a87f997eafabafc1e0856bd0a776df5210b489b",
+          "metadata_sha256": "5a5fe1645e07b4566677ce1ea7434c0195934a371dfceb216da73d9a36c9f8de"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA32_1000_2602.laz",
+          "run_id": "20261009T061303Z_sat_pretrained_pc_BA32_1000_2602_training_tile_2488531",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_2602/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_2602/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2464,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "119a344c18e95c071939d1535d387db8b5d6f33f59b566e5fdbec2d041cbef5a",
+          "metadata_sha256": "c38ffeb337b6b2978457830ad866f37e4f5e9aa1f0a1f9c5573b255558a16fa3"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA32_1000_3009.laz",
+          "run_id": "20261009T065415Z_sat_pretrained_pc_BA32_1000_3009_training_tile_2511773",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_3009/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_3009/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2633,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "fc6c11056bb545915abf2dd0532c2744f4da517188b59afd02f696f3e4a3722a",
+          "metadata_sha256": "b69b28729c0a67aecf9d69891a1b47cd8a8097511ec3cf493924be524dda14c1"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA32_1000_3311.laz",
+          "run_id": "20261009T073816Z_sat_pretrained_pc_BA32_1000_3311_training_tile_2535025",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_3311/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_3311/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 1584,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "e67d9dd3ce8e2c4d06b9f7bca498ffb8a96bf217a66c8c44dabe7e8029153475",
+          "metadata_sha256": "5632968f9048124547310e90e31c75b22ce3b312a51ffe7bd4ce17a06920d711"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA32_1000_3602.laz",
+          "run_id": "20261009T080447Z_sat_pretrained_pc_BA32_1000_3602_training_tile_2550121",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_3602/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_3602/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2531,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "ef512fc81c09687e579aaf351d0c42ab64e47149587c1eeea471ac78bb36fed0",
+          "metadata_sha256": "b7dcab038080cfd219199a195e04ab8a49434f170bd91a62e4144783bb0fe330"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA32_1000_3606.laz",
+          "run_id": "20261009T084705Z_sat_pretrained_pc_BA32_1000_3606_training_tile_2573284",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_3606/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_3606/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2402,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "1afa3ff523ee74485c60821d95b85a0f76c9dd664739d229d3d0546ff5277014",
+          "metadata_sha256": "88c030666335f7f0a08c9499151408cc2143429545501eeeb0f9f7b6396775d9"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA32_1000_4204.laz",
+          "run_id": "20261009T092714Z_sat_pretrained_pc_BA32_1000_4204_training_tile_2596439",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_4204/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_4204/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2893,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "1ca03fee9789affc43e7887bd22eb3a36b420fb033c87a23d2ed77502f9272d5",
+          "metadata_sha256": "466eab20cde1312ad5468c93a2310f7f843ab9439a8e7b4c3c3e88d98236ba51"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA32_1000_4234.laz",
+          "run_id": "20261009T101537Z_sat_pretrained_pc_BA32_1000_4234_training_tile_2619686",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_4234/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_4234/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2463,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "1568a4d264967945cf4b4a92a12fde5e6f2556020c6e7102e6a56400a1ec06ec",
+          "metadata_sha256": "47e9ffbef68ca0df4f126d61a4887d6966560beebd7855b61e96ee86620f57ca"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA32_1000_4235.laz",
+          "run_id": "20261009T105648Z_sat_pretrained_pc_BA32_1000_4235_training_tile_2641716",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_4235/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_4235/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 1316,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "f4bc6968a995dead4c7e70dfb5a09d7d927ea9643ee6fff93e4c15e583344785",
+          "metadata_sha256": "01b403022e7cf03dcd9c08779a1bba44683c5a841d534c5c247552e28a0cd8d2"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BA32_1000_4843.laz",
+          "run_id": "20261009T111850Z_sat_pretrained_pc_BA32_1000_4843_training_tile_2654391",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_4843/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BA32_1000_4843/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2460,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "45acdfcf72e22a97a95aef90238d6994398d9a61e52556e74e8fbc90d82bfbae",
+          "metadata_sha256": "dd8407a3dda9409bf3c6b8229fad74f30aa714ca022785abadcb834dfd6df8b5"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BB31_1000_2120.laz",
+          "run_id": "20261009T115959Z_sat_pretrained_pc_BB31_1000_2120_training_tile_2677604",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BB31_1000_2120/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BB31_1000_2120/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2782,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "36b9563f4220b6a01b64adf03bf9bcfc74168bb54117229bd2a9c4757498bd3d",
+          "metadata_sha256": "52b1e3b279989dc00387324d462966eb594d2ebb4325398b20997589e699f56d"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BB32_1000_0136.laz",
+          "run_id": "20261009T124629Z_sat_pretrained_pc_BB32_1000_0136_training_tile_2700802",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BB32_1000_0136/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BB32_1000_0136/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2768,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "62cb4c08c57f906ca04897805bd6bfe1c3959ce6ee8f776ef35dfb284933c3c0",
+          "metadata_sha256": "3e2e705e82fbf520ba37b762cd21c0b7e3977731319fb134958e092c8cb3ffe5"
+        },
+        {
+          "fraction": "0.125",
+          "tile": "pc_BB32_1000_1524.laz",
+          "run_id": "20261009T133245Z_sat_pretrained_pc_BB32_1000_1524_training_tile_2723981",
+          "command": "command: /home/ubuntu/miniforge3/envs/akl-benchmark-prep/bin/python /home/ubuntu/akl-trees-benchmark/scripts/hpc/run_sat_container.py --source /home/ubuntu/SegmentAnyTree --input outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BB32_1000_1524/staging/input_laz --image sha256:fc814e8b230060ea5475b29e2ec7ad01fa1b0e1308116585a7f2ef9f24c82d91 --output outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/pc_BB32_1000_1524/execution --execute --inference-scenario outputs/nectar/20261007T024000Z_fixed_density_transfer/fraction_0.125/inference_scenario.json",
+          "timing": {
+            "wall_seconds": 2436,
+            "exit_code": 0,
+            "resolution_seconds": 1,
+            "scope": "command including tee; environment inventory excluded"
+          },
+          "timing_sha256": "26e6cbd4e98e350da147442dd2885d0d96cd8e32c2f950ddf118573ee95b808b",
+          "metadata_sha256": "b4d3bfb762dd9f9afae5d8d3f39f90f9e44fd5bdb8ac82983c49c2ca98f7bfa9"
+        }
+      ]
+    }
+  ],
+  "output_sha256": "46b83c1afb26028a81216f3666a2e6625326c6a8a78bf4c530060ea696f54536"
+}

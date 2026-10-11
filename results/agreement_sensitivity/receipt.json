@@ -1,0 +1,22 @@
+{
+  "run_id": "20261009T160744Z_annotation_sensitivity",
+  "started_utc": "2026-10-09T16:07:44.863795+00:00",
+  "completed_utc": "2026-10-09T16:07:45.297084+00:00",
+  "exit_code": 0,
+  "xz_sha256": "ac0b681a0ed5b4faaf10098128d3aa7d3f2eeae401a4b99f953a42cb9dc272f4",
+  "tw_sha256": "19f4f8958489cf40aa00aefa0f7c22f3d65dba1b1838a7b98913b7a70d504185",
+  "policy_sha256": "700978b9c049c9597fea8770b24e033d17aa06c8c931dcd9bec3f5aa663f7d56",
+  "script_sha256": "b448e3b5d562d63fda34f87638e2b9460084bd4a8ca09853a18545c9fa864b23",
+  "command": [
+    "scripts/81_analyse_annotation_sensitivity.py",
+    "--xz-json",
+    "outputs/reference_author_review_20261010_completed/crown_labels_XZ_2026-10-10_reviewed.json",
+    "--tim-json",
+    "data/labels/crown_labels_TW_2026-10-09.json",
+    "--output",
+    "outputs/independent_agreement/TW_2026-10-10_completed_sensitivity"
+  ],
+  "primary_policy_changed": false,
+  "annotations_modified": false,
+  "reference_frozen": false
+}

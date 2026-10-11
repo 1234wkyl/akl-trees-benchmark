@@ -1,0 +1,20 @@
+[
+  "/opt/miniconda3/envs/akl-benchmark/bin/python",
+  "/Users/zhangxi/Desktop/791\u9879\u76ee\u6587\u4ef6/Starter_Kit/scripts/05_interrater_agreement.py",
+  "--a",
+  "XZ",
+  "--b",
+  "TW",
+  "--json-a",
+  "outputs/independent_agreement/TW_2026-10-10_completed_review/inputs/XZ_revised.json",
+  "--json-b",
+  "outputs/independent_agreement/TW_2026-10-10_completed_review/inputs/TW_original.json",
+  "--sites",
+  "S016",
+  "S020",
+  "--iou",
+  "0.5",
+  "--post-revision",
+  "--output",
+  "outputs/independent_agreement/TW_2026-10-10_completed_review/agreement.md"
+]

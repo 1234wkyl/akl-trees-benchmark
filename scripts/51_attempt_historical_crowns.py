@@ -77,6 +77,29 @@ def chm_fingerprints(vrt):
     return {'benchmark_manifest_sha256': sha256(manifest_path), 'source_files': fingerprints}
 
 
+def greenness_fingerprints(path):
+    """Bind every TIFF behind a GLI VRT, including CRS and grid validation."""
+    sources = [path.resolve()]
+    if path.suffix.lower() == '.vrt':
+        sources = []
+        for node in ET.parse(path).getroot().iter('SourceFilename'):
+            source = ((path.parent / node.text).resolve()
+                      if node.get('relativeToVRT') == '1' else Path(node.text).resolve())
+            if source.suffix.lower() == '.vrt':
+                raise ValueError('nested greenness VRTs require a flattened, auditable manifest')
+            sources.append(source)
+        if not sources:
+            raise ValueError('greenness VRT has no source rasters')
+    fingerprints = {}
+    for source in sorted(set(sources)):
+        with rasterio.open(source) as raster:
+            if raster.crs is None or raster.crs.to_epsg() != 2193 or raster.res != (1., 1.):
+                raise ValueError('greenness must use the 1m EPSG:2193 grid')
+        fingerprints[str(source)] = {'bytes': source.stat().st_size, 'sha256': sha256(source)}
+    return {'wrapper_sha256': sha256(path), 'source_files': fingerprints,
+            'historical_input_verified': False}
+
+
 def select_grid_cells(global_bbox, cell_size, regions):
     """Select cells from the original global lattice, not a site-local lattice."""
     x0, y0, x1, y1 = global_bbox
@@ -157,41 +180,57 @@ def merge_osm_payloads(payloads):
 
 
 def fetch_current_masks(module, cells, cache, output, subdivisions=1, endpoints=None,
-                        http_method='GET', query_timeout=None):
+                        http_method='GET', query_timeout=None, maxsize_mib=None, server_busy_retries=0):
+    if not 0 <= server_busy_retries <= 3:
+        raise ValueError('bounded server-busy retries must be between 0 and 3')
     attempts = []
 
     def bounded_request(query):
         if query_timeout is not None:
             query = re.sub(r'\[timeout:\d+\]', f'[timeout:{query_timeout}]', query)
+        if maxsize_mib is not None:
+            if maxsize_mib not in {16,32,64,128,256,512}:
+                raise ValueError('unsupported explicit request memory limit')
+            # An admission hint only: incomplete/out-of-memory results are rejected below.
+            limit=f'[maxsize:{maxsize_mib*1024*1024}]'
+            query=(re.sub(r'\[maxsize:\d+\]',limit,query) if '[maxsize:' in query
+                   else query.replace('[out:json]','[out:json]'+limit,1))
         last = None
         for endpoint in endpoints or module.OVERPASS_ENDPOINTS:
-            started = time.monotonic()
-            record = {'endpoint': endpoint, 'started_utc': utc(), 'query': query,
-                      'http_method': http_method}
-            try:
-                transport = {'params' if http_method == 'GET' else 'data': {'data':query}}
-                response = requests.request(http_method, endpoint, **transport,
-                                        headers={'User-Agent': 'akl-trees-benchmark-research/1.0'},
-                                        timeout=(15, 150))
-                record['http_status'] = response.status_code
-                if response.status_code != 200:
-                    record['error_response_excerpt'] = response.text[:2000]
-                response.raise_for_status()
-                data = response.json()
-                if 'elements' not in data or data.get('remark'):
-                    raise ValueError('Overpass response is incomplete or reports an error')
-                record['elements'] = len(data['elements'])
-                record['osm3s'] = data.get('osm3s')
-                return data
-            except (requests.RequestException, ValueError) as exc:
-                last = exc
-                record['error'] = str(exc)
-                print(f'OSM endpoint failed: {endpoint}: {type(exc).__name__}; '
-                      f'HTTP {record.get("http_status", "unavailable")}', flush=True)
-            finally:
-                record['wall_seconds'] = time.monotonic() - started
-                attempts.append(record)
-                write_json(output / 'network_attempts.json', attempts)
+            for attempt in range(server_busy_retries + 1):
+                retry = False
+                started = time.monotonic()
+                record = {'endpoint': endpoint, 'started_utc': utc(), 'query': query,
+                          'http_method': http_method, 'busy_retry_number': attempt}
+                try:
+                    transport = {'params' if http_method == 'GET' else 'data': {'data':query}}
+                    response = requests.request(http_method, endpoint, **transport,
+                                            headers={'User-Agent': 'akl-trees-benchmark-research/1.0'},
+                                            timeout=(15, 150))
+                    record['http_status'] = response.status_code
+                    if response.status_code != 200:
+                        record['error_response_excerpt'] = response.text[:2000]
+                    response.raise_for_status()
+                    data = response.json()
+                    if 'elements' not in data or data.get('remark'):
+                        raise ValueError('Overpass response is incomplete or reports an error')
+                    record['elements'] = len(data['elements'])
+                    record['osm3s'] = data.get('osm3s')
+                    return data
+                except (requests.RequestException, ValueError) as exc:
+                    last = exc
+                    record['error'] = str(exc)
+                    retry = record.get('http_status') in {429,504} and attempt < server_busy_retries
+                    print(f'OSM endpoint failed: {endpoint}: {type(exc).__name__}; '
+                          f'HTTP {record.get("http_status", "unavailable")}', flush=True)
+                finally:
+                    record['wall_seconds'] = time.monotonic() - started
+                    attempts.append(record)
+                    write_json(output / 'network_attempts.json', attempts)
+                if not retry:
+                    break
+                print('Server busy; waiting 30 seconds before retrying the same subrequest', flush=True)
+                time.sleep(30)
         raise RuntimeError(f'all historical Overpass endpoints failed: {last}')
 
     # Query texts and conversion functions remain those in the supplied source.
@@ -220,13 +259,14 @@ def fetch_current_masks(module, cells, cache, output, subdivisions=1, endpoints=
         'requested_endpoints': list(endpoints or module.OVERPASS_ENDPOINTS),
         'uncached_query_http_method': http_method,
         'uncached_query_timeout_override_seconds': query_timeout,
+        'uncached_query_maxsize_mib': maxsize_mib, 'server_busy_retries': server_busy_retries, 'server_busy_wait_seconds': 30,
         'cells': cells, 'files': files, 'building_polygons': len(buildings),
         'nonvegetation_polygons': len(nonveg),
     })
     print(f'Masks ready: {len(buildings)} buildings, {len(nonveg)} nonvegetation polygons', flush=True)
 
 
-def chunk_seeds(conn, cell, halo):
+def chunk_seeds(conn, cell, halo, original_table_order=False):
     x0, y0, x1, y1 = cell
     query = '''SELECT t.tree_id, t.source_primary, t.source_tree_id,
                t.species_common, t.species_latin, t.owner_class,
@@ -236,11 +276,48 @@ def chunk_seeds(conn, cell, halo):
                WHERE l.chm_local_max_2m_m IS NOT NULL
                  AND l.x_2193>=? AND l.x_2193<=?
                  AND l.y_2193>=? AND l.y_2193<=?'''
+    if original_table_order:
+        # The supplied full-inventory query scans tree_lidar_pilot in rowid
+        # order. Preserve it before calling the original chunk-index functions.
+        query += ' ORDER BY l.rowid'
     records = [dict(r) for r in conn.execute(query, (x0-halo, x1+halo, y0-halo, y1+halo))]
     for r in records:
         if not all(math.isfinite(r[k]) for k in ['x_2193', 'y_2193', 'chm_local_max_2m_m']):
             raise ValueError('nonfinite frozen seed')
     return records
+
+
+def historical_chunk_seeds(conn, cell, module, global_bbox):
+    """Replay the supplied spatial-index traversal, including its seed order.
+
+    Sorting by tree ID or distance would introduce a different tie convention.
+    A bounded input retains every seed admitted by the original halo predicate.
+    """
+    records = chunk_seeds(conn, cell, module.CROWN_HALO_M, original_table_order=True)
+    spatial_index = module.index_trees_by_chunk(records, module.CHUNK_SIZE_M, global_bbox)
+    return module.trees_for_chunk(cell, spatial_index, module.CHUNK_SIZE_M, global_bbox)
+
+
+def building_outline_polygons(path, module):
+    """Load an explicitly supplied alternative; never infer an unknown CRS."""
+    outlines = gpd.read_file(path)
+    if outlines.crs is None or outlines.crs.to_epsg() != 2193:
+        raise ValueError('alternative building outlines must declare EPSG:2193')
+    polygons = [module._clean_polygon(geom) for geom in outlines.geometry]
+    polygons = [geom for geom in polygons if geom is not None]
+    if not polygons:
+        raise ValueError('alternative building file has no usable polygons')
+    return polygons
+
+
+def configure_greenness_threshold(module, value):
+    """Apply an explicit global candidate; do not change supplied file bytes."""
+    default = module.CROWN_GLI_THRESHOLD
+    if value is not None:
+        if not math.isfinite(value) or not -1 <= value <= 1:
+            raise ValueError('greenness threshold must be finite and within [-1,1]')
+        module.CROWN_GLI_THRESHOLD = value
+    return default
 
 
 def frozen_crown_rows(conn, sites):
@@ -297,13 +374,27 @@ def run_crowns(args, module, sites, cells, mask_cells, parameters):
                                              args.allow_missing_nonvegetation)
     else:
         buildings, nonveg, masks = [], [], {}
+    building_receipt = None
+    if args.building_outlines:
+        buildings = building_outline_polygons(args.building_outlines, module)
+        building_receipt = {
+            'file':str(args.building_outlines), 'sha256':sha256(args.building_outlines),
+            'provenance':json.loads(args.building_provenance.read_text()),
+            'provenance_sha256':sha256(args.building_provenance),
+            'polygons':len(buildings), 'osm_buildings_used':False,
+            'historical_input_verified':False,
+            'selection_rule':'supplied historical code prefers LINZ outlines over OSM when present',
+        }
+        write_json(args.output / 'alternative_building_input.json', building_receipt)
     exclusions = buildings + nonveg
     missing_masks = {k:v for k,v in masks.items() if v.get('status') == 'MISSING EXPLICITLY OMITTED'}
     write_json(args.output / 'used_mask_manifest.json', {
         'source': args.mask_source, 'files': masks,
         'complete_current_osm_coverage': bool(masks) and not missing_masks,
         'historical_snapshot':False, 'building_polygons':len(buildings),
-        'nonvegetation_polygons':len(nonveg), 'missing_files':missing_masks})
+        'nonvegetation_polygons':len(nonveg), 'missing_files':missing_masks,
+        'alternative_building_input':building_receipt,
+        'osm_building_payloads_used':building_receipt is None and bool(masks)})
     union_sites = unary_union([box(*s['bbox_epsg2193']) for s in sites.values()])
     inventory = {}
     records, chunks = [], []
@@ -311,6 +402,9 @@ def run_crowns(args, module, sites, cells, mask_cells, parameters):
     conn.row_factory = sqlite3.Row
     conn.execute('PRAGMA query_only=ON')
     gli_src = rasterio.open(args.greenness) if args.greenness else None
+    gli_fingerprints = greenness_fingerprints(args.greenness) if args.greenness else None
+    if gli_fingerprints:
+        write_json(args.output / 'greenness_input_manifest.json', gli_fingerprints)
     try:
         with rasterio.open(args.chm) as src:
             if src.crs is None or src.crs.to_epsg() != 2193 or src.res != (1.0, 1.0):
@@ -318,7 +412,9 @@ def run_crowns(args, module, sites, cells, mask_cells, parameters):
             grid = {'crs': src.crs.to_string(), 'resolution': list(src.res),
                     'transform': list(src.transform), 'nodata': src.nodata}
             for i, cell in enumerate(cells, 1):
-                seeds = chunk_seeds(conn, cell, module.CROWN_HALO_M)
+                seeds = (historical_chunk_seeds(conn, cell, module, parameters['original_global_bbox'])
+                         if args.seed_order == 'historical-chunk'
+                         else chunk_seeds(conn, cell, module.CROWN_HALO_M))
                 for seed in seeds:
                     inventory[seed['tree_id']] = seed
                 chm, transform = module.read_chm_window(src, cell)
@@ -388,17 +484,20 @@ def run_crowns(args, module, sites, cells, mask_cells, parameters):
               'mask_source': args.mask_source, 'mask_files': masks,
               'current_mask_coverage_complete':bool(masks) and not missing_masks,
               'missing_nonvegetation_mask_files':missing_masks,
-              'linz_building_source_used': False, 'historical_masks_available': False,
+              'linz_building_source_used': bool(building_receipt),
+              'alternative_building_input':building_receipt, 'historical_masks_available': False,
               'greenness_used': bool(args.greenness),
               'greenness_sha256': sha256(args.greenness) if args.greenness else None,
-              'missing_inputs': [] if args.greenness else ['original greenness raster; use during frozen run unknown'],
+              'greenness_source_files_verified': len(gli_fingerprints['source_files']) if gli_fingerprints else 0,
+              'missing_inputs': ['original historical masks and greenness; exact frozen-run use unknown'],
               'parameters': parameters,
               'limitations': ['producing commit/default settings not confirmed',
-                              'current OSM masks cannot certify historical mask equality' if masks else 'building/nonvegetation masks explicitly disabled',
+                              'current replacement masks cannot certify historical mask equality' if masks else 'building/nonvegetation masks explicitly disabled',
                               *(['one or more current nonvegetation query responses explicitly omitted; inspect used_mask_manifest.json'] if missing_masks else []),
                               'frozen postprocessing inventory is reused, not a reproduction of detection/canonicalisation',
                               'subset CHM may leave remote context nodata inside original chunks',
-                              'bounded SQL may order equidistant seeds differently from historical full inventory',
+                              *(['bounded SQL order does not replay historical chunk-index traversal']
+                                if args.seed_order == 'bounded-sql' else []),
                               'frozen crown polygon file unavailable; scalar equality cannot establish geometry equality']}
     write_json(args.output / 'summary.json', report)
     print(json.dumps({k: report[k] for k in ['status','crowns_intersecting_training_sites',
@@ -425,6 +524,15 @@ def main():
     ap.add_argument('--allow-missing-nonvegetation', action='store_true',
                     help='run-only approximation: record missing nonveg files explicitly; buildings still mandatory')
     ap.add_argument('--greenness', type=Path)
+    ap.add_argument('--crown-gli-threshold', type=float,
+                    help='explicit training-only inverse-calibration candidate; never historical confirmation')
+    ap.add_argument('--building-outlines', type=Path,
+                    help='explicit EPSG:2193 LINZ outline substitute; replaces OSM building polygons')
+    ap.add_argument('--building-provenance', type=Path,
+                    help='required provenance JSON for the alternative building file')
+    ap.add_argument('--seed-order', choices=['historical-chunk','bounded-sql'],
+                    default='historical-chunk',
+                    help='replay original chunk-index traversal; bounded-sql reproduces the earlier adapter')
     ap.add_argument('--site-ids', nargs='+')
     ap.add_argument('--output', type=Path, required=True)
     args = ap.parse_args()
@@ -435,8 +543,18 @@ def main():
         ap.error('mask acquisition requires osm-current')
     if args.allow_missing_nonvegetation and (args.phase != 'run' or args.mask_source != 'osm-current'):
         ap.error('missing nonvegetation omission applies only to explicit current-OSM crown execution')
+    if bool(args.building_outlines) != bool(args.building_provenance):
+        ap.error('--building-outlines and --building-provenance must be supplied together')
+    if args.building_outlines and (args.phase != 'run' or args.mask_source != 'osm-current'):
+        ap.error('alternative building outlines require offline run with current nonvegetation caches')
+    if args.crown_gli_threshold is not None:
+        if args.phase != 'run' or not args.greenness:
+            ap.error('--crown-gli-threshold requires an offline crown run with explicit greenness')
+        if not math.isfinite(args.crown_gli_threshold) or not -1 <= args.crown_gli_threshold <= 1:
+            ap.error('greenness threshold must be finite and within [-1,1]')
     sites = selected_training_sites(args.site_ids)
     module, source_provenance, source_hashes = source_module(args.source)
+    original_gli_threshold = configure_greenness_threshold(module, args.crown_gli_threshold)
     manifest = json.loads(args.chm_manifest.read_text())
     global_bbox = manifest['pilot_bbox_2193']
     if manifest['resolution_m'] != 1.0 or manifest['chunk_size_m'] != module.CHUNK_SIZE_M:
@@ -448,7 +566,11 @@ def main():
     parameters = {k: getattr(module,k) for k in ['CANOPY_MIN_HEIGHT_M','MIN_CROWN_AREA_M2',
                   'CHUNK_SIZE_M','CROWN_HALO_M','CROWN_GLI_THRESHOLD','CROWN_GLI_WINDOW_PX',
                   'MAX_CROWN_ASPECT_RATIO','MIN_CROWN_BBOX_FILL','OSM_NONVEG_CACHE_VERSION']}
-    parameters.update(original_global_bbox=global_bbox, radius_rule='clip(0.65*height,5,14); missing height 7m',
+    parameters.update(original_global_bbox=global_bbox, seed_order=args.seed_order,
+                      supplied_default_CROWN_GLI_THRESHOLD=original_gli_threshold,
+                      parameter_source=('inverse calibration against training-only frozen attributes'
+                                        if args.crown_gli_threshold is not None else 'supplied defaults'),
+                      radius_rule='clip(0.65*height,5,14); missing height 7m',
                       building_buffer_m=1.0, closing_m=0.65, simplify_m=0.45,
                       polygon_connectivity=4, candidate_connectivity=4,
                       seed_emission='original chunk strict interior', greenness_enabled=bool(args.greenness))

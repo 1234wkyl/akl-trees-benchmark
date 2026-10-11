@@ -224,7 +224,9 @@ function draw(){
     ctx.globalAlpha = 1;
   }
   if(showDet) drawDetections();
-  for(const l of rec().labels) drawLabel(l);
+  // Draw individual crowns after residual groups so a hole boundary cannot
+  // obscure the enclosing tree outline. Do not mutate export/delete order.
+  for(const l of [...rec().labels].sort((a,b)=>(a.cls==="tree")-(b.cls==="tree"))) drawLabel(l);
   drawDraft();
 }
 
@@ -256,7 +258,12 @@ function drawLabel(l){
   ctx.fillStyle = col + "33";
   ctx.beginPath();
   l.px.forEach(([c,r],i)=> i? ctx.lineTo(c,r) : ctx.moveTo(c,r));
-  ctx.closePath(); ctx.fill(); ctx.stroke();
+  ctx.closePath();
+  for(const ring of (l.holes_px || [])){
+    ring.forEach(([c,r],i)=> i? ctx.lineTo(c,r) : ctx.moveTo(c,r));
+    ctx.closePath();
+  }
+  ctx.fill("evenodd"); ctx.stroke();
   ctx.restore();
 }
 
@@ -333,7 +340,7 @@ cv.addEventListener("mousedown", e=>{
   if(tool==="delete"){
     const ls = rec().labels;
     for(let i=ls.length-1;i>=0;i--){
-      if(pointInPoly(p, ls[i].px)){ ls.splice(i,1); save(); draw(); return; }
+      if(pointInPoly(p, ls[i].px) && !(ls[i].holes_px || []).some(ring=>pointInPoly(p,ring))){ ls.splice(i,1); save(); draw(); return; }
     }
     return;
   }

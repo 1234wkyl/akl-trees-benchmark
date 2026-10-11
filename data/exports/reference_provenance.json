@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-10-09T18:09:12.093309+00:00",
+  "status": "PRE-FREEZE DERIVED CANDIDATE; NOT A FROZEN REFERENCE",
+  "source_json": "/Users/zhangxi/Desktop/791\u9879\u76ee\u6587\u4ef6/Starter_Kit/data/labels/crown_labels_XZ_confirmed_2026-10-10.json",
+  "source_json_sha256": "a8766662d51c16cf5cf87df3cbd8046512e1f493f2055f58374da3f878dbeb76",
+  "source_unchanged": true,
+  "site_definitions_sha256": "78b8513a2153d380b3761c8f642b8d23c14216e7aeb3af67865b5070fc0eb1fe",
+  "output_gpkg_sha256": "1dc69fe5f9431c54aab1630525a04eb34615b7676342c4bf3f36f79d2ff87616",
+  "crs": "EPSG:2193",
+  "objects": 645,
+  "class_counts": {
+    "tree": 458,
+    "tree_group": 142,
+    "not_tree": 41,
+    "uncertain": 4
+  },
+  "topology_repaired_count": 6,
+  "topology_repaired_ids": [
+    "S006-mv0nepze",
+    "S008-mv0npvpr",
+    "S011-mv0nlz1j",
+    "S018-mucat6cf",
+    "S019-mucaueb0",
+    "S021-mucaw3n1"
+  ],
+  "outside_site_over_0_01m2_count": 1,
+  "outside_site_over_0_01m2_ids": [
+    "S017-mucar6io"
+  ],
+  "max_abs_repair_area_difference_m2": 0.07227650930197171,
+  "max_outside_site_area_m2": 0.039300465433122135,
+  "geometry_rule": "buffer(0) only for invalid topology, then intersection with fixed site box",
+  "reference_frozen": false,
+  "independent_S016_S020_adjudicated": false,
+  "permitted_use": "training-only diagnostics and pre-freeze QA; no held-out benchmark scoring"
+}

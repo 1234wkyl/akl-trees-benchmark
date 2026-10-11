@@ -1,0 +1,17 @@
+{
+  "sources": {
+    "val": "c89915fbb972916673492cdebd9dc944186d311518b98b6b710b7d909ce99cdf",
+    "test": "16aa3248d02da4ba793a15872c60281569746a8133afee8066d5a983894a783d"
+  },
+  "model_rows": 6,
+  "stratum_rows": 48,
+  "source_code_sha256": "d9fe5cd0ca371b3f04f3dfa76c5f311da59850e1c599e75ae90937b77963bb7f",
+  "model_retuned": false,
+  "supervisor_freeze_claimed": false,
+  "output_sha256": {
+    "stratum_metrics.csv": "70b6435466e00ed6962bfc2095080d48778f0295a97595d53485241ddd199205",
+    "RESULTS.md": "e2554449b8172b4c9b6826e9b4029495744e709da915da5c121d3722dbe690b0",
+    "model_metrics.csv": "b5234aa0f96836a303b2b7c48c79c50799c38879d9c318e2e2a21a5865a2a75d",
+    "compute_receipt.json": "9bcea59a8f0a1c54ac5480270d21b6f1fb5f819ef37a1dd674dc67b3746c099a"
+  }
+}

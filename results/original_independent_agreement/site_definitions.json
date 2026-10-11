@@ -1,0 +1,516 @@
+{
+  "schema_version": "akl-trees-reference-sites/v1",
+  "generated_by": "01_select_reference_sites.py",
+  "seed": 42,
+  "site_size_m": 100,
+  "block_size_m": 4000,
+  "min_site_separation_m": 400,
+  "split_buffer_m": 1000,
+  "crs": "EPSG:2193",
+  "sites": [
+    {
+      "site_id": "S001",
+      "stratum": "open_street_trees",
+      "split": "train",
+      "bbox_epsg2193": [
+        1755000.0,
+        5918600.0,
+        1755100.0,
+        5918700.0
+      ],
+      "centroid_epsg2193": [
+        1755050.0,
+        5918650.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 6.23,
+      "mean_crown_area_m2": 52.6,
+      "paved_fraction": 0.448,
+      "point_density": 4.22,
+      "labelled": false
+    },
+    {
+      "site_id": "S002",
+      "stratum": "open_street_trees",
+      "split": "test",
+      "bbox_epsg2193": [
+        1755800.0,
+        5915100.0,
+        1755900.0,
+        5915200.0
+      ],
+      "centroid_epsg2193": [
+        1755850.0,
+        5915150.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 8.07,
+      "mean_crown_area_m2": 63.9,
+      "paved_fraction": 0.373,
+      "point_density": 14.86,
+      "labelled": false
+    },
+    {
+      "site_id": "S003",
+      "stratum": "open_street_trees",
+      "split": "val",
+      "bbox_epsg2193": [
+        1757800.0,
+        5915800.0,
+        1757900.0,
+        5915900.0
+      ],
+      "centroid_epsg2193": [
+        1757850.0,
+        5915850.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 9.29,
+      "mean_crown_area_m2": 54.8,
+      "paved_fraction": 0.393,
+      "point_density": 8.83,
+      "labelled": false
+    },
+    {
+      "site_id": "S004",
+      "stratum": "park_open_grown",
+      "split": "test",
+      "bbox_epsg2193": [
+        1776500.0,
+        5911600.0,
+        1776600.0,
+        5911700.0
+      ],
+      "centroid_epsg2193": [
+        1776550.0,
+        5911650.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 12.22,
+      "mean_crown_area_m2": 93.8,
+      "paved_fraction": 0.218,
+      "point_density": 5.25,
+      "labelled": false
+    },
+    {
+      "site_id": "S005",
+      "stratum": "park_open_grown",
+      "split": "val",
+      "bbox_epsg2193": [
+        1772300.0,
+        5916000.0,
+        1772400.0,
+        5916100.0
+      ],
+      "centroid_epsg2193": [
+        1772350.0,
+        5916050.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 21.27,
+      "mean_crown_area_m2": 146.1,
+      "paved_fraction": 0.046,
+      "point_density": 9.8,
+      "labelled": false
+    },
+    {
+      "site_id": "S006",
+      "stratum": "park_open_grown",
+      "split": "train",
+      "bbox_epsg2193": [
+        1773000.0,
+        5901700.0,
+        1773100.0,
+        5901800.0
+      ],
+      "centroid_epsg2193": [
+        1773050.0,
+        5901750.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 19.32,
+      "mean_crown_area_m2": 120.9,
+      "paved_fraction": 0.071,
+      "point_density": 8.96,
+      "labelled": false
+    },
+    {
+      "site_id": "S007",
+      "stratum": "dense_broadleaf",
+      "split": "val",
+      "bbox_epsg2193": [
+        1767400.0,
+        5899700.0,
+        1767500.0,
+        5899800.0
+      ],
+      "centroid_epsg2193": [
+        1767450.0,
+        5899750.0
+      ],
+      "existing_detections": 25,
+      "mean_height_m": 16.19,
+      "mean_crown_area_m2": 125.1,
+      "paved_fraction": 0.173,
+      "point_density": 11.63,
+      "labelled": false
+    },
+    {
+      "site_id": "S008",
+      "stratum": "dense_broadleaf",
+      "split": "train",
+      "bbox_epsg2193": [
+        1778400.0,
+        5913200.0,
+        1778500.0,
+        5913300.0
+      ],
+      "centroid_epsg2193": [
+        1778450.0,
+        5913250.0
+      ],
+      "existing_detections": 25,
+      "mean_height_m": 20.15,
+      "mean_crown_area_m2": 160.7,
+      "paved_fraction": 0.0,
+      "point_density": 4.46,
+      "labelled": false
+    },
+    {
+      "site_id": "S009",
+      "stratum": "dense_broadleaf",
+      "split": "test",
+      "bbox_epsg2193": [
+        1741500.0,
+        5895100.0,
+        1741600.0,
+        5895200.0
+      ],
+      "centroid_epsg2193": [
+        1741550.0,
+        5895150.0
+      ],
+      "existing_detections": 25,
+      "mean_height_m": 14.6,
+      "mean_crown_area_m2": 107.1,
+      "paved_fraction": 0.0,
+      "point_density": 3.98,
+      "labelled": false
+    },
+    {
+      "site_id": "S010",
+      "stratum": "conifer_dominant",
+      "split": "train",
+      "bbox_epsg2193": [
+        1744300.0,
+        5914000.0,
+        1744400.0,
+        5914100.0
+      ],
+      "centroid_epsg2193": [
+        1744350.0,
+        5914050.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 22.72,
+      "mean_crown_area_m2": 186.4,
+      "paved_fraction": 0.011,
+      "point_density": 5.72,
+      "labelled": false
+    },
+    {
+      "site_id": "S011",
+      "stratum": "conifer_dominant",
+      "split": "test",
+      "bbox_epsg2193": [
+        1772800.0,
+        5909300.0,
+        1772900.0,
+        5909400.0
+      ],
+      "centroid_epsg2193": [
+        1772850.0,
+        5909350.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 21.29,
+      "mean_crown_area_m2": 156.3,
+      "paved_fraction": 0.032,
+      "point_density": 4.5,
+      "labelled": false
+    },
+    {
+      "site_id": "S012",
+      "stratum": "conifer_dominant",
+      "split": "val",
+      "bbox_epsg2193": [
+        1741900.0,
+        5916400.0,
+        1742000.0,
+        5916500.0
+      ],
+      "centroid_epsg2193": [
+        1741950.0,
+        5916450.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 15.26,
+      "mean_crown_area_m2": 105.2,
+      "paved_fraction": 0.033,
+      "point_density": 4.05,
+      "labelled": false
+    },
+    {
+      "site_id": "S013",
+      "stratum": "palm_present",
+      "split": "test",
+      "bbox_epsg2193": [
+        1755400.0,
+        5915400.0,
+        1755500.0,
+        5915500.0
+      ],
+      "centroid_epsg2193": [
+        1755450.0,
+        5915450.0
+      ],
+      "existing_detections": 23,
+      "mean_height_m": 10.24,
+      "mean_crown_area_m2": 64.3,
+      "paved_fraction": 0.347,
+      "point_density": 9.74,
+      "labelled": false
+    },
+    {
+      "site_id": "S014",
+      "stratum": "palm_present",
+      "split": "val",
+      "bbox_epsg2193": [
+        1756700.0,
+        5920700.0,
+        1756800.0,
+        5920800.0
+      ],
+      "centroid_epsg2193": [
+        1756750.0,
+        5920750.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 11.45,
+      "mean_crown_area_m2": 53.6,
+      "paved_fraction": 0.611,
+      "point_density": 7.18,
+      "labelled": false
+    },
+    {
+      "site_id": "S015",
+      "stratum": "palm_present",
+      "split": "train",
+      "bbox_epsg2193": [
+        1760500.0,
+        5918600.0,
+        1760600.0,
+        5918700.0
+      ],
+      "centroid_epsg2193": [
+        1760550.0,
+        5918650.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 11.93,
+      "mean_crown_area_m2": 147.7,
+      "paved_fraction": 0.317,
+      "point_density": 10.05,
+      "labelled": false
+    },
+    {
+      "site_id": "S016",
+      "stratum": "small_subcanopy",
+      "split": "val",
+      "bbox_epsg2193": [
+        1758700.0,
+        5920500.0,
+        1758800.0,
+        5920600.0
+      ],
+      "centroid_epsg2193": [
+        1758750.0,
+        5920550.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 5.66,
+      "mean_crown_area_m2": 39.5,
+      "paved_fraction": 0.792,
+      "point_density": 3.71,
+      "labelled": false
+    },
+    {
+      "site_id": "S017",
+      "stratum": "small_subcanopy",
+      "split": "train",
+      "bbox_epsg2193": [
+        1755400.0,
+        5919200.0,
+        1755500.0,
+        5919300.0
+      ],
+      "centroid_epsg2193": [
+        1755450.0,
+        5919250.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 5.69,
+      "mean_crown_area_m2": 30.6,
+      "paved_fraction": 0.378,
+      "point_density": 4.57,
+      "labelled": false
+    },
+    {
+      "site_id": "S018",
+      "stratum": "small_subcanopy",
+      "split": "test",
+      "bbox_epsg2193": [
+        1760000.0,
+        5924700.0,
+        1760100.0,
+        5924800.0
+      ],
+      "centroid_epsg2193": [
+        1760050.0,
+        5924750.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 5.09,
+      "mean_crown_area_m2": 85.0,
+      "paved_fraction": 0.296,
+      "point_density": 8.73,
+      "labelled": false
+    },
+    {
+      "site_id": "S019",
+      "stratum": "canopy_edge",
+      "split": "train",
+      "bbox_epsg2193": [
+        1762700.0,
+        5919300.0,
+        1762800.0,
+        5919400.0
+      ],
+      "centroid_epsg2193": [
+        1762750.0,
+        5919350.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 12.54,
+      "mean_crown_area_m2": 58.5,
+      "paved_fraction": 0.321,
+      "point_density": 16.52,
+      "labelled": false
+    },
+    {
+      "site_id": "S020",
+      "stratum": "canopy_edge",
+      "split": "test",
+      "bbox_epsg2193": [
+        1760800.0,
+        5922600.0,
+        1760900.0,
+        5922700.0
+      ],
+      "centroid_epsg2193": [
+        1760850.0,
+        5922650.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 12.93,
+      "mean_crown_area_m2": 73.5,
+      "paved_fraction": 0.354,
+      "point_density": 10.02,
+      "labelled": false
+    },
+    {
+      "site_id": "S021",
+      "stratum": "canopy_edge",
+      "split": "val",
+      "bbox_epsg2193": [
+        1750700.0,
+        5914700.0,
+        1750800.0,
+        5914800.0
+      ],
+      "centroid_epsg2193": [
+        1750750.0,
+        5914750.0
+      ],
+      "existing_detections": 20,
+      "mean_height_m": 13.86,
+      "mean_crown_area_m2": 147.2,
+      "paved_fraction": 0.313,
+      "point_density": 4.39,
+      "labelled": false
+    },
+    {
+      "site_id": "S022",
+      "stratum": "hard_negative_built",
+      "split": "test",
+      "bbox_epsg2193": [
+        1756800.0,
+        5927900.0,
+        1756900.0,
+        5928000.0
+      ],
+      "centroid_epsg2193": [
+        1756850.0,
+        5927950.0
+      ],
+      "existing_detections": 1,
+      "mean_height_m": 10.73,
+      "mean_crown_area_m2": 9.0,
+      "paved_fraction": 0.386,
+      "point_density": 13.35,
+      "labelled": false
+    },
+    {
+      "site_id": "S023",
+      "stratum": "hard_negative_built",
+      "split": "val",
+      "bbox_epsg2193": [
+        1750000.0,
+        5914100.0,
+        1750100.0,
+        5914200.0
+      ],
+      "centroid_epsg2193": [
+        1750050.0,
+        5914150.0
+      ],
+      "existing_detections": 1,
+      "mean_height_m": 10.11,
+      "mean_crown_area_m2": 51.0,
+      "paved_fraction": 0.266,
+      "point_density": 15.67,
+      "labelled": false
+    },
+    {
+      "site_id": "S024",
+      "stratum": "hard_negative_built",
+      "split": "train",
+      "bbox_epsg2193": [
+        1758400.0,
+        5918100.0,
+        1758500.0,
+        5918200.0
+      ],
+      "centroid_epsg2193": [
+        1758450.0,
+        5918150.0
+      ],
+      "existing_detections": 1,
+      "mean_height_m": 4.71,
+      "mean_crown_area_m2": 21.0,
+      "paved_fraction": 0.301,
+      "point_density": 4.93,
+      "labelled": false
+    }
+  ]
+}

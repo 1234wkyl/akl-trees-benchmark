@@ -1,0 +1,18 @@
+{
+  "policy": {
+    "original_sha256": "f4d9b73e87c2b034396d772c2af03ebc66f6a0d76c51c4943bd4e63d8ec402ef",
+    "published_sha256": "7962a6a0fff654dbdb6c8442fc449fa3d111c76491b97d90c239e784ac16e8d0",
+    "changed_fields": [
+      "note",
+      "method_record",
+      "researcher_decision_record"
+    ],
+    "scoring_fields_changed": false,
+    "archived_results_policy_identity": "original_sha256"
+  },
+  "author_lock": {
+    "attachment_and_conversation_fields_removed": true,
+    "published_policy_hash_updated": true,
+    "annotation_and_geometry_hashes_changed": false
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "sources": [
+    {
+      "file": "crown_labels_XZ_2026-10-10_reviewed.json",
+      "sha256": "ac0b681a0ed5b4faaf10098128d3aa7d3f2eeae401a4b99f953a42cb9dc272f4"
+    },
+    {
+      "file": "crown_labels_TW_2026-10-09.json",
+      "sha256": "19f4f8958489cf40aa00aefa0f7c22f3d65dba1b1838a7b98913b7a70d504185"
+    }
+  ],
+  "sites": [
+    "S016",
+    "S020"
+  ],
+  "iou_threshold": 0.4,
+  "matching": "one-to-one greedy best IoU, all classes",
+  "n_a": 77,
+  "n_b": 75,
+  "matched": 56,
+  "agreement_f1": 0.7368421052631579,
+  "median_iou": 0.6733394051827094,
+  "class_kappa": 0.0,
+  "per_class": {
+    "tree": {
+      "n_a": 69,
+      "n_b": 58,
+      "matched": 55,
+      "f1": 0.8661417322834646,
+      "median_iou": 0.6737245423505518,
+      "per_site": [
+        {
+          "site_id": "S016",
+          "n_a": 26,
+          "n_b": 24,
+          "matched": 24,
+          "f1": 0.96,
+          "median_iou": 0.6957046418072796
+        },
+        {
+          "site_id": "S020",
+          "n_a": 43,
+          "n_b": 34,
+          "matched": 31,
+          "f1": 0.8051948051948052,
+          "median_iou": 0.672954268014867
+        }
+      ]
+    },
+    "not_tree": {
+      "n_a": 8,
+      "n_b": 3,
+      "matched": 0,
+      "f1": 0.0,
+      "median_iou": null,
+      "per_site": [
+        {
+          "site_id": "S016",
+          "n_a": 7,
+          "n_b": 2,
+          "matched": 0,
+          "f1": 0.0,
+          "median_iou": null
+        },
+        {
+          "site_id": "S020",
+          "n_a": 1,
+          "n_b": 1,
+          "matched": 0,
+          "f1": 0.0,
+          "median_iou": null
+        }
+      ]
+    },
+    "uncertain": {
+      "n_a": 0,
+      "n_b": 14,
+      "matched": 0,
+      "f1": 0.0,
+      "median_iou": null,
+      "per_site": [
+        {
+          "site_id": "S016",
+          "n_a": 0,
+          "n_b": 4,
+          "matched": 0,
+          "f1": 0.0,
+          "median_iou": null
+        },
+        {
+          "site_id": "S020",
+          "n_a": 0,
+          "n_b": 10,
+          "matched": 0,
+          "f1": 0.0,
+          "median_iou": null
+        }
+      ]
+    }
+  },
+  "class_confusion": {
+    "tree|tree": 55,
+    "tree|uncertain": 1
+  },
+  "per_site": [
+    {
+      "site": "S016",
+      "n_a": 33,
+      "n_b": 30,
+      "matched": 24,
+      "only_a": 9,
+      "only_b": 6,
+      "agreement_f1": 0.7619047619047619,
+      "median_iou": 0.6957046418072796,
+      "class_kappa": null
+    },
+    {
+      "site": "S020",
+      "n_a": 44,
+      "n_b": 45,
+      "matched": 32,
+      "only_a": 12,
+      "only_b": 13,
+      "agreement_f1": 0.7191011235955056,
+      "median_iou": 0.6531438508578984,
+      "class_kappa": 0.0
+    }
+  ],
+  "matching_tie_rule": "descending IoU then ascending stable A/B label IDs",
+  "precision_B_relative_to_A": 0.7466666666666667,
+  "recall_B_relative_to_A": 0.7272727272727273,
+  "directional_metric_note": "Annotation correspondence only; neither rater is declared field truth.",
+  "geometry_rule": "buffer(0) repair for invalid JSON polygons; no boundary clipping",
+  "canonical_reference_written": false,
+  "comparison_kind": "post_revision_correspondence",
+  "independent_blind_agreement": false
+}

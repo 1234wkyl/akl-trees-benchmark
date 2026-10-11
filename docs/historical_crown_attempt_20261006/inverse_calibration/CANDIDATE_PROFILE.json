@@ -1,0 +1,83 @@
+{
+  "profile_id": "classical-crown-reconstruction-osm-gli003-20261006",
+  "status": "PROVISIONAL RECONSTRUCTED CROWN STAGE; HISTORICAL IDENTITY UNCONFIRMED",
+  "operational_use": "training-site development and reproducible method preparation",
+  "training_site_ids": [
+    "S001",
+    "S006",
+    "S008",
+    "S010",
+    "S015",
+    "S017",
+    "S019",
+    "S024"
+  ],
+  "source_commit_as_delivered": "4f002e21ad2bfa357e00279f3813c0423b4c13fa",
+  "parameters": {
+    "CANOPY_MIN_HEIGHT_M": 3.0,
+    "MIN_CROWN_AREA_M2": 4.0,
+    "CHUNK_SIZE_M": 1024.0,
+    "CROWN_HALO_M": 25.0,
+    "CROWN_GLI_THRESHOLD": 0.03,
+    "CROWN_GLI_WINDOW_PX": 5,
+    "MAX_CROWN_ASPECT_RATIO": 3.5,
+    "MIN_CROWN_BBOX_FILL": 0.3,
+    "OSM_NONVEG_CACHE_VERSION": "v2",
+    "original_global_bbox": [
+      1740000.0,
+      5895000.0,
+      1782000.0,
+      5935000.0
+    ],
+    "seed_order": "historical-chunk",
+    "radius_rule": "clip(0.65*height,5,14); missing height 7m",
+    "building_buffer_m": 1.0,
+    "closing_m": 0.65,
+    "simplify_m": 0.45,
+    "polygon_connectivity": 4,
+    "candidate_connectivity": 4,
+    "seed_emission": "original chunk strict interior",
+    "greenness_enabled": true
+  },
+  "source_file_hashes": {
+    "scripts/build_lidar_pilot.py": "b623139bab675942b3f0ab0562cc24300e906768835f0357860300f79f659a6f",
+    "scripts/detect_inferred_trees.py": "4050527891eb434d815c078ee17cdffadef134c2737b4ebd07ac89093112a6a2",
+    "scripts/build_tree_crown_pilot.py": "990b420719c72ea60a9ac46c0e2dca286b74785567fb885f631aa400fad63de1",
+    "scripts/_pilot_config.py": "921ecb9e3c7fc0d6ca4eeba99fa88ee604e61e352e6935fe78e8508410c5cdbd",
+    "config/pilots.json": "4ef8bb40fc60a27ce938494032856dcfb91699469a1143f7b36b564e6f9f0626"
+  },
+  "executed_adapter_sha256": "c32eeb0ac2d964581f13ab802c77ce4bc95a19e8753b5fbdfd127da50d588c6f",
+  "current_adapter_sha256": "fdf79c34cc108918662e34a798d9607a3ec946c77c64ac1575ce65294aa289af",
+  "frozen_database_sha256": "0aa08032104ff21e38f0d3819c5fce2de0fad7cbe71012a3b797cce6a88b6bff",
+  "verified_chm_source_files": 40,
+  "greenness_source_files": 9,
+  "input_and_output_manifest_sha256": {
+    "chm_source_fingerprints.json": "98d16f30acc6224febbc6b9e84a7439a75071560589e6171cf7c05987a9808fc",
+    "greenness_input_manifest.json": "f55bcc566c198c0aeea5decba277bd788bd13cead96b25499508662ebcbed3e2",
+    "used_mask_manifest.json": "cd670717ad2eee6cba11eb69040070d815f944a417ade7aa80515e4709ea7dab",
+    "SHA256_manifest.json": "195ae8b89bc21ba3bb247c5f9da1628f883b8472548bd1dc4f3e8a2d91a6fb56",
+    "plan.json": "6f9dbd19818783c5f9ee97dbcc48a1676d397607f99afc342f2241e130c64b62",
+    "summary.json": "cb4488445de1de43b9e68c96ddd8196ffd38d9ed9413f174353aeb9610b3ca55"
+  },
+  "candidate_gpkg_sha256": "ce4fce6b4abcc60d42f41fb761689ad29b128a18b04f0178e9962739ed18b209",
+  "candidate_geojson_sha256": "f3ce57b09a51bee6662bc3e64f7a8c9813298ba90bf39b472d5c45b46177b71e",
+  "evidence_location": "outputs/nectar_receipts/20261006T023550Z_historical_mask_recovery/evidence/recovery/training_crowns_osm_greenness",
+  "complete_input_archive_sha256": "f77b78c6665704ba050b4b09bf8c3d710fc09d87b3207571d5e6512223753f37",
+  "inverse_calibration_archive_sha256": "00c71551006cbe26bff9864b5f954f629550a9babe16238b3b63a8532b80f9f5",
+  "comparison": {
+    "eligible_frozen_ids": 126,
+    "recovered": 126,
+    "four_attribute_matches": 125,
+    "absolute_tolerance": 1e-06
+  },
+  "producer_commit_verified": false,
+  "historical_input_identity_verified": false,
+  "original_frozen_geometry_compared": false,
+  "initial_detection_replayed": false,
+  "reference_frozen": false,
+  "heldout_sites_used": false,
+  "reference_labels_used_for_inverse_calibration": false,
+  "M3_complete": false,
+  "unresolved_tree_id": "akl_tree_lid_0849199",
+  "note": "Evidence profile, not a config consumed automatically by the trial selector. Do not set provenance/geometry verification flags from attribute agreement."
+}

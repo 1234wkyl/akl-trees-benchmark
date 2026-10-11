@@ -1,0 +1,10 @@
+{
+  "verified_on": "2026-10-12",
+  "repository_tests_passed": 116,
+  "complete_package_tests_passed": 129,
+  "test_command": "python -m pytest tests -q",
+  "analysis_runtime": "Python 3.10; existing akl-benchmark analysis environment",
+  "experiments_rerun_for_packaging": false,
+  "frozen_database_expected_sha256_matched": true,
+  "scoring_fields_changed_for_publication": false
+}
