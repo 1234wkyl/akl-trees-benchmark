@@ -126,8 +126,8 @@ This log records decisions affecting research design, evaluation, model adaptati
 
 **Decision.** Close out completed inference, density, classical and weak-adaptation experiments with their immutable receipts. Deliver a complete local research package and a separate minimal English GitHub release containing code, environments, reference annotations, protocols, manifests and compact results.
 
-**Why.** All queued prediction experiments have completed. The study supports a negative/inconclusive performance finding; none of the models meets all acceptance criteria. Large inputs and checkpoints belong in the local archive, while the repository supports reproducibility and review.
+**Why.** All queued prediction experiments have completed. The study supports a negative/inconclusive performance finding; none of the models meets all acceptance criteria.
 
-**Rejected.** Additional unplanned GPU runs, relaxing acceptance criteria, uploading correspondence or document-editing history, and retaining repeated draft versions as final deliverables.
+**Rejected.** Additional unplanned GPU runs and relaxing acceptance criteria.
 
 **Consequence.** Document review, final word-count compliance and submission remain separate from completed experimental execution. Future model changes require a new experiment.

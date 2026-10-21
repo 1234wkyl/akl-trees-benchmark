@@ -2,7 +2,7 @@
 
 ## Scope
 
-The experiments in this snapshot have finished. Read the result files before launching computation. To reproduce GPU work, use the complete package and its `Starter_Kit/RUNBOOK_EXECUTION_2026-10-10.md` and `Starter_Kit/RUNBOOK_HANDOVER_2026-10-10.md`, whose latest closeout identifies the completed Alto-assisted repeat. The standalone VM is used directly; SLURM is not required. Raw data and weights are supplied outside Git.
+The experiments in this snapshot have finished. Read the result files before launching computation. To reproduce GPU work, use the complete package and its `Starter_Kit/RUNBOOK_EXECUTION_2026-10-10.md` and `Starter_Kit/RUNBOOK_HANDOVER_2026-10-10.md`, whose latest closeout identifies the completed Alto-assisted repeat. The standalone VM is used directly; SLURM is not required.
 
 ## 1 Environment and scientific tests
 

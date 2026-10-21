@@ -1,7 +1,7 @@
 {
   "publication_date": "2026-10-22",
   "file_count": 261,
-  "total_logical_bytes": 15782270,
+  "total_logical_bytes": 15779845,
   "manifest_excludes": [
     "FILE_MANIFEST.json",
     "SHA256SUMS.txt"
@@ -19,13 +19,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 3481,
-      "sha256": "daee70fb27580e85d3cdb0d7a7c49f7484cc580bd04869e14795c6c90bfbd3db"
+      "bytes": 3157,
+      "sha256": "a60a903232ca8d9b8967d7d98714c7e1023a73ed7b7f97b0279c1aefefc10088"
     },
     {
       "path": "RUNBOOK.md",
-      "bytes": 6362,
-      "sha256": "174c79d8fe066709a323cbe6abe9dda1d047812831e9c4a64e0676c7c7ffdae5"
+      "bytes": 6315,
+      "sha256": "a338a7a67f3a62231e62520586d1b9a9054afe314abf7b7ca2ba2363b4cce701"
     },
     {
       "path": "config/annotation_sensitivity_20261009.json",
@@ -159,13 +159,13 @@
     },
     {
       "path": "docs/DECISIONS.md",
-      "bytes": 11512,
-      "sha256": "2b96296b48fdf75492b2b4462daf433889c5459c37123e8746d4357a4c2ab858"
+      "bytes": 11284,
+      "sha256": "952b587099c00f4e4cafe00360e7e14cbd6f4700b94744451c4dfbf151a2d0b0"
     },
     {
       "path": "docs/PROVENANCE.md",
-      "bytes": 2607,
-      "sha256": "0ad009cd0accf5c4b18e3d3a8c2346992239ee317ee31003319f4f661ad67d72"
+      "bytes": 781,
+      "sha256": "e2568e1044108ed4e48d5736b0c3427f3bc8b050ef34ad50baec67fee5244cbb"
     },
     {
       "path": "docs/RESULTS.md",

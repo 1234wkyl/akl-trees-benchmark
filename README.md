@@ -29,8 +29,6 @@ No model meets all predeclared acceptance criteria. The Alto-assisted revision d
 - `provenance/`: input hashes, source/checkpoint identities, experiment ledger and release manifest.
 - `docs/`: annotation protocol, major decisions, methods and results.
 
-Raw LAZ, imagery, raster tiles, the frozen database, upstream model weights, full prediction files, scientific logs and the dissertation are delivered in the separate complete local package. They are intentionally excluded from Git. Correspondence, weekly updates, authoring history and superseded annotation drafts are excluded.
-
 ## Start here
 
 ```bash
@@ -45,4 +43,4 @@ python -m pytest tests -q
 
 Use [RUNBOOK.md](RUNBOOK.md) for the delivered analysis commands and the complete package's execution/handover guides for GPU regeneration. Build new outputs in fresh directories and retain source hashes and run IDs. Completed experiments do not need rerunning to inspect their results.
 
-[Protocol](docs/ANNOTATION_PROTOCOL.md) · [Results](docs/RESULTS.md) · [Major decisions](docs/DECISIONS.md) · [Provenance](docs/PROVENANCE.md)
+[Protocol](docs/ANNOTATION_PROTOCOL.md) · [Results](docs/RESULTS.md) · [Major decisions](docs/DECISIONS.md) · [Source identities](docs/PROVENANCE.md)
