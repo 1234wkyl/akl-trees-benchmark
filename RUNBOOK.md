@@ -7,7 +7,11 @@ The experiments in this snapshot have finished. Read the result files before lau
 ## 1 Environment and scientific tests
 
 ```bash
-conda env create -f environment.vm.yml
+conda create -n akl-benchmark-prep -c conda-forge \
+  python=3.10 'numpy>=1.24,<3' 'scipy>=1.10' \
+  'geopandas>=1.0' 'shapely>=2.0' 'rasterio>=1.3' \
+  'pyproj>=3.6' 'pyogrio>=0.9' 'laspy>=2.5' \
+  lazrs-python pyyaml pillow requests pytest
 conda activate akl-benchmark-prep
 python -m pytest tests -q
 ```

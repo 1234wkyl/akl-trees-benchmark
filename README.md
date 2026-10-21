@@ -27,18 +27,22 @@ No model meets all predeclared acceptance criteria. The Alto-assisted revision d
 - `tests/`: synthetic and workflow checks for the delivered pipeline.
 - `results/`: compact counts, model/density tables, bootstrap results and rater correspondence.
 - `provenance/`: input hashes, source/checkpoint identities, experiment ledger and release manifest.
-- `docs/`: annotation protocol, major decisions, methods, results and delivery requirements.
+- `docs/`: annotation protocol, major decisions, methods and results.
 
 Raw LAZ, imagery, raster tiles, the frozen database, upstream model weights, full prediction files, scientific logs and the dissertation are delivered in the separate complete local package. They are intentionally excluded from Git. Correspondence, weekly updates, authoring history and superseded annotation drafts are excluded.
 
 ## Start here
 
 ```bash
-conda env create -f environment.vm.yml
+conda create -n akl-benchmark-prep -c conda-forge \
+  python=3.10 'numpy>=1.24,<3' 'scipy>=1.10' \
+  'geopandas>=1.0' 'shapely>=2.0' 'rasterio>=1.3' \
+  'pyproj>=3.6' 'pyogrio>=0.9' 'laspy>=2.5' \
+  lazrs-python pyyaml pillow requests pytest
 conda activate akl-benchmark-prep
 python -m pytest tests -q
 ```
 
 Use [RUNBOOK.md](RUNBOOK.md) for the delivered analysis commands and the complete package's execution/handover guides for GPU regeneration. Build new outputs in fresh directories and retain source hashes and run IDs. Completed experiments do not need rerunning to inspect their results.
 
-[Protocol](docs/ANNOTATION_PROTOCOL.md) · [Results](docs/RESULTS.md) · [Major decisions](docs/DECISIONS.md) · [Provenance](docs/PROVENANCE.md) · [Delivery requirements](docs/DELIVERY_REQUIREMENTS.md)
+[Protocol](docs/ANNOTATION_PROTOCOL.md) · [Results](docs/RESULTS.md) · [Major decisions](docs/DECISIONS.md) · [Provenance](docs/PROVENANCE.md)

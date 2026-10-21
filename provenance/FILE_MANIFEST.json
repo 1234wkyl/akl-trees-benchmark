@@ -1,7 +1,7 @@
 {
   "publication_date": "2026-10-22",
-  "file_count": 264,
-  "total_logical_bytes": 15784398,
+  "file_count": 261,
+  "total_logical_bytes": 15782270,
   "manifest_excludes": [
     "FILE_MANIFEST.json",
     "SHA256SUMS.txt"
@@ -19,13 +19,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 3359,
-      "sha256": "5e14a9c1fb645aadcce2a05c5fb7e9aab8e4350855cf671ba9112a0c9258797f"
+      "bytes": 3481,
+      "sha256": "daee70fb27580e85d3cdb0d7a7c49f7484cc580bd04869e14795c6c90bfbd3db"
     },
     {
       "path": "RUNBOOK.md",
-      "bytes": 6159,
-      "sha256": "7d938d896f6440b4c824bbd375231bf689743a98c28e11f652dfde9a73fba5fa"
+      "bytes": 6362,
+      "sha256": "174c79d8fe066709a323cbe6abe9dda1d047812831e9c4a64e0676c7c7ffdae5"
     },
     {
       "path": "config/annotation_sensitivity_20261009.json",
@@ -153,11 +153,6 @@
       "sha256": "a2f280b6c2baac1b29dfbcfad00545b5f2c7bb048e3a329ee7107158978d0e49"
     },
     {
-      "path": "docs/AI_USE.md",
-      "bytes": 667,
-      "sha256": "6fdf85c4119e456e46bc9fdbdf7cfb7d20fafad0f2627e7b2c0906be95750961"
-    },
-    {
       "path": "docs/ANNOTATION_PROTOCOL.md",
       "bytes": 3796,
       "sha256": "91c26391405b8c27e02a20738fd358a10c536e753d7e92a97fd7d0030223a28e"
@@ -166,11 +161,6 @@
       "path": "docs/DECISIONS.md",
       "bytes": 11512,
       "sha256": "2b96296b48fdf75492b2b4462daf433889c5459c37123e8746d4357a4c2ab858"
-    },
-    {
-      "path": "docs/DELIVERY_REQUIREMENTS.md",
-      "bytes": 1417,
-      "sha256": "a6ab0d767598329d9e06948dcd6d8299599bb71d4efb7164f4571c18271aaac0"
     },
     {
       "path": "docs/PROVENANCE.md",
@@ -341,11 +331,6 @@
       "path": "environment.mac.py310.yml",
       "bytes": 6522,
       "sha256": "b5ce06e0632acd5bdac7f1dc0c1dfa80a767fa65a8774bf60aefaf486fa66a86"
-    },
-    {
-      "path": "environment.vm.yml",
-      "bytes": 369,
-      "sha256": "ba15b4b729c4fbd6f6d6da8c9728612dbcb417f2e8e0b50699d4fd3ab8c7f576"
     },
     {
       "path": "environment.yml",

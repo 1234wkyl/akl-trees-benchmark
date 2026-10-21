@@ -1,7 +1,0 @@
-# Delivery requirements and curation
-
-The original Project Outline, final report guidance, Starter Kit runbook and dissertation template require: a written report; labelled reference data and protocol; inter-rater statistics; reproducible code and pinned environment; input manifests/hashes and experiment run IDs; model/stratum/error results; compute accounting; and an AI-use statement. The supervisor subsequently clarified direct standalone Nectar VM execution and removal of unsupported stem/apex location error.
-
-The original documents do not prescribe a per-file Git upload list. This release implements their reproducibility requirements with the smallest practical scientific payload: executable pipeline, its local dependencies and meaningful tests, required configurations, immutable annotation sources, site definitions, reference derivation, compact result tables and provenance. Large original inputs, weights, full logs, imagery and final writing are in the complete local package.
-
-No correspondence, weekly project reporting, annotation edit galleries or dissertation authoring history is included in the repository. Source history is preserved; this release curates the current tree without rewriting Git history. Experimental changes after this snapshot require new run IDs and separate outputs. The complete package includes the original requirements in its overview attachment for exact wording.

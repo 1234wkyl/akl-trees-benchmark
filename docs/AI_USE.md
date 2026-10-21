@@ -1,3 +1,0 @@
-# AI-use statement
-
-I used AI assistance for code drafting and debugging, documentation, translation, figure preparation and visual review of annotation and weak-label proposals. Reported numerical results come from the preserved programmatic calculations and logged experiments. My original annotations and the returned independent annotations are preserved separately from later revisions. AI-assisted visual inspection does not constitute independent human certification of point ownership. Weak targets and Alto-derived evidence retain their stated uncertainty and shared provenance. I retain responsibility for the analysis, interpretation and final submission.
