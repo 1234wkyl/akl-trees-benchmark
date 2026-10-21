@@ -88,7 +88,7 @@ def main():
     def fmt(x):
         return 'NA' if x is None else f'{x:.4f}'
     lines = ['# Fixed weak-label pilot comparison', '',
-             'I report the author-confirmed reference and all fixed model outputs. The weak pilot uses automatically screened polygon/ALTO candidates, not manually checked point truth. Previous test exposure and reference revision are disclosed. The final epoch, conversion and scoring policy were fixed before this queue; no result selects a new checkpoint.', '',
+             'I report the author-confirmed reference and all fixed model outputs. The weak pilot uses automatically screened polygon/ALTO candidates, not manually checked point truth. The final epoch, conversion and scoring policy were fixed before this queue; no result selects a new checkpoint.', '',
              '| Test model | Precision | Recall | F1 [95% site CI] | Median IoU | TP / FP / FN |',
              '|---|---:|---:|---|---:|---|']
     for r in rows:

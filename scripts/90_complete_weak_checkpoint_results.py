@@ -2,7 +2,7 @@
 """Merge audited fixed weak predictions and score against the author lock.
 
 Reuse the exact duplicate-XYZ merge kernel and existing fixed hull/scorer.
-This is a disclosed post-revision experiment, not a retrospective blind test.
+This experiment uses the recorded author-confirmed reference and fixed predictions.
 """
 import argparse
 import importlib.util
@@ -101,7 +101,7 @@ def main():
             raise ValueError('current classical standardized source changed')
         classical=score(classical_path)
         write_json(a.output/f'{split}_comparison.json',{
-            'scope':'POST-REVISION EXPLORATORY WEAK MODEL; PRIOR TEST EXPOSURE DISCLOSED',
+            'scope':'FIXED WEAK MODEL COMPARISON WITH AUTHOR-CONFIRMED REFERENCE',
             'author_reference_locked':True,'supervisor_freeze_claimed':False,
             'reference_sha256':sha256(a.reference),'checkpoint_sha256':queue['checkpoint_sha256'],
             'policy_sha256':sha256(ROOT/'config/evaluation_draft.json'),

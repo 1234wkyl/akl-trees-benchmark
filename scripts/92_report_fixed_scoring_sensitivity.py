@@ -41,7 +41,7 @@ def main():
     with (a.output/'metrics.csv').open('w',newline='') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
     lines=['# Fixed-prediction scoring sensitivity','',
-           'I report six diagnostic variants with the same reference, source predictions and scored sites. These variants were specified after initial test exposure and are sensitivity analyses, not predeclared acceptance rules or model selection. The primary 2 m centroid rule with ambiguity exclusion remains unchanged. An additional IoU gate changes detection correspondence, not the matched-IoU formula. Removing exclusions counts unresolved-group predictions without asserting that they are biologically false positives.','',
+           'I report six diagnostic variants with the same reference, source predictions and scored sites. These variants are supplementary sensitivity analyses; the primary acceptance rules and model selection remain unchanged. The primary 2 m centroid rule with ambiguity exclusion remains unchanged. An additional IoU gate changes detection correspondence, not the matched-IoU formula. Removing exclusions counts unresolved-group predictions without asserting that they are biologically false positives.','',
            '| Test model | Variant | TP | FP | FN | F1 | Ignored |','|---|---|---:|---:|---:|---:|---:|']
     for r in rows:
         if r['split']=='test':lines.append(f"| {r['model']} | {r['variant']} | {r['tp']} | {r['fp']} | {r['fn']} | {r['f1']:.4f} | {r['ignored_predictions']} |")

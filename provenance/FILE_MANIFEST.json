@@ -1,7 +1,7 @@
 {
-  "publication_date": "2026-10-12",
-  "file_count": 263,
-  "total_logical_bytes": 15783020,
+  "publication_date": "2026-10-22",
+  "file_count": 264,
+  "total_logical_bytes": 15784398,
   "manifest_excludes": [
     "FILE_MANIFEST.json",
     "SHA256SUMS.txt"
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3318,
-      "sha256": "7131810939965e32838e29e2d04d7c5c088c9e63435f30833c65171ac42584da"
+      "bytes": 3359,
+      "sha256": "5e14a9c1fb645aadcce2a05c5fb7e9aab8e4350855cf671ba9112a0c9258797f"
     },
     {
       "path": "RUNBOOK.md",
@@ -34,8 +34,8 @@
     },
     {
       "path": "config/evaluation_draft.json",
-      "bytes": 1053,
-      "sha256": "7962a6a0fff654dbdb6c8442fc449fa3d111c76491b97d90c239e784ac16e8d0"
+      "bytes": 1041,
+      "sha256": "e7045d23ebefa0c7d8547baa42c014953323c2fef4a202a565b93cde45fe851c"
     },
     {
       "path": "config/independent_agreement.json",
@@ -174,18 +174,18 @@
     },
     {
       "path": "docs/PROVENANCE.md",
-      "bytes": 2631,
-      "sha256": "a8d88c41c44fe521495f509baf653442ac2a1fcbee91f79c749ad54ff4eae905"
+      "bytes": 2607,
+      "sha256": "0ad009cd0accf5c4b18e3d3a8c2346992239ee317ee31003319f4f661ad67d72"
     },
     {
       "path": "docs/RESULTS.md",
-      "bytes": 2237,
-      "sha256": "14d18dbf5be562107ff13759066ce216ce5a654cafbfc688ec83788d14cb2f87"
+      "bytes": 2232,
+      "sha256": "2fe0c7c10897bcffaf10d6fbccbfe77f1bf8d2904796e61114cf914fff70ed4d"
     },
     {
       "path": "docs/confirmed_reference_20261010/AUTHOR_REFERENCE_LOCK.json",
-      "bytes": 1382,
-      "sha256": "cbb7b50df585fb31608f67304d20ce95d883f6457795cf1650b1a5960df7ad88"
+      "bytes": 1314,
+      "sha256": "683ce116460385d7278e5f1ade45468e67d244fabf3771ddeb996f1317539624"
     },
     {
       "path": "docs/detection_reconstruction_20261006/ARCHIVE_RECEIPT.json",
@@ -364,8 +364,8 @@
     },
     {
       "path": "provenance/AUTHOR_REFERENCE_LOCK.json",
-      "bytes": 1382,
-      "sha256": "cbb7b50df585fb31608f67304d20ce95d883f6457795cf1650b1a5960df7ad88"
+      "bytes": 1314,
+      "sha256": "683ce116460385d7278e5f1ade45468e67d244fabf3771ddeb996f1317539624"
     },
     {
       "path": "provenance/EXPERIMENT_LEDGER.json",
@@ -454,13 +454,18 @@
     },
     {
       "path": "results/alto_weak_revision/receipt.json",
-      "bytes": 2038,
-      "sha256": "57b955ffd1ca090ad90939d7aa7b41d95e2b3972a2b5c4e3509bbd8de2951a5e"
+      "bytes": 2031,
+      "sha256": "93e5959410018c1b1cbc73ba3963f6a463ae30c0f19ac4b96dcb4792f7db0292"
     },
     {
       "path": "results/alto_weak_revision/site_revision_changes.csv",
       "bytes": 1059,
       "sha256": "6286bc925c02229787a56b5338b5b5dc7e2d12eb5cf014196600733a1ceacaee"
+    },
+    {
+      "path": "results/benchmark_summary.csv",
+      "bytes": 1744,
+      "sha256": "cbfbbf207c22ee79fe0e273b284b1f3848e24239d3f5ca0ae6c6059b24261d85"
     },
     {
       "path": "results/density_scores/density_metrics.csv",
@@ -709,8 +714,8 @@
     },
     {
       "path": "scripts/01_select_reference_sites.py",
-      "bytes": 18068,
-      "sha256": "26abaa1006b0f3c40962981475d838d7fd37d98c67a92e56927afbead2a2fcfa"
+      "bytes": 18024,
+      "sha256": "fd009d942a1b19513250a0072f0fea2d580aa989c93105b207c91c2ae5e59d42"
     },
     {
       "path": "scripts/02_extract_site_chips.py",
@@ -764,8 +769,8 @@
     },
     {
       "path": "scripts/106_report_alto_3d_weak_revision.py",
-      "bytes": 5555,
-      "sha256": "93733ec2416c9dd2c0f52502bda014de1fe9fce8426e555d2dcb4acc2ab95260"
+      "bytes": 5548,
+      "sha256": "5546625470138119aaf383fe1c85db6f7279e89051beb73effa24985693df9db"
     },
     {
       "path": "scripts/10_inspect_frozen_baseline.py",
@@ -974,8 +979,8 @@
     },
     {
       "path": "scripts/64_build_conditional_error_gallery.py",
-      "bytes": 7848,
-      "sha256": "8d04a1c2b22bdf49e28ef10c6336f20c6ffaa2ff8223da5b0171336fa15d791d"
+      "bytes": 7817,
+      "sha256": "c7a4cb40efbe7ab89c59e6e9adf477f813e1efbf65c42e03c34afadd4301ddc1"
     },
     {
       "path": "scripts/66_prepare_fixed_density_queues.py",
@@ -1009,8 +1014,8 @@
     },
     {
       "path": "scripts/72_screen_weak_point_labels.py",
-      "bytes": 11774,
-      "sha256": "9c4024278a626b234b3f00c0532764bc34af1ac5288bf595f736a6b322643670"
+      "bytes": 11748,
+      "sha256": "b336cc308ac8069e91770270c01f9b919a1d751ad8e887f5f20caa03d1eb1853"
     },
     {
       "path": "scripts/73_probe_weak_loss_targets.py",
@@ -1039,13 +1044,13 @@
     },
     {
       "path": "scripts/85_rebuild_confirmed_reference.py",
-      "bytes": 6413,
-      "sha256": "b0a6002a8381e098de9e0acb4d70225eb36af00a422b467e3a9bd72ae5b187b5"
+      "bytes": 6424,
+      "sha256": "f6da81569af045dda2af4b8f68213c479bf00c1f50ca4e00eb141e9a28e2c7e1"
     },
     {
       "path": "scripts/87_report_confirmed_results.py",
-      "bytes": 6278,
-      "sha256": "d1a8c8589481cc7d07d86f7cede1179744fe843348be73bab54a35951396b017"
+      "bytes": 6234,
+      "sha256": "87296134bddcd4dba40f6f8b76648de44403e04adaf339d78e12d6f23e7d91d6"
     },
     {
       "path": "scripts/88_rescore_training_archive.py",
@@ -1059,8 +1064,8 @@
     },
     {
       "path": "scripts/90_complete_weak_checkpoint_results.py",
-      "bytes": 10983,
-      "sha256": "01d4be21815d3150fbda3df4474bfaa3d168477a387ecd563d4774c1323da2fe"
+      "bytes": 10981,
+      "sha256": "01d1150f26e9a6f25abdb40fe110a9d7eac69d9446bc82e17a068a4ef1676218"
     },
     {
       "path": "scripts/91_prepare_confirmed_classical.py",
@@ -1069,13 +1074,13 @@
     },
     {
       "path": "scripts/92_report_fixed_scoring_sensitivity.py",
-      "bytes": 4149,
-      "sha256": "4d9252c1315be19df15eb27e0b4006ddc6c89b3c3cc2cf70d2dd57d919aebd58"
+      "bytes": 4130,
+      "sha256": "aaf84633e2ae902abe4a2f988cac56fb6a6ab154893b85e7e5e42c4b3010795a"
     },
     {
       "path": "scripts/93_report_weak_comparison.py",
-      "bytes": 7555,
-      "sha256": "d9fe5cd0ca371b3f04f3dfa76c5f311da59850e1c599e75ae90937b77963bb7f"
+      "bytes": 7494,
+      "sha256": "95a9b9ff37985bad0bbf008155ed73cc087f34260ad8cb29c403b7e6f85c9d5e"
     },
     {
       "path": "scripts/94_report_contextual_errors.py",

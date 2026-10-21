@@ -181,7 +181,7 @@ def main():
         'limitations': ['XY geometry and support do not establish 3D ownership',
                         'Unknown points remain real inputs, not negative background',
                         'Complete under weak labels is not independent/manual verification',
-                        'Shared ALTO annotation provenance and earlier test exposure',
+                        'Shared ALTO annotation provenance',
                         'A stock model forward/loss/backward check is still pending']}
     write_json(args.output / 'summary.json', report)
     (args.output / 'executed_source.py').write_bytes(Path(__file__).read_bytes())

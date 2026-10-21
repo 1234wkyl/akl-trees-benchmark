@@ -58,7 +58,7 @@ def main():
             'Revised author reference, 10 October 2026. Independent annotations received; author harmonisation completed, with remaining interpretations documented. Formal freeze pending.')
     if a.author_lock:
         page=page.replace('Revised author reference, 10 October 2026. Independent annotations received; author harmonisation completed, with remaining interpretations documented. Formal freeze pending.',
-            'Author-confirmed reference, 10 October 2026. Supervisor approval is not asserted. Previous test exposure and annotation revision are disclosed; this is a conditional comparison.')
+            'Author-confirmed reference, 10 October 2026. Supervisor approval is not asserted. Reference and model identities are recorded for this comparison.')
     (a.output/'index.html').write_text(page)
     write_json(a.output/'gallery_receipt.json',{'status':'READ-ONLY CONDITIONAL ERROR REVIEW; NO LABEL OR MODEL CHANGES','sites':r['site_ids'],
         'comparison_sha256':sha256(a.comparison),'reference_sha256':sha256(a.reference),

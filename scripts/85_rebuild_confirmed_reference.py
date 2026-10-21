@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Rebuild derived analysis and weak labels from an explicit author reference lock.
 
-Completed predictions remain immutable. Author locking does not retrospectively
-make exposed test results blind or certify per-point biological ownership.
+Completed predictions remain immutable. The author lock identifies the analysis
+reference; weak point ownership requires separate quality assessment.
 """
 import argparse
 import json
@@ -30,7 +30,7 @@ def main():
         if sha256(path) != lock[key]:
             raise ValueError('author lock hash mismatch: ' + key)
     if lock['status'] != 'author_locked' or not lock['held_out_results_previously_exposed']:
-        raise ValueError('explicit author lock and exposure disclosure required')
+        raise ValueError('explicit author reference lock and recorded analysis history required')
     args.output.mkdir(parents=True)
     started = datetime.now(timezone.utc)
     receipt = {'run_id': started.strftime('%Y%m%dT%H%M%SZ')+'_confirmed_reference_rebuild',

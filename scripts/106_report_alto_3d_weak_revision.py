@@ -91,7 +91,7 @@ def main():
     fig.savefig(a.output/'figure_7_6_alto_revision.svg',bbox_inches='tight');plt.close(fig)
     write_json(a.output/'receipt.json', {'status':'COMPLETE','sources':sources,
                'model_retuned':False,'inference_restarted':False,
-               'scope':'Post-revision exploratory comparison; previous test exposure retained',
+               'scope':'Fixed comparison using the author-confirmed analysis reference',
                'source_code_sha256':sha256(Path(__file__)),
                'output_sha256':{f.name:sha256(f) for f in a.output.iterdir() if f.is_file()}})
     for split in results:

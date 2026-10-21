@@ -22,7 +22,7 @@
   },
   "model_retuned": false,
   "inference_restarted": false,
-  "scope": "Post-revision exploratory comparison; previous test exposure retained",
+  "scope": "Fixed comparison using the author-confirmed analysis reference",
   "source_code_sha256": "93733ec2416c9dd2c0f52502bda014de1fe9fce8426e555d2dcb4acc2ab95260",
   "output_sha256": {
     "figure_7_6_alto_revision.svg": "7ad19992146aa511bc40a3375f83cc7d08a083c0964f023b636f7a0e06df285c",

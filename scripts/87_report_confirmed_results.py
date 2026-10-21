@@ -57,7 +57,7 @@ def main():
     def fmt(v):
         return 'NA' if v is None else f'{v:.4f}'
     lines=['# Author-confirmed reference: fixed-model results — 10 October 2026','',
-           'I locked the supplied author export without changing its geometry. SAT predictions, density levels and scoring policy remain unchanged. The classical configuration is identified in the producer receipt and selected using training sites only. These results disclose prior test exposure and reference revision; author confirmation does not retrospectively make them blind.','',
+           'I locked the supplied author export without changing its geometry. SAT predictions, density levels and scoring policy remain unchanged. The classical configuration is identified in the producer receipt and selected using training sites only. Reference, prediction and configuration identities are recorded for this comparison.','',
            '| Test model | Retention | Precision | Recall | F1 (95% site-bootstrap CI) | Median IoU | Ignored |',
            '|---|---:|---:|---:|---|---:|---:|']
     for r in model_rows:

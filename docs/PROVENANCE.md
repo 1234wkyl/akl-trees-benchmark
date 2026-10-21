@@ -19,4 +19,4 @@ The complete local package preserves original inputs, the upstream source/checkp
 
 Old working annotation exports, weekly communication, document renders/editing scripts, caches, virtual environments and duplicated compressed/extracted copies are excluded. Original blind annotations and distinct reported scientific experiments are retained as necessary evidence, even when they precede the final reference. Historical source hashes and original archive hashes are preserved; package manifests describe the curated payload and do not imply excluded archive files are present.
 
-The original historical producer commit, mask identity and polygon export remain incompletely established. The author lock records previous held-out exposure and does not infer supervisor freeze confirmation. Weak targets do not supply independently checked three-dimensional truth.
+The original historical producer commit, mask identity and polygon export remain incompletely established. The author lock identifies the analysis reference and its approval authority. Weak targets do not supply independently checked three-dimensional truth.

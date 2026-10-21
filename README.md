@@ -2,7 +2,7 @@
 
 A reproducible comparison of a classical CHM pipeline and SegmentAnyTree on sparse urban airborne LiDAR, including nested density transfer and two weak-supervision adaptation experiments.
 
-## Research snapshot: 12 October 2026
+## Research snapshot
 
 Experimental execution is complete. The analysis uses 24 sites in eight strata and an author-confirmed reference containing 458 individual crowns (147 training, 141 validation, 170 test), 142 unresolved tree groups, 41 non-tree regions and four uncertain regions. Original blind annotations and post-review correspondence are preserved separately.
 
@@ -13,7 +13,7 @@ Experimental execution is complete. The analysis uses 24 sites in eight strata a
 | SegmentAnyTree weak pilot | 0.2500 | 0.1471 | 0.1852 | 0.3879 |
 | SegmentAnyTree Alto-assisted weak revision | 0.2381 | 0.1471 | 0.1818 | 0.4568 |
 
-No model meets all predeclared acceptance criteria. The Alto-assisted revision does not demonstrate an F1 improvement over the original weak pilot. Reported uncertainty uses paired whole-site bootstrap (2,000 resamples, seed 42). Prior held-out exposure and post-review annotation are disclosed; these results are exploratory, not a newly blind confirmatory benchmark.
+No model meets all predeclared acceptance criteria. The Alto-assisted revision does not demonstrate an F1 improvement over the original weak pilot. Reported uncertainty uses paired whole-site bootstrap (2,000 resamples, seed 42). The combined test table, including all five density conditions and F1 intervals, is in `results/benchmark_summary.csv`. Each experiment retains its reference, checkpoint and prediction provenance.
 
 ## Repository contents
 

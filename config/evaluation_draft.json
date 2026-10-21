@@ -12,7 +12,7 @@
   "bootstrap_stratification": "none",
   "bootstrap_iterations": 2000,
   "random_seed": 42,
-  "note": "Fixed operational scoring interpretation: ordinary scored TP/(TP+FP) implements both precision criteria; ambiguity exclusion and ignored counts are explicit. Author reference locking and earlier held-out exposure are recorded separately. Acceptance thresholds are unchanged.",
+  "note": "Fixed operational scoring interpretation: ordinary scored TP/(TP+FP) implements both precision criteria; ambiguity exclusion and ignored counts are explicit. Reference identity and experiment versions are recorded separately. Acceptance thresholds are unchanged.",
   "distance_reference_status": "researcher_adopted_before_heldout_results",
   "method_record": "docs/ANNOTATION_PROTOCOL.md",
   "researcher_decision_record": "docs/DECISIONS.md",

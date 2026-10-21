@@ -162,7 +162,7 @@ def classify(cell: dict) -> str | None:
 
 
 def assign_blocks(cells: list[dict], cfg: dict, rng: random.Random) -> dict[tuple, str]:
-    """Assign whole spatial blocks to a split so sites cannot leak across."""
+    """Assign each whole spatial block to one split."""
     blocks = sorted({(int(c["cx"] // BLOCK_SIZE_M), int(c["cy"] // BLOCK_SIZE_M)) for c in cells})
     rng.shuffle(blocks)
     frac = cfg["reference_set"]["splits"]
@@ -394,7 +394,7 @@ def main() -> int:
     lines += ["", f"Minimum separation between sites: {cfg['reference_set']['min_site_separation_m']} m.",
               f"Minimum buffer between different splits: {cfg['reference_set']['split_buffer_m']} m.",
               f"Splits assigned by {BLOCK_SIZE_M} m spatial block, so neighbouring sites",
-              "cannot land in different splits and leak information."]
+              "are assigned to the same split."]
     (d / "site_selection_report.md").write_text("\n".join(lines) + "\n")
 
     try:

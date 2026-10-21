@@ -1,6 +1,6 @@
 # Completed research results
 
-The fixed comparisons and paired confidence intervals are delivered as machine-readable CSV/JSON in `results/`. The complete local package also contains prediction GeoPackages, point outputs, error galleries and full run evidence.
+The fixed comparisons and paired confidence intervals are delivered as machine-readable CSV/JSON in `results/`. The combined test table is `results/benchmark_summary.csv`. The complete local package also contains prediction GeoPackages, point outputs, error galleries and full run evidence.
 
 | Test model | TP | FP | FN | Ignored | F1 | 95% paired-site F1 interval |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
@@ -17,4 +17,4 @@ The revised weak queue audited all 19 tiles and assembled all 16 validation/test
 
 Historical reconstruction uses the immutable 30 July database. Frozen-seed generation recovers 126 crown candidates and matches four stored attributes for 125; independent detection recovers 108 retained inferred detections and matches four attributes for 115 crown candidates. These checks do not prove identical historical polygon vertices or unique producer parameters.
 
-Reference revisions and earlier held-out exposure are disclosed. All labels, checkpoints and fixed predictions remain separate by experiment. Completed execution does not imply that performance thresholds were met, that point targets are independently verified, or that final document review/submission is complete.
+All labels, checkpoints and fixed predictions remain separate by experiment. Completed execution does not imply that performance thresholds were met, that point targets are independently verified, or that final document review/submission is complete.
