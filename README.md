@@ -43,4 +43,4 @@ python -m pytest tests -q
 
 Use [RUNBOOK.md](RUNBOOK.md) for the delivered analysis commands and the complete package's execution/handover guides for GPU regeneration. Build new outputs in fresh directories and retain source hashes and run IDs. Completed experiments do not need rerunning to inspect their results.
 
-[Protocol](docs/ANNOTATION_PROTOCOL.md) · [Results](docs/RESULTS.md) · [Major decisions](docs/DECISIONS.md) · [Source identities](docs/PROVENANCE.md)
+[Protocol](docs/ANNOTATION_PROTOCOL.md) · [Results](docs/RESULTS.md) ·  [Source identities](docs/PROVENANCE.md)
